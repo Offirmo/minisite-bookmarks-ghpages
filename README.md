@@ -1,18 +1,4 @@
-# minisite-bookmarks
-EXPERIMENTAL
 
+# This is not what you are looking for !
 
-## Install
-
-
-## Usage
-
-
-## Troubleshooting
-...
-
-
-## Inspiration and hat tips
-
-
-## Contributing
+The main branch is gh-pages, for important reasons.
