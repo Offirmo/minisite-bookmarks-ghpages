@@ -6,6 +6,9 @@
   "repository": "git@github.com:Offirmo/minisite-bookmarks.git",
   "author": "Offirmo <offirmo.net@gmail.com>",
   "license": "UNLICENSED",
+  "scripts": {
+    "start": "puer"
+  },
   "dependencies": {
     "js-yaml": "^3.7.0",
     "packery": "^2.1.1",
