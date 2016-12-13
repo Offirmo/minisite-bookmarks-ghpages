@@ -7,17 +7,34 @@
   "author": "Offirmo <offirmo.net@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "puer"
+    "__prod": "~~~~~~~ PRODUCTION ~~~~~~~",
+    "build": "./scripts/build.js",
+    "np": "np",
+    "nsp": "nsp",
+    "__dev": "~~~~~~~ DEVELOPMENT ~~~~~~~",
+    "clean": "TODO",
+    "dev1": "TODO node scripts/build-for-unit-tests.js",
+    "dev2": "TODO cpx 'src/**/*.{json}' test/unit/src --watch",
+    "dev": "run-p dev1 dev2",
+    "puer": "puer --filetype 'js|css|html|yaml|markdown' --exclude 'node_modules|scripts' --port $PORT",
+    "start": "npm run puer",
+    "__misc": "~~~~~~~ MISC ~~~~~~~",
+    "tsc": "tsc",
+    "__shortcuts": "~~~~~~~ Shortcuts ~~~~~~~"
   },
   "dependencies": {
-    "js-yaml": "^3.7.0",
-    "packery": "^2.1.1",
-    "requirejs": "^2.3.2",
-    "tachyons": "^4.5.6"
   },
   "devDependencies": {
     "@offirmo/cli-toolbox": "^0.3.0",
+    "js-yaml": "^3.7.0",
+    "node-typescript-compiler": "^1.1.1",
+    "packery": "^2.1.1",
     "puer": "^1.1.1",
-    "semver": "^5.3.0"
+    "requirejs": "^2.3.2",
+    "run-p": "^0.0.0",
+    "rx": "^4.1.0",
+    "semver": "^5.3.0",
+    "tachyons": "^4.5.6",
+    "typescript": "^2.1.4"
   }
 }
