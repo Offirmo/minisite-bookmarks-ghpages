@@ -1,0 +1,35 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"allowJs": false,
+		"lib": [ "DOM", "ES2015" ],
+		"moduleResolution": "node",
+
+		"listEmittedFiles": false,
+		"listFiles": true,
+		"noEmitOnError": true,
+		"pretty": true,
+
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictNullChecks": true,
+
+		"alwaysStrict": true,
+		"declaration": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"module": "AMD",
+		"newLine": "lf",
+		"outDir": "../dist/src.amd",
+		"sourceMap": true,
+		"target": "ES2017"
+	}
+}
