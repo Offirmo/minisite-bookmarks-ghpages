@@ -6,7 +6,8 @@
 		"moduleResolution": "node",
 
 		"listEmittedFiles": false,
-		"listFiles": true,
+		"listFiles": false,
+		"skipDefaultLibCheck": true,
 		"noEmitOnError": true,
 		"pretty": true,
 

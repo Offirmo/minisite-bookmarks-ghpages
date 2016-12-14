@@ -17,26 +17,11 @@ requirejs.config({
     },
     /////////////////////
     // multi-files modules
-    packages: [
-        /*{ // require.js extensions (plugin) to be able to load css with require.js
-            name : 'css',
-            location: 'bower_components/require-css/',
-            main: 'css.js'
-        },*/
-        {
-            name: 'boringrpg',
-            location: 'client/apps/boringrpg/'
-        },
-        {
-            name: 'when',
-            location: 'bower_components/when',
-            main: 'when.js'
-        },
-    ],
+    packages: [],
     /////////////////////
     paths: {
         /////// our apps, as modules, so that we can reference them when inside the concat+min js
-        'app-index': 'client/apps/index/index',
+        'app': 'dist/src.es7.amd',
         /////// shim plugins
         'appcache-nanny': 'bower_components/appcache-nanny/appcache-nanny',
         // dust-full : this plugin MUST be aliased 'dust' for rdust to work properly, see 'dust' below
@@ -60,7 +45,7 @@ requirejs.config({
     config: {},
     /////////////////////
     // dependencies to load as soon as require.js defines require
-    deps: []
+    deps: [],
 });
 console.log('Loaded require.js config.');
 //# sourceMappingURL=requirejs-config.js.map

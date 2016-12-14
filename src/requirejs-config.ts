@@ -42,23 +42,18 @@ requirejs.config({
 			name : 'css',
 			location: 'bower_components/require-css/',
 			main: 'css.js'
+		},
+		{
+			name : 'app',
+			location: 'dist/src.es7.amd',
 		},*/
-		{
-			name : 'boringrpg',
-			location: 'client/apps/boringrpg/'
-		},
-		{
-			name : 'when',
-			location: 'bower_components/when',
-			main: 'when.js'
-		},
 	],
 
 	/////////////////////
 	paths: {
 
 		/////// our apps, as modules, so that we can reference them when inside the concat+min js
-		'app-index'                : 'client/apps/index/index',
+		'app'                      : 'dist/src.es7.amd',
 
 		/////// shim plugins
 		'appcache-nanny'           : 'bower_components/appcache-nanny/appcache-nanny',
