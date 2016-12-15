@@ -9,8 +9,10 @@ const fs = require('@offirmo/cli-toolbox/fs/extra')
 
 const NEEDED_FILES_FROM_MODULES = [
 	// order matters !
+	'requirejs/require.js',
 	'tachyons/css/tachyons.min.css',
 	'js-yaml/dist/js-yaml.js',
+	'rxjs/bundles/Rx.js',
 ]
 
 const MANAGED_MODULES_DIR = 'node_modules'
@@ -29,7 +31,7 @@ NEEDED_FILES_FROM_MODULES.forEach(dep_path => {
 
 	let target_name = dep_path_parsed.name
 	if (! target_name.includes(id)) target_name = id + '.' + target_name
-	target_name = target_name.slice(target_name.indexOf(id))
+	target_name = target_name.slice(target_name.indexOf(id)).toLocaleLowerCase()
 
 	let target_filename = target_name + '@' + version + dep_path_parsed.ext
 	let target_filename_major = target_name + '@' + semver.major(version) + dep_path_parsed.ext

@@ -48,3 +48,12 @@
 Hello
 
 <div class="progress">Loading…</div>
+
+<script src="third-party/require@2.js"></script>
+<script>
+	require([ 'dist/src.es7.amd/requirejs-config.js' ], function() {
+		console.info('require.js successfully bootstraped')
+		// Configuration loaded now, safe to do other require calls that depend on that config.
+		require([ 'app/index' ])
+	})
+</script>

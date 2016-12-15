@@ -11,13 +11,23 @@ requirejs.config({
     // NOTE 2 : relative baseUrl base refers to *the calling html* !
     baseUrl: '.',
     // http://requirejs.org/docs/api.html#config-enforceDefine
-    enforceDefine: true,
+    enforceDefine: false,
     map: {
         '*': {}
     },
     /////////////////////
     // multi-files modules
-    packages: [],
+    packages: [
+        /*{ // require.js extensions (plugin) to be able to load css with require.js
+            name : 'css',
+            location: 'bower_components/require-css/',
+            main: 'css.js'
+        },*/
+        {
+            name: 'app',
+            location: 'dist/src.es7.amd',
+        },
+    ],
     /////////////////////
     paths: {
         /////// our apps, as modules, so that we can reference them when inside the concat+min js
@@ -47,5 +57,4 @@ requirejs.config({
     // dependencies to load as soon as require.js defines require
     deps: [],
 });
-console.log('Loaded require.js config.');
 //# sourceMappingURL=requirejs-config.js.map

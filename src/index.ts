@@ -1,1 +1,1 @@
-console.log('Hello world !')
+console.log('App: Hello world !')

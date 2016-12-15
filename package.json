@@ -13,6 +13,7 @@
     "nsp": "nsp",
     "__dev": "~~~~~~~ DEVELOPMENT ~~~~~~~",
     "clean": "TODO",
+    "copy-third-party": "node scripts/copy-third-party.js",
     "dev1": "tsc --watch",
     "dev": "run-p dev1",
     "puer": "puer --filetype 'js|css|html|yaml|markdown' --exclude 'node_modules|scripts' --port $PORT",

@@ -14,7 +14,7 @@ requirejs.config({
 	baseUrl: '.',
 
 	// http://requirejs.org/docs/api.html#config-enforceDefine
-	enforceDefine: true,
+	enforceDefine: false,
 
 	map: {
 		'*': {
@@ -42,11 +42,11 @@ requirejs.config({
 			name : 'css',
 			location: 'bower_components/require-css/',
 			main: 'css.js'
-		},
+		},*/
 		{
 			name : 'app',
 			location: 'dist/src.es7.amd',
-		},*/
+		},
 	],
 
 	/////////////////////
@@ -87,5 +87,3 @@ requirejs.config({
 	// dependencies to load as soon as require.js defines require
 	deps: [ ],
 })
-
-console.log('Loaded require.js config.')
