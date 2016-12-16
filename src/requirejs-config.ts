@@ -18,31 +18,14 @@ requirejs.config({
 
 	map: {
 		'*': {
-			//'css': 'bower_components/require-css/css',
-			//'json': 'bower_components/requirejs-plugins/src/json',
-			//'css-builder': 'bower_components/require-css/css-builder',
-			//'normalize': 'bower_components/require-css/normalize',
-			// a require.js extension to be able to load less stylesheets with require.js
-			//'less': 'bower_components/require-less/less',
-			// a require.js extension to be able to load dust.js templates easily
-			//'rdust': 'bower_components/require-dust/rdust',
-			// a require.js extension to be able to wait for the DOM to be ready
-			//'domReady': 'bower_components/requirejs-domready/domReady',
-			// an extension to lazy load angular components
-			//'ngload': 'bower_components/angularAMD/ngload',
-			// transparently replace underscore with lodash
-			//'underscore' : 'lodash'
+			css: 'dist/third-party/require-css.css@0.js',
 		}
 	},
+
 
 	/////////////////////
 	// multi-files modules
 	packages: [
-		/*{ // require.js extensions (plugin) to be able to load css with require.js
-			name : 'css',
-			location: 'bower_components/require-css/',
-			main: 'css.js'
-		},*/
 		{
 			name : 'app',
 			location: 'dist/src.es7.amd',
@@ -51,32 +34,30 @@ requirejs.config({
 
 	/////////////////////
 	paths: {
-
-		/////// our apps, as modules, so that we can reference them when inside the concat+min js
-		'app'                      : 'dist/src.es7.amd',
-
 		/////// shim plugins
-		'appcache-nanny'           : 'bower_components/appcache-nanny/appcache-nanny',
-		// dust-full : this plugin MUST be aliased 'dust' for rdust to work properly, see 'dust' below
-		'dust'                     : 'bower_components/dustjs-linkedin/dist/dust-full',
-		'dust-helpers'             : 'bower_components/dustjs-linkedin-helpers/dist/dust-helpers',
+		packery: 'dist/third-party/packery.pkgd@2',
+		tachyons: 'dist/src.es7.amd/empty',
+
+		/*
 		'extended-exceptions'      : 'bower_components/extended-exceptions.js/extended_exceptions',
 		'javascript-state-machine' : 'bower_components/javascript-state-machine/state-machine',
 		'lodash'                   : 'bower_components/lodash/lodash',
 		'rx'                       : 'bower_components/rxjs/dist/rx.all',
+		*/
 	},
 
 
 	/////////////////////
 	shim: {
-		/////// require.js extensions
-
-		/////// AMD plugins
-
 		/////// shim plugins
 		lodash: {
 			exports: '_'
-		}
+		},
+		tachyons: {
+			deps: [
+				'css!dist/third-party/tachyons@4.css'
+			]
+		},
 	},
 
 	/////////////////////

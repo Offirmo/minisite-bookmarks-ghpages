@@ -10,13 +10,15 @@ const fs = require('@offirmo/cli-toolbox/fs/extra')
 const NEEDED_FILES_FROM_MODULES = [
 	// order matters !
 	'requirejs/require.js',
-	'tachyons/css/tachyons.min.css',
+	'require-css/css.js',
+	'tachyons/css/tachyons.css',
+	'packery/dist/packery.pkgd.js',
 	'js-yaml/dist/js-yaml.js',
 	'rxjs/bundles/Rx.js',
 ]
 
 const MANAGED_MODULES_DIR = 'node_modules'
-const SOURCE_CONTROLLED_THIRD_PARTY_DIR = 'third-party'
+const SOURCE_CONTROLLED_THIRD_PARTY_DIR = 'dist/third-party'
 
 fs.emptyDirSync(SOURCE_CONTROLLED_THIRD_PARTY_DIR)
 

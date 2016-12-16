@@ -13,16 +13,13 @@ requirejs.config({
     // http://requirejs.org/docs/api.html#config-enforceDefine
     enforceDefine: false,
     map: {
-        '*': {}
+        '*': {
+            css: 'dist/third-party/require-css.css@0.js',
+        }
     },
     /////////////////////
     // multi-files modules
     packages: [
-        /*{ // require.js extensions (plugin) to be able to load css with require.js
-            name : 'css',
-            location: 'bower_components/require-css/',
-            main: 'css.js'
-        },*/
         {
             name: 'app',
             location: 'dist/src.es7.amd',
@@ -30,26 +27,21 @@ requirejs.config({
     ],
     /////////////////////
     paths: {
-        /////// our apps, as modules, so that we can reference them when inside the concat+min js
-        'app': 'dist/src.es7.amd',
         /////// shim plugins
-        'appcache-nanny': 'bower_components/appcache-nanny/appcache-nanny',
-        // dust-full : this plugin MUST be aliased 'dust' for rdust to work properly, see 'dust' below
-        'dust': 'bower_components/dustjs-linkedin/dist/dust-full',
-        'dust-helpers': 'bower_components/dustjs-linkedin-helpers/dist/dust-helpers',
-        'extended-exceptions': 'bower_components/extended-exceptions.js/extended_exceptions',
-        'javascript-state-machine': 'bower_components/javascript-state-machine/state-machine',
-        'lodash': 'bower_components/lodash/lodash',
-        'rx': 'bower_components/rxjs/dist/rx.all',
+        packery: 'dist/third-party/packery.pkgd@2',
+        tachyons: 'dist/src.es7.amd/empty',
     },
     /////////////////////
     shim: {
-        /////// require.js extensions
-        /////// AMD plugins
         /////// shim plugins
         lodash: {
             exports: '_'
-        }
+        },
+        tachyons: {
+            deps: [
+                'css!dist/third-party/tachyons@4.css'
+            ]
+        },
     },
     /////////////////////
     config: {},
