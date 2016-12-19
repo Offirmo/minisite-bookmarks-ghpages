@@ -1,4 +1,4 @@
-define(["require", "exports", "packery"], function (require, exports) {
+define(["require", "exports", "./state", "packery"], function (require, exports, state_1) {
     "use strict";
     //import * as tachyons from 'tachyons'
     /*
@@ -10,6 +10,7 @@ define(["require", "exports", "packery"], function (require, exports) {
         // options...
     })
     */
-    console.log('App: Hello world !');
+    console.log('App: Hello world ! XX');
+    state_1.factory();
 });
 //# sourceMappingURL=index.js.map
