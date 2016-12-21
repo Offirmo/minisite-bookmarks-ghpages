@@ -45,6 +45,8 @@ services:
 - slack https://dashlane.slack.com/?redir=%2Fhome
 
 tasks
+- https://confluence.dashlane.com/display/WP/World+Chrome+release+Q4+2016
+- https://confluence.dashlane.com/display/WP/Chrome+Extension+popover+UI+v2+known+issues+and+limitations
 - https://jira.dashlane.com/issues/?jql=project%3D%20WebProduct%20and%20type%20%3D%20Bug%20and%20resolution%20%3D%20Unresolved%20and%20component%20%3D%20TAC%20and%20labels%20%3D%20readyToFix
 
 tools:
@@ -74,6 +76,8 @@ side:
 - https://www.sitepoint.com/react-higher-order-components/
 - https://github.com/ivantsov/redux-subscriber
 - http://babeljs.io/users/
+- https://confluence.dashlane.com/pages/viewpage.action?pageId=30508818
+- https://medium.com/javascript-studio/nice-and-easy-module-releases-a32c906b564e#.i0vzjl9a1
 
 morning gym:
 - http://kibana.kwift.eu:9200/_plugin/kibana3/#/dashboard/elasticsearch/tac-dashboard-production
