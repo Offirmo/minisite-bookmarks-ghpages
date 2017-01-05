@@ -38,7 +38,7 @@
     "requirejs": "^2.3.2",
     "rxjs": "^5.0.1",
     "semver": "^5.3.0",
-    "shave": "^0.2.3",
+    "shave": "^1.0.1",
     "tachyons": "^4.5.6",
     "typescript": "^2.1.4"
   }

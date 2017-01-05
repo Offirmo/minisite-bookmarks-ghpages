@@ -5,10 +5,11 @@ pinned:
 - reviewers http://denis-sokolov.github.io/random-items/?items=Antoine,Bradley,Edmundas,Guillaume,Thierry,Thomas,William&count=3
 - PRs https://stash.dashlane.com/plugins/servlet/all-pull-requests/project/WP
 - tokens https://ws1.dashlane.com/token.html
+- zoom standup WP https://dashlane.zoom.us/j/4371485725
 
 dev:
 - https://jira.dashlane.com/secure/Dashboard.jspa
-- https://confluence.dashlane.com/pages/viewpage.action?spaceKey=WP&title=Onboarding
+- https://confluence.dashlane.com/display/WP/Onboarding
 - https://confluence.dashlane.com/pages/viewpage.action?spaceKey=WP&title=WebProduct+projects
 
 team:
@@ -48,6 +49,7 @@ tasks
 - https://confluence.dashlane.com/display/WP/World+Chrome+release+Q4+2016
 - https://confluence.dashlane.com/display/WP/Chrome+Extension+popover+UI+v2+known+issues+and+limitations
 - https://jira.dashlane.com/issues/?jql=project%3D%20WebProduct%20and%20type%20%3D%20Bug%20and%20resolution%20%3D%20Unresolved%20and%20component%20%3D%20TAC%20and%20labels%20%3D%20readyToFix
+- https://chrome.google.com/webstore/detail/dashlane-internal/pekeeklhkheaadlenfbelidhhpbdioem?hl=fr
 
 tools:
 - Zeplin https://app.zeplin.io/project.html#pid=5800dc8b4dabc911081b62ad&sid=5800f34fe483134867fd896c
