@@ -1,5 +1,6 @@
 import { State } from './types'
 
+/*
 function factory(vault_id: string = 'demo'): State {
 	return {
 		vault_id
@@ -9,3 +10,4 @@ function factory(vault_id: string = 'demo'): State {
 export {
 	factory
 }
+*/

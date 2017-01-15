@@ -18,3 +18,18 @@ github pages hosted lists
 
 
 https://dollarshaveclub.github.io/shave/
+
+
+
+Flow
+####
+
+entries:
+- ocurrent vault ID
+- os_ : fresh config
+-     : fresh content (markdown)
+-     : cached config
+-     : cached content
+-     : parsed config
+-     : parsed content
+-     : password
