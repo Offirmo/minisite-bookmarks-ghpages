@@ -5,7 +5,7 @@ pinned:
 - reviewers http://denis-sokolov.github.io/random-items/?items=Antoine,Bradley,Edmundas,Guillaume,Thierry,Thomas,William&count=3
 - PRs https://stash.dashlane.com/plugins/servlet/all-pull-requests/project/WP
 - tokens https://ws1.dashlane.com/token.html
-- zoom standup WP https://dashlane.zoom.us/j/4371485725
+- http://www.worldtimebuddy.com/?pl=1&lid=1153671,2988507,5128581,2193733&h=2988507
 
 dev:
 - https://jira.dashlane.com/secure/Dashboard.jspa
@@ -34,9 +34,11 @@ Agile
 
 prod
 - http://kibana.kwift.eu:9200/_plugin/kibana3/#/dashboard/elasticsearch/websitelog
+- http://kibana.kwift.eu:9200/_plugin/kibana3/index.html#dashboard/temp/AVoDnuN26K4fNdEy7x1e
 
 root:
 - Confluence https://confluence.dashlane.com/#recently-worked
+- calendar https://confluence.dashlane.com/display/WP
 - Stash https://stash.dashlane.com/projects
 - Bamboo https://bamboo-root.dashlane.com/currentActivity.action
 
@@ -52,7 +54,7 @@ tasks
 - https://chrome.google.com/webstore/detail/dashlane-internal/pekeeklhkheaadlenfbelidhhpbdioem?hl=fr
 
 tools:
-- Zeplin https://app.zeplin.io/project.html#pid=5800dc8b4dabc911081b62ad&sid=5800f34fe483134867fd896c
+- Zeplin https://app.zeplin.io/project.html
 - Smartling https://sso.smartling.com/auth/realms/Smartling/protocol/openid-connect/auth?response_type=code&client_id=wa&redirect_uri=https%3A%2F%2Fdashboard.smartling.com%2Fsso%2Flogin.htm&state=324%2Ff15fb964-437d-4cf7-b9d2-b758ae641187&login=true
 - CWS https://chrome.google.com/webstore/developer/dashboard?hl=fr
 - https://www.mailinator.com/

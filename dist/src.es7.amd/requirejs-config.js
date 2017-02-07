@@ -28,19 +28,33 @@ requirejs.config({
     /////////////////////
     paths: {
         /////// shim plugins
-        packery: 'dist/third-party/packery.pkgd@2',
-        tachyons: 'dist/src.es7.amd/empty',
+        '@offirmo/rx-auto': 'dist/third-party/offirmo.rx-auto@0',
+        '@reactivex/rxjs': 'dist/third-party/reactivex.rxjs.rx@5',
+        'js-yaml': 'dist/third-party/js-yaml@3',
+        'lodash': 'dist/third-party/lodash@4',
+        'packery': 'dist/third-party/packery.pkgd@2',
+        'tachyons': 'dist/src.es7.amd/empty',
+        'tslib': 'dist/third-party/tslib@1',
+        'typescript-string-enums': 'dist/third-party/typescript-string-enums@0',
     },
     /////////////////////
     shim: {
         /////// shim plugins
-        lodash: {
+        'lodash': {
             exports: '_'
         },
-        tachyons: {
+        'tachyons': {
             deps: [
                 'css!dist/third-party/tachyons@4.css'
             ]
+        },
+        'typescript-string-enums': {
+            //			exports: 'Enum',
+            init: function () {
+                return {
+                    Enum: this.Enum
+                };
+            }
         },
     },
     /////////////////////

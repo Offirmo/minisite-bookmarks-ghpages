@@ -8,10 +8,10 @@
   "license": "UNLICENSED",
   "scripts": {
     "__prod": "~~~~~~ PRODUCTION ~~~~~~",
-    "build": "./scripts/build.js",
+    "build": "xxx ./scripts/build.js",
     "__dev": "~~~~~~ DEVELOPMENT ~~~~~~",
     "clean": "TODO",
-    "copy-third-party": "node scripts/copy-third-party.js",
+    "copy-third-party": "node meta/scripts/copy-third-party.js",
     "dev1": "tsc --watch",
     "dev": "run-p dev1",
     "start": "browser-sync start --server --port $PORT --logLevel debug --files './*.html,dist/**' --directory --startPath index-dev.html",
@@ -24,22 +24,26 @@
     "tsc": "tsc",
     "__shortcuts": "~~~~~~ Shortcuts ~~~~~~"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@offirmo/rx-auto": "^0.0.3",
+    "@reactivex/rxjs": "^5.0.3",
+    "js-yaml": "^3.7.0",
+    "packery": "^2.1.1",
+    "require-css": "^0.1.8",
+    "requirejs": "^2.3.2",
+    "shave": "^1.0.1",
+    "tachyons": "^4.5.6",
+    "tslib": "^1.5.0",
+    "typescript-string-enums": "^0.1.1"
+  },
   "devDependencies": {
     "@offirmo/cli-toolbox": "^0.3.0",
     "@types/packery": "^1.4.29",
     "browser-sync": "^2.18.5",
-    "js-yaml": "^3.7.0",
     "node-typescript-compiler": "^1.1.1",
     "nodemon": "^1.11.0",
     "npm-run-all": "^3.0.0",
-    "packery": "^2.1.1",
-    "require-css": "^0.1.8",
-    "requirejs": "^2.3.2",
-    "rxjs": "^5.0.1",
     "semver": "^5.3.0",
-    "shave": "^1.0.1",
-    "tachyons": "^4.5.6",
     "typescript": "^2.1.4"
   }
 }

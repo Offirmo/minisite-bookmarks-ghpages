@@ -12,36 +12,50 @@
 	<link rel="icon" href="content/bookmark.png" type="image/png" />
 
 	<style type="text/css">
-		/**
-		 * Flexible Google-style progress indicator
-		 * http://lea.verou.me/2013/11/flexible-google-style-loader-with-css/
+		* {
+			--loader-color: rgba(3, 169, 244, 1);
+		}
+
+		/* coffee cup loader
+		 * https://github.com/Haonancx/CSS3-Loader
 		 */
-		@keyframes progress {
-			50% { border-width: .5em 0; }
-			to { border-width: .5em 0 0 0; }
+		.loader_coffee_cup {
+			width: 20px;
+			height: 24px;
+			border: 1px var(--loader-color) solid;
+			border-radius: 0 0 5px 5px;
+			position: relative;
+			margin: 36px auto;
 		}
-		@keyframes rotate {
-			to { transform: rotate(-270deg); }
+		.loader_coffee_cup:after,
+		.loader_coffee_cup:before {
+			position: absolute;
+			content: "";
 		}
-		.progress {
-			display: inline-block;
-			font-size: 50px; /* Size of the progress indicator */
-			width: 1em; height: 1em;
-			border: solid white;
-			border-top-color: #ddd;
-			border-width: 0 0 .5em 0;
-			border-radius: 50%;
-			box-sizing: border-box;
-			margin: .1em .2em;
-			background: linear-gradient(white 50%, #ddd 50%);
-			background-origin: border-box;
-			transform: rotate(90deg);
-			animation: rotate 1s steps(4) infinite,
-			progress .25s linear infinite alternate;
-			text-indent: 99em;
-			overflow: hidden;
+		.loader_coffee_cup:after {
+			width: 5px;
+			height: 12px;
+			border: 1px var(--loader-color) solid;
+			border-left: none;
+			border-radius: 0 20px 20px 0;
+			left: 20px;
 		}
-	</style>
+		.loader_coffee_cup:before {
+			width: 1px;
+			height: 6px;
+			background-color: var(--loader-color);
+			top: -10px;
+			left: 4px;
+			box-shadow: 5px 0 0 0 var(--loader-color), 5px -5px 0 0 var(--loader-color), 10px 0 0 0 var(--loader-color);
+			-webkit-animation: loader_coffee_up_steam 1s linear infinite alternate;
+			-moz-animation: loader_coffee_up_steam 1s linear infinite alternate;
+			animation: loader_coffee_up_steam 1s linear infinite alternate;
+		}
+		@keyframes loader_coffee_up_steam {
+			0% { height: 0; }
+			100% { height: 6px; }
+		}
+	</style>&
 </head>
 
 <body>
@@ -50,8 +64,11 @@ Hello
 
 <div class="progress">Loading…</div>
 
-<script src="dist/third-party/require@2.js"></script>
+<script src="dist/third-party/requirejs@2.js"></script>
 <script>
+	// for idiot modules
+	window.exports = window
+	// boostrap
 	require([ 'dist/src.es7.amd/requirejs-config.js' ], function() {
 		console.info('require.js successfully bootstraped')
 		// Configuration loaded now, safe to do other require calls that depend on that config.

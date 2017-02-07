@@ -1,53 +1,67 @@
-declare const fetch: any
+import { Enum } from "typescript-string-enums"
+import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
 
-import { Observable } from 'rxjs'
+import { retrying_fetch } from './incubator/retrying-fetch'
+import { log_observable } from './incubator/rx-log'
 
-var source = Rx.Observable.from([1, 2, 3]);
-var subject = new Rx.Subject();
-var multicasted = source.multicast(subject);
+////////////////////////////////////
 
-catch + delay
-
+//////////// CONSTANTS ////////////
 const CONSTS = {
 	LS_KEYS: {
-		last_successful_raw_data: 'minisite-bookmarks.last_successful_raw_data',
-	}
+		last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
+		last_successful_raw_data: 'minisite-bookmark.last_successful_raw_data',
+		last_successful_password: 'minisite-bookmark.last_successful_password',
+	},
+	REPO_URL: 'https://github.com/Offirmo/minisite-w',
 }
 
-// determine vault id
-const VAULT_ID = 'demo'
+////////////////////////////////////
 
-// create observables
+function get_vault_id() {
+	return 'client01'
+}
 
-const O_latest_cached_raw = Observable.create(observer => {
-	const data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data)
-	if (data) observer.onNext(data)
+function fetch_raw_data(vault_id: string) {
+	return retrying_fetch<any>(`content/${vault_id}.markdown`, undefined, {response_should_be_ok: true})
+		.then(res => res.text())
+}
+
+function get_cached_raw_data(vault_id: string): string | null {
+	return localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data)
+}
+
+////////////////////////////////////
+
+
+export const Status = Enum("RUNNING", "STOPPED")
+export type Status = Enum<typeof Status>
+
+
+const subjects = auto({
+	vault_id:    get_vault_id(),
+	cached_raw_data: [ 'vault_id', (deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)],
+	fresh_raw_data:  [ 'vault_id', (deps: ResolvedStreamDefMap) => fetch_raw_data(deps['vault_id'].value)],
+	raw_data:        [ 'cached_raw_data', 'fresh_raw_data', OPERATORS.merge ]
 })
 
-const O_latest_fetched_raw = Observable.create(observer => {
-	// TODO fetch
+for (let id in subjects) {
+	//console.log(`subject ${id}`)
+	log_observable(subjects[id], id)
+}
+
+////////////////////////////////////
+
+// actions
+const sbs1 = subjects['fresh_raw_data'].subscribe(x => {
+	// pretend we did it...
+	console.info('updated cache with fresh data:', x)
+	sbs1.unsubscribe();
 })
 
+// race ?
+// test every cases: cache, no cache
 
-const latest_model = null
-const latest_raw = null
-
-const latest_fetched_raw = null
-
-
-///
-
-
-function fetch_content(vault_id: string): Promise<string> {
-	return fetch(`content/${vault_id}.markdown`)
-	.then(res => res.text())
-	.then()
-}
-
-function fetch_raw_content(vault_id: string): Promise<string> {
-	return fetch(`content/${vault_id}.markdown`)
-	.then(res => res.text())
-}
 
 // trigger fetch of up to date data
 
@@ -59,11 +73,6 @@ function fetch_raw_content(vault_id: string): Promise<string> {
 // plug rendering
 
 
-
-
-
-
-import 'packery'
 
 //import { factory as state_factory } from './state'
 
@@ -77,6 +86,8 @@ var pckry = new Packery('.pckry', {
 	// options...
 })
 */
+
+import 'packery'
 
 console.log('App: Hello world ! XX')
 
