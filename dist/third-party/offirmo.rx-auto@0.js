@@ -13,6 +13,7 @@
     const Rx = require("@reactivex/rxjs");
     const _ = require("lodash");
     const OPERATORS = {
+        combineLatest: Symbol('combineLatest'),
         concat: Symbol('concat'),
         merge: Symbol('merge'),
         zip: Symbol('zip'),
@@ -49,41 +50,64 @@
         }
         if (!stream_def.generator)
             throw new Error(`stream definition "${id}" should have a generator !`);
+        stream_def.dependencies.forEach(dependency => {
+            if (!_.isString(dependency) && !_.isSymbol(dependency))
+                throw new Error(`dependencies must be stream ids, which must be strings or symbols ! ("${typeof dependency}")`);
+        });
         return stream_def;
+    }
+    function subjects_for(observable$, initial_behavior_value) {
+        const plain$ = observable$.multicast(new Rx.Subject()).refCount();
+        return {
+            plain$,
+            behavior$: plain$.multicast(new Rx.BehaviorSubject(initial_behavior_value)).refCount(),
+            async$: plain$.multicast(new Rx.AsyncSubject()).refCount(),
+        };
     }
     function resolve_stream_from_static_value(stream_def) {
         const observable$ = Rx.Observable.of(stream_def.generator);
-        return tslib_1.__assign({}, stream_def, { value: stream_def.generator, promise: Promise.resolve(stream_def.generator), observable$, subject$: observable$.multicast(new Rx.Subject()).refCount() });
+        return tslib_1.__assign({}, stream_def, { value: stream_def.generator, promise: Promise.resolve(stream_def.generator), observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
     function resolve_stream_from_promise(stream_def) {
         const observable$ = Rx.Observable.fromPromise(stream_def.generator);
-        return tslib_1.__assign({}, stream_def, { promise: stream_def.generator, observable$, subject$: observable$.multicast(new Rx.Subject()).refCount() });
+        return tslib_1.__assign({}, stream_def, { promise: stream_def.generator, observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
     function resolve_stream_from_observable(stream_def) {
         const observable$ = stream_def.generator;
-        return tslib_1.__assign({}, stream_def, { observable$, subject$: observable$.multicast(new Rx.Subject()).refCount() });
+        return tslib_1.__assign({}, stream_def, { observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
     function resolve_stream_from_operator(stream_defs_by_id, stream_def) {
         const { id, dependencies, generator } = stream_def;
         if (!dependencies.length)
             throw new Error(`stream "${id}" operator should have dependencies !`);
         let observable$;
+        const dependencies$ = stream_def.dependencies
+            .map(id => stream_defs_by_id[id])
+            .map(resolvedStreamDef => resolvedStreamDef.observable$);
+        console.log(`Applying an operator...`, generator, stream_def.dependencies, dependencies$);
         switch (generator) {
+            case OPERATORS.combineLatest:
+                observable$ = Rx.Observable.combineLatest(...dependencies$);
+                break;
+            case OPERATORS.concat:
+                observable$ = Rx.Observable.concat(...dependencies$);
+                break;
             case OPERATORS.merge:
-                observable$ = Rx.Observable.merge(...stream_def.dependencies
-                    .map(id => stream_defs_by_id[id])
-                    .map(resolvedStreamDef => resolvedStreamDef.observable$));
+                observable$ = Rx.Observable.merge(...dependencies$);
+                break;
+            case OPERATORS.zip:
+                observable$ = Rx.Observable.zip(...dependencies$);
                 break;
             default:
-                throw new Error(`stream ${id}: unrecognized operator ! ${generator}`);
+                throw new Error(`stream ${id}: unrecognized or not implemented operator ! ${generator.toString()}`);
         }
-        return tslib_1.__assign({}, stream_def, { observable$, subject$: observable$.multicast(new Rx.Subject()).refCount() });
+        return tslib_1.__assign({}, stream_def, { observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
     function resolve_stream_observable(stream_defs_by_id, stream_def) {
         const { id } = stream_def;
         let { generator } = stream_def;
         const generated = _.isFunction(generator);
-        console.log(`resolving stream "${id}"...`);
+        console.log(`resolving stream "${id}"...`, { generated, generator });
         if (_.isFunction(generator)) {
             // allow custom constructs. We pass full dependencies results
             const stream_deps_by_id = {};
@@ -111,6 +135,7 @@
         }
         if (_.isSymbol(generator)) {
             switch (generator) {
+                case OPERATORS.combineLatest:
                 case OPERATORS.concat:
                 case OPERATORS.merge:
                 case OPERATORS.zip:
@@ -148,6 +173,14 @@
             stream_defs_by_id[stream_id] = standardized_definition;
             stream_defs.push(standardized_definition);
         });
+        // do some global checks
+        stream_ids.forEach(stream_id => {
+            const dependencies = stream_defs_by_id[stream_id].dependencies;
+            dependencies.forEach(dependency => {
+                if (!stream_ids.includes(dependency))
+                    throw new Error(`Stream definition for "${stream_id}" references an unknown dependency "${dependency}" !`);
+            });
+        });
         // resolve related streams
         let progress = true;
         let iteration_count = 0;
@@ -163,7 +196,7 @@
             throw new Error('deadlock resolving streams, please check dependencies !');
         const subjects = {};
         stream_ids.forEach(stream_id => {
-            subjects[stream_id] = stream_defs_by_id[stream_id].subject$;
+            subjects[stream_id] = stream_defs_by_id[stream_id].subjects;
         });
         return subjects;
     }

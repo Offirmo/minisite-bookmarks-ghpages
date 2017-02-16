@@ -44,7 +44,7 @@ root:
 
 services:
 - https://npm.dashlane.com/#browse/browse/assets:npm-private
-- webmail https://webmail.dashlane.com/owa/auth/logon.aspx
+- webmail https://webmail.dashlane.com/
 - slack https://dashlane.slack.com/?redir=%2Fhome
 
 tasks

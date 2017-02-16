@@ -25,7 +25,7 @@
     "__shortcuts": "~~~~~~ Shortcuts ~~~~~~"
   },
   "dependencies": {
-    "@offirmo/rx-auto": "^0.0.3",
+    "@offirmo/rx-auto": "^0.0.6",
     "@reactivex/rxjs": "^5.0.3",
     "js-yaml": "^3.7.0",
     "lodash": "^4.17.4",
@@ -46,6 +46,6 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^3.0.0",
     "semver": "^5.3.0",
-    "typescript": "^2.1.4"
+    "typescript": "2.1.6"
   }
 }

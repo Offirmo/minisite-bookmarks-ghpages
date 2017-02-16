@@ -2,7 +2,7 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"allowJs": false,
-		"lib": [ "DOM", "ES2015" ],
+		"lib": [ "DOM", "es7" ],
 		"moduleResolution": "node",
 
 		"listEmittedFiles": false,
@@ -31,6 +31,6 @@
 		"newLine": "lf",
 		"outDir": "../dist/src.es7.amd",
 		"sourceMap": true,
-		"target": "ES2017"
+		"target": "es2017"
 	}
 }

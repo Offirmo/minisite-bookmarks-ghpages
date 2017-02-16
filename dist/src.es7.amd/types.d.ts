@@ -4,11 +4,9 @@ interface Bookmark {
     icon_base64?: string;
 }
 interface Data {
+    raw_data: string;
+    password: string;
     top_bar: Bookmark[];
     rows: Bookmark[][];
 }
-interface State {
-    vault_id: string;
-    bookmarks: Data;
-}
-export { Bookmark, Data, State };
+export { Bookmark, Data };

@@ -1,17 +1,20 @@
-import { Enum } from "typescript-string-enums"
+////////////////////////////////////
+
+import * as Rx from '@reactivex/rxjs'
 import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
+import * as whenDomReady from 'when-dom-ready'
+
 
 import { retrying_fetch } from './incubator/retrying-fetch'
 import { log_observable } from './incubator/rx-log'
-
-////////////////////////////////////
+import { Data } from './types'
 
 //////////// CONSTANTS ////////////
 const CONSTS = {
 	LS_KEYS: {
 		last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
-		last_successful_raw_data: 'minisite-bookmark.last_successful_raw_data',
-		last_successful_password: 'minisite-bookmark.last_successful_password',
+		last_successful_raw_data: (vault_id: string) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
+		last_successful_password: (vault_id: string) => `minisite-bookmark.${vault_id}.last_successful_password`,
 	},
 	REPO_URL: 'https://github.com/Offirmo/minisite-w',
 }
@@ -19,6 +22,7 @@ const CONSTS = {
 ////////////////////////////////////
 
 function get_vault_id() {
+	// TODO improve
 	return 'client01'
 }
 
@@ -27,54 +31,99 @@ function fetch_raw_data(vault_id: string) {
 		.then(res => res.text())
 }
 
-function get_cached_raw_data(vault_id: string): string | null {
-	return localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data)
+function get_cached_raw_data(vault_id: string): string | Rx.Observable<any> {
+	const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data(vault_id))
+	return cached_data ?
+		cached_data:
+		Rx.Observable.empty()
+}
+
+function get_password$() {
+	/*
+	const input = document.querySelector('password-input');
+	return Rx.Observable
+		.fromEvent(input, 'click')
+		.debounceTime(250)
+		*/
+	return Rx.Observable.create(function (observer) {
+		observer.next('') // no password
+		// never
+	})
+}
+
+function get_cached_password(vault_id: string): string | Rx.Observable<any> {
+	const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_password(vault_id))
+	return cached_data ?
+		cached_data:
+		Rx.Observable.empty()
+}
+
+function decrypt_and_parse_data(raw_data: string, password: string = ''): Data {
+	console.log('decrypt_and_parse_data', arguments)
+
+	return {
+		raw_data,
+		password,
+		top_bar: [],
+		rows: [],
+	}
 }
 
 ////////////////////////////////////
 
-
-export const Status = Enum("RUNNING", "STOPPED")
-export type Status = Enum<typeof Status>
-
+console.log('App: Hello world !')
 
 const subjects = auto({
-	vault_id:    get_vault_id(),
-	cached_raw_data: [ 'vault_id', (deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)],
-	fresh_raw_data:  [ 'vault_id', (deps: ResolvedStreamDefMap) => fetch_raw_data(deps['vault_id'].value)],
-	raw_data:        [ 'cached_raw_data', 'fresh_raw_data', OPERATORS.merge ]
+	vault_id: get_vault_id,
+	cached_raw_data: [
+		'vault_id',
+		(deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)
+	],
+	fresh_raw_data:  [
+		'vault_id',
+		(deps: ResolvedStreamDefMap) => fetch_raw_data(deps['vault_id'].value)
+	],
+	raw_data:        [
+		'cached_raw_data',
+		'fresh_raw_data',
+		OPERATORS.concat
+	],
+	cached_password: [
+		'vault_id',
+		(deps: ResolvedStreamDefMap) => get_cached_password(deps['vault_id'].value)
+	],
+	fresh_password: get_password$,
+	password:        [
+		'cached_password',
+		'fresh_password',
+		OPERATORS.concat
+	],
+	data:            [
+		'raw_data',
+		'password',
+		({raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
+			raw_data.observable$,
+			password.observable$,
+			decrypt_and_parse_data
+		)
+	],
+	is_dom_ready: whenDomReady(),
 })
 
 for (let id in subjects) {
 	//console.log(`subject ${id}`)
-	log_observable(subjects[id], id)
+	log_observable(subjects[id].plain$, id)
 }
 
 ////////////////////////////////////
 
 // actions
-const sbs1 = subjects['fresh_raw_data'].subscribe(x => {
+let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
 	// pretend we did it...
-	console.info('updated cache with fresh data:', x)
-	sbs1.unsubscribe();
+	console.info('updated cache with fresh data')
+	sbs1.unsubscribe()
 })
 
-// race ?
-// test every cases: cache, no cache
-
-
-// trigger fetch of up to date data
-
-// link rendering to observable
-// link bkp to rendering
-
-// trigger load from LS
-
-// plug rendering
-
-
-
-//import { factory as state_factory } from './state'
 
 //import * as tachyons from 'tachyons'
 /*
@@ -89,6 +138,11 @@ var pckry = new Packery('.pckry', {
 
 import 'packery'
 
-console.log('App: Hello world ! XX')
 
-//state_factory()
+
+subjects['data'].plain$.subscribe({
+	next: x => console.log('got value, TODO RENDER:', x),
+	error: err => console.error('something wrong occurred: ' + err),
+	complete: () => console.log('done'),
+});
+

@@ -1,17 +1,18 @@
-define(["require", "exports", "typescript-string-enums", "@offirmo/rx-auto", "./incubator/retrying-fetch", "./incubator/rx-log", "packery"], function (require, exports, typescript_string_enums_1, rx_auto_1, retrying_fetch_1, rx_log_1) {
+////////////////////////////////////
+define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "packery"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1) {
     "use strict";
-    ////////////////////////////////////
     //////////// CONSTANTS ////////////
     const CONSTS = {
         LS_KEYS: {
             last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
-            last_successful_raw_data: 'minisite-bookmark.last_successful_raw_data',
-            last_successful_password: 'minisite-bookmark.last_successful_password',
+            last_successful_raw_data: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
+            last_successful_password: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_password`,
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
     ////////////////////////////////////
     function get_vault_id() {
+        // TODO improve
         return 'client01';
     }
     function fetch_raw_data(vault_id) {
@@ -19,28 +20,87 @@ define(["require", "exports", "typescript-string-enums", "@offirmo/rx-auto", "./
             .then(res => res.text());
     }
     function get_cached_raw_data(vault_id) {
-        return localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data);
+        const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data(vault_id));
+        return cached_data ?
+            cached_data :
+            Rx.Observable.empty();
+    }
+    function get_password$() {
+        /*
+        const input = document.querySelector('password-input');
+        return Rx.Observable
+            .fromEvent(input, 'click')
+            .debounceTime(250)
+            */
+        return Rx.Observable.create(function (observer) {
+            observer.next(''); // no password
+            // never
+        });
+    }
+    function get_cached_password(vault_id) {
+        const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_password(vault_id));
+        return cached_data ?
+            cached_data :
+            Rx.Observable.empty();
+    }
+    function decrypt_and_parse_data(raw_data, password = '') {
+        console.log('decrypt_and_parse_data', arguments);
+        return {
+            raw_data,
+            password,
+            top_bar: [],
+            rows: [],
+        };
     }
     ////////////////////////////////////
-    exports.Status = typescript_string_enums_1.Enum("RUNNING", "STOPPED");
+    console.log('App: Hello world !');
     const subjects = rx_auto_1.auto({
-        vault_id: get_vault_id(),
-        cached_raw_data: ['vault_id', (deps) => get_cached_raw_data(deps['vault_id'].value)],
-        fresh_raw_data: ['vault_id', (deps) => fetch_raw_data(deps['vault_id'].value)],
-        raw_data: ['cached_raw_data', 'fresh_raw_data', rx_auto_1.OPERATORS.merge]
+        vault_id: get_vault_id,
+        cached_raw_data: [
+            'vault_id',
+            (deps) => get_cached_raw_data(deps['vault_id'].value)
+        ],
+        fresh_raw_data: [
+            'vault_id',
+            (deps) => fetch_raw_data(deps['vault_id'].value)
+        ],
+        raw_data: [
+            'cached_raw_data',
+            'fresh_raw_data',
+            rx_auto_1.OPERATORS.concat
+        ],
+        cached_password: [
+            'vault_id',
+            (deps) => get_cached_password(deps['vault_id'].value)
+        ],
+        fresh_password: get_password$,
+        password: [
+            'cached_password',
+            'fresh_password',
+            rx_auto_1.OPERATORS.concat
+        ],
+        data: [
+            'raw_data',
+            'password',
+            ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, decrypt_and_parse_data)
+        ],
+        is_dom_ready: whenDomReady(),
     });
     for (let id in subjects) {
         //console.log(`subject ${id}`)
-        rx_log_1.log_observable(subjects[id], id);
+        rx_log_1.log_observable(subjects[id].plain$, id);
     }
     ////////////////////////////////////
     // actions
-    const sbs1 = subjects['fresh_raw_data'].subscribe(x => {
+    let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
         // pretend we did it...
-        console.info('updated cache with fresh data:', x);
+        console.info('updated cache with fresh data');
         sbs1.unsubscribe();
     });
-    console.log('App: Hello world ! XX');
+    subjects['data'].plain$.subscribe({
+        next: x => console.log('got value, TODO RENDER:', x),
+        error: err => console.error('something wrong occurred: ' + err),
+        complete: () => console.log('done'),
+    });
 });
-//state_factory()
 //# sourceMappingURL=index.js.map
