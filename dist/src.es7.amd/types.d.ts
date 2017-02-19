@@ -1,12 +1,17 @@
 interface Bookmark {
+    label: string;
     url: string;
-    label?: string;
+    weight: number;
     icon_base64?: string;
+}
+interface BookmarkGroup {
+    title: string;
+    bookmarks: Bookmark[];
 }
 interface Data {
     raw_data: string;
     password: string;
-    top_bar: Bookmark[];
-    rows: Bookmark[][];
+    title: any;
+    rows: BookmarkGroup[];
 }
-export { Bookmark, Data };
+export { Bookmark, BookmarkGroup, Data };

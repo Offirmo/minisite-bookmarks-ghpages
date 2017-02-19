@@ -1,7 +1,8 @@
 ////////////////////////////////////
-define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "packery"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1) {
+define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "packery"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1, parser_1) {
     "use strict";
     //////////// CONSTANTS ////////////
+    const logger = console;
     const CONSTS = {
         LS_KEYS: {
             last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
@@ -10,10 +11,11 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
+    logger.log('constants =', CONSTS);
     ////////////////////////////////////
     function get_vault_id() {
         // TODO improve
-        return 'client01';
+        return 'dev';
     }
     function fetch_raw_data(vault_id) {
         return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, { response_should_be_ok: true })
@@ -42,15 +44,6 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         return cached_data ?
             cached_data :
             Rx.Observable.empty();
-    }
-    function decrypt_and_parse_data(raw_data, password = '') {
-        console.log('decrypt_and_parse_data', arguments);
-        return {
-            raw_data,
-            password,
-            top_bar: [],
-            rows: [],
-        };
     }
     ////////////////////////////////////
     console.log('App: Hello world !');
@@ -82,7 +75,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         data: [
             'raw_data',
             'password',
-            ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, decrypt_and_parse_data)
+            ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, parser_1.decrypt_if_needed_then_parse_data)
         ],
         is_dom_ready: whenDomReady(),
     });

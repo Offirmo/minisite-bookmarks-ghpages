@@ -3,22 +3,28 @@ import { Enum } from "typescript-string-enums"
 /////////////////////
 
 interface Bookmark {
+	label: string
 	url: string
-	label?: string
+	weight: number // 1..3
 	icon_base64?: string
 }
 
+interface BookmarkGroup {
+	title: string
+	bookmarks: Bookmark[]
+}
 interface Data {
 	raw_data: string // useful to flag successful raw data to be cached
 	password: string // idem for password
-	top_bar: Bookmark[]
-	rows: Bookmark[][]
+	title, // page title
+	rows: BookmarkGroup[]
 }
 
 /////////////////////
 
 export {
 	Bookmark,
+	BookmarkGroup,
 	Data,
 }
 

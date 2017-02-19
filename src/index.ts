@@ -1,15 +1,21 @@
 ////////////////////////////////////
 
+import * as _ from 'lodash'
 import * as Rx from '@reactivex/rxjs'
 import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
 import * as whenDomReady from 'when-dom-ready'
+import { Enum } from "typescript-string-enums"
 
 
 import { retrying_fetch } from './incubator/retrying-fetch'
 import { log_observable } from './incubator/rx-log'
 import { Data } from './types'
+import { decrypt_if_needed_then_parse_data } from './parser'
 
 //////////// CONSTANTS ////////////
+
+const logger = console
+
 const CONSTS = {
 	LS_KEYS: {
 		last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
@@ -18,12 +24,13 @@ const CONSTS = {
 	},
 	REPO_URL: 'https://github.com/Offirmo/minisite-w',
 }
+logger.log('constants =', CONSTS)
 
 ////////////////////////////////////
 
 function get_vault_id() {
 	// TODO improve
-	return 'client01'
+	return 'dev'
 }
 
 function fetch_raw_data(vault_id: string) {
@@ -56,17 +63,6 @@ function get_cached_password(vault_id: string): string | Rx.Observable<any> {
 	return cached_data ?
 		cached_data:
 		Rx.Observable.empty()
-}
-
-function decrypt_and_parse_data(raw_data: string, password: string = ''): Data {
-	console.log('decrypt_and_parse_data', arguments)
-
-	return {
-		raw_data,
-		password,
-		top_bar: [],
-		rows: [],
-	}
 }
 
 ////////////////////////////////////
@@ -104,7 +100,7 @@ const subjects = auto({
 		({raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
 			raw_data.observable$,
 			password.observable$,
-			decrypt_and_parse_data
+			decrypt_if_needed_then_parse_data
 		)
 	],
 	is_dom_ready: whenDomReady(),
