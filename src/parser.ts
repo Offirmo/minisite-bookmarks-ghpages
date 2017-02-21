@@ -16,6 +16,14 @@ const logger = console
 
 ////////////////////////////////////
 
+function compute_label_from_url(url: string, parsed_url: any): string {
+	if (parsed_url.protocol !== 'https:' && parsed_url.protocol !== 'http:')
+		return url
+
+	return parsed_url.host + parsed_url.pathname
+}
+
+
 function parse_bookmark(raw_line: string, line_count: number): Bookmark {
 	let params = _.compact(raw_line.split(' '))
 
@@ -25,55 +33,27 @@ function parse_bookmark(raw_line: string, line_count: number): Bookmark {
 
 	// bookmark title may have spaces, so we must be smarter
 	if (params[0].startsWith('+'))
-		weight = params.shift().length
+		weight = Math.max(1, Math.min(3, params.shift().length + 1))
+
+	url = params.slice(-1)[0]
+	console.log('extracted', {url})
+	if(!url.includes('://'))
+		url = 'http://' + url
+
+	const parsed_url = new URL(url)
+	console.log({parsed_url})
 
 	label = params.slice(0, -1).join(' ')
-	url = params.slice(-1)[0]
+	console.log('extracted', {label})
+	label = label || compute_label_from_url(url, parsed_url)
 
 	return {
 		label,
 		url,
 		weight,
+		secure: parsed_url.protocol === 'https',
+		parsed_url,
 	}
-
-	/*
-	switch(params.length) {
-		case 3: {
-			const [weight, label, url] = params
-			return {
-				label,
-				url,
-				weight: Number(weight)
-			}
-		}
-
-		case 2: {
-			const [label, url] = params
-			return {
-				label,
-				url,
-				weight: BOOKMARK_WEIGHT_DEFAULT,
-			}
-		}
-
-		case 1: {
-			const [url] = params
-			return {
-				label: url,
-				url,
-				weight: BOOKMARK_WEIGHT_DEFAULT,
-			}
-		}
-
-		default:
-			logger.error(`line #${line_count} - wrong bookmark, unexpected number of elements on the line !`)
-			return {
-				label: BOOKMARK_LABEL_ERROR,
-				url: BOOKMARK_URL_ERROR,
-				weight: BOOKMARK_WEIGHT_DEFAULT,
-			}
-	}
-	*/
 }
 
 function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {

@@ -14,6 +14,50 @@
 	<style type="text/css">
 		* {
 			--loader-color: rgba(3, 169, 244, 1);
+			--item-base-gutter: 3px;
+			--item-base-size-h: 97px;
+			--item-base-size-v: 30px;
+			--page-bg-color: #f3f3f3;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: var(--page-bg-color);
+			padding: 3px;
+		}
+
+		.grid {
+			xx-border: solid 1px red;
+		}
+		.grid-item {
+			display: inline-block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			border: 2px solid var(--page-bg-color);
+			font-size: 10px;
+			padding: 1px;
+
+			width: var(--item-base-size-h);
+			height: var(--item-base-size-v);
+			line-height: var(--item-base-size-v);
+			background-color: #00B7FF;
+		}
+		.grid-item--width1 {
+			width: var(--item-base-size-h);
+			height: var(--item-base-size-v);
+			line-height: var(--item-base-size-v);
+		}
+		.grid-item--width2 {
+			width: calc(var(--item-base-size-h) * 2 + 0 * var(--item-base-gutter));
+			height: calc(var(--item-base-size-v) * 2 + 0 * var(--item-base-gutter));
+			line-height: calc(var(--item-base-size-v) * 2 + 0 * var(--item-base-gutter));
+		}
+		.grid-item--width3 {
+			width: calc(var(--item-base-size-h) * 3 + var(--item-base-gutter) * 0);
+			height: calc(var(--item-base-size-v) * 3 + var(--item-base-gutter) * 0);
+			line-height: calc(var(--item-base-size-v) * 3 + var(--item-base-gutter) * 0);
 		}
 
 		/* coffee cup loader
@@ -55,14 +99,12 @@
 			0% { height: 0; }
 			100% { height: 6px; }
 		}
-	</style>&
+	</style>
 </head>
 
 <body>
 
-Hello
-
-<div class="progress">Loading…</div>
+<div id="content"><div class="loader_coffee_cup"></div>Loading…</div>
 
 <script src="dist/third-party/requirejs@2.js"></script>
 <script>

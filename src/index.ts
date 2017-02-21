@@ -9,8 +9,10 @@ import { Enum } from "typescript-string-enums"
 
 import { retrying_fetch } from './incubator/retrying-fetch'
 import { log_observable } from './incubator/rx-log'
+
 import { Data } from './types'
 import { decrypt_if_needed_then_parse_data } from './parser'
+import * as TEMPLATES from './templates'
 
 //////////// CONSTANTS ////////////
 
@@ -121,24 +123,38 @@ let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
 })
 
 
-//import * as tachyons from 'tachyons'
-/*
-declare var Packery:
-import { Packery } from 'packery'
-*/
-/*
-var pckry = new Packery('.pckry', {
-	// options...
-})
-*/
-
-import 'packery'
-
-
 
 subjects['data'].plain$.subscribe({
-	next: x => console.log('got value, TODO RENDER:', x),
+	next: render,
 	error: err => console.error('something wrong occurred: ' + err),
 	complete: () => console.log('done'),
 });
 
+
+import 'tachyons'
+import Packery = require('packery')
+
+
+function render(data: Data) {
+
+	logger.groupCollapsed('rendering...')
+	logger.log({data})
+
+	const new_html_content = TEMPLATES.page(data)
+
+	const el_content = document.querySelectorAll('#content')[0]
+	el_content.innerHTML = new_html_content
+
+	const elems = Array.from(document.querySelectorAll('.grid'))
+	const pks = elems.map(elem => new Packery( elem!, {
+		// options
+		itemSelector: '.grid-item',
+		//columnWidth: 50,
+		//rowHeight: 50,
+		//gutter: 3,
+		percentPosition: true,
+		//isHorizontal: true,
+	}))
+
+	logger.groupEnd()
+}

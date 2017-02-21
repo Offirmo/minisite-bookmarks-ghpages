@@ -1,3 +1,4 @@
+# dev toolbox
 
 pinned:
 - chrome://downloadmgr/content/downloadmgrOverlay.xul
@@ -9,7 +10,7 @@ pinned:
 
 wiki perso:
 - https://github.com/Offirmo-team/wiki/wiki
-- https://github.com/Offirmo-team/wiki/wiki/css
+- + https://github.com/Offirmo-team/wiki/wiki/css
 - https://github.com/Offirmo-team/wiki/wiki/extension-de-navigateurs
 - https://github.com/Offirmo-team/wiki/wiki/git
 - https://github.com/Offirmo-team/wiki/wiki/JSON
@@ -21,7 +22,7 @@ wiki perso:
 - https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
 
 docs:
-- http://devdocs.io/
+- +++ http://devdocs.io/
 - https://github.com/caolan/async
 - http://epeli.github.io/underscore.string/
 - http://momentjs.com/docs/

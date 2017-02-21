@@ -1,5 +1,5 @@
 ////////////////////////////////////
-define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "packery"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1, parser_1) {
+define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "packery", "tachyons"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, Packery) {
     "use strict";
     //////////// CONSTANTS ////////////
     const logger = console;
@@ -91,9 +91,26 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         sbs1.unsubscribe();
     });
     subjects['data'].plain$.subscribe({
-        next: x => console.log('got value, TODO RENDER:', x),
+        next: render,
         error: err => console.error('something wrong occurred: ' + err),
         complete: () => console.log('done'),
     });
+    function render(data) {
+        logger.groupCollapsed('rendering...');
+        logger.log({ data });
+        const new_html_content = TEMPLATES.page(data);
+        const el_content = document.querySelectorAll('#content')[0];
+        el_content.innerHTML = new_html_content;
+        const elems = Array.from(document.querySelectorAll('.grid'));
+        const pks = elems.map(elem => new Packery(elem, {
+            // options
+            itemSelector: '.grid-item',
+            //columnWidth: 50,
+            //rowHeight: 50,
+            //gutter: 3,
+            percentPosition: true,
+        }));
+        logger.groupEnd();
+    }
 });
 //# sourceMappingURL=index.js.map

@@ -7,6 +7,8 @@ interface Bookmark {
 	url: string
 	weight: number // 1..3
 	icon_base64?: string
+	secure: boolean
+	parsed_url: any
 }
 
 interface BookmarkGroup {

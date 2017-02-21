@@ -3,6 +3,8 @@ interface Bookmark {
     url: string;
     weight: number;
     icon_base64?: string;
+    secure: boolean;
+    parsed_url: any;
 }
 interface BookmarkGroup {
     title: string;
