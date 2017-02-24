@@ -3,6 +3,7 @@
 import * as _ from 'lodash'
 
 import { Bookmark, BookmarkGroup, Data } from './types'
+import { generate_label_from_url, select_color_for_url } from './view-services'
 
 //////////// CONSTANTS ////////////
 
@@ -16,13 +17,61 @@ const logger = console
 
 ////////////////////////////////////
 
-function compute_label_from_url(url: string, parsed_url: any): string {
-	if (parsed_url.protocol !== 'https:' && parsed_url.protocol !== 'http:')
-		return url
 
-	return parsed_url.host + parsed_url.pathname
+// http://stackoverflow.com/a/1917041/587407
+function sharedStart(array: string[]): string {
+	let A = array.concat().sort(),
+		a1 = A[0],
+		a2 = A[A.length-1],
+		L = a1.length,
+		i = 0
+
+	while(i < L && a1.charAt(i) === a2.charAt(i)) { i++ }
+
+	return a1.substring(0, i)
 }
 
+
+function post_process_group(group: BookmarkGroup): BookmarkGroup {
+	const auto_labelled_bookmarks = group.bookmarks.filter(bookmark => bookmark.label === bookmark.url)
+
+	auto_labelled_bookmarks.forEach(bookmark => {
+		bookmark.label = generate_label_from_url(bookmark.parsed_url)
+	})
+
+	const auto_labels = auto_labelled_bookmarks.map(bookmark => bookmark.label)
+
+	const commonStartLength = sharedStart(auto_labels).length
+
+	auto_labelled_bookmarks.forEach(bookmark => {
+		let candidate_label = bookmark.label
+		if (candidate_label.length <= commonStartLength) {
+			candidate_label = candidate_label.slice(Math.max(0, _.lastIndexOf(Array.from(candidate_label), '/')))
+		}
+		else
+			candidate_label = candidate_label.slice(commonStartLength)
+		if (candidate_label.startsWith('/')) candidate_label = candidate_label.slice(1)
+		bookmark.label = decodeURI(candidate_label)
+	})
+
+	return group
+}
+
+function parse_url(url): URL {
+	let parsed_url
+	try {
+		parsed_url = new URL(url)
+	}
+	catch(e) {
+		logger.error(`couldn’t parse url "${url}"`, e)
+		parsed_url = {
+			href: url
+		} as URL
+	}
+	console.log({parsed_url})
+
+	return parsed_url
+}
 
 function parse_bookmark(raw_line: string, line_count: number): Bookmark {
 	let params = _.compact(raw_line.split(' '))
@@ -40,18 +89,17 @@ function parse_bookmark(raw_line: string, line_count: number): Bookmark {
 	if(!url.includes('://'))
 		url = 'http://' + url
 
-	const parsed_url = new URL(url)
-	console.log({parsed_url})
-
+	let parsed_url = parse_url(url)
 	label = params.slice(0, -1).join(' ')
 	console.log('extracted', {label})
-	label = label || compute_label_from_url(url, parsed_url)
+	label = label || url
 
 	return {
 		label,
 		url,
 		weight,
-		secure: parsed_url.protocol === 'https',
+		secure: parsed_url && parsed_url.protocol === 'https',
+		bgcolor: select_color_for_url(parsed_url),
 		parsed_url,
 	}
 }
@@ -101,10 +149,11 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 			logger.info(`line #${line_count} - parsed bookmark:`, current_row.bookmarks.slice(-1)[0])
 		}
 		else {
+			// new group
 			if (line.endsWith(':')) line = _.trim(line.slice(0, -1))
 			logger.info(`line #${line_count} - found a new group: "${line}"`)
-			// new group
 			if (current_row) {
+				current_row = post_process_group(current_row)
 				rows.push(current_row)
 			}
 			current_row = {
