@@ -1,6 +1,7 @@
 ////////////////////////////////////
-define(["require", "exports", "tslib", "lodash", "./view-services"], function (require, exports, tslib_1, _, view_services_1) {
+define(["require", "exports", "lodash", "./view-services"], function (require, exports, _, view_services_1) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
     //////////// CONSTANTS ////////////
     const DEFAULT_PAGE_TITLE = 'Awesome bookmarks';
     const DEFAULT_GROUP_TITLE = 'Unnamed group';
@@ -11,6 +12,8 @@ define(["require", "exports", "tslib", "lodash", "./view-services"], function (r
     ////////////////////////////////////
     // http://stackoverflow.com/a/1917041/587407
     function sharedStart(array) {
+        if (array.length <= 1)
+            return '';
         let A = array.concat().sort(), a1 = A[0], a2 = A[A.length - 1], L = a1.length, i = 0;
         while (i < L && a1.charAt(i) === a2.charAt(i)) {
             i++;
@@ -81,7 +84,7 @@ define(["require", "exports", "tslib", "lodash", "./view-services"], function (r
         let title = DEFAULT_PAGE_TITLE;
         const rows = [];
         const lines = raw_data.split('\n');
-        let current_row = null;
+        let current_group = null;
         let line_count = 0;
         lines.forEach(line => {
             line_count++;
@@ -94,37 +97,41 @@ define(["require", "exports", "tslib", "lodash", "./view-services"], function (r
             logger.info(`parsing "${line}"`);
             if (line.startsWith('#')) {
                 // title
-                if (title !== 'Awesome bookmarks')
-                    logger.error(`line #${line_count} - found a conflicting title !`);
+                const candidate_title = _.trim(line.slice(1));
+                logger.info(`line #${line_count} - found title: "${candidate_title}"`);
+                // title
+                if (candidate_title !== 'Awesome bookmarks')
+                    logger.error(`line #${line_count} - title is conflicting with a previous one !`);
                 else {
-                    title = _.trim(line.slice(1));
-                    logger.info(`line #${line_count} - found title: "${title}"`);
-                    if (current_row)
+                    if (current_group)
                         logger.error(`line #${line_count} - title is misplaced, should be at the beginning !`);
+                    title = candidate_title;
                 }
             }
             else if (line.startsWith('-')) {
                 // new bookmark
-                if (!current_row) {
+                logger.error(`line #${line_count} - found a bookmark...`);
+                if (!current_group) {
                     logger.error(`line #${line_count} - found a bookmark outside of a section !`);
-                    current_row = {
+                    current_group = {
                         title: DEFAULT_GROUP_TITLE,
                         bookmarks: [],
                     };
                 }
-                current_row.bookmarks.push(parse_bookmark(line.slice(1), line_count));
-                logger.info(`line #${line_count} - parsed bookmark:`, current_row.bookmarks.slice(-1)[0]);
+                current_group.bookmarks.push(parse_bookmark(line.slice(1), line_count));
+                logger.info(`line #${line_count} - parsed bookmark:`, current_group.bookmarks.slice(-1)[0]);
             }
             else {
                 // new group
                 if (line.endsWith(':'))
                     line = _.trim(line.slice(0, -1));
                 logger.info(`line #${line_count} - found a new group: "${line}"`);
-                if (current_row) {
-                    current_row = post_process_group(current_row);
-                    rows.push(current_row);
+                if (current_group) {
+                    logger.info(`Closing previous group: "${current_group.title}"`, current_group);
+                    current_group = post_process_group(current_group);
+                    rows.push(current_group);
                 }
-                current_row = {
+                current_group = {
                     title: line,
                     bookmarks: [],
                 };
@@ -138,7 +145,7 @@ define(["require", "exports", "tslib", "lodash", "./view-services"], function (r
     }
     function decrypt_if_needed_then_parse_data(raw_data, password = '') {
         // pwd protection not supported yet
-        const result = tslib_1.__assign({ 
+        const result = Object.assign({ 
             // rem: keeping a link to source data to allow caching if success
             raw_data,
             password }, parse_data(raw_data));

@@ -1,6 +1,7 @@
 ////////////////////////////////////
 define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "packery", "tachyons"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, Packery) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
     //////////// CONSTANTS ////////////
     const logger = console;
     const CONSTS = {
@@ -11,12 +12,17 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
-    logger.log('constants =', CONSTS);
     ////////////////////////////////////
     function get_vault_id() {
         // http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
-        const slug = location.pathname.split('/').filter(x => x).slice(-1)[0];
-        return slug === '404.html' ? 'default' : slug;
+        let slug = location.pathname.split('/').filter(x => x).slice(-1)[0];
+        // GitHub demo
+        if (slug === 'minisite-bookmarks-ghpages')
+            slug = 'default';
+        // dev
+        if (slug === '404.html')
+            slug = 'default';
+        return slug;
     }
     function fetch_raw_data(vault_id) {
         return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, { response_should_be_ok: true })
@@ -47,7 +53,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
             Rx.Observable.empty();
     }
     ////////////////////////////////////
-    console.log('App: Hello world !');
+    console.log('App: Hello world !', { constants: CONSTS });
     const subjects = rx_auto_1.auto({
         vault_id: get_vault_id,
         cached_raw_data: [
@@ -79,7 +85,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
             ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, parser_1.decrypt_if_needed_then_parse_data)
         ],
         is_dom_ready: whenDomReady(),
-    });
+    }, { logger: console });
     for (let id in subjects) {
         //console.log(`subject ${id}`)
         rx_log_1.log_observable(subjects[id].plain$, id);

@@ -20,6 +20,8 @@ const logger = console
 
 // http://stackoverflow.com/a/1917041/587407
 function sharedStart(array: string[]): string {
+	if (array.length <= 1) return ''
+
 	let A = array.concat().sort(),
 		a1 = A[0],
 		a2 = A[A.length-1],
@@ -111,7 +113,7 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 	const rows: BookmarkGroup[] = []
 
 	const lines = raw_data.split('\n')
-	let current_row: BookmarkGroup | null = null
+	let current_group: BookmarkGroup | null = null
 
 	let line_count = 0
 	lines.forEach(line => {
@@ -127,36 +129,42 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 
 		if(line.startsWith('#')) {
 			// title
-			if (title !== 'Awesome bookmarks')
-				logger.error(`line #${line_count} - found a conflicting title !`)
+			const candidate_title = _.trim(line.slice(1))
+			logger.info(`line #${line_count} - found title: "${candidate_title}"`)
+
+			// title
+			if (candidate_title !== 'Awesome bookmarks')
+				logger.error(`line #${line_count} - title is conflicting with a previous one !`)
 			else {
-				title = _.trim(line.slice(1))
-				logger.info(`line #${line_count} - found title: "${title}"`)
-				if(current_row)
+				if(current_group)
 					logger.error(`line #${line_count} - title is misplaced, should be at the beginning !`)
+				title = candidate_title
 			}
 		}
 		else if(line.startsWith('-')) {
 			// new bookmark
-			if (!current_row) {
+			logger.error(`line #${line_count} - found a bookmark...`)
+			if (!current_group) {
 				logger.error(`line #${line_count} - found a bookmark outside of a section !`)
-				current_row = {
+				current_group = {
 					title: DEFAULT_GROUP_TITLE,
 					bookmarks: [],
 				}
 			}
-			current_row.bookmarks.push(parse_bookmark(line.slice(1), line_count))
-			logger.info(`line #${line_count} - parsed bookmark:`, current_row.bookmarks.slice(-1)[0])
+			current_group.bookmarks.push(parse_bookmark(line.slice(1), line_count))
+			logger.info(`line #${line_count} - parsed bookmark:`, current_group.bookmarks.slice(-1)[0])
 		}
 		else {
 			// new group
 			if (line.endsWith(':')) line = _.trim(line.slice(0, -1))
 			logger.info(`line #${line_count} - found a new group: "${line}"`)
-			if (current_row) {
-				current_row = post_process_group(current_row)
-				rows.push(current_row)
+
+			if (current_group) {
+				logger.info(`Closing previous group: "${current_group.title}"`, current_group)
+				current_group = post_process_group(current_group)
+				rows.push(current_group)
 			}
-			current_row = {
+			current_group = {
 				title: line,
 				bookmarks: [],
 			}
@@ -165,7 +173,7 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 		logger.groupEnd()
 	})
 
-	const result = { title, rows}
+	const result = { title, rows }
 	logger.info('final result:', result)
 
 	logger.groupEnd()

@@ -10,6 +10,8 @@ yarn
 ### stack
 * typescript 2
 * http://reactivex.io/rxjs/
+* RandomColor https://github.com/davidmerfield/randomColor
+* marky https://github.com/nolanlawson/marky
 
 Optional:
 * require.js

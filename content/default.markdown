@@ -39,6 +39,10 @@ toolbox
 
 
 docs:
+- + Typescript doc https://www.typescriptlang.org/docs/index.html
+- TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
+- TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
+- TS What's new 2.0 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html
 - https://github.com/caolan/async
 - http://epeli.github.io/underscore.string/
 - http://momentjs.com/docs/

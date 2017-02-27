@@ -14,7 +14,7 @@
     "copy-third-party": "node meta/scripts/copy-third-party.js",
     "dev1": "tsc --watch",
     "dev": "run-p dev1",
-    "start": "browser-sync start --server --port $PORT --logLevel debug --files './*.html,dist/**,content/**' --directory --startPath index-dev.html",
+    "start": "browser-sync start --server --port $PORT --logLevel debug --files './*.html,dist/**,content/**' --directory --startPath 404.html",
     "start_notes": " --no-open",
     "__misc": "~~~~~~ MISC ~~~~~~",
     "__local_tools": "~~~~~~ Tools installed locally ~~~~~~",
@@ -47,8 +47,8 @@
     "browser-sync": "^2.18.5",
     "node-typescript-compiler": "^1.1.1",
     "nodemon": "^1.11.0",
-    "npm-run-all": "^3.0.0",
+    "npm-run-all": "^4.0.0",
     "semver": "^5.3.0",
-    "typescript": "2.1.6"
+    "typescript": "^2.2"
   }
 }

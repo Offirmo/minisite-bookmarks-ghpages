@@ -5,13 +5,14 @@
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "tslib", "@reactivex/rxjs", "lodash"], factory);
+        define(["require", "exports", "@reactivex/rxjs", "lodash"], factory);
     }
 })(function (require, exports) {
     "use strict";
-    const tslib_1 = require("tslib");
+    Object.defineProperty(exports, "__esModule", { value: true });
     const Rx = require("@reactivex/rxjs");
     const _ = require("lodash");
+    ////////////////////////////////////
     const OPERATORS = {
         combineLatest: Symbol('combineLatest'),
         concat: Symbol('concat'),
@@ -19,6 +20,7 @@
         zip: Symbol('zip'),
     };
     exports.OPERATORS = OPERATORS;
+    let invocation_count = 0;
     ////////////////////////////////////
     function uniformize_stream_definition(raw_definition, id) {
         if (!_.isString(id) && !_.isSymbol(id))
@@ -66,17 +68,17 @@
     }
     function resolve_stream_from_static_value(stream_def) {
         const observable$ = Rx.Observable.of(stream_def.generator);
-        return tslib_1.__assign({}, stream_def, { value: stream_def.generator, promise: Promise.resolve(stream_def.generator), observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
+        return Object.assign({}, stream_def, { value: stream_def.generator, promise: Promise.resolve(stream_def.generator), observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
     function resolve_stream_from_promise(stream_def) {
         const observable$ = Rx.Observable.fromPromise(stream_def.generator);
-        return tslib_1.__assign({}, stream_def, { promise: stream_def.generator, observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
+        return Object.assign({}, stream_def, { promise: stream_def.generator, observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
     function resolve_stream_from_observable(stream_def) {
         const observable$ = stream_def.generator;
-        return tslib_1.__assign({}, stream_def, { observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
+        return Object.assign({}, stream_def, { observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
-    function resolve_stream_from_operator(stream_defs_by_id, stream_def) {
+    function resolve_stream_from_operator(injected, stream_defs_by_id, stream_def) {
         const { id, dependencies, generator } = stream_def;
         if (!dependencies.length)
             throw new Error(`stream "${id}" operator should have dependencies !`);
@@ -84,7 +86,7 @@
         const dependencies$ = stream_def.dependencies
             .map(id => stream_defs_by_id[id])
             .map(resolvedStreamDef => resolvedStreamDef.observable$);
-        console.log(`Applying an operator...`, generator, stream_def.dependencies, dependencies$);
+        injected.logger.log(`Applying an operator...`, generator, stream_def.dependencies, dependencies$);
         switch (generator) {
             case OPERATORS.combineLatest:
                 observable$ = Rx.Observable.combineLatest(...dependencies$);
@@ -101,13 +103,13 @@
             default:
                 throw new Error(`stream ${id}: unrecognized or not implemented operator ! ${generator.toString()}`);
         }
-        return tslib_1.__assign({}, stream_def, { observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
+        return Object.assign({}, stream_def, { observable$, subjects: subjects_for(observable$, stream_def.initialValue) });
     }
-    function resolve_stream_observable(stream_defs_by_id, stream_def) {
+    function resolve_stream_observable(injected, stream_defs_by_id, stream_def) {
         const { id } = stream_def;
         let { generator } = stream_def;
         const generated = _.isFunction(generator);
-        console.log(`resolving stream "${id}"...`, { generated, generator });
+        injected.logger.log(`resolving stream "${id}"...`, { generated, generator });
         if (_.isFunction(generator)) {
             // allow custom constructs. We pass full dependencies results
             const stream_deps_by_id = {};
@@ -116,22 +118,22 @@
             });
             // one call is allowed
             generator = generator(stream_deps_by_id);
-            console.log(`from "${stream_def.id}" generator function: "${generator}"`);
+            injected.logger.log(`from "${stream_def.id}" generator function: "${generator}"`);
         }
         if (!generator) {
-            console.warn(`Warning: stream definition "${id}" generator function returned "${generator}". This will be considered a final static value.`);
+            injected.logger.warn(`Warning: stream definition "${id}" generator function returned "${generator}". This will be considered a final static value.`);
         }
         if (generator && generator.then) {
             // it's a promise !
             if (!generated && stream_def.dependencies.length)
                 throw new Error(`stream "${stream_def.id}" is a direct promise but has dependencies !`);
-            return resolve_stream_from_promise(tslib_1.__assign({}, stream_def, { generator }));
+            return resolve_stream_from_promise(Object.assign({}, stream_def, { generator }));
         }
         if (generator && generator.subscribe) {
             // it's an observable !
             if (!generated && stream_def.dependencies.length)
                 throw new Error(`stream "${stream_def.id}" is a direct observable but has dependencies !`);
-            return resolve_stream_from_observable(tslib_1.__assign({}, stream_def, { generator }));
+            return resolve_stream_from_observable(Object.assign({}, stream_def, { generator }));
         }
         if (_.isSymbol(generator)) {
             switch (generator) {
@@ -139,7 +141,7 @@
                 case OPERATORS.concat:
                 case OPERATORS.merge:
                 case OPERATORS.zip:
-                    return resolve_stream_from_operator(stream_defs_by_id, tslib_1.__assign({}, stream_def, { generator }));
+                    return resolve_stream_from_operator(injected, stream_defs_by_id, Object.assign({}, stream_def, { generator }));
                 default:
                     // not ours, consider it a direct sync value
                     break;
@@ -147,14 +149,16 @@
         }
         if (!generated && stream_def.dependencies.length)
             throw new Error(`stream "${stream_def.id}" is a direct value but has dependencies !`);
-        return resolve_stream_from_static_value(tslib_1.__assign({}, stream_def, { generator }));
+        return resolve_stream_from_static_value(Object.assign({}, stream_def, { generator }));
     }
-    function resolve_streams(stream_defs_by_id, unresolved_stream_defs) {
+    function resolve_streams(injected, stream_defs_by_id, unresolved_stream_defs) {
         const still_unresolved_stream_defs = [];
         unresolved_stream_defs.forEach(stream_def => {
             const has_unresolved_deps = stream_def.dependencies.some(stream_id => !stream_defs_by_id[stream_id].observable$);
             if (!has_unresolved_deps) {
-                stream_defs_by_id[stream_def.id] = resolve_stream_observable(stream_defs_by_id, stream_def);
+                injected.logger.groupCollapsed(`resolving stream "${stream_def.id}"…`);
+                stream_defs_by_id[stream_def.id] = resolve_stream_observable(injected, stream_defs_by_id, stream_def);
+                injected.logger.groupEnd();
             }
             else {
                 still_unresolved_stream_defs.push(stream_def);
@@ -162,7 +166,21 @@
         });
         return still_unresolved_stream_defs;
     }
-    function auto(stream_definitions) {
+    function auto(stream_definitions, options = {}) {
+        invocation_count++;
+        const injected = {
+            debug_id: options.debug_id || `rx-auto invocation #${invocation_count}…`,
+            logger: options.logger || {
+                groupCollapsed: () => undefined,
+                groupEnd: () => undefined,
+                log: () => undefined,
+                info: () => undefined,
+                warn: () => undefined,
+                error: () => undefined,
+            },
+        };
+        injected.logger.groupCollapsed(injected.debug_id);
+        injected.logger.log('Starting… params=', { stream_definitions, options });
         const stream_defs_by_id = {};
         const stream_defs = [];
         // check and uniformize definitions...
@@ -173,7 +191,9 @@
             stream_defs_by_id[stream_id] = standardized_definition;
             stream_defs.push(standardized_definition);
         });
+        injected.logger.info(`Found ${stream_defs.length} stream definitions:`, Object.keys(stream_defs_by_id));
         // do some global checks
+        injected.logger.log('Starting a global check…');
         stream_ids.forEach(stream_id => {
             const dependencies = stream_defs_by_id[stream_id].dependencies;
             dependencies.forEach(dependency => {
@@ -181,23 +201,27 @@
                     throw new Error(`Stream definition for "${stream_id}" references an unknown dependency "${dependency}" !`);
             });
         });
+        injected.logger.log(`Check OK. State so far =`, stream_defs_by_id);
         // resolve related streams
         let progress = true;
         let iteration_count = 0;
         const SAFETY_LIMIT = 25;
         let unresolved_stream_defs = stream_defs.slice();
+        injected.logger.groupCollapsed('Streams resolution…');
         while (unresolved_stream_defs.length && progress && iteration_count < SAFETY_LIMIT) {
             iteration_count++;
-            const still_unresolved_stream_defs = resolve_streams(stream_defs_by_id, unresolved_stream_defs);
+            const still_unresolved_stream_defs = resolve_streams(injected, stream_defs_by_id, unresolved_stream_defs);
             progress = still_unresolved_stream_defs.length < unresolved_stream_defs.length;
             unresolved_stream_defs = still_unresolved_stream_defs;
         }
         if (unresolved_stream_defs.length)
             throw new Error('deadlock resolving streams, please check dependencies !');
+        injected.logger.groupEnd();
         const subjects = {};
         stream_ids.forEach(stream_id => {
             subjects[stream_id] = stream_defs_by_id[stream_id].subjects;
         });
+        injected.logger.groupEnd();
         return subjects;
     }
     exports.auto = auto;

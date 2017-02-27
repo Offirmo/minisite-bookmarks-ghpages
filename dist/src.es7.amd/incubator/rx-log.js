@@ -1,5 +1,6 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
     const PAD_SIZE = 6;
     const start = Date.now();
     const pad = '000000';

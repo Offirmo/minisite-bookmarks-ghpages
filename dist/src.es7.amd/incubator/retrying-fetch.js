@@ -1,5 +1,6 @@
 define(["require", "exports", "typescript-string-enums"], function (require, exports, typescript_string_enums_1) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
     const RetryScheme = typescript_string_enums_1.Enum('periodic', 'linear', 'geometric');
     exports.RetryScheme = RetryScheme;
     const DEFAULT_OPTIONS = {

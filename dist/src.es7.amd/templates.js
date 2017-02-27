@@ -1,6 +1,7 @@
 ////////////////////////////////////
 define(["require", "exports"], function (require, exports) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
     ////////////////////////////////////
     const ALT0_TACHYONS_BG_COLOR = 'light-gray';
     const ALT1_TACHYONS_BG_COLOR = 'light-gray';
@@ -9,6 +10,8 @@ define(["require", "exports"], function (require, exports) {
         label = label || url;
         let tachyons_classes = 'no-underline near-black ba bw1 dib';
         tachyons_classes += alt === 0 ? ` b--${ALT0_TACHYONS_BG_COLOR}` : ` b--${ALT1_TACHYONS_BG_COLOR}`;
+        if (label.length > 20)
+            tachyons_classes += ` tracked-tight`; // character spacing diminished
         return `
 <a class="grid-item grid-item--weight${weight} ${tachyons_classes}" style="background-color: ${bgcolor};" href="${url}" title="${label}">
 	<span class="label">${label}</span>

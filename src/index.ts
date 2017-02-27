@@ -26,14 +26,20 @@ const CONSTS = {
 	},
 	REPO_URL: 'https://github.com/Offirmo/minisite-w',
 }
-logger.log('constants =', CONSTS)
 
 ////////////////////////////////////
 
 function get_vault_id() {
 	// http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
-	const slug = location.pathname.split('/').filter(x => x).slice(-1)[0]
-	return slug === '404.html' ? 'default' : slug
+	let slug = location.pathname.split('/').filter(x => x).slice(-1)[0]
+	// GitHub demo
+	if (slug === 'minisite-bookmarks-ghpages')
+		slug = 'default'
+	// dev
+	if (slug === '404.html')
+		slug = 'default'
+
+	return slug
 }
 
 function fetch_raw_data(vault_id: string) {
@@ -70,19 +76,20 @@ function get_cached_password(vault_id: string): string | Rx.Observable<any> {
 
 ////////////////////////////////////
 
-console.log('App: Hello world !')
+console.log('App: Hello world !', { constants: CONSTS })
 
 const subjects = auto({
-	vault_id: get_vault_id,
+	vault_id:
+		get_vault_id,
 	cached_raw_data: [
 		'vault_id',
 		(deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)
 	],
-	fresh_raw_data:  [
+	fresh_raw_data: [
 		'vault_id',
 		(deps: ResolvedStreamDefMap) => fetch_raw_data(deps['vault_id'].value)
 	],
-	raw_data:        [
+	raw_data: [
 		'cached_raw_data',
 		'fresh_raw_data',
 		OPERATORS.concat
@@ -91,13 +98,14 @@ const subjects = auto({
 		'vault_id',
 		(deps: ResolvedStreamDefMap) => get_cached_password(deps['vault_id'].value)
 	],
-	fresh_password: get_password$,
-	password:        [
+	fresh_password:
+		get_password$,
+	password: [
 		'cached_password',
 		'fresh_password',
 		OPERATORS.concat
 	],
-	data:            [
+	data: [
 		'raw_data',
 		'password',
 		({raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
@@ -106,8 +114,9 @@ const subjects = auto({
 			decrypt_if_needed_then_parse_data
 		)
 	],
-	is_dom_ready: whenDomReady(),
-})
+	is_dom_ready:
+		whenDomReady(),
+}, { logger: console })
 
 for (let id in subjects) {
 	//console.log(`subject ${id}`)
