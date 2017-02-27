@@ -22,13 +22,13 @@ const logger = console
 function sharedStart(array: string[]): string {
 	if (array.length <= 1) return ''
 
-	let A = array.concat().sort(),
-		a1 = A[0],
-		a2 = A[A.length-1],
-		L = a1.length,
-		i = 0
+	const A = array.concat().sort()
+	const a1 = A[0]
+	const a2 = A[A.length-1]
+	const L = a1.length
 
-	while(i < L && a1.charAt(i) === a2.charAt(i)) { i++ }
+	let i = 0
+	while (i < L && a1.charAt(i) === a2.charAt(i)) { i++ }
 
 	return a1.substring(0, i)
 }
@@ -65,9 +65,11 @@ function parse_url(url): URL {
 		parsed_url = new URL(url)
 	}
 	catch(e) {
-		logger.error(`couldn’t parse url "${url}"`, e)
+		logger.warn(`couldn’t parse url "${url}"`, e)
 		parsed_url = {
-			href: url
+			// the bare minimum we need for the remaining of the processing
+			href: url,
+			hostname: '',
 		} as URL
 	}
 	console.log({parsed_url})
@@ -76,7 +78,7 @@ function parse_url(url): URL {
 }
 
 function parse_bookmark(raw_line: string, line_count: number): Bookmark {
-	let params = _.compact(raw_line.split(' '))
+	const params = _.compact(raw_line.split(' '))
 
 	let weight = BOOKMARK_WEIGHT_DEFAULT
 	let url = BOOKMARK_URL_ERROR
@@ -91,7 +93,7 @@ function parse_bookmark(raw_line: string, line_count: number): Bookmark {
 	if(!url.includes('://'))
 		url = 'http://' + url
 
-	let parsed_url = parse_url(url)
+	const parsed_url = parse_url(url)
 	label = params.slice(0, -1).join(' ')
 	console.log('extracted', {label})
 	label = label || url
@@ -133,8 +135,8 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 			logger.info(`line #${line_count} - found title: "${candidate_title}"`)
 
 			// title
-			if (candidate_title !== 'Awesome bookmarks')
-				logger.error(`line #${line_count} - title is conflicting with a previous one !`)
+			if (title !== DEFAULT_PAGE_TITLE)
+				logger.error(`line #${line_count} - title "#${candidate_title}" is conflicting with a previous one "#${title}" !`)
 			else {
 				if(current_group)
 					logger.error(`line #${line_count} - title is misplaced, should be at the beginning !`)
