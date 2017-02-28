@@ -12,6 +12,8 @@ requirejs.config({
     baseUrl: '.',
     // http://requirejs.org/docs/api.html#config-enforceDefine
     enforceDefine: false,
+    // http://requirejs.org/docs/api.html#config-waitSeconds
+    waitSeconds: 30,
     map: {
         '*': {
             css: 'dist/third-party/require-css.css@0.js',
