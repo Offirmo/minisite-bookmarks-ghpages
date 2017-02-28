@@ -15,7 +15,7 @@ requirejs.config({
 
 	// http://requirejs.org/docs/api.html#config-enforceDefine
 	enforceDefine: false,
-	
+
 	// http://requirejs.org/docs/api.html#config-waitSeconds
 	waitSeconds: 30, // FF has trouble with the default. Strange...
 
