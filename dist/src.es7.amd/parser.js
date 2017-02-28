@@ -144,6 +144,16 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             }
             logger.groupEnd();
         });
+        // close the last group
+        if (!current_group) {
+            throw new Error('No group at all ? Please add some data !');
+        }
+        else {
+            logger.info(`Closing last group: "${current_group.title}"`, current_group);
+            current_group = post_process_group(current_group);
+            rows.push(current_group);
+            current_group = null;
+        }
         const result = { title, rows };
         logger.info('final result:', result);
         logger.groupEnd();

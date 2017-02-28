@@ -1,14 +1,15 @@
 # dev toolbox
 
-pinned:
+Pinned:
 - chrome://downloadmgr/content/downloadmgrOverlay.xul
 - devdocs.io http://devdocs.io/
 - www.deezer.com
+- Deezer tops http://www.deezer.com/profile/637006841/playlists
 - chrome://extensions/
 - chrome://settings/
 
 
-wiki perso:
+Wiki perso:
 - +++ https://github.com/Offirmo-team/wiki/wiki
 - ++ https://github.com/Offirmo-team/wiki/wiki/appli-web
 - + https://github.com/Offirmo-team/wiki/wiki/administration-unix
@@ -32,13 +33,10 @@ wiki perso:
 - https://github.com/Offirmo-team/wiki/wiki/YAML
 
 
-toolbox
+Docs:
 - +++ http://devdocs.io/
 - http://htmlreference.io/
 - http://cssreference.io/
-
-
-docs:
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
 - TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
 - TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
@@ -93,7 +91,7 @@ toread:
 - https://codingbox.io/do-you-need-service-worker-in-your-web-app-d68131d65e2c?gi=8262fb9a0ddb
 - https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711
 
-tosort
+tosort:
 - id4 https://docs.google.com/document/d/1hny8PEJ7TlEhmt0LSfMvyxD814cQZouKBAF2nz5jgFw/edit
 - script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit#
 - http://gamesfromwithin.com/

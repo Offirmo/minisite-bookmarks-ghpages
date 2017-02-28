@@ -25,7 +25,7 @@ define(["require", "exports", "typescript-string-enums"], function (require, exp
                     console.log(`fetch "${param1} attempt #${try_count} succeeded.`);
                     resolve(res);
                 })
-                    .catch(err => {
+                    .catch((err) => {
                     console.log(`fetch "${param1} attempt #${try_count} failed !`, err);
                     if (options.max_try_count && try_count >= options.max_try_count)
                         return reject(err);

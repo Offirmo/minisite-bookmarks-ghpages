@@ -14,7 +14,7 @@ interface BookmarkGroup {
 interface Data {
     raw_data: string;
     password: string;
-    title: any;
+    title: string;
     rows: BookmarkGroup[];
 }
 export { Bookmark, BookmarkGroup, Data };

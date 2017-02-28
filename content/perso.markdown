@@ -17,7 +17,14 @@ Offirmo:
 A surveiller:
 - http://www.displaylink.com/downloads/osx
 
+Projects
+- Google Drive https://drive.google.com/drive/#my-drive
+- script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
+- RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit?usp=drive_web
+
 
 Loterie:
 - http://macbidouille.com/
 - https://slashdot.org/
+- google.fr
+

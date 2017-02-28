@@ -41,7 +41,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
             .fromEvent(input, 'click')
             .debounceTime(250)
             */
-        return Rx.Observable.create(function (observer) {
+        return Rx.Observable.create((observer) => {
             observer.next(''); // no password
             // never
         });

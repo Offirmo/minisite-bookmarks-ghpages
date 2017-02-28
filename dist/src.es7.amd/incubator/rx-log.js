@@ -11,7 +11,7 @@ define(["require", "exports"], function (require, exports) {
             throw new Error('log_observable should be given an observable');
         if (!id)
             throw new Error('log_observable should be given an id');
-        observable.subscribe(x => {
+        observable.subscribe((x) => {
             const s = (typeof x === 'undefined') ? 'undefined' : x.toString();
             const eol = s.indexOf('\n');
             let nice = s;
@@ -20,7 +20,7 @@ define(["require", "exports"], function (require, exports) {
             if (nice.length > 30)
                 nice = nice.slice(0, 30) + '...';
             console.log(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ..."${nice}"`);
-        }, err => console.error(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Error: "${err}" !]`), () => console.log(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Completed]`));
+        }, (err) => console.error(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Error: "${err}" !]`), () => console.log(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Completed]`));
     }
     exports.log_observable = log_observable;
 });

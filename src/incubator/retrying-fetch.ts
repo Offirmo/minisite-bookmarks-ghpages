@@ -41,7 +41,7 @@ function retrying_fetch<T>(param1: any, param2: any, options: RetryingFetchOptio
 					console.log(`fetch "${param1} attempt #${try_count} succeeded.`)
 					resolve(res as T)
 				})
-				.catch(err => {
+				.catch((err: Error) => {
 					console.log(`fetch "${param1} attempt #${try_count} failed !`, err)
 					if (options.max_try_count && try_count >= options.max_try_count)
 						return reject(err)

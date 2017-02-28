@@ -11,7 +11,7 @@ function log_observable(observable: {subscribe: Function}, id: string): void {
 	if (!id) throw new Error('log_observable should be given an id')
 
 	observable.subscribe(
-		x   => {
+		(x: any)   => {
 			const s = (typeof x === 'undefined') ? 'undefined' : x.toString()
 			const eol = s.indexOf('\n')
 			let nice = s
@@ -21,7 +21,7 @@ function log_observable(observable: {subscribe: Function}, id: string): void {
 				nice = nice.slice(0, 30) + '...'
 			console.log(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ..."${nice}"`)
 		},
-		err => console.error(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Error: "${err}" !]`),
+		(err: Error) => console.error(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Error: "${err}" !]`),
 		()  =>   console.log(`T=${(pad + (Date.now() - start)).slice(-PAD_SIZE)} [${id}] ...[Completed]`)
 	)
 }

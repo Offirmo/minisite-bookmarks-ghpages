@@ -14,7 +14,7 @@
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
+		"noFallthroughCasesInSwitch": false,
 		"noImplicitAny": false,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,

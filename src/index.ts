@@ -61,7 +61,7 @@ function get_password$() {
 		.fromEvent(input, 'click')
 		.debounceTime(250)
 		*/
-	return Rx.Observable.create(function (observer) {
+	return Rx.Observable.create((observer) => {
 		observer.next('') // no password
 		// never
 	})

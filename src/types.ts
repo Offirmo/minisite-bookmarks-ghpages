@@ -19,7 +19,7 @@ interface BookmarkGroup {
 interface Data {
 	raw_data: string // useful to flag successful raw data to be cached
 	password: string // idem for password
-	title, // page title
+	title: string, // page title
 	rows: BookmarkGroup[]
 }
 

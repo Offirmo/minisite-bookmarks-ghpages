@@ -6,27 +6,30 @@ import { Enum } from 'typescript-string-enums'
 
 ////////////////////////////////////
 
-const UrlCategory1 = Enum(
-	'special', // not internet, ex. chrome settings, ftp...
+import { murmurhash3_32_gc } from './murmur'
+
+const SEED: number = 3712
+const NUMBER_VARIANT_COUNT: number = 100
+
+const UrlCategory = Enum(
 	'pro', // .com, .co.xyz, .biz
 	'geek', // .net, .io
-	'perso',
-	'other'
+	'perso', // .me, .name
+	'other',
+	'special', // not internet, ex. chrome settings, ftp...
 )
-type UrlCategory1 = Enum<typeof UrlCategory1>
-
-interface UrlCategories {
-	cat1: UrlCategory1
-}
+type UrlCategory = Enum<typeof UrlCategory>
 
 const RandomColorHue = Enum(
-	'red', // note: too strong, do not use
-	'orange',
-	'yellow', // ~ "work sign" -> tech, geek
-	'green',
+	'red', // too strong, too frightening, won't use
+	'purple', // also too strong
+
+	'orange', // maybe, but connoted to warning
+
+	'yellow', // like a "work sign" -> tech, geek
 	'blue', // "pro"
-	'purple',
-	'pink',
+	'green', // good for misc non-pro
+	'pink', // good for "snowflake" private sites
 	'monochrome' // special
 )
 type RandomColorHue = Enum<typeof RandomColorHue>
@@ -36,24 +39,24 @@ type RandomColorLuminosity = Enum<typeof RandomColorLuminosity>
 
 ////////////////////////////////////
 
-function get_colors() {
+const get_colors = _.memoize(function get_colors() {
+	console.info('Generating colors...')
 	const colors = {}
 
-	/*
-	RANDOMCOLOR_CONSTS.hues.forEach(hue => {
-		const by_lum = colors[hue] = {}
-
-	})*/
+	Object.keys(RandomColorHue).forEach(hue => {
+		colors[hue] = RandomColor({
+			seed: SEED,
+			count: NUMBER_VARIANT_COUNT,
+			luminosity: RandomColorLuminosity.light,
+			hue: hue as RandomColorHue
+		})
+	})
 
 	return colors
-}
+})
 
-function get_RandomColor_luminosity_for(parsed_url: URL, cats: UrlCategories): RandomColorLuminosity {
-	return RandomColorLuminosity.light
-}
-
-function get_RandomColor_hue_for(parsed_url: URL, cats: UrlCategories): RandomColorHue {
-	switch (cats.cat1) {
+const get_hue_for_category = _.memoize(function get_hue_for_category(cat: UrlCategory): RandomColorHue {
+	switch (cat) {
 		case 'pro':
 			return RandomColorHue.blue
 		case 'geek':
@@ -70,17 +73,19 @@ function get_RandomColor_hue_for(parsed_url: URL, cats: UrlCategories): RandomCo
 		default:
 			return RandomColorHue.monochrome
 	}
-}
+})
 
-function select_color_for_url(parsed_url: URL): string {
-	const { hostname, protocol } = parsed_url
+const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
+	return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
+})
 
-	let cat1: UrlCategory1 = 'other'
-
+const get_category_for_url = _.memoize(function get_category1_for_url(hostname: string, protocol: string) {
+	let cat: UrlCategory = 'other'
 
 	switch (hostname.slice(-5)) {
 		case '.name':
-			cat1 = UrlCategory1.perso
+		case '.blog':
+			cat = UrlCategory.perso
 			break
 		default:
 			break
@@ -90,11 +95,13 @@ function select_color_for_url(parsed_url: URL): string {
 		case '.biz':
 		case '.com':
 		case '.pro':
+		case '.gov':
 		case '.edu':
-			cat1 = UrlCategory1.pro
+		case '.mil':
+			cat = UrlCategory.pro
 			break
 		case '.net':
-			cat1 = UrlCategory1.geek
+			cat = UrlCategory.geek
 			break
 		default:
 			break
@@ -102,10 +109,22 @@ function select_color_for_url(parsed_url: URL): string {
 
 	switch (hostname.slice(-3)) {
 		case '.io':
-			cat1 = UrlCategory1.geek
+			cat = UrlCategory.geek
 			break
 		case '.me':
-			cat1 = UrlCategory1.perso
+			cat = UrlCategory.perso
+			break
+		default:
+			break
+	}
+
+	// https://en.wikipedia.org/wiki/Second-level_domain
+	switch (hostname.slice(-7, -3)) {
+		case '.com.':
+		case '.edu.':
+		case '.gov.':
+		case '.law.':
+			cat = UrlCategory.pro
 			break
 		default:
 			break
@@ -113,17 +132,31 @@ function select_color_for_url(parsed_url: URL): string {
 
 	// other special cases
 	if (hostname.slice(-6, -3) === '.co.')
-		cat1 = UrlCategory1.pro
+		cat = UrlCategory.pro
 
 	if (protocol !== 'https:' && protocol !== 'http:')
-		cat1 = UrlCategory1.special
+		cat = UrlCategory.special
 
 	if (hostname === 'github.com')
-		cat1 = UrlCategory1.geek
+		cat = UrlCategory.geek
+
+	return cat
+})
+
+function select_color_for_url(parsed_url: URL): string {
+	const { hostname, protocol } = parsed_url
+
+	const cat = get_category_for_url(hostname, protocol)
+	const hue = get_hue_for_category(cat)
+
+	/*
+	const index = get_variant_index_for_hostname(hostname)
+	return get_colors()[hue][index]
+	*/
 
 	return RandomColor({
-		luminosity: get_RandomColor_luminosity_for(parsed_url, {cat1}),
-		hue: get_RandomColor_hue_for(parsed_url, {cat1}),
+		luminosity: RandomColorLuminosity.light,
+		hue,
 	})
 }
 
