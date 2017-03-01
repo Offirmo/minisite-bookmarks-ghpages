@@ -10,7 +10,6 @@ import { generate_label_from_url, select_color_for_url } from './view-services'
 const DEFAULT_PAGE_TITLE = 'Awesome bookmarks'
 const DEFAULT_GROUP_TITLE = 'Unnamed group'
 
-const BOOKMARK_LABEL_ERROR = '(parse error)'
 const BOOKMARK_URL_ERROR = 'https://github.com/Offirmo/minisite-bookmarks'
 const BOOKMARK_WEIGHT_DEFAULT = 1
 const logger = console
@@ -64,7 +63,7 @@ function parse_url(url: string): URL {
 	try {
 		parsed_url = new URL(url)
 	}
-	catch(e) {
+	catch (e) {
 		logger.warn(`couldn’t parse url "${url}"`, e)
 		parsed_url = {
 			// the bare minimum we need for the remaining of the processing
@@ -81,21 +80,20 @@ function parse_bookmark(raw_line: string, line_count: number): Bookmark {
 	const params = _.compact(raw_line.split(' '))
 
 	let weight = BOOKMARK_WEIGHT_DEFAULT
-	let url = BOOKMARK_URL_ERROR
-	let label = BOOKMARK_LABEL_ERROR
 
-	// bookmark title may have spaces, so we must be smarter
-	if (params[0].startsWith('+'))
+	if ((params[0] || '').startsWith('+'))
 		weight = Math.max(1, Math.min(3, params.shift().length + 1))
 
-	url = params.slice(-1)[0]
+	let url = params.slice(-1)[0] || BOOKMARK_URL_ERROR
 	console.log('extracted', {url})
 	if(!url.includes('://'))
 		url = 'http://' + url
-
 	const parsed_url = parse_url(url)
-	label = params.slice(0, -1).join(' ')
+
+	// bookmark title may have spaces, so we must be smarter
+	let label = params.slice(0, -1).join(' ')
 	console.log('extracted', {label})
+	// it's ok to not have a label
 	label = label || url
 
 	return {
@@ -124,12 +122,17 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 		if (!line) return
 		line = _.trim(line)
 		if (!line) return
+		if (line.startsWith('[comment]: <>')) {
+			// http://stackoverflow.com/questions/4823468/comments-in-markdown
+			logger.info(`line #${line_count} is a comment`)
+			return
+		}
 
 		logger.groupCollapsed(`line #${line_count}`)
 
 		logger.info(`parsing "${line}"`)
 
-		if(line.startsWith('#')) {
+		if (line.startsWith('#')) {
 			// title
 			const candidate_title = _.trim(line.slice(1))
 			logger.info(`line #${line_count} - found title: "${candidate_title}"`)
@@ -143,7 +146,7 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 				title = candidate_title
 			}
 		}
-		else if(line.startsWith('-')) {
+		else if (line.startsWith('-') || line.startsWith('*')) {
 			// new bookmark
 			logger.error(`line #${line_count} - found a bookmark...`)
 			if (!current_group) {
@@ -177,7 +180,7 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 
 	// close the last group
 	if (!current_group) {
-		throw new Error('No group at all ? Please add some data !')
+		logger.error('No group at all ? Please add some data !')
 	}
 	else {
 		logger.info(`Closing last group: "${current_group!.title}"`, current_group)

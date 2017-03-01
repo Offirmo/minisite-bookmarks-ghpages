@@ -4,7 +4,6 @@ import * as _ from 'lodash'
 import * as Rx from '@reactivex/rxjs'
 import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
 import * as whenDomReady from 'when-dom-ready'
-import { Enum } from "typescript-string-enums"
 
 
 import { retrying_fetch } from './incubator/retrying-fetch'
@@ -32,12 +31,19 @@ const CONSTS = {
 function get_vault_id() {
 	// http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
 	let slug = location.pathname.split('/').filter(x => x).slice(-1)[0]
+
 	// GitHub demo
 	if (slug === 'minisite-bookmarks-ghpages')
 		slug = 'default'
+
 	// dev
-	if (slug === '404.html')
-		slug = 'default'
+	if (slug === '404.html') {
+		//slug = 'default'
+		//slug = 'xxx-test-error'
+		//slug = 'xxx-test-empty'
+		slug = 'xxx-test-ciphered'
+		slug = 'client01-unciphered'
+	}
 
 	return slug
 }
@@ -136,7 +142,7 @@ let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
 
 subjects['data'].plain$.subscribe({
 	next: render,
-	error: err => console.error('something wrong occurred: ' + err),
+	error: render_error,
 	complete: () => console.log('done'),
 });
 
@@ -152,7 +158,13 @@ function render(data: Data) {
 
 	window.document.title = data.title
 
-	const new_html_content = TEMPLATES.page(data)
+	let new_html_content
+	if(! data.rows.length) {
+		new_html_content = '<h2>Empty ! Please add some data...'
+	}
+	else {
+		new_html_content =  TEMPLATES.page(data)
+	}
 	logger.log('html generated')
 
 	const el_content = document.querySelectorAll('#content')[0]
@@ -189,4 +201,10 @@ function render(data: Data) {
 	logger.log('Packery layout launched on all elements')
 
 	logger.groupEnd()
+}
+
+function render_error(err: Error) {
+	console.error('something wrong occurred:', err)
+	const el_content = document.querySelectorAll('#content')[0]
+	el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)'
 }

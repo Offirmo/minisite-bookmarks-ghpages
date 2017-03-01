@@ -1,5 +1,7 @@
+[comment]: <> (Test of a comment)
 # dev toolbox
 
+[comment]: <> (another comment)
 Pinned:
 - chrome://downloadmgr/content/downloadmgrOverlay.xul
 - devdocs.io http://devdocs.io/
@@ -37,10 +39,12 @@ Docs:
 - +++ http://devdocs.io/
 - http://htmlreference.io/
 - http://cssreference.io/
+- Git solving http://justinhileman.info/article/git-pretty/full/
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
 - TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
 - TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
 - TS What's new 2.0 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html
+- online regexp tester https://regex101.com/
 - https://github.com/caolan/async
 - http://epeli.github.io/underscore.string/
 - http://momentjs.com/docs/
@@ -52,6 +56,10 @@ Docs:
 - https://httpstatuses.com/
 - http://facebook.github.io/immutable-js/
 - ES6 http://exploringjs.com/es6/ch_modules.html
+
+
+Offline / local
+- devdocs.io http://0.0.0.0:9292/
 
 
 Veille:
@@ -92,9 +100,6 @@ toread:
 - https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711
 
 tosort:
-- id4 https://docs.google.com/document/d/1hny8PEJ7TlEhmt0LSfMvyxD814cQZouKBAF2nz5jgFw/edit
-- script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit#
-- http://gamesfromwithin.com/
 - games http://gamestd.io/colyseus/
 - https://github.com/Offirmo-team/wiki/wiki/idées-de-posts-de-blog
 

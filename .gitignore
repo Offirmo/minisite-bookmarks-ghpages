@@ -7,4 +7,4 @@ yarn-error.log
 node_modules
 
 # secrets
-content/ciphering_keys.yaml
+content/*-unciphered.markdown

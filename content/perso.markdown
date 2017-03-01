@@ -47,6 +47,7 @@ Loterie:
 
 A surveiller:
 - http://www.displaylink.com/downloads/osx
+- http://gamesfromwithin.com/
 
 
 tosort
@@ -56,3 +57,5 @@ tosort
 
 To check:
 - aprilzero.com/explorer/august-2014/
+- Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
+- impôts

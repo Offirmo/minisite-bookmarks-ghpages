@@ -20,8 +20,13 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         if (slug === 'minisite-bookmarks-ghpages')
             slug = 'default';
         // dev
-        if (slug === '404.html')
-            slug = 'default';
+        if (slug === '404.html') {
+            //slug = 'default'
+            //slug = 'xxx-test-error'
+            //slug = 'xxx-test-empty'
+            slug = 'xxx-test-ciphered';
+            slug = 'client01-unciphered';
+        }
         return slug;
     }
     function fetch_raw_data(vault_id) {
@@ -99,14 +104,20 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
     });
     subjects['data'].plain$.subscribe({
         next: render,
-        error: err => console.error('something wrong occurred: ' + err),
+        error: render_error,
         complete: () => console.log('done'),
     });
     function render(data) {
         logger.group('rendering...');
         logger.log('source data', data);
         window.document.title = data.title;
-        const new_html_content = TEMPLATES.page(data);
+        let new_html_content;
+        if (!data.rows.length) {
+            new_html_content = '<h2>Empty ! Please add some data...';
+        }
+        else {
+            new_html_content = TEMPLATES.page(data);
+        }
         logger.log('html generated');
         const el_content = document.querySelectorAll('#content')[0];
         el_content.innerHTML = new_html_content;
@@ -136,6 +147,11 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         pks.forEach(pckry => pckry.layout());
         logger.log('Packery layout launched on all elements');
         logger.groupEnd();
+    }
+    function render_error(err) {
+        console.error('something wrong occurred:', err);
+        const el_content = document.querySelectorAll('#content')[0];
+        el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)';
     }
 });
 //# sourceMappingURL=index.js.map

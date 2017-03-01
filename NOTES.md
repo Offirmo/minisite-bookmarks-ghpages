@@ -5,6 +5,10 @@ http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
 http://lea.verou.me/2013/11/flexible-google-style-loader-with-css/
 
 
+## use you secret key on https://gchq.github.io/CyberChef/
+https://gchq.github.io/CyberChef/?recipe=%5B%7B%22op%22%3A%22AES%20Encrypt%22%2C%22args%22%3A%5B%7B%22option%22%3A%22UTF8%22%2C%22string%22%3A%22secret%22%7D%2C%7B%22option%22%3A%22Hex%22%2C%22string%22%3A%22%22%7D%2C%7B%22option%22%3A%22Hex%22%2C%22string%22%3A%22%22%7D%2C%22CBC%22%2C%22Pkcs7%22%2C%22Show%20all%22%2C%22Hex%22%5D%7D%5D
+
+
 Packery
 https://github.com/DefinitelyTyped/DefinitelyTyped/blob/4869992bc079b88280b9ff91213528904109e8ae/packery/packery-tests.ts
 https://www.gnu.org/licenses/gpl-faq.html#CombinePublicDomainWithGPL
