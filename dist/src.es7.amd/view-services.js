@@ -150,5 +150,18 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
         return candidate_label;
     }
     exports.generate_label_from_url = generate_label_from_url;
+    const WIDTH2 = 'Iabcdefghjkmnopqstuvwxyz';
+    const WIDTH1 = ' ilr.';
+    function evaluate_string_width(s) {
+        // unit 1 ~= i or space
+        let size = 0;
+        Array.from(s).forEach(c => size += WIDTH1.includes(c)
+            ? 1
+            : WIDTH2.includes(c)
+                ? 2
+                : 3);
+        return size;
+    }
+    exports.evaluate_string_width = evaluate_string_width;
 });
 //# sourceMappingURL=view-services.js.map

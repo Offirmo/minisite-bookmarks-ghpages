@@ -29,21 +29,19 @@ const CONSTS = {
 ////////////////////////////////////
 
 function get_vault_id() {
-	// http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
-	let slug = location.pathname.split('/').filter(x => x).slice(-1)[0]
+	let slug =
+		window.location.hash.slice(1)
+		// http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
+		|| location.pathname.split('/').filter(x => x).slice(-1)[0]
+		|| 'default'
 
 	// GitHub demo
 	if (slug === 'minisite-bookmarks-ghpages')
 		slug = 'default'
 
-	// dev
-	if (slug === '404.html') {
-		//slug = 'default'
-		//slug = 'xxx-test-error'
-		//slug = 'xxx-test-empty'
-		slug = 'xxx-test-ciphered'
-		slug = 'client01-unciphered'
-	}
+	// dev local
+	if (slug === '404.html')
+		slug = 'default'
 
 	return slug
 }
@@ -176,7 +174,7 @@ function render(data: Data) {
 		// options
 		itemSelector: '.grid-item',
 		// assist column width to clean adapt to variable-width titles
-		columnWidth: elem.classList.contains('pinned') ? 72 : 144,
+		columnWidth: 72,
 		//rowHeight: 36,
 		//gutter: 1,
 		percentPosition: false,

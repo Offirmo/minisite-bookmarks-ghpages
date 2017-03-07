@@ -194,9 +194,27 @@ function generate_label_from_url(parsed_url: URL): string {
 	return candidate_label
 }
 
+
+const WIDTH2 = 'Iabcdefghjkmnopqstuvwxyz'
+const WIDTH1 = ' ilr.'
+function evaluate_string_width(s: string): number {
+	// unit 1 ~= i or space
+	let size = 0
+	Array.from(s).forEach(c =>
+		size += WIDTH1.includes(c)
+			? 1
+			: WIDTH2.includes(c)
+				? 2
+				: 3
+	)
+
+	return size
+}
+
 ////////////////////////////////////
 
 export {
 	generate_label_from_url,
 	select_color_for_url,
+	evaluate_string_width,
 }
