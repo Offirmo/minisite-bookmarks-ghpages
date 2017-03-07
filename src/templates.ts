@@ -20,7 +20,7 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 
 	if (weight === 1 && lw <= 20)
 		weight = 0
-	else if (weight === 1 && lw <= 22) {
+	else if (weight === 1 && lw <= 23) {
 		weight = 0
 		tachyons_classes += ` tracked-tight` // character spacing diminished
 	}
