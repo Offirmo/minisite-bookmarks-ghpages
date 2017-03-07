@@ -10,7 +10,7 @@ define(["require", "exports", "./view-services"], function (require, exports, vi
         let tachyons_classes = 'no-underline near-black ba dib';
         if (weight === 1 && lw <= 20)
             weight = 0;
-        else if (weight === 1 && lw <= 22) {
+        else if (weight === 1 && lw <= 23) {
             weight = 0;
             tachyons_classes += ` tracked-tight`; // character spacing diminished
         }
