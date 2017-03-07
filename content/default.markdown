@@ -1,10 +1,12 @@
 [comment]: <> (Test of a comment)
-# dev toolbox
+# JS dev bookmarks
 
 [comment]: <> (another comment)
 Pinned:
 - chrome://downloadmgr/content/downloadmgrOverlay.xul
 - devdocs.io http://devdocs.io/
+- Inbox https://inbox.google.com/
+- https://github.com/Offirmo?tab=repositories
 - www.deezer.com
 - Deezer tops http://www.deezer.com/profile/637006841/playlists
 - chrome://extensions/
@@ -60,6 +62,10 @@ Docs:
 
 Offline / local
 - devdocs.io http://0.0.0.0:9292/
+
+
+Own projects
+- http://www.offirmo.net/
 
 
 Veille:

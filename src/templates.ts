@@ -14,7 +14,7 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 
 	label = label || url
 
-	let tachyons_classes = 'no-underline near-black ba bw1 dib'
+	let tachyons_classes = 'no-underline near-black ba dib'
 
 	if (label.length > 20)
 		tachyons_classes += ` tracked-tight` // character spacing diminished
@@ -32,15 +32,19 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 
 function bookmark_group(group: BookmarkGroup, index: number): string {
 	const is_pinned_row = group.title.toLowerCase() === 'pinned'
-	const alternative = is_pinned_row ? -1 : index % 2
+	const alternative = is_pinned_row
+		? -1
+		: index % 2
 	const items = group.bookmarks.map(b => bookmark(b, alternative)).join('')
-	const title = is_pinned_row ? '' : `<h2 class="pa0 ma0">${group.title}</h2>`
-	let tachyons_classes = 'pa1'
+	const title_html = is_pinned_row
+		? ''
+		: `<div class="pa0 ma0 stamp dib">${group.title}</div>`
+	let tachyons_classes = 'pa0'
 
 	return `
 <div class="${tachyons_classes}">
-	${title}
-	<div class="grid">
+	<div class="grid ${is_pinned_row?'pinned':''}">
+		${title_html}
 		${items}
 	</div>
 </div>

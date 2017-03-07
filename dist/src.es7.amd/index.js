@@ -126,12 +126,15 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         const pks = elems.map(elem => new Packery(elem, {
             // options
             itemSelector: '.grid-item',
-            //columnWidth: 50,
-            //rowHeight: 50,
-            //gutter: 3,
-            percentPosition: true,
+            // assist column width to clean adapt to variable-width titles
+            columnWidth: elem.classList.contains('pinned') ? 72 : 144,
+            //rowHeight: 36,
+            //gutter: 1,
+            percentPosition: false,
             //isHorizontal: true,
             initLayout: false,
+            // stamp elements
+            stamp: '.stamp',
         }));
         logger.log('Packery created on all elements');
         // attach our event handlers before running the layout

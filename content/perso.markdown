@@ -1,7 +1,6 @@
-# Perso
+# Personal bookmarks
 
-
-Notes
+Pinned
 - Google Drive https://drive.google.com/drive/#my-drive
 - S https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
@@ -52,8 +51,9 @@ A surveiller:
 
 tosort
 - https://www.facebook.com/
-- http://www.mutadis.org/
+- http://www.mutadis.org/connexion/
 
+- http://javerzac.jutard.com
 
 To check:
 - aprilzero.com/explorer/august-2014/

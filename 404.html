@@ -15,11 +15,13 @@
 
 	<style type="text/css">
 		* {
-/*
-			--background-color: #24292e;
-			--contrast-color: #eee;
+			/*
+			  #eee     light grey from tachyons
+			  #fafbfc  light grey from GitHub
+			  #24292e  contrast
 			*/
-			--background-color: #eee;
+
+			--background-color: #fafbfc;
 			--contrast-color: #24292e;
 
 			--loader-color: var(--contrast-color);
@@ -29,58 +31,11 @@
 			--item-base-size-v: calc(var(--item-base-unit) * 1);
 		}
 
-		a.github-corner svg {
-			fill: var(--contrast-color);
-			color: var(--background-color);
-		}
-
 		body {
 			font-family: 'Roboto', 'Verdana', 'Open Sans', sans-serif;
 			color: var(--contrast-color);
 			background-color: var(--background-color);
-		}
-
-		/* http://stackoverflow.com/questions/17481660/darken-background-image-on-hover */
-		.grid a {
-			position:relative;
-		}
-		.grid a:hover > .overlay {
-			width:100%;
-			height:100%;
-			position:absolute;
-			background-color:#000;
-			opacity:0.2;
-		}
-
-		.grid {}
-		.grid-item {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-
-			font-size: 12px;
-			padding: 2px;
-			line-height: 2.4;
-
-			border-color: var(--background-color);
-			width: var(--item-base-size-h);
-			height: var(--item-base-size-v);
-		}
-		.grid-item--weight0 {
-			width: calc(var(--item-base-unit) * 2);
-			height: calc(var(--item-base-unit) * 1);
-		}
-		.grid-item--weight1 {
-			width: calc(var(--item-base-size-h) * 1);
-			height: calc(var(--item-base-size-v) * 1);
-		}
-		.grid-item--weight2 {
-			width: calc(var(--item-base-size-h) * 1);
-			height: calc(var(--item-base-size-v) * 2);
-		}
-		.grid-item--weight3 {
-			width: calc(var(--item-base-size-h) * 1);
-			height: calc(var(--item-base-size-v) * 3);
+			padding: 3px;
 		}
 
 		/* coffee cup loader
@@ -121,6 +76,75 @@
 		@keyframes loader_coffee_up_steam {
 			0% { height: 0; }
 			100% { height: 6px; }
+		}
+
+
+		/* https://github.com/tholman/github-corners */
+		a.github-corner svg {
+			fill: var(--contrast-color);
+			color: var(--background-color);
+		}
+
+		/* http://stackoverflow.com/questions/17481660/darken-background-image-on-hover */
+		.grid a {
+			position:relative;
+		}
+		.grid a:hover > .overlay {
+			width:100%;
+			height:100%;
+			position:absolute;
+			background-color:#000;
+			opacity:0.2;
+		}
+
+		.stamp {
+			height: calc(var(--item-base-size-v) * 1);
+			font-size: 22px;
+			line-height: 1.6;
+		}
+		.grid {
+			border-bottom: rgba(0, 0, 0, 0.17) dashed 1px;
+			padding-bottom: 1px;
+			margin-bottom: 1px;
+		}
+		.grid-item {
+			width: var(--item-base-size-h);
+			height: var(--item-base-size-v);
+
+			border-color: var(--background-color);
+			border-width: 1px;
+			padding: 2px;
+
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			font-size: 12px;
+			line-height: 2.4;
+		}
+		.grid-item--weight0 {
+			width: calc(var(--item-base-unit) * 2);
+			height: calc(var(--item-base-unit) * 1);
+		}
+		.grid-item--weight1 {
+			width: calc(var(--item-base-size-h) * 1);
+			height: calc(var(--item-base-size-v) * 1);
+		}
+		.grid-item--weight2 {
+			width: calc(var(--item-base-size-h) * 1);
+			height: calc(var(--item-base-size-v) * 2);
+
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 1.8;
+		}
+		.grid-item--weight3 {
+			width: calc(var(--item-base-size-h) * 1);
+			height: calc(var(--item-base-size-v) * 3);
+
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 1.8;
 		}
 	</style>
 </head>

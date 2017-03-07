@@ -119,6 +119,14 @@ const get_category_for_url = _.memoize(function get_category1_for_url(hostname: 
 	}
 
 	// https://en.wikipedia.org/wiki/Second-level_domain
+	switch (hostname.slice(-8, -3)) {
+		case '.gouv.':
+			cat = UrlCategory.pro
+			break
+		default:
+			break
+	}
+
 	switch (hostname.slice(-7, -3)) {
 		case '.com.':
 		case '.edu.':
@@ -130,9 +138,13 @@ const get_category_for_url = _.memoize(function get_category1_for_url(hostname: 
 			break
 	}
 
-	// other special cases
-	if (hostname.slice(-6, -3) === '.co.')
-		cat = UrlCategory.pro
+	switch (hostname.slice(-6, -3)) {
+		case '.co.':
+			cat = UrlCategory.pro
+			break
+		default:
+			break
+	}
 
 	if (protocol !== 'https:' && protocol !== 'http:')
 		cat = UrlCategory.special

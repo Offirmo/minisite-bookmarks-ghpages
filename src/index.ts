@@ -175,13 +175,15 @@ function render(data: Data) {
 	const pks = elems.map(elem => new Packery( elem!, {
 		// options
 		itemSelector: '.grid-item',
-		//columnWidth: 50,
-		//rowHeight: 50,
-		//gutter: 3,
-		percentPosition: true,
+		// assist column width to clean adapt to variable-width titles
+		columnWidth: elem.classList.contains('pinned') ? 72 : 144,
+		//rowHeight: 36,
+		//gutter: 1,
+		percentPosition: false,
 		//isHorizontal: true,
-
 		initLayout: false,// disable initial layout
+		// stamp elements
+		stamp: '.stamp',
 	}))
 	logger.log('Packery created on all elements')
 
