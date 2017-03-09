@@ -174,7 +174,8 @@ function render(data: Data) {
 		// options
 		itemSelector: '.grid-item',
 		// assist column width to clean adapt to variable-width titles
-		columnWidth: 72,
+		columnWidth: elem.classList.contains('pinned') ? 72 : 144,
+		//columnWidth: 72,
 		//rowHeight: 36,
 		//gutter: 1,
 		percentPosition: false,

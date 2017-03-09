@@ -1,22 +1,37 @@
-[comment]: <> (Test of a comment)
-
 # Personal bookmarks
 
 Pinned
 - GDrive https://drive.google.com/drive/#my-drive
+- Inbox https://inbox.google.com/
 - S https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
 - RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit?usp=drive_web
 - W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
 
+Pinned:
+- devdocs.io http://devdocs.io/
+- Repos GitHub https://github.com/Offirmo?tab=repositories
+- www.deezer.com
+- Deezer tops http://www.deezer.com/profile/637006841/playlists
+- Wiki https://github.com/Offirmo-team/wiki/wiki
+- langages https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
+- chrome://downloadmgr/content/downloadmgrOverlay.xul
+- chrome://extensions/
+- chrome://settings/
+
 
 Projects
+- H https://docs.google.com/spreadsheets/d/1o8K0pv5QZVcopl4-6RZoot8ixmLZAJqFX99W7ec-wao/edit#gid=2075720335
+- NW https://docs.google.com/spreadsheets/d/1gw6oq6Y-lBK7dwHbHFAVsXwU0UsBMPSa6vW84FZwtS0/edit
+- RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit#gid=0
+- xP https://docs.google.com/spreadsheets/d/1fLPvAOTpolX8EksJt6zHNzoCN4fN_yaGexwJYNCQipc/edit#gid=0
 - id4 https://docs.google.com/document/d/1hny8PEJ7TlEhmt0LSfMvyxD814cQZouKBAF2nz5jgFw/edit
 - script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
 - Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
 - OA www.online-adventur.es
 - TBRPG https://docs.google.com/spreadsheets/d/1EZHJQN0qBWuIjOHvCUQl2HoA37dO86tvfCh_MArNqFY/edit#gid=859684177
-
+- TBRPG frags https://docs.google.com/presentation/d/17V7ID-F3OCJlbaXrGcvcjS5C20LRgBHEqD1Pn0aK-kg/edit#slide=id.g28918c0c560567f1_16
+- Incrémental https://docs.google.com/spreadsheets/d/16UfXJFIM_scFSS8jEGKaKwFWk4kB2vD7D87dKixvxKo/edit#gid=0
 
 Banque:
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
@@ -30,20 +45,17 @@ Banque:
 
 Outils
 - https://framindmap.org/c/maps/
+- www.emoji-cheat-sheet.com
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
-- www.emoji-cheat-sheet.com
 
-Offirmo:
-- Repos GitHub https://github.com/Offirmo?tab=repositories
-- Wiki https://github.com/Offirmo-team/wiki/wiki
-- langages https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 
 Loterie:
 - http://macbidouille.com/
 - https://slashdot.org/
 - https://news.google.fr/
 - feedly.com/#my
+- https://www.facebook.com/
 
 
 A surveiller:
@@ -51,30 +63,19 @@ A surveiller:
 - http://gamesfromwithin.com/
 
 
-tosort
-- https://www.facebook.com/
+Admin:
 - http://www.mutadis.org/connexion/
-
+- http://fundfordemocraticculture.org/connexion
+- http://www.ameliedescamps.com/connexion
 - http://javerzac.jutard.com
+- http://demoetendard-ef001.rhcloud.com/connexion
+- http://bacasable-ef001.rhcloud.com/connexion
+- services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
 
 To check:
 - aprilzero.com/explorer/august-2014/
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
-- impôts
-
-
-# JS dev bookmarks
-
-[comment]: <> (another comment)
-Pinned:
-- chrome://downloadmgr/content/downloadmgrOverlay.xul
-- devdocs.io http://devdocs.io/
-- Inbox https://inbox.google.com/
-- https://github.com/Offirmo?tab=repositories
-- www.deezer.com
-- Deezer tops http://www.deezer.com/profile/637006841/playlists
-- chrome://extensions/
-- chrome://settings/
+- impots.gouv.fr
 
 
 Wiki perso:

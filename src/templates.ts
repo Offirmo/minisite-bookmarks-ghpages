@@ -16,14 +16,16 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 	label = label || url
 	const lw = evaluate_string_width(label)
 
-	let tachyons_classes = 'no-underline near-black ba dib'
+	let tachyons_classes = 'no-underline near-black ba dib tc'
 
+	/*
 	if (weight === 1 && lw <= 20)
 		weight = 0
 	else if (weight === 1 && lw <= 23) {
 		weight = 0
 		tachyons_classes += ` tracked-tight` // character spacing diminished
 	}
+	*/
 	if (label.length > 50)
 		tachyons_classes += ` tracked-tight` // character spacing diminished
 
@@ -31,7 +33,7 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 <a class="grid-item grid-item--weight${alternative === -1 ? 0 : weight} ${tachyons_classes}"
 	style="background-color: ${bgcolor};"
 	href="${url}"
-	title="${lw}">
+	title="${label}">
 	<div class="overlay"></div>
 	<span class="label">${label}</span>
 </a>
