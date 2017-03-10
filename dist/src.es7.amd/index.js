@@ -1,7 +1,9 @@
 ////////////////////////////////////
-define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-ready", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "packery", "tachyons"], function (require, exports, Rx, rx_auto_1, whenDomReady, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, Packery) {
+define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "packery", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, Packery) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    const marky = window.marky;
+    marky.mark('bootstrap');
     //////////// CONSTANTS ////////////
     const logger = console;
     const CONSTS = {
@@ -26,8 +28,12 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         return slug;
     }
     function fetch_raw_data(vault_id) {
+        marky.mark('fetch_raw_data');
         return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, { response_should_be_ok: true })
-            .then(res => res.text());
+            .then(res => {
+            marky.stop('fetch_raw_data');
+            return res.text();
+        });
     }
     function get_cached_raw_data(vault_id) {
         const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_raw_data(vault_id));
@@ -85,7 +91,6 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
             'password',
             ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, parser_1.decrypt_if_needed_then_parse_data)
         ],
-        is_dom_ready: whenDomReady(),
     }, { logger: console });
     for (let id in subjects) {
         //console.log(`subject ${id}`)
@@ -104,6 +109,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         complete: () => console.log('done'),
     });
     function render(data) {
+        marky.mark('render');
         logger.group('rendering...');
         logger.log('source data', data);
         window.document.title = data.title;
@@ -139,9 +145,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         all_layouts_done
             .then(() => {
             console.info('All packery layouts done');
-            setTimeout(() => {
-                //fit_text(document.querySelectorAll('.grid-item'), 0.8, { minFontSize: 5, maxFontSize: 50 })
-            }, 100);
+            marky.stop('render');
         })
             .catch(e => console.error(e));
         pks.forEach(pckry => pckry.layout());
@@ -153,5 +157,6 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "when-dom-r
         const el_content = document.querySelectorAll('#content')[0];
         el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)';
     }
+    marky.stop('bootstrap');
 });
 //# sourceMappingURL=index.js.map

@@ -2,6 +2,7 @@
 define(["require", "exports", "lodash", "./view-services"], function (require, exports, _, view_services_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    const marky = window.marky;
     //////////// CONSTANTS ////////////
     const DEFAULT_PAGE_TITLE = 'Awesome bookmarks';
     const DEFAULT_GROUP_TITLE = 'Unnamed group';
@@ -164,10 +165,12 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
     }
     function decrypt_if_needed_then_parse_data(raw_data, password = '') {
         // pwd protection not supported yet
+        marky.mark('decrypt-and-parse');
         const result = Object.assign({ 
             // rem: keeping a link to source data to allow caching if success
             raw_data,
             password }, parse_data(raw_data));
+        marky.stop('decrypt-and-parse');
         return result;
     }
     exports.decrypt_if_needed_then_parse_data = decrypt_if_needed_then_parse_data;

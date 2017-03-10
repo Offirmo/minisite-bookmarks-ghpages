@@ -1,25 +1,10 @@
+(function (exports) {
 'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
 
 /* global performance */
 var perf = typeof performance !== 'undefined' && performance;
 
-var nowForNode;
-
-{
-  // implementation borrowed from:
-  // https://github.com/myrne/performance-now/blob/6223a0d544bae1d5578dd7431f78b4ec7d65b15c/src/performance-now.coffee
-  var hrtime = process.hrtime;
-  var getNanoSeconds = function () {
-    var hr = hrtime();
-    return hr[0] * 1e9 + hr[1]
-  };
-  var loadTime = getNanoSeconds();
-  nowForNode = function () { return ((getNanoSeconds() - loadTime) / 1e6); };
-}
-
-var now = nowForNode;
+var now = perf && perf.now ? function () { return perf.now(); } : function () { return Date.now(); };
 
 function throwIfEmpty (name) {
   if (!name) {
@@ -85,3 +70,5 @@ if (perf && perf.mark && perf.measure) {
   };
   exports.getEntries = function () { return entries; };
 }
+
+}((this.marky = this.marky || {})));

@@ -1,7 +1,9 @@
 ////////////////////////////////////
-define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums", "./murmur"], function (require, exports, _, RandomColor, typescript_string_enums_1, murmur_1) {
+define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"], function (require, exports, _, RandomColor, typescript_string_enums_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    ////////////////////////////////////
+    //import { murmurhash3_32_gc } from '../tosort/murmur'
     const SEED = 3712;
     const NUMBER_VARIANT_COUNT = 100;
     const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .biz
@@ -50,9 +52,11 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
                 return RandomColorHue.monochrome;
         }
     });
-    const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname) {
-        return (murmur_1.murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT);
-    });
+    /*
+    const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
+        return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
+    })
+    */
     const get_category_for_url = _.memoize(function get_category1_for_url(hostname, protocol) {
         let cat = 'other';
         switch (hostname.slice(-5)) {

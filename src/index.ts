@@ -3,8 +3,11 @@
 import * as _ from 'lodash'
 import * as Rx from '@reactivex/rxjs'
 import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
-import * as whenDomReady from 'when-dom-ready'
+import 'marky'
 
+const marky = (window as any).marky
+
+marky.mark('bootstrap')
 
 import { retrying_fetch } from './incubator/retrying-fetch'
 import { log_observable } from './incubator/rx-log'
@@ -47,8 +50,12 @@ function get_vault_id() {
 }
 
 function fetch_raw_data(vault_id: string) {
+	marky.mark('fetch_raw_data')
 	return retrying_fetch<any>(`content/${vault_id}.markdown`, undefined, {response_should_be_ok: true})
-		.then(res => res.text())
+		.then(res => {
+			marky.stop('fetch_raw_data')
+			return res.text()
+		})
 }
 
 function get_cached_raw_data(vault_id: string): string | Rx.Observable<any> {
@@ -118,8 +125,6 @@ const subjects = auto({
 			decrypt_if_needed_then_parse_data
 		)
 	],
-	is_dom_ready:
-		whenDomReady(),
 }, { logger: console })
 
 for (let id in subjects) {
@@ -149,6 +154,7 @@ import 'tachyons'
 import Packery = require('packery')
 
 function render(data: Data) {
+	marky.mark('render')
 
 	logger.group('rendering...')
 
@@ -191,9 +197,7 @@ function render(data: Data) {
 	all_layouts_done
 	.then(() => {
 		console.info('All packery layouts done')
-		setTimeout(() => {
-			//fit_text(document.querySelectorAll('.grid-item'), 0.8, { minFontSize: 5, maxFontSize: 50 })
-		}, 100)
+		marky.stop('render')
 	})
 	.catch(e => console.error(e))
 
@@ -209,3 +213,5 @@ function render_error(err: Error) {
 	const el_content = document.querySelectorAll('#content')[0]
 	el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)'
 }
+
+marky.stop('bootstrap')

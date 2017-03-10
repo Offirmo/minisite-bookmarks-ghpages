@@ -41,6 +41,7 @@ NEEDED_MODULES.forEach(module_name => {
 	switch(module_name) {
 		case '@reactivex/rxjs': dep_path = `${module_name}/dist/global/Rx.js`; break
 		case 'js-yaml': dep_path = `${module_name}/dist/js-yaml.js`; break
+		case 'marky': dep_path = `${module_name}/dist/marky.js`; break
 		case 'packery': dep_path = `${module_name}/dist/packery.pkgd.js`; break
 		case 'require-css': dep_path = `${module_name}/css.js`; break
 		case 'requirejs': dep_path = `${module_name}/require.js`; break

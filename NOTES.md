@@ -1,4 +1,9 @@
 
+    "js-yaml": "^3.7.0",
+    "shave": "^1.0.1",
+    "when-dom-ready": "^1.2.6"
+import * as whenDomReady from 'when-dom-ready'
+
 
 http://fontawesome.io/get-started/
 

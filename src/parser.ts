@@ -1,6 +1,7 @@
 ////////////////////////////////////
 
 import * as _ from 'lodash'
+const marky = (window as any).marky
 
 import { Bookmark, BookmarkGroup, Data } from './types'
 import { generate_label_from_url, select_color_for_url } from './view-services'
@@ -199,6 +200,7 @@ function parse_data(raw_data: string): {title: string, rows: BookmarkGroup[]} {
 
 function decrypt_if_needed_then_parse_data(raw_data: string, password: string = ''): Data {
 	// pwd protection not supported yet
+	marky.mark('decrypt-and-parse')
 
 	const result: Data = {
 		// rem: keeping a link to source data to allow caching if success
@@ -207,6 +209,8 @@ function decrypt_if_needed_then_parse_data(raw_data: string, password: string = 
 		// parsing results:
 		...parse_data(raw_data)
 	}
+
+	marky.stop('decrypt-and-parse')
 
 	return  result
 }
