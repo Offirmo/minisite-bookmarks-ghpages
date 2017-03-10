@@ -64,12 +64,12 @@ A surveiller:
 
 
 Admin:
-- http://www.mutadis.org/connexion/
-- http://fundfordemocraticculture.org/connexion
-- http://www.ameliedescamps.com/connexion
+- mutadis.org http://www.mutadis.org/connexion/
+- FDC http://fundfordemocraticculture.org/connexion
+- ameliedescamps.com http://www.ameliedescamps.com/connexion
 - http://javerzac.jutard.com
-- http://demoetendard-ef001.rhcloud.com/connexion
-- http://bacasable-ef001.rhcloud.com/connexion
+- demoetendard http://demoetendard-ef001.rhcloud.com/connexion
+- bac à sable WP http://bacasable-ef001.rhcloud.com/connexion
 - services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
 
 To check:
@@ -79,17 +79,17 @@ To check:
 
 
 Wiki perso:
-- +++ https://github.com/Offirmo-team/wiki/wiki
-- ++ https://github.com/Offirmo-team/wiki/wiki/appli-web
+- + https://github.com/Offirmo-team/wiki/wiki
+- + https://github.com/Offirmo-team/wiki/wiki/appli-web
 - + https://github.com/Offirmo-team/wiki/wiki/administration-unix
 - https://github.com/Offirmo-team/wiki/wiki/bash
-- + https://github.com/Offirmo-team/wiki/wiki/css
+- + CSS https://github.com/Offirmo-team/wiki/wiki/css
 - https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
 - https://github.com/Offirmo-team/wiki/wiki/extension-de-navigateurs
 - + https://github.com/Offirmo-team/wiki/wiki/git
 - https://github.com/Offirmo-team/wiki/wiki/GitHub
 - + https://github.com/Offirmo-team/wiki/wiki/html
-- ++ https://github.com/Offirmo-team/wiki/wiki/javascript
+- + https://github.com/Offirmo-team/wiki/wiki/javascript
 - https://github.com/Offirmo-team/wiki/wiki/JSON
 - https://github.com/Offirmo-team/wiki/wiki/npm
 - https://github.com/Offirmo-team/wiki/wiki/react
@@ -98,7 +98,7 @@ Wiki perso:
 - + https://github.com/Offirmo-team/wiki/wiki/Sécurité
 - https://github.com/Offirmo-team/wiki/wiki/tachyons
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
-- ++ https://github.com/Offirmo-team/wiki/wiki/UX
+- + https://github.com/Offirmo-team/wiki/wiki/UX
 - https://github.com/Offirmo-team/wiki/wiki/YAML
 
 
