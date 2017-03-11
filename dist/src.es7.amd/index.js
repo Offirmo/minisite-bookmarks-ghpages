@@ -1,11 +1,11 @@
 ////////////////////////////////////
-define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "packery", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, Packery) {
+define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "./incubator/parse-location-search", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, parse_location_search_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     const marky = window.marky;
     marky.mark('bootstrap');
+    marky.mark('global');
     //////////// CONSTANTS ////////////
-    const logger = console;
     const CONSTS = {
         LS_KEYS: {
             last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
@@ -14,6 +14,21 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "./incubato
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
+    const dynamic_options = parse_location_search_1.parse(window.location);
+    console.info({ dynamic_options });
+    const logger = dynamic_options.verbose > 0
+        ? console
+        : ({
+            log: () => { },
+            info: () => { },
+            warn: () => { },
+            error: console.error.bind(console),
+            group: () => { },
+            groupCollapsed: () => { },
+            groupEnd: () => { },
+        });
+    const { decrypt_if_needed_then_parse_data } = parser_1.factory({ logger });
+    logger.log('App: Hello world !', { constants: CONSTS });
     ////////////////////////////////////
     function get_vault_id() {
         let slug = window.location.hash.slice(1)
@@ -29,7 +44,10 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "./incubato
     }
     function fetch_raw_data(vault_id) {
         marky.mark('fetch_raw_data');
-        return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, { response_should_be_ok: true })
+        return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, {
+            response_should_be_ok: true,
+            logger,
+        })
             .then(res => {
             marky.stop('fetch_raw_data');
             return res.text();
@@ -59,55 +77,6 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "./incubato
             cached_data :
             Rx.Observable.empty();
     }
-    ////////////////////////////////////
-    console.log('App: Hello world !', { constants: CONSTS });
-    const subjects = rx_auto_1.auto({
-        vault_id: get_vault_id,
-        cached_raw_data: [
-            'vault_id',
-            (deps) => get_cached_raw_data(deps['vault_id'].value)
-        ],
-        fresh_raw_data: [
-            'vault_id',
-            (deps) => fetch_raw_data(deps['vault_id'].value)
-        ],
-        raw_data: [
-            'cached_raw_data',
-            'fresh_raw_data',
-            rx_auto_1.OPERATORS.concat
-        ],
-        cached_password: [
-            'vault_id',
-            (deps) => get_cached_password(deps['vault_id'].value)
-        ],
-        fresh_password: get_password$,
-        password: [
-            'cached_password',
-            'fresh_password',
-            rx_auto_1.OPERATORS.concat
-        ],
-        data: [
-            'raw_data',
-            'password',
-            ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, parser_1.decrypt_if_needed_then_parse_data)
-        ],
-    }, { logger: console });
-    for (let id in subjects) {
-        //console.log(`subject ${id}`)
-        rx_log_1.log_observable(subjects[id].plain$, id);
-    }
-    ////////////////////////////////////
-    // actions
-    let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
-        // pretend we did it...
-        console.info('updated cache with fresh data');
-        sbs1.unsubscribe();
-    });
-    subjects['data'].plain$.subscribe({
-        next: render,
-        error: render_error,
-        complete: () => console.log('done'),
-    });
     function render(data) {
         marky.mark('render');
         logger.group('rendering...');
@@ -144,19 +113,75 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "./incubato
         const all_layouts_done = Promise.all(pks.map(pckry => new Promise(resolve => pckry.once('layoutComplete', resolve))));
         all_layouts_done
             .then(() => {
-            console.info('All packery layouts done');
+            logger.info('All packery layouts done');
             marky.stop('render');
+            marky.stop('global');
         })
-            .catch(e => console.error(e));
+            .catch(e => logger.error(e));
         pks.forEach(pckry => pckry.layout());
         logger.log('Packery layout launched on all elements');
         logger.groupEnd();
     }
     function render_error(err) {
-        console.error('something wrong occurred:', err);
+        logger.error('something wrong occurred:', err);
         const el_content = document.querySelectorAll('#content')[0];
         el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)';
+        marky.stop('global');
     }
+    ////////////////////////////////////
+    setTimeout(() => {
+        marky.mark('rx setup');
+        const subjects = rx_auto_1.auto({
+            vault_id: get_vault_id,
+            cached_raw_data: [
+                'vault_id',
+                (deps) => get_cached_raw_data(deps['vault_id'].value)
+            ],
+            fresh_raw_data: [
+                'vault_id',
+                (deps) => fetch_raw_data(deps['vault_id'].value)
+            ],
+            raw_data: [
+                'cached_raw_data',
+                'fresh_raw_data',
+                rx_auto_1.OPERATORS.concat
+            ],
+            cached_password: [
+                'vault_id',
+                (deps) => get_cached_password(deps['vault_id'].value)
+            ],
+            fresh_password: get_password$,
+            password: [
+                'cached_password',
+                'fresh_password',
+                rx_auto_1.OPERATORS.concat
+            ],
+            data: [
+                'raw_data',
+                'password',
+                ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, decrypt_if_needed_then_parse_data)
+            ],
+        }, { logger });
+        // actions
+        if (dynamic_options.verbose > 0) {
+            for (let id in subjects) {
+                //logger.log(`subject ${id}`)
+                rx_log_1.log_observable(subjects[id].plain$, id);
+            }
+        }
+        let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
+            // pretend we did it...
+            logger.info('updated cache with fresh data');
+            // XXX TODO
+            sbs1.unsubscribe();
+        });
+        subjects['data'].plain$.subscribe({
+            next: render,
+            error: render_error,
+            complete: () => logger.log('done'),
+        });
+        marky.stop('rx setup');
+    });
     marky.stop('bootstrap');
 });
 //# sourceMappingURL=index.js.map

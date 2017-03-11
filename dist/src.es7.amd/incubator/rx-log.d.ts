@@ -1,4 +1,5 @@
-declare function log_observable(observable: {
+interface LooseObservable {
     subscribe: Function;
-}, id: string): void;
-export { log_observable };
+}
+declare function log_observable(observable: LooseObservable, id?: string): void;
+export { LooseObservable, log_observable };

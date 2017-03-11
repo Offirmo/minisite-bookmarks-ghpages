@@ -4,6 +4,8 @@
     "when-dom-ready": "^1.2.6"
 import * as whenDomReady from 'when-dom-ready'
 
+http://localhost:7000/404.html?verbose=1&debug=parser,render#client01-unciphered
+
 
 http://fontawesome.io/get-started/
 

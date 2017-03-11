@@ -1,24 +1,24 @@
 ////////////////////////////////////
 
-import * as _ from 'lodash'
+import 'marky'
+const marky = (window as any).marky
+marky.mark('bootstrap')
+marky.mark('global')
+
 import * as Rx from '@reactivex/rxjs'
 import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
-import 'marky'
-
-const marky = (window as any).marky
-
-marky.mark('bootstrap')
+import Packery = require('packery')
+import 'tachyons'
 
 import { retrying_fetch } from './incubator/retrying-fetch'
 import { log_observable } from './incubator/rx-log'
 
 import { Data } from './types'
-import { decrypt_if_needed_then_parse_data } from './parser'
+import { factory as parser_factory } from './parser'
 import * as TEMPLATES from './templates'
+import { parse as parse_location_search } from './incubator/parse-location-search'
 
 //////////// CONSTANTS ////////////
-
-const logger = console
 
 const CONSTS = {
 	LS_KEYS: {
@@ -28,6 +28,25 @@ const CONSTS = {
 	},
 	REPO_URL: 'https://github.com/Offirmo/minisite-w',
 }
+
+const dynamic_options = parse_location_search(window.location)
+console.info({dynamic_options})
+
+const logger: Console = dynamic_options.verbose > 0
+	? console
+	: ({
+		log: () => {},
+		info: () => {},
+		warn: () => {},
+		error: console.error.bind(console),
+		group: () => {},
+		groupCollapsed: () => {},
+		groupEnd: () => {},
+	}) as any as Console
+
+const { decrypt_if_needed_then_parse_data } = parser_factory({logger})
+
+logger.log('App: Hello world !', { constants: CONSTS })
 
 ////////////////////////////////////
 
@@ -51,7 +70,10 @@ function get_vault_id() {
 
 function fetch_raw_data(vault_id: string) {
 	marky.mark('fetch_raw_data')
-	return retrying_fetch<any>(`content/${vault_id}.markdown`, undefined, {response_should_be_ok: true})
+	return retrying_fetch<any>(`content/${vault_id}.markdown`, undefined, {
+		response_should_be_ok: true,
+		logger,
+	})
 		.then(res => {
 			marky.stop('fetch_raw_data')
 			return res.text()
@@ -84,74 +106,6 @@ function get_cached_password(vault_id: string): string | Rx.Observable<any> {
 		cached_data:
 		Rx.Observable.empty()
 }
-
-////////////////////////////////////
-
-console.log('App: Hello world !', { constants: CONSTS })
-
-const subjects = auto({
-	vault_id:
-		get_vault_id,
-	cached_raw_data: [
-		'vault_id',
-		(deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)
-	],
-	fresh_raw_data: [
-		'vault_id',
-		(deps: ResolvedStreamDefMap) => fetch_raw_data(deps['vault_id'].value)
-	],
-	raw_data: [
-		'cached_raw_data',
-		'fresh_raw_data',
-		OPERATORS.concat
-	],
-	cached_password: [
-		'vault_id',
-		(deps: ResolvedStreamDefMap) => get_cached_password(deps['vault_id'].value)
-	],
-	fresh_password:
-		get_password$,
-	password: [
-		'cached_password',
-		'fresh_password',
-		OPERATORS.concat
-	],
-	data: [
-		'raw_data',
-		'password',
-		({raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
-			raw_data.observable$,
-			password.observable$,
-			decrypt_if_needed_then_parse_data
-		)
-	],
-}, { logger: console })
-
-for (let id in subjects) {
-	//console.log(`subject ${id}`)
-	log_observable(subjects[id].plain$, id)
-}
-
-////////////////////////////////////
-
-// actions
-let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
-	// pretend we did it...
-	console.info('updated cache with fresh data')
-	sbs1.unsubscribe()
-})
-
-
-
-subjects['data'].plain$.subscribe({
-	next: render,
-	error: render_error,
-	complete: () => console.log('done'),
-});
-
-
-import 'tachyons'
-import Packery = require('packery')
 
 function render(data: Data) {
 	marky.mark('render')
@@ -196,10 +150,11 @@ function render(data: Data) {
 	const all_layouts_done = Promise.all(pks.map(pckry => new Promise(resolve => pckry.once('layoutComplete', resolve))))
 	all_layouts_done
 	.then(() => {
-		console.info('All packery layouts done')
+		logger.info('All packery layouts done')
 		marky.stop('render')
+		marky.stop('global')
 	})
-	.catch(e => console.error(e))
+	.catch(e => logger.error(e))
 
 
 	pks.forEach(pckry => pckry.layout())
@@ -209,9 +164,77 @@ function render(data: Data) {
 }
 
 function render_error(err: Error) {
-	console.error('something wrong occurred:', err)
+	logger.error('something wrong occurred:', err)
 	const el_content = document.querySelectorAll('#content')[0]
 	el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)'
+	marky.stop('global')
 }
+
+////////////////////////////////////
+
+setTimeout(() => {
+	marky.mark('rx setup')
+
+	const subjects = auto({
+		vault_id:
+		get_vault_id,
+		cached_raw_data: [
+			'vault_id',
+			(deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)
+		],
+		fresh_raw_data: [
+			'vault_id',
+			(deps: ResolvedStreamDefMap) => fetch_raw_data(deps['vault_id'].value)
+		],
+		raw_data: [
+			'cached_raw_data',
+			'fresh_raw_data',
+			OPERATORS.concat
+		],
+		cached_password: [
+			'vault_id',
+			(deps: ResolvedStreamDefMap) => get_cached_password(deps['vault_id'].value)
+		],
+		fresh_password:
+		get_password$,
+		password: [
+			'cached_password',
+			'fresh_password',
+			OPERATORS.concat
+		],
+		data: [
+			'raw_data',
+			'password',
+			({raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
+				raw_data.observable$,
+				password.observable$,
+				decrypt_if_needed_then_parse_data
+			)
+		],
+	}, { logger })
+
+	// actions
+	if (dynamic_options.verbose > 0) {
+		for (let id in subjects) {
+			//logger.log(`subject ${id}`)
+			log_observable(subjects[id].plain$, id)
+		}
+	}
+
+	let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
+		// pretend we did it...
+		logger.info('updated cache with fresh data')
+		// XXX TODO
+		sbs1.unsubscribe()
+	})
+
+	subjects['data'].plain$.subscribe({
+		next: render,
+		error: render_error,
+		complete: () => logger.log('done'),
+	})
+
+	marky.stop('rx setup')
+})
 
 marky.stop('bootstrap')

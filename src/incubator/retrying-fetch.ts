@@ -1,17 +1,21 @@
-declare const fetch: any
+////////////////////////////////////
 
+declare const fetch: any
 import { Enum } from "typescript-string-enums"
+
+////////////////////////////////////
 
 const RetryScheme = Enum('periodic', 'linear', 'geometric')
 type RetryScheme = Enum<typeof RetryScheme>
 
 
 interface RetryingFetchOptions {
-	response_should_be_ok?: boolean
-	max_try_count?: number
-	initial_retry_interval_ms?: number
-	max_retry_interval_ms?: number
-	retry_scheme?: RetryScheme
+	response_should_be_ok: boolean
+	max_try_count: number
+	initial_retry_interval_ms: number
+	max_retry_interval_ms: number
+	retry_scheme: RetryScheme
+	logger: Console
 }
 
 
@@ -21,11 +25,13 @@ const DEFAULT_OPTIONS: RetryingFetchOptions = {
 	initial_retry_interval_ms: 1000,
 	max_retry_interval_ms: 3600 * 1000,
 	retry_scheme: RetryScheme.geometric,
+	logger: console,
 }
 
+////////////////////////////////////
 
-function retrying_fetch<T>(param1: any, param2: any, options: RetryingFetchOptions): Promise<T> {
-	options = Object.assign({}, DEFAULT_OPTIONS, options)
+function retrying_fetch<T>(param1: any, param2: any, raw_options: Partial<RetryingFetchOptions>): Promise<T> {
+	const options: RetryingFetchOptions = Object.assign({}, DEFAULT_OPTIONS, raw_options)
 
 	return new Promise((resolve, reject) => {
 		let try_count = 0
@@ -34,15 +40,15 @@ function retrying_fetch<T>(param1: any, param2: any, options: RetryingFetchOptio
 		function attempt_resolution() {
 			try_count++
 
-			console.log(`fetch "${param1} attempt #${try_count}...`, options)
+			options.logger.log(`fetch "${param1} attempt #${try_count}...`, options)
 			fetch(param1, param2)
 				.then((res: any) => {
 					if (!res.ok && options.response_should_be_ok) throw new Error('fetch failure on non-network error (ok = false) !')
-					console.log(`fetch "${param1} attempt #${try_count} succeeded.`)
+					options.logger.log(`fetch "${param1} attempt #${try_count} succeeded.`)
 					resolve(res as T)
 				})
 				.catch((err: Error) => {
-					console.log(`fetch "${param1} attempt #${try_count} failed !`, err)
+					options.logger.log(`fetch "${param1} attempt #${try_count} failed !`, err)
 					if (options.max_try_count && try_count >= options.max_try_count)
 						return reject(err)
 
@@ -64,7 +70,7 @@ function retrying_fetch<T>(param1: any, param2: any, options: RetryingFetchOptio
 					}
 					interval_before_retry_ms = Math.min(options.max_retry_interval_ms!, interval_before_retry_ms!)
 
-					console.log(`fetch "${param1} attemp #${try_count} failed ! Will retry in ${interval_before_retry_ms}`)
+					options.logger.log(`fetch "${param1} attemp #${try_count} failed ! Will retry in ${interval_before_retry_ms}`)
 					setTimeout(attempt_resolution, interval_before_retry_ms)
 				})
 		}
@@ -72,10 +78,12 @@ function retrying_fetch<T>(param1: any, param2: any, options: RetryingFetchOptio
 	})
 }
 
-
+////////////////////////////////////
 
 export {
 	RetryScheme,
 	RetryingFetchOptions,
 	retrying_fetch,
 }
+
+////////////////////////////////////
