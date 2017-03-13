@@ -8,9 +8,6 @@ import { Enum } from 'typescript-string-enums'
 
 //import { murmurhash3_32_gc } from '../tosort/murmur'
 
-const SEED: number = 3712
-const NUMBER_VARIANT_COUNT: number = 100
-
 const UrlCategory = Enum(
 	'pro', // .com, .co.xyz, .biz
 	'geek', // .net, .io
@@ -39,6 +36,10 @@ type RandomColorLuminosity = Enum<typeof RandomColorLuminosity>
 
 ////////////////////////////////////
 
+/*
+ const SEED: number = 3712
+ const NUMBER_VARIANT_COUNT: number = 100
+
 const get_colors = _.memoize(function get_colors() {
 	console.info('Generating colors...')
 	const colors = {}
@@ -54,6 +55,7 @@ const get_colors = _.memoize(function get_colors() {
 
 	return colors
 })
+*/
 
 const get_hue_for_category = _.memoize(function get_hue_for_category(cat: UrlCategory): RandomColorHue {
 	switch (cat) {

@@ -1,14 +1,15 @@
 ////////////////////////////////////
-define(["require", "exports", "./view-services"], function (require, exports, view_services_1) {
+define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    //import { evaluate_string_width } from './view-services'
     ////////////////////////////////////
     function bookmark(bookmark, alternative) {
         let { label, url, weight, bgcolor, } = bookmark;
         label = label || url;
-        const lw = view_services_1.evaluate_string_width(label);
         let tachyons_classes = 'no-underline near-black ba dib tc';
         /*
+        const lw = evaluate_string_width(label)
         if (weight === 1 && lw <= 20)
             weight = 0
         else if (weight === 1 && lw <= 23) {

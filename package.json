@@ -8,11 +8,12 @@
   "license": "UNLICENSED",
   "scripts": {
     "__prod": "~~~~~~ PRODUCTION ~~~~~~",
-    "build": "xxx ./scripts/build.js",
+    "r.js": "r.js",
+    "build": "r.js -o meta/prod/requirejs-build-config.js paths.requireLib=dist/third-party/requirejs@2 include=requireLib",
     "__dev": "~~~~~~ DEVELOPMENT ~~~~~~",
     "clean": "TODO",
-    "copy-third-party": "node meta/scripts/copy-third-party.js",
-    "dev1": "tsc --watch",
+    "copy-third-party": "node meta/scripts/copy-third-party.js && cp node_modules/require-css/css-builder.js dist/third-party && cp node_modules/require-css/normalize.js dist/third-party",
+    "dev1": "tsc -p meta/dev --watch",
     "dev": "run-p dev1",
     "start": "browser-sync start --server --port $PORT --logLevel debug --files './*.html,dist/**,content/**' --directory --startPath 404.html",
     "start_notes": " --no-open",
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "@offirmo/cli-toolbox": "^0.3.0",
+    "@types/lodash": "^4.14.50",
     "@types/packery": "^1.4.29",
     "@types/randomcolor": "^0.4.3",
     "browser-sync": "^2.18.5",

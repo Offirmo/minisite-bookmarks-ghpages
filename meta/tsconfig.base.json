@@ -7,30 +7,33 @@
 
 		"listEmittedFiles": false,
 		"listFiles": false,
-		"skipDefaultLibCheck": true,
+		"skipDefaultLibCheck": false,
 		"noEmitOnError": true,
 		"pretty": true,
 
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": false,
-		"noImplicitAny": false,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		"strictNullChecks": true,
 
 		"alwaysStrict": true,
-		"declaration": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"importHelpers": true,
-		"module": "AMD",
-		"newLine": "lf",
-		"outDir": "../dist/src.es7.amd",
 		"sourceMap": true,
-		"target": "es2017"
-	}
+		"newLine": "lf",
+
+		"noEmit": true
+	},
+
+	"include": [
+		"../typings-custom/**/*.ts",
+		"../src/**/*.ts"
+	]
 }

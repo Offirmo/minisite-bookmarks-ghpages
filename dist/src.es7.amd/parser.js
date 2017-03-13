@@ -64,7 +64,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             logger.log({ parsed_url });
             return parsed_url;
         }
-        function parse_bookmark(raw_line, line_count) {
+        function parse_bookmark(raw_line) {
             const params = _.compact(raw_line.split(' '));
             let weight = BOOKMARK_WEIGHT_DEFAULT;
             if ((params[0] || '').startsWith('+'))
@@ -132,7 +132,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
                             bookmarks: [],
                         };
                     }
-                    current_group.bookmarks.push(parse_bookmark(line.slice(1), line_count));
+                    current_group.bookmarks.push(parse_bookmark(line.slice(1)));
                     logger.info(`line #${line_count} - parsed bookmark:`, current_group.bookmarks.slice(-1)[0]);
                 }
                 else {
@@ -167,11 +167,12 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             logger.groupEnd();
             return result;
         }
-        function decrypt_if_needed_then_parse_data(raw_data, password = '') {
+        function decrypt_if_needed_then_parse_data(vault_id, raw_data, password = '') {
             // pwd protection not supported yet
             marky.mark('decrypt-and-parse');
             const result = Object.assign({ 
                 // rem: keeping a link to source data to allow caching if success
+                vault_id,
                 raw_data,
                 password }, parse_data(raw_data));
             marky.stop('decrypt-and-parse');

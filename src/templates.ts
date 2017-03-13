@@ -1,7 +1,7 @@
 ////////////////////////////////////
 
 import { Bookmark, BookmarkGroup, Data } from './types'
-import { evaluate_string_width } from './view-services'
+//import { evaluate_string_width } from './view-services'
 
 ////////////////////////////////////
 
@@ -14,11 +14,11 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 	} = bookmark
 
 	label = label || url
-	const lw = evaluate_string_width(label)
 
 	let tachyons_classes = 'no-underline near-black ba dib tc'
 
 	/*
+	const lw = evaluate_string_width(label)
 	if (weight === 1 && lw <= 20)
 		weight = 0
 	else if (weight === 1 && lw <= 23) {

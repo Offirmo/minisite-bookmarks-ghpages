@@ -4,8 +4,6 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
     Object.defineProperty(exports, "__esModule", { value: true });
     ////////////////////////////////////
     //import { murmurhash3_32_gc } from '../tosort/murmur'
-    const SEED = 3712;
-    const NUMBER_VARIANT_COUNT = 100;
     const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .biz
     'geek', // .net, .io
     'perso', // .me, .name
@@ -21,19 +19,26 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
     );
     const RandomColorLuminosity = typescript_string_enums_1.Enum('bright', 'light', 'dark');
     ////////////////////////////////////
+    /*
+     const SEED: number = 3712
+     const NUMBER_VARIANT_COUNT: number = 100
+    
     const get_colors = _.memoize(function get_colors() {
-        console.info('Generating colors...');
-        const colors = {};
+        console.info('Generating colors...')
+        const colors = {}
+    
         Object.keys(RandomColorHue).forEach(hue => {
             colors[hue] = RandomColor({
                 seed: SEED,
                 count: NUMBER_VARIANT_COUNT,
                 luminosity: RandomColorLuminosity.light,
-                hue: hue
-            });
-        });
-        return colors;
-    });
+                hue: hue as RandomColorHue
+            })
+        })
+    
+        return colors
+    })
+    */
     const get_hue_for_category = _.memoize(function get_hue_for_category(cat) {
         switch (cat) {
             case 'pro':

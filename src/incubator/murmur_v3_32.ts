@@ -11,7 +11,7 @@
  * @return {number} 32-bit positive integer hash
  */
 
-export function murmurhash3_32_gc(key: string, seed: number): number {
+export function murmurhash_v3_32_gc(key: string, seed: number): number {
 	let remainder, bytes, h1, h1b, c1, c2, k1, i;
 
 	remainder = key.length & 3; // key.length % 4

@@ -22,7 +22,7 @@ import { parse as parse_location_search } from './incubator/parse-location-searc
 
 const CONSTS = {
 	LS_KEYS: {
-		last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
+		//last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
 		last_successful_raw_data: (vault_id: string) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
 		last_successful_password: (vault_id: string) => `minisite-bookmark.${vault_id}.last_successful_password`,
 	},
@@ -94,7 +94,7 @@ function get_password$() {
 		.fromEvent(input, 'click')
 		.debounceTime(250)
 		*/
-	return Rx.Observable.create((observer) => {
+	return Rx.Observable.create((observer: Rx.Observer<string>) => {
 		observer.next('') // no password
 		// never
 	})
@@ -131,18 +131,15 @@ function render(data: Data) {
 
 	const elems = Array.from(document.querySelectorAll('.grid'))
 	const pks = elems.map(elem => new Packery( elem!, {
-		// options
 		itemSelector: '.grid-item',
-		// assist column width to clean adapt to variable-width titles
+		// stamp elements
+		stamp: '.stamp',
+		// assist column width to cleanly adapt to variable-width titles
 		columnWidth: elem.classList.contains('pinned') ? 72 : 144,
-		//columnWidth: 72,
 		//rowHeight: 36,
 		//gutter: 1,
 		percentPosition: false,
-		//isHorizontal: true,
-		initLayout: false,// disable initial layout
-		// stamp elements
-		stamp: '.stamp',
+		initLayout: false, // disable initial layout
 	}))
 	logger.log('Packery created on all elements')
 
@@ -189,7 +186,7 @@ setTimeout(() => {
 		raw_data: [
 			'cached_raw_data',
 			'fresh_raw_data',
-			OPERATORS.concat
+			OPERATORS.concat // XXX TODO filter unicity !
 		],
 		cached_password: [
 			'vault_id',
@@ -203,9 +200,11 @@ setTimeout(() => {
 			OPERATORS.concat
 		],
 		data: [
+			'vault_id',
 			'raw_data',
 			'password',
-			({raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
+			({vault_id, raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
+				vault_id.observable$,
 				raw_data.observable$,
 				password.observable$,
 				decrypt_if_needed_then_parse_data
@@ -214,6 +213,7 @@ setTimeout(() => {
 	}, { logger })
 
 	// actions
+
 	if (dynamic_options.verbose > 0) {
 		for (let id in subjects) {
 			//logger.log(`subject ${id}`)
@@ -221,20 +221,23 @@ setTimeout(() => {
 		}
 	}
 
-	let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
-		// pretend we did it...
-		logger.info('updated cache with fresh data')
-		// XXX TODO
-		sbs1.unsubscribe()
-	})
-
 	subjects['data'].plain$.subscribe({
 		next: render,
 		error: render_error,
 		complete: () => logger.log('done'),
 	})
 
+	let sbs1 = subjects['data'].plain$.subscribe(data => {
+		// successful parse: store this good data
+		localStorage.setItem(CONSTS.LS_KEYS.last_successful_raw_data(data.vault_id), data.raw_data)
+		localStorage.setItem(CONSTS.LS_KEYS.last_successful_password(data.vault_id), data.password)
+		logger.info('updated cache with fresh data')
+		sbs1.unsubscribe()
+	})
+
 	marky.stop('rx setup')
 })
 
 marky.stop('bootstrap')
+
+////////////////////////////////////

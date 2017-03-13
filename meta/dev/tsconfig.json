@@ -1,0 +1,17 @@
+{
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"skipDefaultLibCheck": true,
+		"noFallthroughCasesInSwitch": false,
+		"noImplicitAny": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+
+		"noEmit": false,
+		"declaration": true,
+
+		"module": "AMD",
+		"outDir": "../../dist/src.es7.amd",
+		"target": "es2017"
+	}
+}

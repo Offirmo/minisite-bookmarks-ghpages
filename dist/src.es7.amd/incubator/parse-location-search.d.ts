@@ -1,4 +1,5 @@
-declare function parse(location: Location): {
+declare type Options = {
     [k: string]: number | string | string[];
 };
-export { parse };
+declare function parse(location: Location): Options;
+export { Options, parse };

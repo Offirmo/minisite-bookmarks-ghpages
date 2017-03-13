@@ -1,4 +1,3 @@
-import { Enum } from "typescript-string-enums"
 
 /////////////////////
 
@@ -17,6 +16,7 @@ interface BookmarkGroup {
 	bookmarks: Bookmark[]
 }
 interface Data {
+	vault_id: string
 	raw_data: string // useful to flag successful raw data to be cached
 	password: string // idem for password
 	title: string, // page title
@@ -32,8 +32,3 @@ export {
 }
 
 /////////////////////
-
-/*
-export const Status = Enum("RUNNING", "STOPPED")
-export type Status = Enum<typeof Status>
-*/

@@ -86,13 +86,13 @@ function factory(raw_options: Partial<ParserOptions>) {
 		return parsed_url
 	}
 
-	function parse_bookmark(raw_line: string, line_count: number): Bookmark {
+	function parse_bookmark(raw_line: string): Bookmark {
 		const params = _.compact(raw_line.split(' '))
 
 		let weight = BOOKMARK_WEIGHT_DEFAULT
 
 		if ((params[0] || '').startsWith('+'))
-			weight = Math.max(1, Math.min(3, params.shift().length + 1))
+			weight = Math.max(1, Math.min(3, params.shift()!.length + 1))
 
 		let url = params.slice(-1)[0] || BOOKMARK_URL_ERROR
 		logger.log('extracted', {url})
@@ -166,7 +166,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 						bookmarks: [],
 					}
 				}
-				current_group.bookmarks.push(parse_bookmark(line.slice(1), line_count))
+				current_group.bookmarks.push(parse_bookmark(line.slice(1)))
 				logger.info(`line #${line_count} - parsed bookmark:`, current_group.bookmarks.slice(-1)[0])
 			}
 			else {
@@ -207,12 +207,13 @@ function factory(raw_options: Partial<ParserOptions>) {
 		return result
 	}
 
-	function decrypt_if_needed_then_parse_data(raw_data: string, password: string = ''): Data {
+	function decrypt_if_needed_then_parse_data(vault_id: string, raw_data: string, password: string = ''): Data {
 		// pwd protection not supported yet
 		marky.mark('decrypt-and-parse')
 
 		const result: Data = {
 			// rem: keeping a link to source data to allow caching if success
+			vault_id,
 			raw_data,
 			password,
 			// parsing results:

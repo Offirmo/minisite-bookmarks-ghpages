@@ -12,6 +12,7 @@ interface BookmarkGroup {
     bookmarks: Bookmark[];
 }
 interface Data {
+    vault_id: string;
     raw_data: string;
     password: string;
     title: string;

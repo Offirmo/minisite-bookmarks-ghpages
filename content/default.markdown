@@ -4,7 +4,6 @@ Pinned
 - GDrive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
 - S https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
-- .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
 - RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit?usp=drive_web
 - W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
 
@@ -39,7 +38,6 @@ Banque:
 - Boursorama https://clients.boursorama.com/connexion/
 - WeSwap https://www.weswap.com/fr/
 - Compte Nickel https://compte-nickel.fr/
-- ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 
 
@@ -48,6 +46,23 @@ Outils
 - www.emoji-cheat-sheet.com
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
+
+
+Entreprise
+- Télédéclarations https://www.net-entreprises.fr/
+- Changements situation https://forms.guichet-entreprises.fr/login
+- ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
+- services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
+- .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
+
+
+Admin:
+- mutadis.org http://www.mutadis.org/connexion/
+- FDC http://fundfordemocraticculture.org/connexion
+- ameliedescamps.com http://www.ameliedescamps.com/connexion
+- http://javerzac.jutard.com
+- demoetendard http://demoetendard-ef001.rhcloud.com/connexion
+- bac à sable WP http://bacasable-ef001.rhcloud.com/connexion
 
 
 Loterie:
@@ -63,19 +78,10 @@ A surveiller:
 - http://gamesfromwithin.com/
 
 
-Admin:
-- mutadis.org http://www.mutadis.org/connexion/
-- FDC http://fundfordemocraticculture.org/connexion
-- ameliedescamps.com http://www.ameliedescamps.com/connexion
-- http://javerzac.jutard.com
-- demoetendard http://demoetendard-ef001.rhcloud.com/connexion
-- bac à sable WP http://bacasable-ef001.rhcloud.com/connexion
-- services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
-
 To check:
 - aprilzero.com/explorer/august-2014/
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
-- impots.gouv.fr
+- https://www.impots.gouv.fr/portail/
 
 
 Wiki perso:

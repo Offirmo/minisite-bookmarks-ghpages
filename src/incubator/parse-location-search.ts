@@ -1,6 +1,8 @@
 ////////////////////////////////////
 
-function parse(location: Location): { [k: string]: number | string | string[] } {
+type Options = { [k: string]: number | string | string[] }
+
+function parse(location: Location): Options {
 	const raw_options =
 		location.search.split('?').slice(-1)[0].split('&')
 
@@ -15,13 +17,14 @@ function parse(location: Location): { [k: string]: number | string | string[] } 
 					? value.split(',')
 					: value
 			return acc
-		}, {})
+		}, {} as Options)
 }
 
 ////////////////////////////////////
 
 export {
-	parse
+	Options,
+	parse,
 }
 
 ////////////////////////////////////

@@ -8,7 +8,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     //////////// CONSTANTS ////////////
     const CONSTS = {
         LS_KEYS: {
-            last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
+            //last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
             last_successful_raw_data: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
             last_successful_password: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_password`,
         },
@@ -95,18 +95,15 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         logger.log('html replaced');
         const elems = Array.from(document.querySelectorAll('.grid'));
         const pks = elems.map(elem => new Packery(elem, {
-            // options
             itemSelector: '.grid-item',
-            // assist column width to clean adapt to variable-width titles
+            // stamp elements
+            stamp: '.stamp',
+            // assist column width to cleanly adapt to variable-width titles
             columnWidth: elem.classList.contains('pinned') ? 72 : 144,
-            //columnWidth: 72,
             //rowHeight: 36,
             //gutter: 1,
             percentPosition: false,
-            //isHorizontal: true,
             initLayout: false,
-            // stamp elements
-            stamp: '.stamp',
         }));
         logger.log('Packery created on all elements');
         // attach our event handlers before running the layout
@@ -144,7 +141,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             raw_data: [
                 'cached_raw_data',
                 'fresh_raw_data',
-                rx_auto_1.OPERATORS.concat
+                rx_auto_1.OPERATORS.concat // XXX TODO filter unicity !
             ],
             cached_password: [
                 'vault_id',
@@ -157,9 +154,10 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
                 rx_auto_1.OPERATORS.concat
             ],
             data: [
+                'vault_id',
                 'raw_data',
                 'password',
-                ({ raw_data, password }) => Rx.Observable.combineLatest(raw_data.observable$, password.observable$, decrypt_if_needed_then_parse_data)
+                ({ vault_id, raw_data, password }) => Rx.Observable.combineLatest(vault_id.observable$, raw_data.observable$, password.observable$, decrypt_if_needed_then_parse_data)
             ],
         }, { logger });
         // actions
@@ -169,19 +167,21 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
                 rx_log_1.log_observable(subjects[id].plain$, id);
             }
         }
-        let sbs1 = subjects['fresh_raw_data'].plain$.subscribe(x => {
-            // pretend we did it...
-            logger.info('updated cache with fresh data');
-            // XXX TODO
-            sbs1.unsubscribe();
-        });
         subjects['data'].plain$.subscribe({
             next: render,
             error: render_error,
             complete: () => logger.log('done'),
         });
+        let sbs1 = subjects['data'].plain$.subscribe(data => {
+            // successful parse: store this good data
+            localStorage.setItem(CONSTS.LS_KEYS.last_successful_raw_data(data.vault_id), data.raw_data);
+            localStorage.setItem(CONSTS.LS_KEYS.last_successful_password(data.vault_id), data.password);
+            logger.info('updated cache with fresh data');
+            sbs1.unsubscribe();
+        });
         marky.stop('rx setup');
     });
     marky.stop('bootstrap');
 });
+////////////////////////////////////
 //# sourceMappingURL=index.js.map

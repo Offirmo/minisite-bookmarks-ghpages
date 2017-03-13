@@ -25,6 +25,7 @@ requirejs.config({
         {
             name: 'app',
             location: 'dist/src.es7.amd',
+            main: 'index.js',
         },
     ],
     /////////////////////
@@ -41,6 +42,8 @@ requirejs.config({
         'tachyons': 'dist/src.es7.amd/empty',
         'tslib': 'dist/third-party/tslib@1',
         'typescript-string-enums': 'dist/third-party/typescript-string-enums@0',
+        /////// our app, as a module, so that we can reference it when inside the bundle
+        'app-mod': 'src/index',
     },
     /////////////////////
     shim: {
