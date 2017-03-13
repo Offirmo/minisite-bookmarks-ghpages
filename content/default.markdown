@@ -37,7 +37,7 @@ Banque:
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/
 - WeSwap https://www.weswap.com/fr/
-- Compte Nickel https://compte-nickel.fr/
+- Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 
 

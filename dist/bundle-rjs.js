@@ -39276,7 +39276,7 @@ define('app/templates',["require", "exports"], function (require, exports) {
     //import { evaluate_string_width } from './view-services'
     ////////////////////////////////////
     function bookmark(bookmark, alternative) {
-        let { label, url, weight, bgcolor, } = bookmark;
+        let { label, url, weight, bgcolor, parsed_url, } = bookmark;
         label = label || url;
         let tachyons_classes = 'no-underline near-black ba dib tc';
         /* Experiment with smaller tiles
@@ -39296,6 +39296,7 @@ define('app/templates',["require", "exports"], function (require, exports) {
 	href="${url}"
 	title="${label}">
 	<div class="overlay"></div>
+	<span class="icon fl pt1"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>
 	<span class="label">${label}</span>
 </a>
 `;

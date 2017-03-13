@@ -11,6 +11,7 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 		url,
 		weight,
 		bgcolor,
+		parsed_url,
 	} = bookmark
 
 	label = label || url
@@ -28,13 +29,14 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 	*/
 	if (label.length > 50)
 		tachyons_classes += ` tracked-tight` // character spacing diminished
-
+	
 	return `
 <a class="grid-item grid-item--weight${alternative === -1 ? 0 : weight} ${tachyons_classes}"
 	style="background-color: ${bgcolor};"
 	href="${url}"
 	title="${label}">
 	<div class="overlay"></div>
+	<span class="icon fl pt1"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>
 	<span class="label">${label}</span>
 </a>
 `
