@@ -1,7 +1,7 @@
 
 ## Install
 ```
-npm i -gs yarn
+npm i -g yarn
 yarn
 ```
 

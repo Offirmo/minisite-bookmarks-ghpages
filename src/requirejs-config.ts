@@ -34,16 +34,6 @@ requirejs.config({
 			location: 'dist/src.es7.amd',
 			main: 'index.js',
 		},
-		/*
-		{
-			name : 'app-dev',
-			location: 'dist/src.es7.amd',
-		},
-		{
-			name : 'app-prod',
-			location: 'src',
-		},
-		*/
 	],
 
 	/////////////////////
@@ -78,7 +68,6 @@ requirejs.config({
 			]
 		},
 		'typescript-string-enums': {
-//			exports: 'Enum',
 			init: function (this: any) {
 				return {
 					Enum: this.Enum

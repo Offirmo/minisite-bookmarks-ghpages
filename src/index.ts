@@ -22,7 +22,6 @@ import { parse as parse_location_search } from './incubator/parse-location-searc
 
 const CONSTS = {
 	LS_KEYS: {
-		//last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
 		last_successful_raw_data: (vault_id: string) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
 		last_successful_password: (vault_id: string) => `minisite-bookmark.${vault_id}.last_successful_password`,
 	},
@@ -64,6 +63,10 @@ function get_vault_id() {
 	// dev local
 	if (slug === '404.html')
 		slug = 'default'
+	if (slug === 'index.html')
+		slug = 'default'
+	if (slug === 'index-dev.html')
+		slug = 'default'
 
 	return slug
 }
@@ -88,6 +91,7 @@ function get_cached_raw_data(vault_id: string): string | Rx.Observable<any> {
 }
 
 function get_password$() {
+	// TODO !
 	/*
 	const input = document.querySelector('password-input');
 	return Rx.Observable
@@ -102,9 +106,9 @@ function get_password$() {
 
 function get_cached_password(vault_id: string): string | Rx.Observable<any> {
 	const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_password(vault_id))
-	return cached_data ?
-		cached_data:
-		Rx.Observable.empty()
+	return cached_data
+		? cached_data
+		: Rx.Observable.empty()
 }
 
 function render(data: Data) {
@@ -216,7 +220,6 @@ setTimeout(() => {
 
 	if (dynamic_options.verbose > 0) {
 		for (let id in subjects) {
-			//logger.log(`subject ${id}`)
 			log_observable(subjects[id].plain$, id)
 		}
 	}

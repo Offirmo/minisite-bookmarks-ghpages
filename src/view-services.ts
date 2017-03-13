@@ -6,8 +6,6 @@ import { Enum } from 'typescript-string-enums'
 
 ////////////////////////////////////
 
-//import { murmurhash3_32_gc } from '../tosort/murmur'
-
 const UrlCategory = Enum(
 	'pro', // .com, .co.xyz, .biz
 	'geek', // .net, .io
@@ -55,6 +53,10 @@ const get_colors = _.memoize(function get_colors() {
 
 	return colors
 })
+
+const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
+ return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
+})
 */
 
 const get_hue_for_category = _.memoize(function get_hue_for_category(cat: UrlCategory): RandomColorHue {
@@ -77,11 +79,6 @@ const get_hue_for_category = _.memoize(function get_hue_for_category(cat: UrlCat
 	}
 })
 
-/*
-const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
-	return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
-})
-*/
 
 const get_category_for_url = _.memoize(function get_category1_for_url(hostname: string, protocol: string) {
 	let cat: UrlCategory = 'other'

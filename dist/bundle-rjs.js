@@ -38913,7 +38913,6 @@ define('app/view-services',["require", "exports", "lodash", "randomcolor", "type
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     ////////////////////////////////////
-    //import { murmurhash3_32_gc } from '../tosort/murmur'
     const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .biz
     'geek', // .net, .io
     'perso', // .me, .name
@@ -38948,6 +38947,10 @@ define('app/view-services',["require", "exports", "lodash", "randomcolor", "type
     
         return colors
     })
+    
+    const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
+     return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
+    })
     */
     const get_hue_for_category = _.memoize(function get_hue_for_category(cat) {
         switch (cat) {
@@ -38967,11 +38970,6 @@ define('app/view-services',["require", "exports", "lodash", "randomcolor", "type
                 return RandomColorHue.monochrome;
         }
     });
-    /*
-    const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
-        return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
-    })
-    */
     const get_category_for_url = _.memoize(function get_category1_for_url(hostname, protocol) {
         let cat = 'other';
         switch (hostname.slice(-5)) {
@@ -39281,8 +39279,8 @@ define('app/templates',["require", "exports"], function (require, exports) {
         let { label, url, weight, bgcolor, } = bookmark;
         label = label || url;
         let tachyons_classes = 'no-underline near-black ba dib tc';
-        /*
-         const lw = evaluate_string_width(label)
+        /* Experiment with smaller tiles
+        const lw = evaluate_string_width(label)
         if (weight === 1 && lw <= 20)
             weight = 0
         else if (weight === 1 && lw <= 23) {
@@ -39754,7 +39752,6 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
     //////////// CONSTANTS ////////////
     const CONSTS = {
         LS_KEYS: {
-            //last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
             last_successful_raw_data: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
             last_successful_password: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_password`,
         },
@@ -39786,6 +39783,10 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         // dev local
         if (slug === '404.html')
             slug = 'default';
+        if (slug === 'index.html')
+            slug = 'default';
+        if (slug === 'index-dev.html')
+            slug = 'default';
         return slug;
     }
     function fetch_raw_data(vault_id) {
@@ -39806,6 +39807,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             Rx.Observable.empty();
     }
     function get_password$() {
+        // TODO !
         /*
         const input = document.querySelector('password-input');
         return Rx.Observable
@@ -39819,9 +39821,9 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
     }
     function get_cached_password(vault_id) {
         const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_password(vault_id));
-        return cached_data ?
-            cached_data :
-            Rx.Observable.empty();
+        return cached_data
+            ? cached_data
+            : Rx.Observable.empty();
     }
     function render(data) {
         marky.mark('render');
@@ -39909,7 +39911,6 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         // actions
         if (dynamic_options.verbose > 0) {
             for (let id in subjects) {
-                //logger.log(`subject ${id}`)
                 rx_log_1.log_observable(subjects[id].plain$, id);
             }
         }

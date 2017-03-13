@@ -162,11 +162,12 @@
 	</a>
 	<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
+
 	<script>
 		// for idiot modules
 		window.exports = window
 	</script>
-	<script src="dist/bundle-rjs.js"></script>
+	<script src="dist/third-party/requirejs@2.js"></script>
 	<script>
 		// http://devdocs.io/requirejs/index#requirejsonerror
 		requirejs.onError = function (err) {
@@ -179,11 +180,11 @@
 			throw err
 		}
 
-		require(['app'])
-		/*
-		require([ 'app-prod/requirejs-config' ], function() {
+		// boostrap
+		require([ 'dist/src.es7.amd/requirejs-config.js' ], function() {
+			console.info('require.js successfully bootstraped')
+			// Configuration loaded now, safe to do other require calls that depend on that config.
 			require([ 'app' ])
 		})
-		*/
 	</script>
 </body>

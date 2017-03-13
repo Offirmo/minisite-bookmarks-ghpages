@@ -8,7 +8,6 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     //////////// CONSTANTS ////////////
     const CONSTS = {
         LS_KEYS: {
-            //last_successful_raw_config: 'minisite-bookmark.last_successful_raw_config',
             last_successful_raw_data: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
             last_successful_password: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_password`,
         },
@@ -40,6 +39,10 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         // dev local
         if (slug === '404.html')
             slug = 'default';
+        if (slug === 'index.html')
+            slug = 'default';
+        if (slug === 'index-dev.html')
+            slug = 'default';
         return slug;
     }
     function fetch_raw_data(vault_id) {
@@ -60,6 +63,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             Rx.Observable.empty();
     }
     function get_password$() {
+        // TODO !
         /*
         const input = document.querySelector('password-input');
         return Rx.Observable
@@ -73,9 +77,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     }
     function get_cached_password(vault_id) {
         const cached_data = localStorage.getItem(CONSTS.LS_KEYS.last_successful_password(vault_id));
-        return cached_data ?
-            cached_data :
-            Rx.Observable.empty();
+        return cached_data
+            ? cached_data
+            : Rx.Observable.empty();
     }
     function render(data) {
         marky.mark('render');
@@ -163,7 +167,6 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         // actions
         if (dynamic_options.verbose > 0) {
             for (let id in subjects) {
-                //logger.log(`subject ${id}`)
                 rx_log_1.log_observable(subjects[id].plain$, id);
             }
         }

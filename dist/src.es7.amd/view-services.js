@@ -3,7 +3,6 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     ////////////////////////////////////
-    //import { murmurhash3_32_gc } from '../tosort/murmur'
     const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .biz
     'geek', // .net, .io
     'perso', // .me, .name
@@ -38,6 +37,10 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
     
         return colors
     })
+    
+    const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
+     return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
+    })
     */
     const get_hue_for_category = _.memoize(function get_hue_for_category(cat) {
         switch (cat) {
@@ -57,11 +60,6 @@ define(["require", "exports", "lodash", "randomcolor", "typescript-string-enums"
                 return RandomColorHue.monochrome;
         }
     });
-    /*
-    const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
-        return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
-    })
-    */
     const get_category_for_url = _.memoize(function get_category1_for_url(hostname, protocol) {
         let cat = 'other';
         switch (hostname.slice(-5)) {

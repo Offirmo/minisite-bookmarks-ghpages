@@ -17,7 +17,7 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 
 	let tachyons_classes = 'no-underline near-black ba dib tc'
 
-	/*
+	/* Experiment with smaller tiles
 	const lw = evaluate_string_width(label)
 	if (weight === 1 && lw <= 20)
 		weight = 0

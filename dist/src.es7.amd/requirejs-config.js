@@ -57,7 +57,6 @@ requirejs.config({
             ]
         },
         'typescript-string-enums': {
-            //			exports: 'Enum',
             init: function () {
                 return {
                     Enum: this.Enum
