@@ -4,22 +4,16 @@ Pinned
 - GDrive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
 - S https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
-- RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit?usp=drive_web
-- W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
-
-Pinned:
 - devdocs.io http://devdocs.io/
 - Repos GitHub https://github.com/Offirmo?tab=repositories
 - www.deezer.com
 - Deezer tops http://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
-- langages https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
-- chrome://downloadmgr/content/downloadmgrOverlay.xul
-- chrome://extensions/
-- chrome://settings/
+- langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 
 
 Projects
+- W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
 - H https://docs.google.com/spreadsheets/d/1o8K0pv5QZVcopl4-6RZoot8ixmLZAJqFX99W7ec-wao/edit#gid=2075720335
 - NW https://docs.google.com/spreadsheets/d/1gw6oq6Y-lBK7dwHbHFAVsXwU0UsBMPSa6vW84FZwtS0/edit
 - RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit#gid=0
@@ -31,6 +25,7 @@ Projects
 - TBRPG https://docs.google.com/spreadsheets/d/1EZHJQN0qBWuIjOHvCUQl2HoA37dO86tvfCh_MArNqFY/edit#gid=859684177
 - TBRPG frags https://docs.google.com/presentation/d/17V7ID-F3OCJlbaXrGcvcjS5C20LRgBHEqD1Pn0aK-kg/edit#slide=id.g28918c0c560567f1_16
 - Incrémental https://docs.google.com/spreadsheets/d/16UfXJFIM_scFSS8jEGKaKwFWk4kB2vD7D87dKixvxKo/edit#gid=0
+
 
 Banque:
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
@@ -166,6 +161,11 @@ Veille:
 - https://aerotwist.com/
 
 
+Setup:
+- FF down chrome://downloadmgr/content/downloadmgrOverlay.xul
+- Cext. chrome://extensions/
+- CSet. chrome://settings/
+
 
 toread:
 - https://blog.risingstack.com/10-most-important-node-js-articles-2016/
@@ -176,6 +176,7 @@ toread:
 - https://medium.com/re-dom/master-the-dom-bc1a2a06089b
 - https://codingbox.io/do-you-need-service-worker-in-your-web-app-d68131d65e2c?gi=8262fb9a0ddb
 - https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711
+
 
 tosort:
 - games http://gamestd.io/colyseus/

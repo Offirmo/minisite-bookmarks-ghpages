@@ -31,12 +31,12 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 	if (label.length > 50)
 		tachyons_classes += ` tracked-tight` // character spacing diminished
 
-	let favicon = `<span class="icon fl pt1"><img height="16" width="16" src='content/bookmark.png' /></span>`
+	let favicon = `<span class="icon"><img height="16" width="16" src='content/bookmark.png' /></span>`
 	if (parsed_url.protocol === 'https:' || parsed_url.protocol === 'http:') {
 		// http://stackoverflow.com/questions/5119041/how-can-i-get-a-web-sites-favicon
-		favicon = `<span class="icon fl"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>`
-		//favicon = `<span class="icon fl p0"><img height="20" width="20" src='http://f1.allesedv.com/24/${parsed_url.hostname}' /></span>`
-		//favicon = `<span class="icon fl pt1"><img height="16" width="16" src='http://favicon.yandex.net/favicon/${parsed_url.hostname}' /></span>`
+		favicon = `<span class="icon"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>`
+		//favicon = `<span class="icon"><img height="20" width="20" src='http://f1.allesedv.com/24/${parsed_url.hostname}' /></span>`
+		//favicon = `<span class="icon"><img height="16" width="16" src='http://favicon.yandex.net/favicon/${parsed_url.hostname}' /></span>`
 	}
 
 	return `
@@ -45,8 +45,10 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 	href="${url}"
 	title="${label}">
 	<div class="overlay"></div>
-	${favicon}
-	<span class="label">${label}</span>
+	<div class="container">
+		${favicon}
+		<span class="label">${label}</span>
+	</div>
 </a>
 `
 }

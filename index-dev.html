@@ -109,7 +109,9 @@
 			margin-bottom: 1px;
 		}
 		.grid-item {
+			display: inline-block;
 			width: var(--item-base-size-h);
+			max-width: var(--item-base-size-h);
 			height: var(--item-base-size-v);
 
 			border-color: var(--background-color);
@@ -148,9 +150,28 @@
 			line-height: 1.8;
 		}
 
-		.icon {
-			padding-top: 4px;
+
+
+		.grid-item .container {
+			display: flex;
+			flex-direction: row;
+			line-height: 32px;
+		}
+		.grid-item .container .icon {
+			padding-top: 3px;
 			padding-right: 2px;
+			flex-shrink: 0;
+		}
+		.grid-item .container .label {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.grid-item--weight2 .container,
+		.grid-item--weight3 .container {
+			flex-direction: column;
+			text-align: center;
 		}
 	</style>
 </head>
