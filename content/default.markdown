@@ -43,7 +43,8 @@ Banque:
 
 Outils
 - https://framindmap.org/c/maps/
-- www.emoji-cheat-sheet.com
+- Emoji www.emoji-cheat-sheet.com
+- Lenny face https://lennyfaces.org/
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
 

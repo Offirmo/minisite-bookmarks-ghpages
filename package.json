@@ -9,7 +9,7 @@
   "scripts": {
     "__prod": "~~~~~~ PRODUCTION ~~~~~~",
     "r.js": "r.js",
-    "build": "r.js -o meta/prod/requirejs-build-config.js paths.requireLib=dist/third-party/requirejs@2 include=requireLib",
+    "build": "r.js -o meta/prod/requirejs-build-config.js paths.requireLib=dist/third-party/requirejs@2 include=requireLib && cp -f index.html 404.html",
     "__dev": "~~~~~~ DEVELOPMENT ~~~~~~",
     "clean": "TODO",
     "copy-third-party": "node meta/scripts/copy-third-party.js && cp node_modules/require-css/css-builder.js dist/third-party && cp node_modules/require-css/normalize.js dist/third-party",
