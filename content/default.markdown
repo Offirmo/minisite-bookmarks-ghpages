@@ -1,10 +1,11 @@
 # Personal bookmarks
 
 Pinned
-- GDrive https://drive.google.com/drive/#my-drive
+- Drive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
-- S https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
-- devdocs.io http://devdocs.io/
+- S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
+- Maps https://framindmap.org/c/maps/
+- http://devdocs.io/
 - Repos GitHub https://github.com/Offirmo?tab=repositories
 - www.deezer.com
 - Deezer tops http://www.deezer.com/profile/637006841/playlists

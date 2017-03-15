@@ -39095,6 +39095,9 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
     const DEFAULT_OPTIONS = {
         logger: console,
     };
+    function is_url_separator(c) {
+        return c === '/' || c === '.' || c === ':';
+    }
     function factory(raw_options) {
         const options = Object.assign({}, DEFAULT_OPTIONS, raw_options);
         const { logger } = options;
@@ -39113,23 +39116,41 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
             return a1.substring(0, i);
         }
         function post_process_group(group) {
+            logger.groupCollapsed('post_process_group');
             const auto_labelled_bookmarks = group.bookmarks.filter(bookmark => bookmark.label === bookmark.url);
             auto_labelled_bookmarks.forEach(bookmark => {
                 bookmark.label = view_services_1.generate_label_from_url(bookmark.parsed_url);
             });
             const auto_labels = auto_labelled_bookmarks.map(bookmark => bookmark.label);
-            const commonStartLength = sharedStart(auto_labels).length;
-            auto_labelled_bookmarks.forEach(bookmark => {
-                let candidate_label = bookmark.label;
-                if (candidate_label.length <= commonStartLength) {
-                    candidate_label = candidate_label.slice(Math.max(0, _.lastIndexOf(Array.from(candidate_label), '/')));
-                }
-                else
-                    candidate_label = candidate_label.slice(commonStartLength);
-                if (candidate_label.startsWith('/'))
-                    candidate_label = candidate_label.slice(1);
-                bookmark.label = decodeURI(candidate_label);
-            });
+            if (auto_labels.length) {
+                const common_prefix_length = sharedStart(auto_labels).length;
+                const common_prefix = auto_labels[0].slice(0, common_prefix_length);
+                console.log(`computed shared part:`, { common_prefix_length, common_prefix });
+                // the shared prefix removal is sometimes too greedy,
+                // example: deezer.com devodcs.io => "de" is removed :-/
+                // let's do this only if it ends with or is followed with an expected separator
+                const common_prefix_ends_on_separator = is_url_separator(common_prefix.slice(-1));
+                auto_labelled_bookmarks.forEach(bookmark => {
+                    const initial_label = bookmark.label;
+                    let candidate_label = bookmark.label;
+                    if (candidate_label.length <= common_prefix_length) {
+                        // let's keep something !
+                        candidate_label = candidate_label.slice(Math.max(0, _.lastIndexOf(Array.from(candidate_label), '/')));
+                    }
+                    else {
+                        if (!common_prefix_ends_on_separator && !is_url_separator(candidate_label[common_prefix_length])) {
+                            // better not remove the prefix
+                        }
+                        else
+                            candidate_label = candidate_label.slice(common_prefix_length);
+                    }
+                    if (is_url_separator(candidate_label[0]))
+                        candidate_label = candidate_label.slice(1);
+                    bookmark.label = decodeURI(candidate_label);
+                    console.log(`changed label "${initial_label}" to "${bookmark.label}"`);
+                });
+            }
+            logger.groupEnd();
             return group;
         }
         function parse_url(url) {
@@ -39151,19 +39172,22 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
         function parse_bookmark(raw_line) {
             const params = _.compact(raw_line.split(' '));
             let weight = BOOKMARK_WEIGHT_DEFAULT;
-            if ((params[0] || '').startsWith('+'))
-                weight = Math.max(1, Math.min(3, params.shift().length + 1));
+            if ((params[0] || '').startsWith('+')) {
+                const raw_weight = params.shift().length + 1;
+                logger.log('raw weight extracted:', raw_weight);
+                weight = Math.max(1, Math.min(3, raw_weight));
+            }
             let url = params.slice(-1)[0] || BOOKMARK_URL_ERROR;
-            logger.log('extracted', { url });
+            logger.log('raw url extracted:', url);
             if (!url.includes('://'))
                 url = 'http://' + url;
             const parsed_url = parse_url(url);
             // bookmark title may have spaces, so we must be smarter
             let label = params.slice(0, -1).join(' ');
-            logger.log('extracted', { label });
+            logger.log('raw label extracted:', label);
             // it's ok to not have a label
             label = label || url;
-            return {
+            const res = {
                 label,
                 url,
                 weight,
@@ -39171,6 +39195,10 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
                 bgcolor: view_services_1.select_color_for_url(parsed_url),
                 parsed_url,
             };
+            logger.log('Final, corrected, data extracted from line (before group-level post-processing):', 
+            // clamp down data to ease debugging
+            Object.assign({}, res));
+            return res;
         }
         function parse_data(raw_data) {
             logger.groupCollapsed('parse_data');
@@ -39191,7 +39219,10 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
                     logger.info(`line #${line_count} is a comment`);
                     return;
                 }
-                logger.groupCollapsed(`line #${line_count}`);
+                const group_debug_info = current_group
+                    ? `parsing group #${rows.length + 1} "${current_group.title}" with ${current_group.bookmarks.length} parsed bookmarks so far`
+                    : `no group found yet`;
+                logger.groupCollapsed(`line #${line_count} - (${group_debug_info})`);
                 logger.info(`parsing "${line}"`);
                 if (line.startsWith('#')) {
                     // title
@@ -39277,7 +39308,7 @@ define('app/templates',["require", "exports"], function (require, exports) {
     ////////////////////////////////////
     function bookmark(bookmark, alternative) {
         let { label, url, weight, bgcolor, parsed_url, } = bookmark;
-        label = label || url;
+        label = label || '[error]'; // should never happen, should have been taken care of earlier
         // tc
         let tachyons_classes = 'no-underline near-black ba dib';
         /* Experiment with smaller tiles
@@ -39292,7 +39323,11 @@ define('app/templates',["require", "exports"], function (require, exports) {
         if (label.length > 50)
             tachyons_classes += ` tracked-tight`; // character spacing diminished
         let favicon = `<span class="icon"><img height="16" width="16" src='content/bookmark.png' /></span>`;
-        if (parsed_url.protocol === 'https:' || parsed_url.protocol === 'http:') {
+        if (!url) {
+            // TODO put a clear error icon
+            label = '[error missing link]';
+        }
+        else if (parsed_url.protocol === 'https:' || parsed_url.protocol === 'http:') {
             // http://stackoverflow.com/questions/5119041/how-can-i-get-a-web-sites-favicon
             favicon = `<span class="icon"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>`;
             //favicon = `<span class="icon"><img height="20" width="20" src='http://f1.allesedv.com/24/${parsed_url.hostname}' /></span>`
