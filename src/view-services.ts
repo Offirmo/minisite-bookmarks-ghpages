@@ -3,8 +3,17 @@
 import * as _ from 'lodash'
 import RandomColor = require('randomcolor')
 import { Enum } from 'typescript-string-enums'
+import * as chroma from 'chroma-js'
+const marky = (window as any).marky
+
+import {
+	BACKGROUND_COLOR,
+	FOREGROUND_COLOR,
+} from './templates'
+import { murmurhash_v3_32_gc as hash_int32_uncached } from './incubator/murmur_v3_32'
 
 ////////////////////////////////////
+
 
 const UrlCategory = Enum(
 	'pro', // .com, .co.xyz, .biz
@@ -15,70 +24,87 @@ const UrlCategory = Enum(
 )
 type UrlCategory = Enum<typeof UrlCategory>
 
-const RandomColorHue = Enum(
-	'red', // too strong, too frightening, won't use
-	'purple', // also too strong
+const UrlCategoryColorMapping = {
+	[ UrlCategory.pro ]: '#2fb1ff', // blue-ish
+	[ UrlCategory.geek ]: '#f5ff5b', // yellow-ish
+	[ UrlCategory.perso ]: '#ffb5e1', // pink-ish
+	[ UrlCategory.other ]: '#bdff77', // green-ish
+	[ UrlCategory.special ]: 'black',
+}
 
-	'orange', // maybe, but connoted to warning
+const SEED: number = 3712
+const COLOR_VARIANT_COUNT: number = 50
 
-	'yellow', // like a "work sign" -> tech, geek
-	'blue', // "pro"
-	'green', // good for misc non-pro
-	'pink', // good for "snowflake" private sites
-	'monochrome' // special
-)
-type RandomColorHue = Enum<typeof RandomColorHue>
+marky.mark('generate-color-range')
+const UrlCategoryColorRange = {
+	[ UrlCategory.pro ]: generate_color_range_for(UrlCategory.pro),
+	[ UrlCategory.geek ]: generate_color_range_for(UrlCategory.geek),
+	[ UrlCategory.perso ]: generate_color_range_for(UrlCategory.perso),
+	[ UrlCategory.other ]: generate_color_range_for(UrlCategory.other),
+	[ UrlCategory.special ]: generate_color_range_for(UrlCategory.special),
+}
+marky.stop('generate-color-range')
 
-const RandomColorLuminosity = Enum('bright', 'light', 'dark')
-type RandomColorLuminosity = Enum<typeof RandomColorLuminosity>
+const hash_int32: (string) => number = _.memoize(_.curryRight(hash_int32_uncached)(SEED))
+
+function generate_color_range_for(category: UrlCategory): string[] {
+	const INTERMEDIATE_SCALE_LENGTH = 100
+	const MINIMAL_FG_CONTRAST = 7 // https://www.w3.org/TR/WCAG20-TECHS/G18.html
+	const MINIMAL_BG_CONTRAST = 1.5
+
+	const base_color = UrlCategoryColorMapping[category]
+
+	let intermediate_scale: string[]
+	if (chroma(BACKGROUND_COLOR).luminance() > chroma(base_color).luminance()) {
+		intermediate_scale = chroma.scale([
+			BACKGROUND_COLOR,
+			base_color
+		]).colors(INTERMEDIATE_SCALE_LENGTH)
+	}
+	else {
+		throw new Error('Dark background is NOT implemented, sorry !')
+	}
+
+	console.log({intermediate_scale})
+
+	let scale_lower_bound: string = 'xxx'
+	let scale_upper_bound: string = 'xxx'
+	intermediate_scale.find(color => {
+		/*console.log({
+			color,
+			contrast_to_bg: chroma.contrast(BACKGROUND_COLOR, color),
+			contrast_to_fg: chroma.contrast(FOREGROUND_COLOR, color),
+			scale_lower_bound,
+			scale_upper_bound,
+		})*/
+
+		if (scale_lower_bound === 'xxx' && chroma.contrast(BACKGROUND_COLOR, color) >= MINIMAL_BG_CONTRAST)
+			scale_lower_bound = color
+
+		if (scale_upper_bound === 'xxx' && chroma.contrast(FOREGROUND_COLOR, color) <= MINIMAL_FG_CONTRAST)
+			scale_upper_bound = color
+
+		return (scale_lower_bound !== 'xxx' && scale_upper_bound !== 'xxx')
+	})
+	if (scale_upper_bound === 'xxx') {
+		// it can happen that the base color is already at high contrast
+		console.warn(`Failed to compute upper scale bound for ${category}/${base_color} !`)
+		scale_upper_bound = intermediate_scale[INTERMEDIATE_SCALE_LENGTH - 30]
+	}
+	if (scale_lower_bound === 'xxx') {
+		// this should never happen, but...
+		console.error(`Failed to compute lower scale bound for ${category}/${base_color} !`)
+		scale_lower_bound = intermediate_scale[10]
+	}
+
+	return chroma.scale([
+		scale_lower_bound,
+		scale_upper_bound
+	])
+	.colors(COLOR_VARIANT_COUNT)
+}
 
 ////////////////////////////////////
-
-/*
- const SEED: number = 3712
- const NUMBER_VARIANT_COUNT: number = 100
-
-const get_colors = _.memoize(function get_colors() {
-	console.info('Generating colors...')
-	const colors = {}
-
-	Object.keys(RandomColorHue).forEach(hue => {
-		colors[hue] = RandomColor({
-			seed: SEED,
-			count: NUMBER_VARIANT_COUNT,
-			luminosity: RandomColorLuminosity.light,
-			hue: hue as RandomColorHue
-		})
-	})
-
-	return colors
-})
-
-const get_variant_index_for_hostname = _.memoize(function get_hued_variant_index_for_hostname(hostname: string): number {
- return (murmurhash3_32_gc(hostname, SEED) % NUMBER_VARIANT_COUNT)
-})
-*/
-
-const get_hue_for_category = _.memoize(function get_hue_for_category(cat: UrlCategory): RandomColorHue {
-	switch (cat) {
-		case 'pro':
-			return RandomColorHue.blue
-		case 'geek':
-			return RandomColorHue.yellow
-		case 'other':
-			// TODO spread
-			return RandomColorHue.green
-		case 'perso':
-			// TODO spread
-			return RandomColorHue.pink
-
-		case 'special':
-			/* fall through */
-		default:
-			return RandomColorHue.monochrome
-	}
-})
-
 
 const get_category_for_url = _.memoize(function get_category1_for_url(hostname: string, protocol: string) {
 	let cat: UrlCategory = 'other'
@@ -156,21 +182,12 @@ const get_category_for_url = _.memoize(function get_category1_for_url(hostname: 
 	return cat
 })
 
-function select_color_for_url(parsed_url: URL): string {
+function generate_background_color_for_url(parsed_url: URL, uniformized_url: string): string {
 	const { hostname, protocol } = parsed_url
 
 	const cat = get_category_for_url(hostname, protocol)
-	const hue = get_hue_for_category(cat)
 
-	/*
-	const index = get_variant_index_for_hostname(hostname)
-	return get_colors()[hue][index]
-	*/
-
-	return RandomColor({
-		luminosity: RandomColorLuminosity.light,
-		hue,
-	})
+	return UrlCategoryColorRange[cat][hash_int32(uniformized_url) % COLOR_VARIANT_COUNT]
 }
 
 
@@ -216,6 +233,6 @@ function evaluate_string_width(s: string): number {
 
 export {
 	generate_label_from_url,
-	select_color_for_url,
+	generate_background_color_for_url,
 	evaluate_string_width,
 }

@@ -5,6 +5,11 @@ import { Bookmark, BookmarkGroup, Data } from './types'
 
 ////////////////////////////////////
 
+const BACKGROUND_COLOR = '#fafbfc'
+const FOREGROUND_COLOR = '#24292e'
+
+////////////
+
 function bookmark(bookmark: Bookmark, alternative: number): string {
 	let {
 		label,
@@ -91,5 +96,7 @@ ${items}
 ////////////////////////////////////
 
 export {
+	BACKGROUND_COLOR,
+	FOREGROUND_COLOR,
 	page
 }

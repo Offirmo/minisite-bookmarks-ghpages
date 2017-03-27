@@ -1,12 +1,13 @@
 # Personal bookmarks
 
+
 Pinned
 - Drive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - Maps https://framindmap.org/c/maps/
 - http://devdocs.io/
-- Repos GitHub https://github.com/Offirmo?tab=repositories
+- GitHub https://github.com/Offirmo?tab=repositories
 - www.deezer.com
 - Deezer tops http://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
@@ -22,6 +23,7 @@ Projects
 - id4 https://docs.google.com/document/d/1hny8PEJ7TlEhmt0LSfMvyxD814cQZouKBAF2nz5jgFw/edit
 - script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
 - Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
+- http://www.offirmo.net/
 - OA www.online-adventur.es
 - TBRPG https://docs.google.com/spreadsheets/d/1EZHJQN0qBWuIjOHvCUQl2HoA37dO86tvfCh_MArNqFY/edit#gid=859684177
 - TBRPG frags https://docs.google.com/presentation/d/17V7ID-F3OCJlbaXrGcvcjS5C20LRgBHEqD1Pn0aK-kg/edit#slide=id.g28918c0c560567f1_16
@@ -70,13 +72,7 @@ Loterie:
 - https://www.facebook.com/
 
 
-A surveiller:
-- http://www.displaylink.com/downloads/osx
-- http://gamesfromwithin.com/
-
-
 To check:
-- aprilzero.com/explorer/august-2014/
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
 - https://www.impots.gouv.fr/portail/
 
@@ -114,6 +110,7 @@ Docs:
 - TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
 - TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
 - TS What's new 2.0 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html
+- RxJS http://reactivex.io/rxjs/
 - online regexp tester https://regex101.com/
 - https://github.com/caolan/async
 - http://epeli.github.io/underscore.string/
@@ -130,13 +127,12 @@ Docs:
 
 Offline / local
 - devdocs.io http://0.0.0.0:9292/
-
-
-Own projects
-- http://www.offirmo.net/
-
+- :3000 http://0.0.0.0:3000/
+- :3001 http://0.0.0.0:3001/
+- :7000 http://0.0.0.0:7000/
 
 Veille:
+- http://gamesfromwithin.com/
 - https://blog.risingstack.com/
 - http://www.stackoverflow.blog/code-for-a-living
 - http://stackoverflow.blog/engineering/
@@ -163,6 +159,10 @@ Veille:
 
 
 Setup:
+- https://github.com/Offirmo-team/wiki/wiki/macOS
+- https://github.com/Offirmo-team/wiki/wiki/dev-env
+- https://github.com/Offirmo-team/wiki/wiki/Firefox
+- http://www.displaylink.com/downloads/osx
 - FF down chrome://downloadmgr/content/downloadmgrOverlay.xul
 - Cext. chrome://extensions/
 - CSet. chrome://settings/
@@ -182,4 +182,5 @@ toread:
 tosort:
 - games http://gamestd.io/colyseus/
 - https://github.com/Offirmo-team/wiki/wiki/idées-de-posts-de-blog
+- aprilzero.com/explorer/august-2014/
 

@@ -4,7 +4,7 @@ import * as _ from 'lodash'
 const marky = (window as any).marky
 
 import { Bookmark, BookmarkGroup, Data } from './types'
-import { generate_label_from_url, select_color_for_url } from './view-services'
+import { generate_label_from_url, generate_background_color_for_url } from './view-services'
 
 //////////// CONSTANTS ////////////
 
@@ -38,7 +38,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 
 		const A = array.concat().sort()
 		const a1 = A[0]
-		const a2 = A[A.length-1]
+		const a2 = A[A.length - 1]
 		const L = a1.length
 
 		let i = 0
@@ -61,7 +61,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 		if (auto_labels.length) {
 			const common_prefix_length = sharedStart(auto_labels).length
 			const common_prefix = auto_labels[0].slice(0, common_prefix_length)
-			console.log(`computed shared part:`, {common_prefix_length, common_prefix})
+			logger.log(`computed shared part:`, {common_prefix_length, common_prefix})
 
 			// the shared prefix removal is sometimes too greedy,
 			// example: deezer.com devodcs.io => "de" is removed :-/
@@ -87,7 +87,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 				if (is_url_separator(candidate_label[0])) candidate_label = candidate_label.slice(1)
 				bookmark.label = decodeURI(candidate_label)
 
-				console.log(`changed label "${initial_label}" to "${bookmark.label}"`)
+				logger.log(`changed label "${initial_label}" to "${bookmark.label}"`)
 			})
 		}
 
@@ -137,12 +137,15 @@ function factory(raw_options: Partial<ParserOptions>) {
 		// it's ok to not have a label
 		label = label || url
 
+		const uniformized_url = url // TODO
+
 		const res = {
-			label,
 			url,
+			uniformized_url,
+			label,
 			weight,
 			secure: parsed_url && parsed_url.protocol === 'https',
-			bgcolor: select_color_for_url(parsed_url),
+			bgcolor: generate_background_color_for_url(parsed_url, uniformized_url),
 			parsed_url,
 		}
 		logger.log(
@@ -250,6 +253,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 	}
 
 	function decrypt_if_needed_then_parse_data(vault_id: string, raw_data: string, password: string = ''): Data {
+		logger.info('decrypt_if_needed_then_parse_data', {vault_id, raw_data, password})
 		// pwd protection not supported yet
 		marky.mark('decrypt-and-parse')
 
@@ -264,7 +268,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 
 		marky.stop('decrypt-and-parse')
 
-		return  result
+		return result
 	}
 
 	return {

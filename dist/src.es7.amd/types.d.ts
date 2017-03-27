@@ -1,6 +1,7 @@
 interface Bookmark {
+    readonly url: string;
+    readonly uniformized_url: string;
     label: string;
-    url: string;
     weight: number;
     icon_base64?: string;
     bgcolor: string;

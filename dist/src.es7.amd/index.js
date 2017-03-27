@@ -82,6 +82,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             : Rx.Observable.empty();
     }
     function render(data) {
+        console.log('render', data);
+        if (!data)
+            return;
         marky.mark('render');
         logger.group('rendering...');
         logger.log('source data', data);
@@ -133,7 +136,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     setTimeout(() => {
         marky.mark('rx setup');
         const subjects = rx_auto_1.auto({
+            ////////////////////////////////////
             vault_id: get_vault_id,
+            ////////////////////////////////////
             cached_raw_data: [
                 'vault_id',
                 (deps) => get_cached_raw_data(deps['vault_id'].value)
@@ -145,8 +150,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             raw_data: [
                 'cached_raw_data',
                 'fresh_raw_data',
-                rx_auto_1.OPERATORS.concat // XXX TODO filter unicity !
+                rx_auto_1.OPERATORS.concatDistinctUntilChanged
             ],
+            ////////////////////////////////////
             cached_password: [
                 'vault_id',
                 (deps) => get_cached_password(deps['vault_id'].value)
@@ -155,32 +161,46 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             password: [
                 'cached_password',
                 'fresh_password',
-                rx_auto_1.OPERATORS.concat
+                rx_auto_1.OPERATORS.concatDistinctUntilChanged
             ],
-            data: [
+            ////////////////////////////////////
+            data_source: [
                 'vault_id',
                 'raw_data',
                 'password',
-                ({ vault_id, raw_data, password }) => Rx.Observable.combineLatest(vault_id.observable$, raw_data.observable$, password.observable$, decrypt_if_needed_then_parse_data)
+                //			OPERATORS.combineLatestHashDistinctUntilChangedShallow
+                rx_auto_1.OPERATORS.combineLatestHash
+            ],
+            data: [
+                'data_source',
+                ({ data_source }) => data_source.observable$.map(v => {
+                    const { vault_id, raw_data, password } = v;
+                    console.warn('source to feed', v, decrypt_if_needed_then_parse_data);
+                    return decrypt_if_needed_then_parse_data(vault_id, raw_data, password);
+                })
             ],
         }, { logger });
         // actions
         if (dynamic_options.verbose > 0) {
             for (let id in subjects) {
                 rx_log_1.log_observable(subjects[id].plain$, id);
+                //log_observable(subjects[id].behavior$, id + 'B')
             }
         }
-        subjects['data'].plain$.subscribe({
+        console.info('Subscribing to data...');
+        subjects['data'].behavior$.subscribe({
             next: render,
             error: render_error,
-            complete: () => logger.log('done'),
+            complete: () => logger.log('data plain$ done'),
         });
-        let sbs1 = subjects['data'].plain$.subscribe(data => {
+        let sbs1 = subjects['data'].behavior$.subscribe(data => {
+            if (!data)
+                return;
             // successful parse: store this good data
             localStorage.setItem(CONSTS.LS_KEYS.last_successful_raw_data(data.vault_id), data.raw_data);
             localStorage.setItem(CONSTS.LS_KEYS.last_successful_password(data.vault_id), data.password);
             logger.info('updated cache with fresh data');
-            sbs1.unsubscribe();
+            setTimeout(() => sbs1.unsubscribe());
         });
         marky.stop('rx setup');
     });

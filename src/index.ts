@@ -71,7 +71,7 @@ function get_vault_id() {
 	return slug
 }
 
-function fetch_raw_data(vault_id: string) {
+function fetch_raw_data(vault_id: string): Promise<string> {
 	marky.mark('fetch_raw_data')
 	return retrying_fetch<any>(`content/${vault_id}.markdown`, undefined, {
 		response_should_be_ok: true,
@@ -112,6 +112,8 @@ function get_cached_password(vault_id: string): string | Rx.Observable<any> {
 }
 
 function render(data: Data) {
+	console.log('render', data)
+	if (!data) return
 	marky.mark('render')
 
 	logger.group('rendering...')
@@ -177,8 +179,12 @@ setTimeout(() => {
 	marky.mark('rx setup')
 
 	const subjects = auto({
+
+		////////////////////////////////////
 		vault_id:
-		get_vault_id,
+			get_vault_id,
+
+		////////////////////////////////////
 		cached_raw_data: [
 			'vault_id',
 			(deps: ResolvedStreamDefMap) => get_cached_raw_data(deps['vault_id'].value)
@@ -190,29 +196,37 @@ setTimeout(() => {
 		raw_data: [
 			'cached_raw_data',
 			'fresh_raw_data',
-			OPERATORS.concat // XXX TODO filter unicity !
+			OPERATORS.concatDistinctUntilChanged
 		],
+
+		////////////////////////////////////
 		cached_password: [
 			'vault_id',
 			(deps: ResolvedStreamDefMap) => get_cached_password(deps['vault_id'].value)
 		],
 		fresh_password:
-		get_password$,
+			get_password$,
 		password: [
 			'cached_password',
 			'fresh_password',
-			OPERATORS.concat
+			OPERATORS.concatDistinctUntilChanged
 		],
-		data: [
+
+		////////////////////////////////////
+		data_source: [
 			'vault_id',
 			'raw_data',
 			'password',
-			({vault_id, raw_data, password}: ResolvedStreamDefMap) => Rx.Observable.combineLatest(
-				vault_id.observable$,
-				raw_data.observable$,
-				password.observable$,
-				decrypt_if_needed_then_parse_data
-			)
+//			OPERATORS.combineLatestHashDistinctUntilChangedShallow
+			OPERATORS.combineLatestHash
+		],
+		data: [
+			'data_source',
+			({data_source}: ResolvedStreamDefMap) => data_source.observable$.map(v => {
+				const {vault_id, raw_data, password} = v
+				console.warn('source to feed', v, decrypt_if_needed_then_parse_data)
+				return decrypt_if_needed_then_parse_data(vault_id, raw_data, password)
+			})
 		],
 	}, { logger })
 
@@ -221,21 +235,24 @@ setTimeout(() => {
 	if (dynamic_options.verbose > 0) {
 		for (let id in subjects) {
 			log_observable(subjects[id].plain$, id)
+			//log_observable(subjects[id].behavior$, id + 'B')
 		}
 	}
 
-	subjects['data'].plain$.subscribe({
+	console.info('Subscribing to data...')
+	subjects['data'].behavior$.subscribe({
 		next: render,
 		error: render_error,
-		complete: () => logger.log('done'),
+		complete: () => logger.log('data plain$ done'),
 	})
 
-	let sbs1 = subjects['data'].plain$.subscribe(data => {
+	let sbs1 = subjects['data'].behavior$.subscribe(data => {
+		if (!data) return
 		// successful parse: store this good data
 		localStorage.setItem(CONSTS.LS_KEYS.last_successful_raw_data(data.vault_id), data.raw_data)
 		localStorage.setItem(CONSTS.LS_KEYS.last_successful_password(data.vault_id), data.password)
 		logger.info('updated cache with fresh data')
-		sbs1.unsubscribe()
+		setTimeout(() => sbs1.unsubscribe())
 	})
 
 	marky.stop('rx setup')

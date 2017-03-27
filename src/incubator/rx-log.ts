@@ -40,8 +40,13 @@ function log_observable(observable: LooseObservable, id?: string): void {
 	id = id || `#${auto_id}`
 
 	observable.subscribe(
-		(value: any) =>
-			console.log(`${generate_timestamp()} [${id}] ..."${to_string_but_not_too_big(value)}"`),
+		(value: any) => {
+			const val_s = to_string_but_not_too_big(value)
+			if (val_s !== '[object Object]')
+				console.log(`${generate_timestamp()} [${id}] ..."${val_s}"`)
+			else
+				console.log(`${generate_timestamp()} [${id}] ...`, value)
+		},
 		(err: Error) =>
 			console.error(`${generate_timestamp()} [${id}] ...[Error: "${err}" !]`),
 		() =>

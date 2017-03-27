@@ -4,6 +4,11 @@ define(["require", "exports"], function (require, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     //import { evaluate_string_width } from './view-services'
     ////////////////////////////////////
+    const BACKGROUND_COLOR = '#fafbfc';
+    exports.BACKGROUND_COLOR = BACKGROUND_COLOR;
+    const FOREGROUND_COLOR = '#24292e';
+    exports.FOREGROUND_COLOR = FOREGROUND_COLOR;
+    ////////////
     function bookmark(bookmark, alternative) {
         let { label, url, weight, bgcolor, parsed_url, } = bookmark;
         label = label || '[error]'; // should never happen, should have been taken care of earlier

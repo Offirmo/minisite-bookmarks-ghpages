@@ -41,7 +41,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             if (auto_labels.length) {
                 const common_prefix_length = sharedStart(auto_labels).length;
                 const common_prefix = auto_labels[0].slice(0, common_prefix_length);
-                console.log(`computed shared part:`, { common_prefix_length, common_prefix });
+                logger.log(`computed shared part:`, { common_prefix_length, common_prefix });
                 // the shared prefix removal is sometimes too greedy,
                 // example: deezer.com devodcs.io => "de" is removed :-/
                 // let's do this only if it ends with or is followed with an expected separator
@@ -63,7 +63,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
                     if (is_url_separator(candidate_label[0]))
                         candidate_label = candidate_label.slice(1);
                     bookmark.label = decodeURI(candidate_label);
-                    console.log(`changed label "${initial_label}" to "${bookmark.label}"`);
+                    logger.log(`changed label "${initial_label}" to "${bookmark.label}"`);
                 });
             }
             logger.groupEnd();
@@ -103,12 +103,14 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             logger.log('raw label extracted:', label);
             // it's ok to not have a label
             label = label || url;
+            const uniformized_url = url; // TODO
             const res = {
-                label,
                 url,
+                uniformized_url,
+                label,
                 weight,
                 secure: parsed_url && parsed_url.protocol === 'https',
-                bgcolor: view_services_1.select_color_for_url(parsed_url),
+                bgcolor: view_services_1.generate_background_color_for_url(parsed_url, uniformized_url),
                 parsed_url,
             };
             logger.log('Final, corrected, data extracted from line (before group-level post-processing):', 
@@ -199,6 +201,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             return result;
         }
         function decrypt_if_needed_then_parse_data(vault_id, raw_data, password = '') {
+            logger.info('decrypt_if_needed_then_parse_data', { vault_id, raw_data, password });
             // pwd protection not supported yet
             marky.mark('decrypt-and-parse');
             const result = Object.assign({ 

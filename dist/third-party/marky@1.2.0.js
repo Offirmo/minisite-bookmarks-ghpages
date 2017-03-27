@@ -28,7 +28,7 @@ function insertSorted (arr, item) {
   arr.splice(low, 0, item);
 }
 
-if (perf && perf.mark && perf.measure) {
+if (perf && perf.mark) {
   exports.mark = function (name) {
     throwIfEmpty(name);
     perf.mark(("start " + name));
@@ -41,6 +41,10 @@ if (perf && perf.mark && perf.measure) {
     return entries[entries.length - 1]
   };
   exports.getEntries = function () { return perf.getEntriesByType('measure'); };
+  exports.clear = function () {
+    perf.clearMarks();
+    perf.clearMeasures();
+  };
 } else {
   var marks = {};
   var entries = [];
@@ -69,6 +73,7 @@ if (perf && perf.mark && perf.measure) {
     return entry
   };
   exports.getEntries = function () { return entries; };
+  exports.clear = function () { entries = []; };
 }
 
 }((this.marky = this.marky || {})));

@@ -29,7 +29,13 @@ define(["require", "exports"], function (require, exports) {
         if (!observable)
             throw new Error('log_observable should be given an observable');
         id = id || `#${auto_id}`;
-        observable.subscribe((value) => console.log(`${generate_timestamp()} [${id}] ..."${to_string_but_not_too_big(value)}"`), (err) => console.error(`${generate_timestamp()} [${id}] ...[Error: "${err}" !]`), () => console.log(`${generate_timestamp()} [${id}] ...[Completed]`));
+        observable.subscribe((value) => {
+            const val_s = to_string_but_not_too_big(value);
+            if (val_s !== '[object Object]')
+                console.log(`${generate_timestamp()} [${id}] ..."${val_s}"`);
+            else
+                console.log(`${generate_timestamp()} [${id}] ...`, value);
+        }, (err) => console.error(`${generate_timestamp()} [${id}] ...[Error: "${err}" !]`), () => console.log(`${generate_timestamp()} [${id}] ...[Completed]`));
     }
     exports.log_observable = log_observable;
 });

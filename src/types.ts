@@ -2,8 +2,11 @@
 /////////////////////
 
 interface Bookmark {
+	readonly url: string // url given by the user, immutable
+	readonly uniformized_url: string,
+
+	// those parts are computed
 	label: string
-	url: string
 	weight: number // 1..3
 	icon_base64?: string
 	bgcolor: string
