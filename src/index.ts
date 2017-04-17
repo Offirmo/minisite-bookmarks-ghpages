@@ -6,9 +6,10 @@ marky.mark('bootstrap')
 marky.mark('global')
 
 import * as Rx from '@reactivex/rxjs'
-import { auto, OPERATORS, ResolvedStreamDefMap } from '@offirmo/rx-auto'
+import { auto, Operator, ResolvedStreamDefMap } from '@offirmo/rx-auto'
 import Packery = require('packery')
 import 'tachyons'
+import { parseLocationParams } from '@offirmo/simple-querystring-parser'
 
 import { retrying_fetch } from './incubator/retrying-fetch'
 import { log_observable } from './incubator/rx-log'
@@ -16,7 +17,6 @@ import { log_observable } from './incubator/rx-log'
 import { Data } from './types'
 import { factory as parser_factory } from './parser'
 import * as TEMPLATES from './templates'
-import { parse as parse_location_search } from './incubator/parse-location-search'
 
 //////////// CONSTANTS ////////////
 
@@ -28,7 +28,7 @@ const CONSTS = {
 	REPO_URL: 'https://github.com/Offirmo/minisite-w',
 }
 
-const dynamic_options = parse_location_search(window.location)
+const dynamic_options = parseLocationParams(window.location)
 console.info({dynamic_options})
 
 const logger: Console = dynamic_options.verbose > 0
@@ -196,7 +196,9 @@ setTimeout(() => {
 		raw_data: [
 			'cached_raw_data',
 			'fresh_raw_data',
-			OPERATORS.concatDistinctUntilChanged
+			Operator()
+				.concat()
+				.distinctUntilChanged()
 		],
 
 		////////////////////////////////////
@@ -209,26 +211,42 @@ setTimeout(() => {
 		password: [
 			'cached_password',
 			'fresh_password',
-			OPERATORS.concatDistinctUntilChanged
+			Operator()
+				.concat()
+				.distinctUntilChanged()
 		],
 
 		////////////////////////////////////
-		data_source: [
+		data: [
 			'vault_id',
 			'raw_data',
 			'password',
-//			OPERATORS.combineLatestHashDistinctUntilChangedShallow
-			OPERATORS.combineLatestHash
-		],
-		data: [
-			'data_source',
-			({data_source}: ResolvedStreamDefMap) => data_source.observable$.map(v => {
-				const {vault_id, raw_data, password} = v
-				console.warn('source to feed', v, decrypt_if_needed_then_parse_data)
-				return decrypt_if_needed_then_parse_data(vault_id, raw_data, password)
+			Operator().combineLatest({
+				project: decrypt_if_needed_then_parse_data
 			})
 		],
-	}, { logger })
+
+
+		/*
+		 data_source: [
+		 'vault_id',
+		 'raw_data',
+		 'password',
+		 //			OPERATORS.combineLatestHashDistinctUntilChangedShallow
+		 OPERATORS.combineLatestHash
+		 ],
+		 data: [
+		 'data_source',
+		 ({data_source}: ResolvedStreamDefMap) => data_source.observable$.map(v => {
+		 const {vault_id, raw_data, password} = v
+		 console.warn('source to feed', v, decrypt_if_needed_then_parse_data)
+		 return decrypt_if_needed_then_parse_data(vault_id, raw_data, password)
+		 })
+		 ],*/
+	}, {
+		logger: console,
+		validate: true,
+	})
 
 	// actions
 

@@ -1,7 +1,6 @@
 ////////////////////////////////////
 
 import * as _ from 'lodash'
-import RandomColor = require('randomcolor')
 import { Enum } from 'typescript-string-enums'
 import * as chroma from 'chroma-js'
 const marky = (window as any).marky
@@ -45,7 +44,7 @@ const UrlCategoryColorRange = {
 }
 marky.stop('generate-color-range')
 
-const hash_int32: (string) => number = _.memoize(_.curryRight(hash_int32_uncached)(SEED))
+const hash_int32: (s: string) => number = _.memoize(_.curryRight(hash_int32_uncached)(SEED))
 
 function generate_color_range_for(category: UrlCategory): string[] {
 	const INTERMEDIATE_SCALE_LENGTH = 100

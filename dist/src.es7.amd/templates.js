@@ -57,12 +57,12 @@ define(["require", "exports"], function (require, exports) {
         const items = group.bookmarks.map(b => bookmark(b, alternative)).join('');
         const title_html = is_pinned_row
             ? ''
-            : `<div class="pa0 ma0 stamp dib">${group.title}</div>`;
-        let tachyons_classes = 'pa0';
+            : `<div class="pa0 ma0 stamp dib h-100 grid-title">${group.title}</div>`;
+        let tachyons_classes = 'pa0 df';
         return `
-<div class="${tachyons_classes}">
+<div class="group ${tachyons_classes}">
+	${title_html}
 	<div class="grid ${is_pinned_row ? 'pinned' : ''}">
-		${title_html}
 		${items}
 	</div>
 </div>

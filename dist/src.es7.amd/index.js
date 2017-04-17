@@ -1,5 +1,5 @@
 ////////////////////////////////////
-define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "./incubator/parse-location-search", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES, parse_location_search_1) {
+define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     const marky = window.marky;
@@ -13,7 +13,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
-    const dynamic_options = parse_location_search_1.parse(window.location);
+    const dynamic_options = simple_querystring_parser_1.parseLocationParams(window.location);
     console.info({ dynamic_options });
     const logger = dynamic_options.verbose > 0
         ? console
@@ -150,7 +150,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             raw_data: [
                 'cached_raw_data',
                 'fresh_raw_data',
-                rx_auto_1.OPERATORS.concatDistinctUntilChanged
+                rx_auto_1.Operator()
+                    .concat()
+                    .distinctUntilChanged()
             ],
             ////////////////////////////////////
             cached_password: [
@@ -161,25 +163,23 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             password: [
                 'cached_password',
                 'fresh_password',
-                rx_auto_1.OPERATORS.concatDistinctUntilChanged
+                rx_auto_1.Operator()
+                    .concat()
+                    .distinctUntilChanged()
             ],
             ////////////////////////////////////
-            data_source: [
+            data: [
                 'vault_id',
                 'raw_data',
                 'password',
-                //			OPERATORS.combineLatestHashDistinctUntilChangedShallow
-                rx_auto_1.OPERATORS.combineLatestHash
-            ],
-            data: [
-                'data_source',
-                ({ data_source }) => data_source.observable$.map(v => {
-                    const { vault_id, raw_data, password } = v;
-                    console.warn('source to feed', v, decrypt_if_needed_then_parse_data);
-                    return decrypt_if_needed_then_parse_data(vault_id, raw_data, password);
+                rx_auto_1.Operator().combineLatest({
+                    project: decrypt_if_needed_then_parse_data
                 })
             ],
-        }, { logger });
+        }, {
+            logger: console,
+            validate: true,
+        });
         // actions
         if (dynamic_options.verbose > 0) {
             for (let id in subjects) {

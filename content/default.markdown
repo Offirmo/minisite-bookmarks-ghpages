@@ -6,10 +6,10 @@ Pinned
 - Inbox https://inbox.google.com/
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - Maps https://framindmap.org/c/maps/
-- http://devdocs.io/
+- devdocs http://devdocs.io/
 - GitHub https://github.com/Offirmo?tab=repositories
-- www.deezer.com
-- Deezer tops http://www.deezer.com/profile/637006841/playlists
+- Deezer www.deezer.com
+- tops http://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 
@@ -89,12 +89,14 @@ Wiki perso:
 - https://github.com/Offirmo-team/wiki/wiki/GitHub
 - + https://github.com/Offirmo-team/wiki/wiki/html
 - + https://github.com/Offirmo-team/wiki/wiki/javascript
+- + https://github.com/Offirmo-team/wiki/wiki/module-web
 - https://github.com/Offirmo-team/wiki/wiki/JSON
 - https://github.com/Offirmo-team/wiki/wiki/npm
 - https://github.com/Offirmo-team/wiki/wiki/react
 - https://github.com/Offirmo-team/wiki/wiki/reactive-programming
 - https://github.com/Offirmo-team/wiki/wiki/serveur
 - + https://github.com/Offirmo-team/wiki/wiki/Sécurité
+- https://github.com/Offirmo-team/wiki/wiki/navigateur
 - https://github.com/Offirmo-team/wiki/wiki/tachyons
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
 - + https://github.com/Offirmo-team/wiki/wiki/UX

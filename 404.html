@@ -86,6 +86,11 @@
 			color: var(--background-color);
 		}
 
+		/* complements to tachyons */
+		.df {
+			display: flex;
+		}
+
 		/* http://stackoverflow.com/questions/17481660/darken-background-image-on-hover */
 		.grid a {
 			position:relative;
@@ -98,15 +103,26 @@
 			opacity:0.2;
 		}
 
+		.group {
+			border-bottom: rgba(0, 0, 0, 0.17) dashed 1px;
+			padding-bottom: 1px;
+			margin-bottom: 1px;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.grid-title {
+			width: var(--item-base-size-h);
+		}
+
 		.stamp {
 			height: calc(var(--item-base-size-v) * 1);
 			font-size: 22px;
 			line-height: 1.6;
 		}
 		.grid {
-			border-bottom: rgba(0, 0, 0, 0.17) dashed 1px;
-			padding-bottom: 1px;
-			margin-bottom: 1px;
+			flex-grow: 1;
+			align-self: flex-start;
 		}
 		.grid-item {
 			display: inline-block;
