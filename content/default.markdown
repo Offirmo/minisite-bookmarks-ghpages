@@ -34,7 +34,7 @@ Banque:
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/
-- WeSwap https://www.weswap.com/fr/
+- WeSwap https://app.weswap.com/#/fr/login
 - Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 
@@ -109,11 +109,13 @@ Docs:
 - http://cssreference.io/
 - Git solving http://justinhileman.info/article/git-pretty/full/
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
+- + TS compiler options https://www.typescriptlang.org/docs/handbook/compiler-options.html
 - TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
 - TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
 - TS What's new 2.0 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html
 - RxJS http://reactivex.io/rxjs/
 - online regexp tester https://regex101.com/
+- unminifier http://unminify.com/
 - https://github.com/caolan/async
 - http://epeli.github.io/underscore.string/
 - http://momentjs.com/docs/
@@ -127,11 +129,20 @@ Docs:
 - ES6 http://exploringjs.com/es6/ch_modules.html
 
 
+Tools:
+- Color converter http://www.cssportal.com/css-color-converter/
+- Lorem Ipsum http://www.lipsum.com/feed/html
+
+
 Offline / local
 - devdocs.io http://0.0.0.0:9292/
 - :3000 http://0.0.0.0:3000/
 - :3001 http://0.0.0.0:3001/
+- :4000 http://0.0.0.0:4000/
+- :5000 http://0.0.0.0:5000/
+- :6000 http://0.0.0.0:6000/
 - :7000 http://0.0.0.0:7000/
+
 
 Veille:
 - http://gamesfromwithin.com/

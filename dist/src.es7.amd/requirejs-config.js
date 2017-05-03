@@ -29,7 +29,7 @@ requirejs.config({
         },
         {
             name: '@offirmo/rx-auto',
-            location: 'node_modules/@offirmo/rx-auto/dist/es6.umd',
+            location: 'node_modules/@offirmo/rx-auto/dist/es2017.umd',
             main: 'index.js',
         },
     ],
