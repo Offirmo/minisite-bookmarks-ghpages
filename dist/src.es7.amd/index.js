@@ -2,10 +2,10 @@
 define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    const marky = window.marky;
-    marky.mark('bootstrap');
-    marky.mark('global');
-    //////////// CONSTANTS ////////////
+    const user_timing_measurement = window.marky;
+    user_timing_measurement.mark('global');
+    user_timing_measurement.mark('bootstrap');
+    ////////////
     const CONSTS = {
         LS_KEYS: {
             last_successful_raw_data: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
@@ -46,13 +46,13 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         return slug;
     }
     function fetch_raw_data(vault_id) {
-        marky.mark('fetch_raw_data');
+        user_timing_measurement.mark('fetch_raw_data');
         return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, {
             response_should_be_ok: true,
             logger,
         })
             .then(res => {
-            marky.stop('fetch_raw_data');
+            user_timing_measurement.stop('fetch_raw_data');
             return res.text();
         });
     }
@@ -82,10 +82,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             : Rx.Observable.empty();
     }
     function render(data) {
-        console.log('render', data);
         if (!data)
             return;
-        marky.mark('render');
+        user_timing_measurement.mark('render');
         logger.group('rendering...');
         logger.log('source data', data);
         window.document.title = data.title;
@@ -118,8 +117,8 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         all_layouts_done
             .then(() => {
             logger.info('All packery layouts done');
-            marky.stop('render');
-            marky.stop('global');
+            user_timing_measurement.stop('render');
+            user_timing_measurement.stop('global');
         })
             .catch(e => logger.error(e));
         pks.forEach(pckry => pckry.layout());
@@ -130,11 +129,11 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         logger.error('something wrong occurred:', err);
         const el_content = document.querySelectorAll('#content')[0];
         el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)';
-        marky.stop('global');
+        user_timing_measurement.stop('global');
     }
     ////////////////////////////////////
     setTimeout(() => {
-        marky.mark('rx setup');
+        user_timing_measurement.mark('rx setup');
         const subjects = rx_auto_1.auto({
             ////////////////////////////////////
             vault_id: get_vault_id,
@@ -202,9 +201,9 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             logger.info('updated cache with fresh data');
             setTimeout(() => sbs1.unsubscribe());
         });
-        marky.stop('rx setup');
+        user_timing_measurement.stop('rx setup');
     });
-    marky.stop('bootstrap');
+    user_timing_measurement.stop('bootstrap');
 });
 ////////////////////////////////////
 //# sourceMappingURL=index.js.map

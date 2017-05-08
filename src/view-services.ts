@@ -24,15 +24,99 @@ const UrlCategory = Enum(
 type UrlCategory = Enum<typeof UrlCategory>
 
 const UrlCategoryColorMapping = {
-	[ UrlCategory.pro ]: '#2fb1ff', // blue-ish
-	[ UrlCategory.geek ]: '#f5ff5b', // yellow-ish
-	[ UrlCategory.perso ]: '#ffb5e1', // pink-ish
-	[ UrlCategory.other ]: '#bdff77', // green-ish
-	[ UrlCategory.special ]: 'black',
+	[ UrlCategory.pro ]: '#57bfff', // blue-ish
+	[ UrlCategory.geek ]: '#f3ff4b', // yellow-ish
+	[ UrlCategory.perso ]: '#ffaada', // pink-ish
+	[ UrlCategory.other ]: '#adf95e', // green-ish
+	[ UrlCategory.special ]: '#a1a1a1',
 }
 
 const SEED: number = 3712
 const COLOR_VARIANT_COUNT: number = 50
+
+// thank you @gka https://github.com/gka/chroma.js/issues/127#issuecomment-291457530
+const get_CMC_color_difference: (ref_color: string, test_color: string) => number = (chroma as any).deltaE
+function get_CIE76_color_difference(ref_color: string, test_color: string): number {
+	const [ L1, a1, b1 ] = chroma(ref_color).lab()
+	const [ L2, a2, b2 ] = chroma(test_color).lab()
+
+	return Math.sqrt( Math.pow(L2 - L1, 2) + Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2) )
+}
+// https://en.wikipedia.org/wiki/Color_difference#CIE94
+function get_CIE94_color_difference(ref_color: string, test_color: string): number {
+	const [ L1, a1, b1 ] = chroma(ref_color).lab()
+	const [ L2, a2, b2 ] = chroma(test_color).lab()
+
+	// values for "graphic arts"
+	const kL = 1
+	const K1 = 0.045
+	const K2 = 0.015
+
+	// usual values
+	const kC = 1
+	const kH = 1
+
+	const deltaEab = Math.sqrt( Math.pow(L2 - L1, 2) + Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2) )
+	const deltaL = L1 - L2
+	const C1 = Math.sqrt( a1 * a1 + b1 * b1)
+	const C2 = Math.sqrt( a2 * a2 + b2 * b2)
+	const deltaCab = C1 - C2
+	const deltaHab = Math.sqrt( deltaEab * deltaEab - deltaL * deltaL - deltaCab * deltaCab)
+
+	// control
+	const deltaa = a1 - a2
+	const deltab = b1 - b2
+	const deltaHab2 = Math.sqrt( deltaa * deltaa + deltab * deltab - deltaCab * deltaCab)
+	console.assert(Math.trunc(deltaHab * 1000000) === Math.trunc(deltaHab2 * 1000000), 'erreur')
+
+	const SL = 1
+	const SC = 1 + K1 * C1
+	const SH = 1 + K2 * C1
+
+	// parts
+	const p1 = deltaL / kL * SL
+	const p2 = deltaCab / kC * SC
+	const p3 = deltaHab / kH * SH
+
+	return Math.sqrt( p1 * p1 + p2 * p2 + p3 * p3 )
+}
+
+/*
+function color_difference(ref_color: string, test_color: string): number {
+	return chroma.contrast(ref_color, test_color)
+}
+const MINIMAL_BG_DIFFERENCE = 1.5
+const MINIMAL_FG_DIFFERENCE = 7 // https://www.w3.org/TR/WCAG20-TECHS/G18.html
+*/
+/*
+function color_difference(ref_color: string, test_color: string): number {
+	return Math.min(
+		get_CMC_color_difference(ref_color, test_color),
+		get_CMC_color_difference(test_color, ref_color)
+	)
+}
+const MINIMAL_BG_DIFFERENCE = 30
+const MINIMAL_FG_DIFFERENCE = 70
+*/
+/*
+function color_difference(ref_color: string, test_color: string): number {
+	return get_CIE76_color_difference(ref_color, test_color)
+}
+const JND = 2.3
+const MINIMAL_BG_DIFFERENCE = JND * 7
+const MINIMAL_FG_DIFFERENCE = JND * 14
+*/
+
+function color_difference(ref_color: string, test_color: string): number {
+	return Math.min(
+		get_CIE94_color_difference(ref_color, test_color),
+		get_CIE94_color_difference(test_color, ref_color)
+	)
+}
+const JND = 2.3
+const MINIMAL_BG_DIFFERENCE = JND * 7
+const MINIMAL_FG_DIFFERENCE = JND * 10
+
 
 marky.mark('generate-color-range')
 const UrlCategoryColorRange = {
@@ -46,11 +130,15 @@ marky.stop('generate-color-range')
 
 const hash_int32: (s: string) => number = _.memoize(_.curryRight(hash_int32_uncached)(SEED))
 
-function generate_color_range_for(category: UrlCategory): string[] {
-	const INTERMEDIATE_SCALE_LENGTH = 100
-	const MINIMAL_FG_CONTRAST = 7 // https://www.w3.org/TR/WCAG20-TECHS/G18.html
-	const MINIMAL_BG_CONTRAST = 1.5
 
+
+function generate_color_range_for(category: UrlCategory): string[] {
+	console.groupCollapsed(`generate_color_range_for ${category}`)
+
+	let color_range_lower_bound: string
+	let color_range_upper_bound: string
+
+	const INTERMEDIATE_SCALE_LENGTH = 100
 	const base_color = UrlCategoryColorMapping[category]
 
 	let intermediate_scale: string[]
@@ -66,39 +154,69 @@ function generate_color_range_for(category: UrlCategory): string[] {
 
 	console.log({intermediate_scale})
 
-	let scale_lower_bound: string = 'xxx'
-	let scale_upper_bound: string = 'xxx'
-	intermediate_scale.find(color => {
-		/*console.log({
-			color,
-			contrast_to_bg: chroma.contrast(BACKGROUND_COLOR, color),
-			contrast_to_fg: chroma.contrast(FOREGROUND_COLOR, color),
-			scale_lower_bound,
-			scale_upper_bound,
-		})*/
+	// look for lightest acceptable variant with enough color difference
+	let intermediate_scale_lowest_acceptable_index = -1
+	for (
+		let i = 0;
+		i < intermediate_scale.length && intermediate_scale_lowest_acceptable_index === -1;
+		++i
+	) {
+		const candidate_color = intermediate_scale[i]
 
-		if (scale_lower_bound === 'xxx' && chroma.contrast(BACKGROUND_COLOR, color) >= MINIMAL_BG_CONTRAST)
-			scale_lower_bound = color
+		console.log({
+			i,
+			candidate_color,
+			difference_with_bg1: color_difference(BACKGROUND_COLOR, candidate_color),
+			difference_with_bg2: color_difference(candidate_color, BACKGROUND_COLOR),
+		})
 
-		if (scale_upper_bound === 'xxx' && chroma.contrast(FOREGROUND_COLOR, color) <= MINIMAL_FG_CONTRAST)
-			scale_upper_bound = color
-
-		return (scale_lower_bound !== 'xxx' && scale_upper_bound !== 'xxx')
-	})
-	if (scale_upper_bound === 'xxx') {
-		// it can happen that the base color is already at high contrast
-		console.warn(`Failed to compute upper scale bound for ${category}/${base_color} !`)
-		scale_upper_bound = intermediate_scale[INTERMEDIATE_SCALE_LENGTH - 30]
+		if (color_difference(BACKGROUND_COLOR, candidate_color) >= MINIMAL_BG_DIFFERENCE) {
+			intermediate_scale_lowest_acceptable_index = i
+			break
+		}
 	}
-	if (scale_lower_bound === 'xxx') {
+
+	if (intermediate_scale_lowest_acceptable_index === -1) {
 		// this should never happen, but...
 		console.error(`Failed to compute lower scale bound for ${category}/${base_color} !`)
-		scale_lower_bound = intermediate_scale[10]
+		intermediate_scale_lowest_acceptable_index = 10
+	}
+	color_range_lower_bound = intermediate_scale[intermediate_scale_lowest_acceptable_index]
+
+
+	// look for darkest acceptable variant with enough color difference
+	let intermediate_scale_highest_acceptable_index = -1
+	for (
+		let i = INTERMEDIATE_SCALE_LENGTH - 1;
+		i > intermediate_scale_lowest_acceptable_index && intermediate_scale_highest_acceptable_index === -1;
+		--i
+	) {
+		const candidate_color = intermediate_scale[i]
+
+		console.log({
+			i,
+			candidate_color,
+			difference_with_fg1: color_difference(FOREGROUND_COLOR, candidate_color),
+			difference_with_fg2: color_difference(candidate_color, FOREGROUND_COLOR),
+		})
+
+		if (color_difference(candidate_color, FOREGROUND_COLOR) >= MINIMAL_FG_DIFFERENCE) {
+			intermediate_scale_highest_acceptable_index = i
+		}
 	}
 
+	if (intermediate_scale_highest_acceptable_index === -1) {
+		// it can happen that the base color is already at high contrast
+		console.warn(`Failed to compute upper scale bound for ${category}/${base_color} !`)
+		intermediate_scale_highest_acceptable_index = INTERMEDIATE_SCALE_LENGTH - 30
+	}
+	color_range_upper_bound = intermediate_scale[intermediate_scale_highest_acceptable_index]
+
+	console.groupEnd()
+
 	return chroma.scale([
-		scale_lower_bound,
-		scale_upper_bound
+		color_range_lower_bound,
+		color_range_upper_bound
 	])
 	.colors(COLOR_VARIANT_COUNT)
 }

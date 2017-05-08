@@ -28,21 +28,21 @@
   "dependencies": {
     "@offirmo/rx-auto": "^0.1.0",
     "@offirmo/simple-querystring-parser": "^1.0.4",
-    "@reactivex/rxjs": "^5.0.3",
+    "@reactivex/rxjs": "^5.3.1",
     "chroma-js": "^1.3.3",
     "lodash": "^4.17.4",
     "marky": "^1.1.3",
     "packery": "^2.1.1",
     "require-css": "^0.1.8",
     "requirejs": "^2.3.2",
-    "tachyons": "^4.5.6",
-    "tslib": "^1.5.0",
-    "typescript-string-enums": "^0.3.1"
+    "tachyons": "^4.7.1",
+    "tslib": "^1.7.0",
+    "typescript-string-enums": "^0.3.2"
   },
   "devDependencies": {
     "@offirmo/cli-toolbox": "^0.3.0",
     "@types/chroma-js": "^1.1.32",
-    "@types/lodash": "^4.14.50",
+    "@types/lodash": "^4.14.64",
     "@types/packery": "^1.4.29",
     "@types/randomcolor": "^0.4.3",
     "browser-sync": "^2.18.5",
@@ -50,6 +50,6 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.0",
     "semver": "^5.3.0",
-    "typescript": "^2.2"
+    "typescript": "^2.3.2"
   }
 }

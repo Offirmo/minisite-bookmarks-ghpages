@@ -33,6 +33,7 @@ function bookmark(bookmark: Bookmark, alternative: number): string {
 		tachyons_classes += ` tracked-tight` // character spacing diminished
 	}
 	*/
+
 	if (label.length > 50)
 		tachyons_classes += ` tracked-tight` // character spacing diminished
 

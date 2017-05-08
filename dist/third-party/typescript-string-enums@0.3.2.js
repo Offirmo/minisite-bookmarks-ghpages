@@ -19,17 +19,8 @@ function Enum() {
 }
 exports.Enum = Enum;
 (function (Enum) {
-    function hasOwnProperty(obj, prop) {
-        return Object.prototype.hasOwnProperty.call(obj, prop);
-    }
     function keys(e) {
-        var result = [];
-        for (var prop in e) {
-            if (hasOwnProperty(e, prop)) {
-                result.push(prop);
-            }
-        }
-        return result;
+        return Object.keys(e);
     }
     Enum.keys = keys;
     function values(e) {
@@ -41,5 +32,9 @@ exports.Enum = Enum;
         return result;
     }
     Enum.values = values;
+    function isType(e, value) {
+        return values(e).indexOf(value) !== -1;
+    }
+    Enum.isType = isType;
 })(Enum = exports.Enum || (exports.Enum = {}));
 //# sourceMappingURL=index.js.map

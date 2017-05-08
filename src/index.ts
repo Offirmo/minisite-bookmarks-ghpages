@@ -1,9 +1,9 @@
 ////////////////////////////////////
 
 import 'marky'
-const marky = (window as any).marky
-marky.mark('bootstrap')
-marky.mark('global')
+const user_timing_measurement = (window as any).marky
+user_timing_measurement.mark('global')
+user_timing_measurement.mark('bootstrap')
 
 import * as Rx from '@reactivex/rxjs'
 import { auto, Operator, ResolvedStreamDefMap } from '@offirmo/rx-auto'
@@ -18,7 +18,7 @@ import { Data } from './types'
 import { factory as parser_factory } from './parser'
 import * as TEMPLATES from './templates'
 
-//////////// CONSTANTS ////////////
+////////////
 
 const CONSTS = {
 	LS_KEYS: {
@@ -72,13 +72,13 @@ function get_vault_id() {
 }
 
 function fetch_raw_data(vault_id: string): Promise<string> {
-	marky.mark('fetch_raw_data')
+	user_timing_measurement.mark('fetch_raw_data')
 	return retrying_fetch<any>(`content/${vault_id}.markdown`, undefined, {
 		response_should_be_ok: true,
 		logger,
 	})
 		.then(res => {
-			marky.stop('fetch_raw_data')
+			user_timing_measurement.stop('fetch_raw_data')
 			return res.text()
 		})
 }
@@ -112,12 +112,11 @@ function get_cached_password(vault_id: string): string | Rx.Observable<any> {
 }
 
 function render(data: Data) {
-	console.log('render', data)
 	if (!data) return
-	marky.mark('render')
+
+	user_timing_measurement.mark('render')
 
 	logger.group('rendering...')
-
 	logger.log('source data', data)
 
 	window.document.title = data.title
@@ -154,11 +153,10 @@ function render(data: Data) {
 	all_layouts_done
 	.then(() => {
 		logger.info('All packery layouts done')
-		marky.stop('render')
-		marky.stop('global')
+		user_timing_measurement.stop('render')
+		user_timing_measurement.stop('global')
 	})
 	.catch(e => logger.error(e))
-
 
 	pks.forEach(pckry => pckry.layout())
 	logger.log('Packery layout launched on all elements')
@@ -170,13 +168,13 @@ function render_error(err: Error) {
 	logger.error('something wrong occurred:', err)
 	const el_content = document.querySelectorAll('#content')[0]
 	el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)'
-	marky.stop('global')
+	user_timing_measurement.stop('global')
 }
 
 ////////////////////////////////////
 
 setTimeout(() => {
-	marky.mark('rx setup')
+	user_timing_measurement.mark('rx setup')
 
 	const subjects = auto({
 
@@ -273,9 +271,9 @@ setTimeout(() => {
 		setTimeout(() => sbs1.unsubscribe())
 	})
 
-	marky.stop('rx setup')
+	user_timing_measurement.stop('rx setup')
 })
 
-marky.stop('bootstrap')
+user_timing_measurement.stop('bootstrap')
 
 ////////////////////////////////////

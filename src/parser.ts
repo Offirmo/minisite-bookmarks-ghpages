@@ -25,6 +25,8 @@ const DEFAULT_OPTIONS: ParserOptions = {
 }
 
 function is_url_separator(c: string): boolean {
+	if (c.length > 1) throw new Error('is_url_separator incorrect parameter')
+
 	return c === '/' || c === '.' || c === ':'
 }
 

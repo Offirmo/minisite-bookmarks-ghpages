@@ -12,6 +12,8 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
         logger: console,
     };
     function is_url_separator(c) {
+        if (c.length > 1)
+            throw new Error('is_url_separator incorrect parameter');
         return c === '/' || c === '.' || c === ':';
     }
     function factory(raw_options) {

@@ -2445,11 +2445,23 @@ function __asyncValues(o) {
  * self: browser in WebWorker
  * global: Node.js/other
  */
-var root = (typeof window == 'object' && window.window === window && window
-    || typeof self == 'object' && self.self === self && self
-    || typeof global == 'object' && global.global === global && global);
-if (!root) {
-    throw new Error('RxJS could not find any global context (window, self, global)');
+var root;
+if (typeof window == 'object' && window.window === window) {
+    root = window;
+}
+else if (typeof self == 'object' && self.self === self) {
+    root = self;
+}
+else if (typeof global == 'object' && global.global === global) {
+    root = global;
+}
+else {
+    // Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.
+    // This is needed when used with angular/tsickle which inserts a goog.module statement.
+    // Wrap in IIFE
+    (function () {
+        throw new Error('RxJS could not find any global context (window, self, global)');
+    })();
 }
 
 function isFunction(x) {
@@ -6179,11 +6191,11 @@ var AsyncAction = (function (_super) {
     AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
         if (delay === void 0) { delay = 0; }
         // If this action is rescheduled with the same delay time, don't clear the interval id.
-        if (delay !== null && this.delay === delay) {
+        if (delay !== null && this.delay === delay && this.pending === false) {
             return id;
         }
         // Otherwise, if the action's delay time is different from the current delay,
-        // clear the interval id
+        // or the action has been rescheduled before it's executed, clear the interval id
         return root.clearInterval(id) && undefined || undefined;
     };
     /**
@@ -7525,7 +7537,7 @@ Observable.zip = zip;
  * applies a projection to each value and emits that projection in the output
  * Observable.
  *
- * @example <caption>Map every every click to the clientX position of that click</caption>
+ * @example <caption>Map every click to the clientX position of that click</caption>
  * var clicks = Rx.Observable.fromEvent(document, 'click');
  * var positions = clicks.map(ev => ev.clientX);
  * positions.subscribe(x => console.log(x));
@@ -10842,7 +10854,7 @@ Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged;
  * an Observable that is identical to the source.
  *
  * <span class="informal">Intercepts each emission on the source and runs a
- * function, but returns an output which is identical to the source.</span>
+ * function, but returns an output which is identical to the source as long as errors don't occur.</span>
  *
  * <img src="./img/do.png" width="100%">
  *
@@ -16255,7 +16267,7 @@ Observable.prototype.toArray = toArray;
  * @example
  * // Using normal ES2015
  * let source = Rx.Observable
- *   .just(42)
+ *   .of(42)
  *   .toPromise();
  *
  * source.then((value) => console.log('Value: %s', value));
@@ -16284,7 +16296,7 @@ Observable.prototype.toArray = toArray;
  *
  * // Setting via the method
  * let source = Rx.Observable
- *   .just(42)
+ *   .of(42)
  *   .toPromise(RSVP.Promise);
  *
  * source.then((value) => console.log('Value: %s', value));
@@ -34857,17 +34869,8 @@ function Enum() {
 }
 exports.Enum = Enum;
 (function (Enum) {
-    function hasOwnProperty(obj, prop) {
-        return Object.prototype.hasOwnProperty.call(obj, prop);
-    }
     function keys(e) {
-        var result = [];
-        for (var prop in e) {
-            if (hasOwnProperty(e, prop)) {
-                result.push(prop);
-            }
-        }
-        return result;
+        return Object.keys(e);
     }
     Enum.keys = keys;
     function values(e) {
@@ -34879,6 +34882,10 @@ exports.Enum = Enum;
         return result;
     }
     Enum.values = values;
+    function isType(e, value) {
+        return values(e).indexOf(value) !== -1;
+    }
+    Enum.isType = isType;
 })(Enum = exports.Enum || (exports.Enum = {}));
 //# sourceMappingURL=index.js.map;
 define("typescript-string-enums", (function (global) {
@@ -41707,14 +41714,83 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     'perso', // .me, .name
     'other', 'special');
     const UrlCategoryColorMapping = {
-        [UrlCategory.pro]: '#2fb1ff',
-        [UrlCategory.geek]: '#f5ff5b',
-        [UrlCategory.perso]: '#ffb5e1',
-        [UrlCategory.other]: '#bdff77',
-        [UrlCategory.special]: 'black',
+        [UrlCategory.pro]: '#57bfff',
+        [UrlCategory.geek]: '#f3ff4b',
+        [UrlCategory.perso]: '#ffaada',
+        [UrlCategory.other]: '#adf95e',
+        [UrlCategory.special]: '#a1a1a1',
     };
     const SEED = 3712;
     const COLOR_VARIANT_COUNT = 50;
+    // thank you @gka https://github.com/gka/chroma.js/issues/127#issuecomment-291457530
+    const get_CMC_color_difference = chroma.deltaE;
+    function get_CIE76_color_difference(ref_color, test_color) {
+        const [L1, a1, b1] = chroma(ref_color).lab();
+        const [L2, a2, b2] = chroma(test_color).lab();
+        return Math.sqrt(Math.pow(L2 - L1, 2) + Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
+    }
+    // https://en.wikipedia.org/wiki/Color_difference#CIE94
+    function get_CIE94_color_difference(ref_color, test_color) {
+        const [L1, a1, b1] = chroma(ref_color).lab();
+        const [L2, a2, b2] = chroma(test_color).lab();
+        // values for "graphic arts"
+        const kL = 1;
+        const K1 = 0.045;
+        const K2 = 0.015;
+        // usual values
+        const kC = 1;
+        const kH = 1;
+        const deltaEab = Math.sqrt(Math.pow(L2 - L1, 2) + Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
+        const deltaL = L1 - L2;
+        const C1 = Math.sqrt(a1 * a1 + b1 * b1);
+        const C2 = Math.sqrt(a2 * a2 + b2 * b2);
+        const deltaCab = C1 - C2;
+        const deltaHab = Math.sqrt(deltaEab * deltaEab - deltaL * deltaL - deltaCab * deltaCab);
+        // control
+        const deltaa = a1 - a2;
+        const deltab = b1 - b2;
+        const deltaHab2 = Math.sqrt(deltaa * deltaa + deltab * deltab - deltaCab * deltaCab);
+        console.assert(Math.trunc(deltaHab * 1000000) === Math.trunc(deltaHab2 * 1000000), 'erreur');
+        const SL = 1;
+        const SC = 1 + K1 * C1;
+        const SH = 1 + K2 * C1;
+        // parts
+        const p1 = deltaL / kL * SL;
+        const p2 = deltaCab / kC * SC;
+        const p3 = deltaHab / kH * SH;
+        return Math.sqrt(p1 * p1 + p2 * p2 + p3 * p3);
+    }
+    /*
+    function color_difference(ref_color: string, test_color: string): number {
+        return chroma.contrast(ref_color, test_color)
+    }
+    const MINIMAL_BG_DIFFERENCE = 1.5
+    const MINIMAL_FG_DIFFERENCE = 7 // https://www.w3.org/TR/WCAG20-TECHS/G18.html
+    */
+    /*
+    function color_difference(ref_color: string, test_color: string): number {
+        return Math.min(
+            get_CMC_color_difference(ref_color, test_color),
+            get_CMC_color_difference(test_color, ref_color)
+        )
+    }
+    const MINIMAL_BG_DIFFERENCE = 30
+    const MINIMAL_FG_DIFFERENCE = 70
+    */
+    /*
+    function color_difference(ref_color: string, test_color: string): number {
+        return get_CIE76_color_difference(ref_color, test_color)
+    }
+    const JND = 2.3
+    const MINIMAL_BG_DIFFERENCE = JND * 7
+    const MINIMAL_FG_DIFFERENCE = JND * 14
+    */
+    function color_difference(ref_color, test_color) {
+        return Math.min(get_CIE94_color_difference(ref_color, test_color), get_CIE94_color_difference(test_color, ref_color));
+    }
+    const JND = 2.3;
+    const MINIMAL_BG_DIFFERENCE = JND * 7;
+    const MINIMAL_FG_DIFFERENCE = JND * 10;
     marky.mark('generate-color-range');
     const UrlCategoryColorRange = {
         [UrlCategory.pro]: generate_color_range_for(UrlCategory.pro),
@@ -41726,9 +41802,10 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     marky.stop('generate-color-range');
     const hash_int32 = _.memoize(_.curryRight(murmur_v3_32_1.murmurhash_v3_32_gc)(SEED));
     function generate_color_range_for(category) {
+        console.groupCollapsed(`generate_color_range_for ${category}`);
+        let color_range_lower_bound;
+        let color_range_upper_bound;
         const INTERMEDIATE_SCALE_LENGTH = 100;
-        const MINIMAL_FG_CONTRAST = 7; // https://www.w3.org/TR/WCAG20-TECHS/G18.html
-        const MINIMAL_BG_CONTRAST = 1.5;
         const base_color = UrlCategoryColorMapping[category];
         let intermediate_scale;
         if (chroma(templates_1.BACKGROUND_COLOR).luminance() > chroma(base_color).luminance()) {
@@ -41741,35 +41818,51 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
             throw new Error('Dark background is NOT implemented, sorry !');
         }
         console.log({ intermediate_scale });
-        let scale_lower_bound = 'xxx';
-        let scale_upper_bound = 'xxx';
-        intermediate_scale.find(color => {
-            /*console.log({
-                color,
-                contrast_to_bg: chroma.contrast(BACKGROUND_COLOR, color),
-                contrast_to_fg: chroma.contrast(FOREGROUND_COLOR, color),
-                scale_lower_bound,
-                scale_upper_bound,
-            })*/
-            if (scale_lower_bound === 'xxx' && chroma.contrast(templates_1.BACKGROUND_COLOR, color) >= MINIMAL_BG_CONTRAST)
-                scale_lower_bound = color;
-            if (scale_upper_bound === 'xxx' && chroma.contrast(templates_1.FOREGROUND_COLOR, color) <= MINIMAL_FG_CONTRAST)
-                scale_upper_bound = color;
-            return (scale_lower_bound !== 'xxx' && scale_upper_bound !== 'xxx');
-        });
-        if (scale_upper_bound === 'xxx') {
-            // it can happen that the base color is already at high contrast
-            console.warn(`Failed to compute upper scale bound for ${category}/${base_color} !`);
-            scale_upper_bound = intermediate_scale[INTERMEDIATE_SCALE_LENGTH - 30];
+        // look for lightest acceptable variant with enough color difference
+        let intermediate_scale_lowest_acceptable_index = -1;
+        for (let i = 0; i < intermediate_scale.length && intermediate_scale_lowest_acceptable_index === -1; ++i) {
+            const candidate_color = intermediate_scale[i];
+            console.log({
+                i,
+                candidate_color,
+                difference_with_bg1: color_difference(templates_1.BACKGROUND_COLOR, candidate_color),
+                difference_with_bg2: color_difference(candidate_color, templates_1.BACKGROUND_COLOR),
+            });
+            if (color_difference(templates_1.BACKGROUND_COLOR, candidate_color) >= MINIMAL_BG_DIFFERENCE) {
+                intermediate_scale_lowest_acceptable_index = i;
+                break;
+            }
         }
-        if (scale_lower_bound === 'xxx') {
+        if (intermediate_scale_lowest_acceptable_index === -1) {
             // this should never happen, but...
             console.error(`Failed to compute lower scale bound for ${category}/${base_color} !`);
-            scale_lower_bound = intermediate_scale[10];
+            intermediate_scale_lowest_acceptable_index = 10;
         }
+        color_range_lower_bound = intermediate_scale[intermediate_scale_lowest_acceptable_index];
+        // look for darkest acceptable variant with enough color difference
+        let intermediate_scale_highest_acceptable_index = -1;
+        for (let i = INTERMEDIATE_SCALE_LENGTH - 1; i > intermediate_scale_lowest_acceptable_index && intermediate_scale_highest_acceptable_index === -1; --i) {
+            const candidate_color = intermediate_scale[i];
+            console.log({
+                i,
+                candidate_color,
+                difference_with_fg1: color_difference(templates_1.FOREGROUND_COLOR, candidate_color),
+                difference_with_fg2: color_difference(candidate_color, templates_1.FOREGROUND_COLOR),
+            });
+            if (color_difference(candidate_color, templates_1.FOREGROUND_COLOR) >= MINIMAL_FG_DIFFERENCE) {
+                intermediate_scale_highest_acceptable_index = i;
+            }
+        }
+        if (intermediate_scale_highest_acceptable_index === -1) {
+            // it can happen that the base color is already at high contrast
+            console.warn(`Failed to compute upper scale bound for ${category}/${base_color} !`);
+            intermediate_scale_highest_acceptable_index = INTERMEDIATE_SCALE_LENGTH - 30;
+        }
+        color_range_upper_bound = intermediate_scale[intermediate_scale_highest_acceptable_index];
+        console.groupEnd();
         return chroma.scale([
-            scale_lower_bound,
-            scale_upper_bound
+            color_range_lower_bound,
+            color_range_upper_bound
         ])
             .colors(COLOR_VARIANT_COUNT);
     }
@@ -41892,6 +41985,8 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
         logger: console,
     };
     function is_url_separator(c) {
+        if (c.length > 1)
+            throw new Error('is_url_separator incorrect parameter');
         return c === '/' || c === '.' || c === ':';
     }
     function factory(raw_options) {
@@ -42499,10 +42594,10 @@ define('tachyons',["require", "exports"], function (require, exports) {
 define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    const marky = window.marky;
-    marky.mark('bootstrap');
-    marky.mark('global');
-    //////////// CONSTANTS ////////////
+    const user_timing_measurement = window.marky;
+    user_timing_measurement.mark('global');
+    user_timing_measurement.mark('bootstrap');
+    ////////////
     const CONSTS = {
         LS_KEYS: {
             last_successful_raw_data: (vault_id) => `minisite-bookmark.${vault_id}.last_successful_raw_data`,
@@ -42543,13 +42638,13 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         return slug;
     }
     function fetch_raw_data(vault_id) {
-        marky.mark('fetch_raw_data');
+        user_timing_measurement.mark('fetch_raw_data');
         return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, {
             response_should_be_ok: true,
             logger,
         })
             .then(res => {
-            marky.stop('fetch_raw_data');
+            user_timing_measurement.stop('fetch_raw_data');
             return res.text();
         });
     }
@@ -42579,10 +42674,9 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             : Rx.Observable.empty();
     }
     function render(data) {
-        console.log('render', data);
         if (!data)
             return;
-        marky.mark('render');
+        user_timing_measurement.mark('render');
         logger.group('rendering...');
         logger.log('source data', data);
         window.document.title = data.title;
@@ -42615,8 +42709,8 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         all_layouts_done
             .then(() => {
             logger.info('All packery layouts done');
-            marky.stop('render');
-            marky.stop('global');
+            user_timing_measurement.stop('render');
+            user_timing_measurement.stop('global');
         })
             .catch(e => logger.error(e));
         pks.forEach(pckry => pckry.layout());
@@ -42627,11 +42721,11 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         logger.error('something wrong occurred:', err);
         const el_content = document.querySelectorAll('#content')[0];
         el_content.innerHTML = 'Something wrong occured :-( (Look at the console if you are a dev)';
-        marky.stop('global');
+        user_timing_measurement.stop('global');
     }
     ////////////////////////////////////
     setTimeout(() => {
-        marky.mark('rx setup');
+        user_timing_measurement.mark('rx setup');
         const subjects = rx_auto_1.auto({
             ////////////////////////////////////
             vault_id: get_vault_id,
@@ -42699,9 +42793,9 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             logger.info('updated cache with fresh data');
             setTimeout(() => sbs1.unsubscribe());
         });
-        marky.stop('rx setup');
+        user_timing_measurement.stop('rx setup');
     });
-    marky.stop('bootstrap');
+    user_timing_measurement.stop('bootstrap');
 });
 ////////////////////////////////////
 //# sourceMappingURL=index.js.map;
