@@ -41714,14 +41714,14 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     'perso', // .me, .name
     'other', 'special');
     const UrlCategoryColorMapping = {
-        [UrlCategory.pro]: '#57bfff',
+        [UrlCategory.pro]: '#45afff',
         [UrlCategory.geek]: '#f3ff4b',
         [UrlCategory.perso]: '#ffaada',
         [UrlCategory.other]: '#adf95e',
         [UrlCategory.special]: '#a1a1a1',
     };
     const SEED = 3712;
-    const COLOR_VARIANT_COUNT = 50;
+    const COLOR_VARIANT_COUNT = 33;
     // thank you @gka https://github.com/gka/chroma.js/issues/127#issuecomment-291457530
     const get_CMC_color_difference = chroma.deltaE;
     function get_CIE76_color_difference(ref_color, test_color) {
@@ -41792,17 +41792,24 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     const MINIMAL_BG_DIFFERENCE = JND * 7;
     const MINIMAL_FG_DIFFERENCE = JND * 10;
     marky.mark('generate-color-range');
+    const CACHED_COLOR_RANGE_BOUNDS = {
+        [UrlCategory.pro]: ["#cae7fd", "#45afff"],
+        [UrlCategory.geek]: ["#f9fcde", "#f3ff4b"],
+        [UrlCategory.perso]: ["#fcdef0", "#ffaada"],
+        [UrlCategory.other]: ["#ecfbdf", "#adf95e"],
+        [UrlCategory.special]: ["#cccdcd", "#a1a1a1"],
+    };
     const UrlCategoryColorRange = {
-        [UrlCategory.pro]: generate_color_range_for(UrlCategory.pro),
-        [UrlCategory.geek]: generate_color_range_for(UrlCategory.geek),
-        [UrlCategory.perso]: generate_color_range_for(UrlCategory.perso),
-        [UrlCategory.other]: generate_color_range_for(UrlCategory.other),
-        [UrlCategory.special]: generate_color_range_for(UrlCategory.special),
+        [UrlCategory.pro]: get_color_range_for(UrlCategory.pro),
+        [UrlCategory.geek]: get_color_range_for(UrlCategory.geek),
+        [UrlCategory.perso]: get_color_range_for(UrlCategory.perso),
+        [UrlCategory.other]: get_color_range_for(UrlCategory.other),
+        [UrlCategory.special]: get_color_range_for(UrlCategory.special),
     };
     marky.stop('generate-color-range');
     const hash_int32 = _.memoize(_.curryRight(murmur_v3_32_1.murmurhash_v3_32_gc)(SEED));
-    function generate_color_range_for(category) {
-        console.groupCollapsed(`generate_color_range_for ${category}`);
+    function generate_color_range_bounds_for(category) {
+        console.groupCollapsed(`generate_color_range_bounds_for ${category}`);
         let color_range_lower_bound;
         let color_range_upper_bound;
         const INTERMEDIATE_SCALE_LENGTH = 100;
@@ -41860,6 +41867,14 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
         }
         color_range_upper_bound = intermediate_scale[intermediate_scale_highest_acceptable_index];
         console.groupEnd();
+        console.log([color_range_lower_bound, color_range_upper_bound]);
+        return [
+            color_range_lower_bound,
+            color_range_upper_bound
+        ];
+    }
+    function get_color_range_for(category) {
+        const [color_range_lower_bound, color_range_upper_bound] = CACHED_COLOR_RANGE_BOUNDS[category] || generate_color_range_bounds_for(category);
         return chroma.scale([
             color_range_lower_bound,
             color_range_upper_bound

@@ -24,7 +24,7 @@ const UrlCategory = Enum(
 type UrlCategory = Enum<typeof UrlCategory>
 
 const UrlCategoryColorMapping = {
-	[ UrlCategory.pro ]: '#57bfff', // blue-ish
+	[ UrlCategory.pro ]: '#45afff', // blue-ish
 	[ UrlCategory.geek ]: '#f3ff4b', // yellow-ish
 	[ UrlCategory.perso ]: '#ffaada', // pink-ish
 	[ UrlCategory.other ]: '#adf95e', // green-ish
@@ -32,7 +32,7 @@ const UrlCategoryColorMapping = {
 }
 
 const SEED: number = 3712
-const COLOR_VARIANT_COUNT: number = 50
+const COLOR_VARIANT_COUNT: number = 33
 
 // thank you @gka https://github.com/gka/chroma.js/issues/127#issuecomment-291457530
 const get_CMC_color_difference: (ref_color: string, test_color: string) => number = (chroma as any).deltaE
@@ -119,21 +119,29 @@ const MINIMAL_FG_DIFFERENCE = JND * 10
 
 
 marky.mark('generate-color-range')
+
+const CACHED_COLOR_RANGE_BOUNDS = {
+	[ UrlCategory.pro ]: ["#cae7fd", "#45afff"],
+	[ UrlCategory.geek ]: ["#f9fcde", "#f3ff4b"],
+	[ UrlCategory.perso ]: ["#fcdef0", "#ffaada"],
+	[ UrlCategory.other ]: ["#ecfbdf", "#adf95e"],
+	[ UrlCategory.special ]: ["#cccdcd", "#a1a1a1"],
+}
+
 const UrlCategoryColorRange = {
-	[ UrlCategory.pro ]: generate_color_range_for(UrlCategory.pro),
-	[ UrlCategory.geek ]: generate_color_range_for(UrlCategory.geek),
-	[ UrlCategory.perso ]: generate_color_range_for(UrlCategory.perso),
-	[ UrlCategory.other ]: generate_color_range_for(UrlCategory.other),
-	[ UrlCategory.special ]: generate_color_range_for(UrlCategory.special),
+	[ UrlCategory.pro ]: get_color_range_for(UrlCategory.pro),
+	[ UrlCategory.geek ]: get_color_range_for(UrlCategory.geek),
+	[ UrlCategory.perso ]: get_color_range_for(UrlCategory.perso),
+	[ UrlCategory.other ]: get_color_range_for(UrlCategory.other),
+	[ UrlCategory.special ]: get_color_range_for(UrlCategory.special),
 }
 marky.stop('generate-color-range')
 
 const hash_int32: (s: string) => number = _.memoize(_.curryRight(hash_int32_uncached)(SEED))
 
 
-
-function generate_color_range_for(category: UrlCategory): string[] {
-	console.groupCollapsed(`generate_color_range_for ${category}`)
+function generate_color_range_bounds_for(category: UrlCategory): [string, string] {
+	console.groupCollapsed(`generate_color_range_bounds_for ${category}`)
 
 	let color_range_lower_bound: string
 	let color_range_upper_bound: string
@@ -213,6 +221,18 @@ function generate_color_range_for(category: UrlCategory): string[] {
 	color_range_upper_bound = intermediate_scale[intermediate_scale_highest_acceptable_index]
 
 	console.groupEnd()
+
+	console.log([ color_range_lower_bound, color_range_upper_bound])
+
+	return [
+		color_range_lower_bound,
+		color_range_upper_bound
+	]
+}
+
+function get_color_range_for(category: UrlCategory): string[] {
+	const [ color_range_lower_bound, color_range_upper_bound ] =
+		CACHED_COLOR_RANGE_BOUNDS[category] || generate_color_range_bounds_for(category)
 
 	return chroma.scale([
 		color_range_lower_bound,

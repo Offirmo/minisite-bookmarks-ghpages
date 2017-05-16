@@ -20,6 +20,7 @@ Abandoned webcomics:
 
 
 Ongoing mangas:
+- http://mangakakalot.com/
 - The Gamer http://mangafox.me/manga/the_gamer/v03/c163/30.html
 - Naruto http://www.mangareader.net/naruto
 - Bleach http://www.mangareader.net/bleach
@@ -28,10 +29,16 @@ Ongoing mangas:
 - Hunter x Hunter http://www.mangareader.net/hunter-x-hunter
 - space brothers
 - Jin
+- http://mangakakalot.com/chapter/oh_lord_jesus/chapter_32
+- http://mangakakalot.com/chapter/mousou_telepathy/chapter_312
+- http://mangakakalot.com/chapter/quan_zhi_gao_shou/chapter_24.3
+- http://mangakakalot.com/manga/dice_the_cube_that_changes_everything
+- http://mangakakalot.com/chapter/dungeon_ni_deai_o_motomeru_no_wa_machigatte_iru_darou_ka/chapter_71
+
 
 
 Finished mangas
-- The breaker http://www.mangareader.net/the-breaker
+- The breaker http://mangakakalot.com/chapter/the_breaker/chapter_1
 - Nausicaa
 - Doraemon
 - History's strongest disciple http://www.mangareader.net/historys-strongest-disciple-kenichi
@@ -40,4 +47,5 @@ Finished mangas
 
 
 Abandonned mangas
-- The Breaker: new waves http://www.mangareader.net/the-breaker-new-waves/1
+- The Breaker: new waves http://mangakakalot.com/chapter/the_breaker_new_waves/chapter_1
+- http://mangakakalot.com/manga/mahou_shoujo_nante_mou_ii_desu_kara
