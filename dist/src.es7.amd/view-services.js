@@ -4,7 +4,7 @@ define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", 
     Object.defineProperty(exports, "__esModule", { value: true });
     const marky = window.marky;
     ////////////////////////////////////
-    const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .biz
+    const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .com.xy, .biz
     'geek', // .net, .io
     'perso', // .me, .name
     'other', 'special');
@@ -266,6 +266,7 @@ define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", 
         return candidate_label;
     }
     exports.generate_label_from_url = generate_label_from_url;
+    // experiment for dynamic font size adjustment
     const WIDTH2 = 'Iabcdefghjkmnopqstuvwxyz';
     const WIDTH1 = ' ilr.';
     function evaluate_string_width(s) {

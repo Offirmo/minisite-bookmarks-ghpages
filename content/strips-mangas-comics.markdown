@@ -9,7 +9,7 @@ Ongoing webcomics
 - (Order of the stick) http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 
 
-Finished:
+Finished webcomics:
 - Inverloch http://inverloch.seraph-inn.com/volume1.html
 
 
@@ -19,8 +19,10 @@ Abandoned webcomics:
 - 72 bunnies http://seventy2bunnies.comicgenesis.com/d/20050507.html
 
 
-Ongoing mangas:
+Mangas:
 - http://mangakakalot.com/
+
+Ongoing mangas:
 - The Gamer http://mangafox.me/manga/the_gamer/v03/c163/30.html
 - Naruto http://www.mangareader.net/naruto
 - Bleach http://www.mangareader.net/bleach
@@ -34,7 +36,7 @@ Ongoing mangas:
 - http://mangakakalot.com/chapter/quan_zhi_gao_shou/chapter_24.3
 - http://mangakakalot.com/manga/dice_the_cube_that_changes_everything
 - http://mangakakalot.com/chapter/dungeon_ni_deai_o_motomeru_no_wa_machigatte_iru_darou_ka/chapter_71
-
+- http://mangakakalot.com/chapter/spirit_blade_mountain/chapter_181
 
 
 Finished mangas
@@ -46,6 +48,6 @@ Finished mangas
 - Flame of Recca http://www.mangareader.net/flame-of-recca
 
 
-Abandonned mangas
+Abandoned mangas
 - The Breaker: new waves http://mangakakalot.com/chapter/the_breaker_new_waves/chapter_1
 - http://mangakakalot.com/manga/mahou_shoujo_nante_mou_ii_desu_kara

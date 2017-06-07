@@ -24,30 +24,31 @@ const DEFAULT_OPTIONS: ParserOptions = {
 	logger: console,
 }
 
-function is_url_separator(c: string): boolean {
-	if (c.length > 1) throw new Error('is_url_separator incorrect parameter')
+function is_url_separator(char: string): boolean {
+	if (char.length > 1)
+		throw new Error('is_url_separator incorrect parameter')
 
-	return c === '/' || c === '.' || c === ':'
+	return char === '/' || char === '.' || char === ':'
+}
+
+// http://stackoverflow.com/a/1917041/587407
+function sharedStart(array: string[]): string {
+	if (array.length <= 1) return ''
+
+	const A = array.concat().sort()
+	const a1 = A[0]
+	const a2 = A[A.length - 1]
+	const L = a1.length
+
+	let i = 0
+	while (i < L && a1.charAt(i) === a2.charAt(i)) { i++ }
+
+	return a1.substring(0, i)
 }
 
 function factory(raw_options: Partial<ParserOptions>) {
 	const options: ParserOptions = Object.assign({}, DEFAULT_OPTIONS, raw_options)
 	const { logger } = options
-
-	// http://stackoverflow.com/a/1917041/587407
-	function sharedStart(array: string[]): string {
-		if (array.length <= 1) return ''
-
-		const A = array.concat().sort()
-		const a1 = A[0]
-		const a2 = A[A.length - 1]
-		const L = a1.length
-
-		let i = 0
-		while (i < L && a1.charAt(i) === a2.charAt(i)) { i++ }
-
-		return a1.substring(0, i)
-	}
 
 	function post_process_group(group: BookmarkGroup): BookmarkGroup {
 		logger.groupCollapsed('post_process_group')

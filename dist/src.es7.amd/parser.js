@@ -11,28 +11,28 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
     const DEFAULT_OPTIONS = {
         logger: console,
     };
-    function is_url_separator(c) {
-        if (c.length > 1)
+    function is_url_separator(char) {
+        if (char.length > 1)
             throw new Error('is_url_separator incorrect parameter');
-        return c === '/' || c === '.' || c === ':';
+        return char === '/' || char === '.' || char === ':';
+    }
+    // http://stackoverflow.com/a/1917041/587407
+    function sharedStart(array) {
+        if (array.length <= 1)
+            return '';
+        const A = array.concat().sort();
+        const a1 = A[0];
+        const a2 = A[A.length - 1];
+        const L = a1.length;
+        let i = 0;
+        while (i < L && a1.charAt(i) === a2.charAt(i)) {
+            i++;
+        }
+        return a1.substring(0, i);
     }
     function factory(raw_options) {
         const options = Object.assign({}, DEFAULT_OPTIONS, raw_options);
         const { logger } = options;
-        // http://stackoverflow.com/a/1917041/587407
-        function sharedStart(array) {
-            if (array.length <= 1)
-                return '';
-            const A = array.concat().sort();
-            const a1 = A[0];
-            const a2 = A[A.length - 1];
-            const L = a1.length;
-            let i = 0;
-            while (i < L && a1.charAt(i) === a2.charAt(i)) {
-                i++;
-            }
-            return a1.substring(0, i);
-        }
         function post_process_group(group) {
             logger.groupCollapsed('post_process_group');
             const auto_labelled_bookmarks = group.bookmarks.filter(bookmark => bookmark.label === bookmark.url);

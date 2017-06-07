@@ -39,13 +39,14 @@ Banque:
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 
 
-Outils
+Apps
 - https://framindmap.org/c/maps/
 - Emoji www.emoji-cheat-sheet.com
 - Emoji http://emojihomepage.com/
 - Lenny face https://lennyfaces.org/
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
+- Online PDF editor https://www.pdfescape.com/
 
 
 Entreprise
@@ -76,6 +77,7 @@ Loterie:
 To check:
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
 - https://www.impots.gouv.fr/portail/
+- https://www.info-retraite.fr/
 
 
 Wiki perso:
@@ -111,11 +113,11 @@ Docs:
 - Git solving http://justinhileman.info/article/git-pretty/full/
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
 - + TS compiler options https://www.typescriptlang.org/docs/handbook/compiler-options.html
+- TS What's new 2.3 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html
 - TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
 - TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
 - TS What's new 2.0 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html
 - RxJS http://reactivex.io/rxjs/
-- online regexp tester https://regex101.com/
 - unminifier http://unminify.com/
 - https://github.com/caolan/async
 - http://epeli.github.io/underscore.string/
@@ -130,7 +132,8 @@ Docs:
 - ES6 http://exploringjs.com/es6/ch_modules.html
 
 
-Tools:
+Dev tools:
+- online regexp tester https://regex101.com/
 - Color converter http://www.cssportal.com/css-color-converter/
 - Lorem Ipsum http://www.lipsum.com/feed/html
 

@@ -1,12 +1,12 @@
 interface Bookmark {
     readonly url: string;
     readonly uniformized_url: string;
+    parsed_url: URL;
     label: string;
     weight: number;
     icon_base64?: string;
     bgcolor: string;
     secure: boolean;
-    parsed_url: URL;
 }
 interface BookmarkGroup {
     title: string;

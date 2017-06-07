@@ -85,7 +85,6 @@ function bookmark_group(group: BookmarkGroup, index: number): string {
 }
 
 function page(data: Data): string {
-
 	const items = data.rows.map(bookmark_group).join('\n')
 
 	return `

@@ -15,7 +15,7 @@ import { murmurhash_v3_32_gc as hash_int32_uncached } from './incubator/murmur_v
 
 
 const UrlCategory = Enum(
-	'pro', // .com, .co.xyz, .biz
+	'pro', // .com, .co.xyz, .com.xy, .biz
 	'geek', // .net, .io
 	'perso', // .me, .name
 	'other',
@@ -350,6 +350,7 @@ function generate_label_from_url(parsed_url: URL): string {
 }
 
 
+// experiment for dynamic font size adjustment
 const WIDTH2 = 'Iabcdefghjkmnopqstuvwxyz'
 const WIDTH1 = ' ilr.'
 function evaluate_string_width(s: string): number {

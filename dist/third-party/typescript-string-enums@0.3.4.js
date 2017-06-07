@@ -19,13 +19,22 @@ function Enum() {
 }
 exports.Enum = Enum;
 (function (Enum) {
+    function ofKeys(e) {
+        var result = {};
+        for (var _i = 0, _a = Object.keys(e); _i < _a.length; _i++) {
+            var key = _a[_i];
+            result[key] = key;
+        }
+        return result;
+    }
+    Enum.ofKeys = ofKeys;
     function keys(e) {
         return Object.keys(e);
     }
     Enum.keys = keys;
     function values(e) {
         var result = [];
-        for (var _i = 0, _a = keys(e); _i < _a.length; _i++) {
+        for (var _i = 0, _a = Object.keys(e); _i < _a.length; _i++) {
             var key = _a[_i];
             result.push(e[key]);
         }

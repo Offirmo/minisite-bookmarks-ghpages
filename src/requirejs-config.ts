@@ -5,7 +5,7 @@
  *  - no fancy stuff
  */
 
-declare var requirejs: any
+declare const requirejs: any
 requirejs.config({
 
 	// base URL from which component files will be searched
