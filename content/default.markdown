@@ -12,6 +12,7 @@ Pinned
 - tops http://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
+- pocket https://getpocket.com/a?src=ff_ext_saved
 
 
 Projects
@@ -39,14 +40,13 @@ Banque:
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 
 
-Apps
+Misc
 - https://framindmap.org/c/maps/
 - Emoji www.emoji-cheat-sheet.com
 - Emoji http://emojihomepage.com/
 - Lenny face https://lennyfaces.org/
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
-- Online PDF editor https://www.pdfescape.com/
 
 
 Entreprise
@@ -55,7 +55,7 @@ Entreprise
 - ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
 - services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
 - .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
-
+- https://www.eseo-alumni.com/#
 
 Admin:
 - mutadis.org http://www.mutadis.org/connexion/
@@ -104,7 +104,7 @@ Wiki perso:
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
 - + https://github.com/Offirmo-team/wiki/wiki/UX
 - https://github.com/Offirmo-team/wiki/wiki/YAML
-
+- https://github.com/Offirmo-team/wiki/wiki/carrière
 
 Docs:
 - +++ http://devdocs.io/
@@ -136,6 +136,7 @@ Dev tools:
 - online regexp tester https://regex101.com/
 - Color converter http://www.cssportal.com/css-color-converter/
 - Lorem Ipsum http://www.lipsum.com/feed/html
+- Online PDF editor https://www.pdfescape.com/
 
 
 Offline / local
