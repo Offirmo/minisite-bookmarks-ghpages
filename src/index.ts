@@ -135,7 +135,7 @@ function render(data: Data) {
 	logger.log('html replaced')
 
 	const elems = Array.from(document.querySelectorAll('.grid'))
-	const pks = elems.map(elem => new Packery( elem!, {
+	const pks = elems.map(elem => new (Packery as any)( elem!, {
 		itemSelector: '.grid-item',
 		// stamp elements
 		stamp: '.stamp',

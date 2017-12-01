@@ -1,18 +1,24 @@
-// UMD template from here https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
+// UMD template from https://gist.github.com/Offirmo/ec5c7ec9c44377c202f9f8abcacf1061#file-umd-js
 (function (root, factory) {
+	var LIB_NAME = 'SimpleQuerystringParser'
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
 		define(function () {
-			return (root.SimpleQuerystringParser = factory())
+			return (root
+				? root[LIB_NAME] = factory()
+				: factory() // root is not defined in webpack 2, but this works
+			)
 		});
 	} else if (typeof module === 'object' && module.exports) {
 		// Node. Does not work with strict CommonJS, but
 		// only CommonJS-like environments that support module.exports,
 		// like Node.
 		module.exports = factory()
-	} else {
+	} else if (root) {
 		// Browser globals
-		root.SimpleQuerystringParser = factory()
+		root[LIB_NAME] = factory()
+	} else {
+		throw new Error('From UMD wrapper of lib "' + LIB_NAME + '": unexpected env, cannot expose my content!')
 	}
 }(this, function () {
 	"use strict";

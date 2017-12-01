@@ -1,0 +1,14 @@
+
+pinned:
+- prod http://www.humblecreatives.ssi.org.au/
+- prod login http://www.humblecreatives.ssi.org.au/wp-login.php
+
+setup:
+- https://www.virtualbox.org/
+- https://coolestguidesontheplanet.com/using-vvv-varying-vagrant-vagrants-wordpress-local-development-environment/
+- repo https://bitbucket.org/drpotato_atlassian/humble-creatives
+- https://varyingvagrantvagrants.org/docs/en-US/installation/
+
+local dev:
+- http://vvv.test/
+- http://vvv.dev/database-admin/
