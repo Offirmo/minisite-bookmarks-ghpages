@@ -3,6 +3,7 @@
 
 All boards
 - bootstrap http://www.offirmo.net/minisite-bookmarks-ghpages/bootstrap
+- perso http://www.offirmo.net/minisite-bookmarks-ghpages/perso
 - client01 http://www.offirmo.net/minisite-bookmarks-ghpages/client01
 - client02 http://www.offirmo.net/minisite-bookmarks-ghpages/client02
 - demo http://www.offirmo.net/minisite-bookmarks-ghpages/demo

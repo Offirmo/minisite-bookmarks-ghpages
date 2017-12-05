@@ -13,5 +13,5 @@ the-boring-rpg:
 - dev http://localhost:8080/packages/the-boring-rpg/
 
 marketing:
-- 
+- PH https://www.producthunt.com/upcoming/the-npm-rpg
 

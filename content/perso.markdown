@@ -13,7 +13,7 @@ Pinned
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 - pocket https://getpocket.com/a?src=ff_ext_saved
-- coles
+- https://www.worldtimebuddy.com/
 
 
 Projects
@@ -36,9 +36,10 @@ Banque:
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/
-- WeSwap https://app.weswap.com/#/fr/login
+- ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
 - Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
+- WeSwap https://app.weswap.com/#/fr/login
 
 
 Misc
@@ -50,13 +51,6 @@ Misc
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
 
 
-Entreprise
-- Télédéclarations https://www.net-entreprises.fr/
-- Changements situation https://forms.guichet-entreprises.fr/login
-- ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
-- services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
-- .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
-- https://www.eseo-alumni.com/#
 
 Admin:
 - mutadis.org http://www.mutadis.org/connexion/
@@ -83,29 +77,30 @@ To check:
 
 Wiki perso:
 - + https://github.com/Offirmo-team/wiki/wiki
-- + https://github.com/Offirmo-team/wiki/wiki/appli-web
 - + https://github.com/Offirmo-team/wiki/wiki/administration-unix
-- https://github.com/Offirmo-team/wiki/wiki/bash
-- + CSS https://github.com/Offirmo-team/wiki/wiki/css
-- https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
-- https://github.com/Offirmo-team/wiki/wiki/extension-de-navigateurs
+- + https://github.com/Offirmo-team/wiki/wiki/appli-web
+- + https://github.com/Offirmo-team/wiki/wiki/css
 - + https://github.com/Offirmo-team/wiki/wiki/git
-- https://github.com/Offirmo-team/wiki/wiki/GitHub
 - + https://github.com/Offirmo-team/wiki/wiki/html
 - + https://github.com/Offirmo-team/wiki/wiki/javascript
 - + https://github.com/Offirmo-team/wiki/wiki/module-web
-- https://github.com/Offirmo-team/wiki/wiki/JSON
-- https://github.com/Offirmo-team/wiki/wiki/npm
-- https://github.com/Offirmo-team/wiki/wiki/react
-- https://github.com/Offirmo-team/wiki/wiki/reactive-programming
-- https://github.com/Offirmo-team/wiki/wiki/serveur
 - + https://github.com/Offirmo-team/wiki/wiki/Sécurité
-- https://github.com/Offirmo-team/wiki/wiki/navigateur
-- https://github.com/Offirmo-team/wiki/wiki/tachyons
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
 - + https://github.com/Offirmo-team/wiki/wiki/UX
-- https://github.com/Offirmo-team/wiki/wiki/YAML
+- https://github.com/Offirmo-team/wiki/wiki/bash
 - https://github.com/Offirmo-team/wiki/wiki/carrière
+- https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
+- https://github.com/Offirmo-team/wiki/wiki/ethereum
+- https://github.com/Offirmo-team/wiki/wiki/GitHub
+- https://github.com/Offirmo-team/wiki/wiki/growth
+- https://github.com/Offirmo-team/wiki/wiki/JSON
+- https://github.com/Offirmo-team/wiki/wiki/navigateur
+- https://github.com/Offirmo-team/wiki/wiki/npm
+- https://github.com/Offirmo-team/wiki/wiki/react
+- https://github.com/Offirmo-team/wiki/wiki/serveur
+- https://github.com/Offirmo-team/wiki/wiki/tachyons
+- https://github.com/Offirmo-team/wiki/wiki/YAML
+
 
 Docs:
 - +++ http://devdocs.io/
@@ -148,6 +143,7 @@ Offline / local
 - :5000 http://0.0.0.0:5000/
 - :6000 http://0.0.0.0:6000/
 - :7000 http://0.0.0.0:7000/
+- :9001 http://0.0.0.0:9001/
 
 
 Veille:
@@ -204,3 +200,10 @@ tosort:
 - https://github.com/Offirmo-team/wiki/wiki/idées-de-posts-de-blog
 - aprilzero.com/explorer/august-2014/
 
+
+Entreprise
+- Télédéclarations https://www.net-entreprises.fr/
+- Changements situation https://forms.guichet-entreprises.fr/login
+- services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
+- .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
+- https://www.eseo-alumni.com/#
