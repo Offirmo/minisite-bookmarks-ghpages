@@ -176,6 +176,7 @@ Veille:
 
 
 Setup:
+- https://github.com/Offirmo/open-source-dev-env
 - https://github.com/Offirmo-team/wiki/wiki/macOS
 - https://github.com/Offirmo-team/wiki/wiki/dev-env
 - https://github.com/Offirmo-team/wiki/wiki/Firefox

@@ -9,6 +9,9 @@ setup:
 - repo https://bitbucket.org/drpotato_atlassian/humble-creatives
 - https://varyingvagrantvagrants.org/docs/en-US/installation/
 
+project:
+- https://trello.com/b/jVxXIJht/humble-creatives-website-dev
+
 local dev:
 - http://vvv.test/
 - http://vvv.dev/database-admin/

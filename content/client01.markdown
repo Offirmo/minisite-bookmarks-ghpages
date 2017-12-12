@@ -1,5 +1,3 @@
-%YAML 1.2
----
 
 pinned:
 - reviewers http://denis-sokolov.github.io/random-items/?items=Antoine,Bradley,Edmundas,Guillaume,Thierry,Thomas,William&count=3
