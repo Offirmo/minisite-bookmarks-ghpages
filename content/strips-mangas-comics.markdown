@@ -8,6 +8,7 @@ Ongoing webcomics
 - The Order of The Stick http://www.giantitp.com/comics/oots0001.html
 - (Order of the stick) http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 - https://thedesignteam.io/
+- Ubunchu https://seotch.wordpress.com/ubunchu/
 
 Finished webcomics:
 - Inverloch http://inverloch.seraph-inn.com/volume1.html
