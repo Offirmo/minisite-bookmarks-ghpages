@@ -32,7 +32,7 @@ tech
 SAAS
 - netlify.com
 - https://getstream.io/get_started/#flat_feed
-
+- https://humio.com/pricing.html
 
 Content
 - https://www.pinterest.com/
