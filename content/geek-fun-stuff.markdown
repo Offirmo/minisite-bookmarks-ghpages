@@ -5,12 +5,15 @@ Dev
 - + Les joies du code (fr) https://lesjoiesducode.fr/
 - + CSS puns https://saijogeorge.com/css-puns/
 - daily WTF http://thedailywtf.com/
-- Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
 
 
 Design
 - The design team https://thedesignteam.io/
 - UX hero http://www.uxherocomics.com/
+
+
+Admin
+- Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
 
 
 Enterprise life
