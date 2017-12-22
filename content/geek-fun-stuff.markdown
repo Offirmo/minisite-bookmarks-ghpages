@@ -17,7 +17,7 @@ Admin
 
 
 Enterprise life
-- + http://dilbert.com/
+- + Dilbert http://dilbert.com/
 - Bootstrapped http://bootstrappedcomic.com/post/136384581922
 
 

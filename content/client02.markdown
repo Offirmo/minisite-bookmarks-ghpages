@@ -7,8 +7,9 @@ pinned:
 Project:
 - https://growth.jira-dev.com/secure/Dashboard.jspa
 - OKRs https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+OKRs
-- https://extranet.atlassian.com/display/PGT/Expandonauts+FY18+Q3+plan
-- Agile https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
+- Plan https://extranet.atlassian.com/display/PGT/Expandonauts+FY18+Q3+plan
+- backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
+- kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
 
 
 Engineering:
