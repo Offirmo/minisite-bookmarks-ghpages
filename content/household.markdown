@@ -33,3 +33,21 @@ Administration France
 - https://www.impots.gouv.fr/portail/
 - https://www.info-retraite.fr/
 
+
+
+Super:
+* https://extranet.atlassian.com/questions/2331674858/what-are-some-good-alternatives-to-bt-super
+
+
+Medicare
+* https://expats.atlassian.net/wiki/display/SYD/customcontent/list/ac%3Acom.atlassian.confluence.plugins.confluence-questions%3Aquestion?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions/99483659
+* https://extranet.atlassian.com/display/PEOP/Medicare+FAQ
+* https://www.privatehealth.gov.au/healthinsurance/howitworks/waitingperiods.htm
+
+
+Tenants
+* https://www.tenants.org.au/factsheet-09-you-want-to-leave
+
+
+Educ
+* https://extranet.atlassian.com/display/PEOP/Expats+Benefits+-+Child+Education+Costs

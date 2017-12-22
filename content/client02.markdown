@@ -9,7 +9,6 @@ Project:
 - OKRs https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+OKRs
 - https://extranet.atlassian.com/display/PGT/Expandonauts+FY18+Q3+plan
 - Agile https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
-- 
 
 
 Engineering:
@@ -30,23 +29,6 @@ Tools:
 * https://packages.atlassian.com/
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
 
-
-Super:
-* https://extranet.atlassian.com/questions/2331674858/what-are-some-good-alternatives-to-bt-super
-
-
-Medicare
-* https://expats.atlassian.net/wiki/display/SYD/customcontent/list/ac%3Acom.atlassian.confluence.plugins.confluence-questions%3Aquestion?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions/99483659
-* https://extranet.atlassian.com/display/PEOP/Medicare+FAQ
-* https://www.privatehealth.gov.au/healthinsurance/howitworks/waitingperiods.htm
-
-
-Tenants
-* https://www.tenants.org.au/factsheet-09-you-want-to-leave
-
-
-Educ
-* https://extranet.atlassian.com/display/PEOP/Expats+Benefits+-+Child+Education+Costs
 
 
 Shipits
