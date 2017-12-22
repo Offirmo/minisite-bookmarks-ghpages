@@ -1,8 +1,8 @@
-# fun stuff
+# fun geek stuff
 
 Dev
 - ++ CommitStrip http://www.commitstrip.com/en/
-- + les joies du code https://lesjoiesducode.fr/
+- + Les joies du code (fr) https://lesjoiesducode.fr/
 - + CSS puns https://saijogeorge.com/css-puns/
 - daily WTF http://thedailywtf.com/
 - Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master

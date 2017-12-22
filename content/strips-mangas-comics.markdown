@@ -1,23 +1,12 @@
 
-IT
-- CommitStrip http://www.commitstrip.com/en/
-- Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
-- WTF http://thedailywtf.com/
-- Bootstrapped http://bootstrappedcomic.com/post/136384581922
-
-
-Design
-- The design team https://thedesignteam.io/
-- UX hero http://www.uxherocomics.com/
-
-
-Geek
-- XKCD https://xkcd.com/
+DnD
 - OOTS http://www.giantitp.com/comics/oots0001.html
 - OOTS bonus http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
-* DM of the ring http://www.shamusyoung.com/twentysidedtale/?p=612
+- DM of the ring http://www.shamusyoung.com/twentysidedtale/?p=612
+
 
 Strips:
+- XKCD https://xkcd.com/
 - Sarah Andersen http://sarahcandersen.com/page/108
 
 
