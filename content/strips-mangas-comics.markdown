@@ -1,14 +1,25 @@
 
+IT
+- CommitStrip http://www.commitstrip.com/en/
+- Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
+- WTF http://thedailywtf.com/
+- Bootstrapped http://bootstrappedcomic.com/post/136384581922
+
+
+Design
+- The design team https://thedesignteam.io/
+- UX hero http://www.uxherocomics.com/
+
+
+Geek
+- XKCD https://xkcd.com/
+- OOTS http://www.giantitp.com/comics/oots0001.html
+- OOTS bonus http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
+* DM of the ring http://www.shamusyoung.com/twentysidedtale/?p=612
+
 Strips:
 - Sarah Andersen http://sarahcandersen.com/page/108
-- xkcd
 
-
-Ongoing webcomics
-- The Order of The Stick http://www.giantitp.com/comics/oots0001.html
-- (Order of the stick) http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
-- https://thedesignteam.io/
-- Ubunchu https://seotch.wordpress.com/ubunchu/
 
 Finished webcomics:
 - Inverloch http://inverloch.seraph-inn.com/volume1.html
