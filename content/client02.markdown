@@ -2,6 +2,7 @@
 pinned:
 - mail https://mail.google.com/mail/u/0/#inbox
 - portal https://atlassian.my.centrify.com/
+- YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
 
 
 Project:
@@ -24,7 +25,7 @@ Repos:
 Tools:
 * https://packages.atlassian.com/
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
-
+* VMs https://vmac-server.internal.uswest.atlassian.io/
 
 Fundle
 * Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
@@ -36,9 +37,11 @@ Fundle
 
 
 WAC Prod:
-* tech debt https://growth.jira-dev.com/browse/JSWJSD-230
+* notes https://extranet.atlassian.com/display/~yjutard/Notes%3A+JSWJSD-178+WAC+productioniz
+* dev help notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes#GrowthEngineering-DeveloperHelpNotes-HowToTriggerMegatrontouchpoints
+* xflow https://extranet.atlassian.com/pages/viewpage.action?pageId=3573745850
 * magnolia https://bitbucket.org/atlassian/magnolia-resources/pull-requests/1145/wcf-91-wac-optimized-flow-simple-signup/diff
-
+* tech debt https://growth.jira-dev.com/browse/JSWJSD-230
 
 Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
