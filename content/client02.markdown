@@ -16,11 +16,6 @@ Engineering:
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
 
 
-WAC Prod:
-* tech debt https://growth.jira-dev.com/browse/JSWJSD-230
-* magnolia https://bitbucket.org/atlassian/magnolia-resources/pull-requests/1145/wcf-91-wac-optimized-flow-simple-signup/diff
-
-
 Repos:
 - list https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
 - https://bitbucket.org/atlassian/pf-home-ui/src
@@ -30,6 +25,19 @@ Tools:
 * https://packages.atlassian.com/
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
 
+
+Fundle
+* Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
+* scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
+* F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
+* F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
+* onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
+ 
+
+
+WAC Prod:
+* tech debt https://growth.jira-dev.com/browse/JSWJSD-230
+* magnolia https://bitbucket.org/atlassian/magnolia-resources/pull-requests/1145/wcf-91-wac-optimized-flow-simple-signup/diff
 
 
 Shipits
