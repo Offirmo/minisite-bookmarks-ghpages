@@ -68,6 +68,8 @@ Loterie:
 - https://news.google.fr/
 - feedly.com/#my
 - https://www.facebook.com/
+- https://www.linkedin.com/in/yves-jutard/
+- https://smile.amazon.com/
 
 
 To check:
