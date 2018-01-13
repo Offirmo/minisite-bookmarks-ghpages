@@ -13,6 +13,8 @@ Strips:
 Finished webcomics:
 - Inverloch http://inverloch.seraph-inn.com/volume1.html
 
+Ongoing webcomics
+- http://www.gunnerkrigg.com/?p=1
 
 Abandoned webcomics:
 - Dragon's burn http://dragonsburn.tumblr.com/post/61187442826/dragons-burn-1-9

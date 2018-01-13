@@ -19,12 +19,15 @@ Admin
 
 
 Enterprise life
+
+
+Strips
+- XKCD https://xkcd.com/
 - Dilbert http://dilbert.com/
 - Bootstrapped http://bootstrappedcomic.com/post/136384581922
 
 
-Geek
-- XKCD https://xkcd.com/
+Webcomics
 - DM of the ring http://www.shamusyoung.com/twentysidedtale/?p=612
 - OOTS http://www.giantitp.com/comics/oots0001.html
 - OOTS help http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
