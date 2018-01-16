@@ -15,15 +15,18 @@ Finished webcomics:
 
 Ongoing webcomics
 - http://www.gunnerkrigg.com/?p=1
+- goblins
+- Dragon's burn http://dragonsburn.tumblr.com/post/61187442826/dragons-burn-1-9
+
 
 Abandoned webcomics:
-- Dragon's burn http://dragonsburn.tumblr.com/post/61187442826/dragons-burn-1-9
 - No rest for the wicked http://www.forthewicked.net
 - 72 bunnies http://seventy2bunnies.comicgenesis.com/d/20050507.html
 
 
 Mangas:
 - http://mangakakalot.com/
+
 
 Ongoing mangas:
 - The Gamer http://mangafox.me/manga/the_gamer/v03/c163/30.html

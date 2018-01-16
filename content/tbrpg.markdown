@@ -10,7 +10,7 @@ the-npm-rpg:
 
 
 the-boring-rpg:
-- prod https://oh-my-rpg.netlify.com/packages/the-boring-rpg/
+- prod https://offirmo.netlify.com/apps/the-boring-rpg/
 - dev http://localhost:8080/packages/the-boring-rpg/
 
 
@@ -21,7 +21,7 @@ oh-my-rpg:
 
 marketing:
 - PH ship https://www.producthunt.com/upcoming/the-npm-rpg
-- Reddit TBRPG
+- Reddit TBRPG https://www.reddit.com/r/boringrpg/
 - Reddit incremental
 
 
