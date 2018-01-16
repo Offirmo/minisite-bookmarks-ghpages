@@ -3,6 +3,7 @@ pinned:
 - mail https://mail.google.com/mail/u/0/#inbox
 - portal https://atlassian.my.centrify.com/
 - YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
+- VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
 
 
 Project:
