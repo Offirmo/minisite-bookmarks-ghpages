@@ -3,7 +3,13 @@ pinned:
 - mail https://mail.google.com/mail/u/0/#inbox
 - portal https://atlassian.my.centrify.com/
 - YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
-- VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
+
+
+Strategy
+- 2021 https://extranet.atlassian.com/pages/viewpage.action?pageId=3675993305
+- FY18 VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
+- FY18 OKRs https://extranet.atlassian.com/display/PGT/FY18+Growth+OKRs
+- FY19 proposals https://extranet.atlassian.com/display/PGT/FY19+Initiative+Proposals
 
 
 Project:
@@ -44,6 +50,7 @@ WAC Prod:
 * xflow https://extranet.atlassian.com/pages/viewpage.action?pageId=3573745850
 * magnolia https://bitbucket.org/atlassian/magnolia-resources/pull-requests/1145/wcf-91-wac-optimized-flow-simple-signup/diff
 * tech debt https://growth.jira-dev.com/browse/JSWJSD-230
+
 
 Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17

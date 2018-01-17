@@ -27,12 +27,15 @@ marketing:
 
 tech
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/edit#gid=0
+- chalk https://github.com/chalk/chalk
+- bolt https://github.com/boltpkg/bolt
 
 
 SAAS
 - netlify.com
 - https://getstream.io/get_started/#flat_feed
 - https://humio.com/pricing.html
+- https://pwdless.github.io/Cierge-Website/
 
 Content
 - https://www.pinterest.com/
