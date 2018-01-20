@@ -11,7 +11,7 @@ the-npm-rpg:
 
 the-boring-rpg:
 - prod https://offirmo.netlify.com/apps/the-boring-rpg/
-- dev http://localhost:8080/packages/the-boring-rpg/
+- dev http://localhost:8080/apps/the-boring-rpg/
 
 
 oh-my-rpg:

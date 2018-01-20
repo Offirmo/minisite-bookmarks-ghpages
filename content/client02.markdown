@@ -54,3 +54,8 @@ WAC Prod:
 
 Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
+
+
+Roulette
+- Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
+- For sale https://extranet.atlassian.com/pages/viewpage.action?pageId=1871783827
