@@ -5,6 +5,11 @@ pinned:
 - YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
 
 
+Emergency
+- Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
+- ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
+
+
 Strategy
 - 2021 https://extranet.atlassian.com/pages/viewpage.action?pageId=3675993305
 - FY18 VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
@@ -34,6 +39,12 @@ Tools:
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
 * VMs https://vmac-server.internal.uswest.atlassian.io/
 
+
+Services:
+* https://extranet.atlassian.com/display/JCC/Vertigo+Architecture+Part+1+-+Infrastructure%2C+services%2C+and+sharding
+* 
+
+
 Fundle
 * Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
 * scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
@@ -41,7 +52,6 @@ Fundle
 * F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
 * onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
  
-
 
 WAC Prod:
 * PC https://extranet.atlassian.com/jira/browse/PC-3969?src=confmacro
@@ -59,3 +69,7 @@ Shipits
 Roulette
 - Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
 - For sale https://extranet.atlassian.com/pages/viewpage.action?pageId=1871783827
+
+
+Misc/fun:
+- hypnotoad https://extranet.atlassian.com/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog

@@ -7,6 +7,7 @@ Dev
 - IT jokes https://entertainment.slashdot.org/story/17/12/18/024219/ask-slashdot-whats-the-worst-it-related-joke-youve-ever-heard
 - daily WTF http://thedailywtf.com/
 - https://twitter.com/Trump_Developer
+- worst bug https://dev.to/ben/what-was-the-worst-bug-youve-ever-written-2cn7
 
 
 Design
@@ -16,6 +17,7 @@ Design
 
 Admin
 - Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
+- bash.org top http://www.bash.org/?top
 
 
 Enterprise life

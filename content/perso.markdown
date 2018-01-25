@@ -137,6 +137,8 @@ Dev tools:
 - Color converter http://www.cssportal.com/css-color-converter/
 - Lorem Ipsum http://www.lipsum.com/feed/html
 - Online PDF editor https://www.pdfescape.com/
+- Google PageSpeed Insights https://developers.google.com/speed/pagespeed/insights/
+- Google LightHouse https://developers.google.com/web/tools/lighthouse/#devtools
 
 
 Offline / local

@@ -1,7 +1,7 @@
 
 pinned:
 - prod http://www.humblecreatives.ssi.org.au/
-- prod login http://www.humblecreatives.ssi.org.au/wp-login.php
+- login http://www.humblecreatives.ssi.org.au/wp-login.php
 
 setup:
 - https://www.virtualbox.org/
