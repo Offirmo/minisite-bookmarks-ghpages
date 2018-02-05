@@ -3,6 +3,8 @@ pinned:
 - mail https://mail.google.com/mail/u/0/#inbox
 - portal https://atlassian.my.centrify.com/
 - YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
+- Features lead 1 https://extranet.atlassian.com/jira/secure/Dashboard.jspa?selectPageId=35421
+- Feature lead 2 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+Dev
 
 
 Emergency
@@ -51,6 +53,7 @@ Fundle
 * F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
 * F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
 * onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
+* https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
  
 
 WAC Prod:
@@ -60,15 +63,22 @@ WAC Prod:
 * xflow https://extranet.atlassian.com/pages/viewpage.action?pageId=3573745850
 * magnolia https://bitbucket.org/atlassian/magnolia-resources/pull-requests/1145/wcf-91-wac-optimized-flow-simple-signup/diff
 * tech debt https://growth.jira-dev.com/browse/JSWJSD-230
+* https://growth.jira-dev.com/browse/KERBAL-296
 
 
 Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
+- 41 
 
 
 Roulette
 - Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
 - For sale https://extranet.atlassian.com/pages/viewpage.action?pageId=1871783827
+
+
+Review
+- Trello https://trello.com/b/759wclxv/yjutard-engineering-p5
+- https://extranet.atlassian.com/display/PEOP/Pascal+-+Engineering+Growth+Profiles
 
 
 Misc/fun:

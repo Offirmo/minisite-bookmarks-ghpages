@@ -1,8 +1,10 @@
-
+[comment]: <> (When installing a new computer, this handy page contains all the lings I need)
+# TBRPG
 
 pinned:
 - OA https://www.online-adventur.es
 * GH https://github.com/online-adventures
+* cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 
 
 the-npm-rpg:
@@ -14,7 +16,7 @@ the-boring-rpg:
 - dev http://localhost:8080/apps/the-boring-rpg/
 
 
-oh-my-rpg:
+[LEGACY]oh-my-rpg:
 - npm org https://www.npmjs.com/org/oh-my-rpg
 - GH https://github.com/online-adventures/oh-my-rpg
 
