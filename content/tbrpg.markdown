@@ -18,6 +18,7 @@ the-npm-rpg:
 the-boring-rpg:
 - prod https://www.online-adventur.es/the-boring-rpg/
 - staging https://offirmo.netlify.com/apps/the-boring-rpg/
+- dev+ http://localhost:8000/apps/the-boring-rpg/
 - dev http://localhost:8080/the-boring-rpg/
 
 

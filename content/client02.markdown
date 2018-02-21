@@ -17,6 +17,7 @@ Strategy
 - FY18 VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
 - FY18 OKRs https://extranet.atlassian.com/display/PGT/FY18+Growth+OKRs
 - FY19 proposals https://extranet.atlassian.com/display/PGT/FY19+Initiative+Proposals
+- ydux https://ydux.us-west-1.staging.atl-paas.net/#
 
 
 Project:
@@ -28,6 +29,7 @@ Project:
 
 
 Engineering:
+- dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
 
 
@@ -69,7 +71,7 @@ WAC Prod:
 Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
 - 41 
-
+- GIW4 https://shipit.atlassian.net/projects/GIW4/
 
 Roulette
 - Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
