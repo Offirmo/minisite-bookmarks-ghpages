@@ -3,16 +3,18 @@
 
 pinned:
 - OA https://www.online-adventur.es
-* GH https://github.com/online-adventures
-* cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
+- PH ship https://www.producthunt.com/upcoming/the-npm-rpg
+- cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 
 
 Dev
 - tracking https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
-
-
-the-npm-rpg:
-- npm https://www.npmjs.com/package/the-npm-rpg
+* GHOA https://github.com/online-adventures
+* GH mono https://github.com/Offirmo/offirmo-monorepo
+* GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
+* GH TBRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg/README.md
+* GH TNRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-npm-rpg/README.md
+* npm https://www.npmjs.com/package/the-npm-rpg
 
 
 the-boring-rpg:
@@ -25,7 +27,7 @@ the-boring-rpg:
 marketing:
 - PH ship https://www.producthunt.com/upcoming/the-npm-rpg
 - Reddit TBRPG https://www.reddit.com/r/boringrpg/
-- Reddit incremental
+- Reddit incremental https://www.reddit.com/r/incremental/
 - blog prod http://www.offirmo.net/blog/
 
 
