@@ -8,6 +8,7 @@ Dev
 - daily WTF http://thedailywtf.com/
 - https://twitter.com/Trump_Developer
 - worst bug https://dev.to/ben/what-was-the-worst-bug-youve-ever-written-2cn7
+- node.js reactions https://nodejsreactions.tumblr.com/
 
 
 Design
@@ -15,7 +16,8 @@ Design
 - UX hero http://www.uxherocomics.com/
 
 
-Admin
+devops
+- devops reactions http://devopsreactions.tumblr.com/
 - Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
 - bash.org top http://www.bash.org/?top
 
@@ -33,3 +35,7 @@ Webcomics
 - DM of the ring http://www.shamusyoung.com/twentysidedtale/?p=612
 - OOTS http://www.giantitp.com/comics/oots0001.html
 - OOTS help http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
+
+
+Misc
+- https://what-if.xkcd.com/

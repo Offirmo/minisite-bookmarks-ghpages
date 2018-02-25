@@ -79,7 +79,7 @@ Roulette
 
 
 Review
-- Trello https://trello.com/b/759wclxv/yjutard-engineering-p5
+- Growth profile https://trello.com/b/759wclxv/yjutard-engineering-p5
 - https://extranet.atlassian.com/display/PEOP/Pascal+-+Engineering+Growth+Profiles
 
 
