@@ -15,6 +15,7 @@ Dev
 * GH TBRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg/README.md
 * GH TNRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-npm-rpg/README.md
 * npm https://www.npmjs.com/package/the-npm-rpg
+* AWS https://aws.amazon.com/
 
 
 the-boring-rpg:
