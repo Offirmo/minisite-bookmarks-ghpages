@@ -1,10 +1,13 @@
 
 pinned:
+- centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
-- portal https://atlassian.my.centrify.com/
 - YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
 - Features lead 1 https://extranet.atlassian.com/jira/secure/Dashboard.jspa?selectPageId=35421
 - Feature lead 2 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+Dev
+- onboarding https://extranet.atlassian.com/display/PGT/Onboarding+new+members+to+the+Growth+Team
+- good debates https://extranet.atlassian.com/display/~yjutard/Good+debates%2C+reports+and+resources
+- dev notes https://extranet.atlassian.com/display/PGT/Jira+Frontend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
 
 
 Emergency
@@ -79,8 +82,10 @@ Roulette
 
 
 Review
+- 1-on-1 https://extranet.atlassian.com/pages/viewpage.action?pageId=3770869722
 - Growth profile https://trello.com/b/759wclxv/yjutard-engineering-p5
 - https://extranet.atlassian.com/display/PEOP/Pascal+-+Engineering+Growth+Profiles
+- https://extranet.atlassian.com/display/~yjutard/Quarterly+Performance+Review+Template
 
 
 Misc/fun:

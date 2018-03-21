@@ -34,8 +34,7 @@ marketing:
 
 tech
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/edit#gid=0
-- chalk https://github.com/chalk/chalk
-- bolt https://github.com/boltpkg/bolt
+
 
 
 SAAS
@@ -56,8 +55,11 @@ Monetize
 
 
 Dependencies
-- https://github.com/ai/nanoid
-- https://github.com/Offirmo/random-js
+- nanoid https://github.com/ai/nanoid
+- random https://github.com/Offirmo/random-js
+- chalk https://github.com/chalk/chalk
+- bolt https://github.com/boltpkg/bolt
+- https://github.com/Offirmo/hello-world-aws-cognito
 
 
 [LEGACY]oh-my-rpg:
