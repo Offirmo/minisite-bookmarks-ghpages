@@ -32,10 +32,21 @@ Project:
 
 
 Engineering:
-- dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
+- services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
 
 
+Doc:
+- dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
+- storybook https://storybook.js.org/basics/guide-react/
+- assertions https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
+- sinon https://github.com/Offirmo-team/wiki/wiki/sinon
+- jest https://facebook.github.io/jest/
+- enzyme http://airbnb.io/enzyme/
+- fetch-mock http://www.wheresrhys.co.uk/fetch-mock/
+- styled components https://github.com/styled-components/styled-components
+    
+    
 Repos:
 - list https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
 - https://bitbucket.org/atlassian/pf-home-ui/src
