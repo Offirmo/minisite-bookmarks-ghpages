@@ -8,11 +8,13 @@ pinned:
 - onboarding https://extranet.atlassian.com/display/PGT/Onboarding+new+members+to+the+Growth+Team
 - good debates https://extranet.atlassian.com/display/~yjutard/Good+debates%2C+reports+and+resources
 - dev notes https://extranet.atlassian.com/display/PGT/Jira+Frontend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
+- CTasks https://extranet.atlassian.com/plugins/inlinetasks/mytasks.action
 
 
 Emergency
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
+- FUNDLE https://extranet.atlassian.com/display/PGT/Growth%27s+Fundle+experiment+-+how+to+kill+it
 
 
 Strategy
@@ -32,12 +34,15 @@ Project:
 
 
 Engineering:
-- services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
 
 
-Doc:
+Doc interne:
+- services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
+
+
+Doc exeterne
 - storybook https://storybook.js.org/basics/guide-react/
 - assertions https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
 - sinon https://github.com/Offirmo-team/wiki/wiki/sinon
@@ -45,8 +50,8 @@ Doc:
 - enzyme http://airbnb.io/enzyme/
 - fetch-mock http://www.wheresrhys.co.uk/fetch-mock/
 - styled components https://github.com/styled-components/styled-components
-    
-    
+
+
 Repos:
 - list https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
 - https://bitbucket.org/atlassian/pf-home-ui/src
