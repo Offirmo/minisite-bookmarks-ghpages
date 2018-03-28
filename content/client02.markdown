@@ -42,7 +42,7 @@ Doc interne:
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
 
 
-Doc exeterne
+Doc externe
 - storybook https://storybook.js.org/basics/guide-react/
 - assertions https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
 - sinon https://github.com/Offirmo-team/wiki/wiki/sinon
