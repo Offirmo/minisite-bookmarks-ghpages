@@ -14,6 +14,7 @@ pinned:
 Emergency
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
+- Chopper https://extranet.atlassian.com/display/JCC/Get+to+the+Chopper
 - FUNDLE https://extranet.atlassian.com/display/PGT/Growth%27s+Fundle+experiment+-+how+to+kill+it
 
 
@@ -35,11 +36,13 @@ Project:
 
 Engineering:
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
+- Dev list https://extranet.atlassian.com/display/PGT/Fundle+dev+check+list
 
 
 Doc interne:
 - services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
+- key repos https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
 
 
 Doc externe
