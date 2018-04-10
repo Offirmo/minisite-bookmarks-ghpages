@@ -15,7 +15,7 @@ Emergency
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
 - Chopper https://extranet.atlassian.com/display/JCC/Get+to+the+Chopper
-- FUNDLE https://extranet.atlassian.com/display/PGT/Growth%27s+Fundle+experiment+-+how+to+kill+it
+- KILL FUNDLE https://extranet.atlassian.com/display/PGT/Growth%27s+Fundle+experiment+-+how+to+kill+it
 
 
 Strategy
