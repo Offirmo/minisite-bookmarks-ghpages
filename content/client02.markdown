@@ -40,6 +40,7 @@ Engineering:
 
 
 Doc interne:
+- bootcamps https://extranet.atlassian.com/display/BOOTCAMP/Classes
 - services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
 - key repos https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
@@ -103,8 +104,9 @@ Roulette
 Review
 - 1-on-1 https://extranet.atlassian.com/pages/viewpage.action?pageId=3770869722
 - Growth profile https://trello.com/b/759wclxv/yjutard-engineering-p5
-- https://extranet.atlassian.com/display/PEOP/Pascal+-+Engineering+Growth+Profiles
-- https://extranet.atlassian.com/display/~yjutard/Quarterly+Performance+Review+Template
+- Pascal https://extranet.atlassian.com/pages/viewpage.action?pageId=3582838772
+- P-levels https://extranet.atlassian.com/pages/viewpage.action?pageId=3609468731
+- review Q3 https://extranet.atlassian.com/display/~yjutard/Quarterly+Performance+Review
 
 
 Misc/fun:
