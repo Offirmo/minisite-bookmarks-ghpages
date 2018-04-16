@@ -18,6 +18,11 @@ Emergency
 - KILL FUNDLE https://extranet.atlassian.com/display/PGT/Growth%27s+Fundle+experiment+-+how+to+kill+it
 
 
+Tangerine
+- meetings https://extranet.atlassian.com/display/JFP/Tanginerine+-+Jira+Frontend+Committee+meetings
+- article https://extranet.atlassian.com/display/JFP/Transitioning+to+tangerine+apps
+
+
 Strategy
 - 2021 https://extranet.atlassian.com/pages/viewpage.action?pageId=3675993305
 - FY18 VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
@@ -72,6 +77,14 @@ Services:
 * 
 
 
+NUEPI
+- https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments
+
+
+Origin
+- https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+
+
 Fundle
 * Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
 * scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
@@ -79,7 +92,10 @@ Fundle
 * F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
 * onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
 * https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
- 
+* EPIC https://growth.jira-dev.com/browse/KERBAL-180
+* conflicts https://growth.jira-dev.com/browse/KERBAL-394
+* Final retro https://extranet.atlassian.com/plugins/servlet/ac/com.atlassian.perspectiveretros/perspective-retros?content.id=3830941873
+
 
 WAC Prod:
 * PC https://extranet.atlassian.com/jira/browse/PC-3969?src=confmacro
@@ -107,6 +123,7 @@ Review
 - Pascal https://extranet.atlassian.com/pages/viewpage.action?pageId=3582838772
 - P-levels https://extranet.atlassian.com/pages/viewpage.action?pageId=3609468731
 - review Q3 https://extranet.atlassian.com/display/~yjutard/Quarterly+Performance+Review
+- 1000eyes https://app.thousandeyes.com/
 
 
 Misc/fun:
