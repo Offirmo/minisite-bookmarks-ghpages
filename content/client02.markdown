@@ -82,7 +82,13 @@ NUEPI
 
 
 Origin
-- https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+- EPIC https://growth.jira-dev.com/browse/KERBAL-353
+- Conf https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+* JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
+* CITE PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence-invite-to-edit-plugin/pull-requests
+* Conf PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/pull-requests
+* AID PRs https://stash.atlassian.com/projects/AID/repos/aid-frontend/pull-requests
+
 
 
 Fundle
@@ -90,10 +96,12 @@ Fundle
 * scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
 * F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
 * F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
+* Conf https://extranet.atlassian.com/display/PGT/KERBAL-180+-+Bundle+optimisation
 * onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
-* https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
+* notes https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
 * EPIC https://growth.jira-dev.com/browse/KERBAL-180
 * conflicts https://growth.jira-dev.com/browse/KERBAL-394
+* JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
 * Final retro https://extranet.atlassian.com/plugins/servlet/ac/com.atlassian.perspectiveretros/perspective-retros?content.id=3830941873
 
 
