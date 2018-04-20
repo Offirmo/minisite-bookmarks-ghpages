@@ -37,7 +37,8 @@ Project:
 - Plan https://extranet.atlassian.com/display/PGT/Expandonauts+FY18+Q3+plan
 - backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
 - kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
-
+- sync Growth https://extranet.atlassian.com/display/PGT/Growth+Platform+Collaboration+Register
+- sync Jira https://extranet.atlassian.com/display/JPLAT/Jira+Cloud+-+Growth+Sync
 
 Engineering:
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
@@ -82,11 +83,12 @@ NUEPI
 
 
 Origin
-- EPIC https://growth.jira-dev.com/browse/KERBAL-353
-- Conf https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+- epic https://growth.jira-dev.com/browse/KERBAL-353
+- pages https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+* EXJS PRs https://bitbucket.org/atlassian/experiment-js/pull-requests/
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
 * CITE PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence-invite-to-edit-plugin/pull-requests
-* Conf PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/pull-requests
+* Confluence PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/pull-requests
 * AID PRs https://stash.atlassian.com/projects/AID/repos/aid-frontend/pull-requests
 
 
@@ -96,7 +98,7 @@ Fundle
 * scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
 * F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
 * F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
-* Conf https://extranet.atlassian.com/display/PGT/KERBAL-180+-+Bundle+optimisation
+* pages https://extranet.atlassian.com/display/PGT/KERBAL-180+-+Bundle+optimisation
 * onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
 * notes https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
 * EPIC https://growth.jira-dev.com/browse/KERBAL-180
