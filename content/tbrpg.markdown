@@ -19,9 +19,9 @@ Dev
 
 
 the-boring-rpg:
-- prod https://www.online-adventur.es/the-boring-rpg/
-- staging https://offirmo.netlify.com/apps/the-boring-rpg/
-- dev+ http://localhost:8000/apps/the-boring-rpg/
+- prod https://www.online-adventur.es/apps/the-boring-rpg/
+- staging https://offirmo.netlify.com/apps/the-boring-rpg/dist/index.html
+- dev+ http://localhost:8000/apps/the-boring-rpg/dist/index.html
 - dev http://localhost:8080/the-boring-rpg/
 - UI dev http://localhost:8000/9-oh-my-rpg/view-browser/doc/demo-index.html
 - storybook localhost:9009

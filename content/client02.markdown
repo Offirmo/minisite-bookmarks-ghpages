@@ -49,7 +49,7 @@ Doc interne:
 - bootcamps https://extranet.atlassian.com/display/BOOTCAMP/Classes
 - services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
-- key repos https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
+- key repos https://extranet.atlassian.com/display/PGT/Key+repos+that+we+work+with
 
 
 Doc externe
