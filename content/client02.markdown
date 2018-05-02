@@ -15,7 +15,8 @@ Emergency
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
 - Chopper https://extranet.atlassian.com/display/JCC/Get+to+the+Chopper
-- KILL FUNDLE https://extranet.atlassian.com/display/PGT/Growth%27s+Fundle+experiment+-+how+to+kill+it
+- KILL FUNDLE https://extranet.atlassian.com/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
+- KILL ORIGIN https://extranet.atlassian.com/pages/viewpage.action?pageId=3853735467
 
 
 Tangerine
@@ -40,6 +41,7 @@ Project:
 - sync Growth https://extranet.atlassian.com/display/PGT/Growth+Platform+Collaboration+Register
 - sync Jira https://extranet.atlassian.com/display/JPLAT/Jira+Cloud+-+Growth+Sync
 
+
 Engineering:
 - Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
 - Dev list https://extranet.atlassian.com/display/PGT/Fundle+dev+check+list
@@ -50,6 +52,7 @@ Doc interne:
 - services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
 - key repos https://extranet.atlassian.com/display/PGT/Key+repos+that+we+work+with
+- test https://extranet.atlassian.com/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
 
 
 Doc externe
@@ -90,6 +93,7 @@ Origin
 * CITE PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence-invite-to-edit-plugin/pull-requests
 * Confluence PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/pull-requests
 * AID PRs https://stash.atlassian.com/projects/AID/repos/aid-frontend/pull-requests
+* plaintes https://extranet.atlassian.com/display/~asharman/Difficulty+adding+features+in+product
 
 
 
@@ -129,6 +133,7 @@ Roulette
 
 Review
 - 1-on-1 https://extranet.atlassian.com/pages/viewpage.action?pageId=3770869722
+- training https://extranet.atlassian.com/pages/viewpage.action?pageId=3841753305
 - Growth profile https://trello.com/b/759wclxv/yjutard-engineering-p5
 - Pascal https://extranet.atlassian.com/pages/viewpage.action?pageId=3582838772
 - P-levels https://extranet.atlassian.com/pages/viewpage.action?pageId=3609468731
