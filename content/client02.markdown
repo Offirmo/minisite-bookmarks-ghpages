@@ -2,12 +2,11 @@
 pinned:
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
-- YE pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
+- pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
 - Features lead 1 https://extranet.atlassian.com/jira/secure/Dashboard.jspa?selectPageId=35421
 - Feature lead 2 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+Dev
 - onboarding https://extranet.atlassian.com/display/PGT/Onboarding+new+members+to+the+Growth+Team
 - good debates https://extranet.atlassian.com/display/~yjutard/Good+debates%2C+reports+and+resources
-- dev notes https://extranet.atlassian.com/display/PGT/Jira+Frontend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
 - CTasks https://extranet.atlassian.com/plugins/inlinetasks/mytasks.action
 
 
@@ -82,7 +81,8 @@ Services:
 
 
 NUEPI
-- https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments
+- design https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments+design
+- 4 
 
 
 Origin
@@ -94,7 +94,7 @@ Origin
 * Confluence PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/pull-requests
 * AID PRs https://stash.atlassian.com/projects/AID/repos/aid-frontend/pull-requests
 * plaintes https://extranet.atlassian.com/display/~asharman/Difficulty+adding+features+in+product
-
+* cleanup https://jira.atlassian.com/browse/CONFDEV-59372
 
 
 Fundle
