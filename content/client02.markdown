@@ -51,7 +51,8 @@ Doc interne:
 - services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
 - dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
 - key repos https://extranet.atlassian.com/display/PGT/Key+repos+that+we+work+with
-- test https://extranet.atlassian.com/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
+- test1 https://extranet.atlassian.com/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
+- test2 https://extranet.atlassian.com/display/HAMS/Testing+Credit+Cards
 
 
 Doc externe
@@ -80,9 +81,10 @@ Services:
 * 
 
 
-NUEPI
+NUEPI 4
 - design https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments+design
-- 4 
+- concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI-4%3A+NUEPI+4+concept
+- poster https://extranet.atlassian.com/display/PGT/NUEPI-4+-+Google+Contacts+Experiment
 
 
 Origin

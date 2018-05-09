@@ -25,6 +25,7 @@ the-boring-rpg:
 - dev http://localhost:8080/the-boring-rpg/
 - UI dev http://localhost:8000/9-oh-my-rpg/view-browser/doc/demo-index.html
 - storybook localhost:9009
+- offirmo http://www.offirmo.net/
 
 
 marketing:
