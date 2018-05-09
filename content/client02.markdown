@@ -141,6 +141,7 @@ Review
 - P-levels https://extranet.atlassian.com/pages/viewpage.action?pageId=3609468731
 - review Q3 https://extranet.atlassian.com/display/~yjutard/Quarterly+Performance+Review
 - 1000eyes https://app.thousandeyes.com/
+- rsrc https://extranet.atlassian.com/pages/viewpage.action?pageId=3841753305
 
 
 Misc/fun:
