@@ -7,6 +7,9 @@ pinned:
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 
 
+Admin
+- https://tlk.io/the-boring-rpg-reloaded
+
 Dev
 - tracking https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
 * GHOA https://github.com/online-adventures
@@ -29,9 +32,11 @@ the-boring-rpg:
 
 
 marketing:
-- PH ship https://www.producthunt.com/upcoming/the-npm-rpg
+- Twitter https://twitter.com/TheBoringRpg
+- Instagram https://www.instagram.com/theboringrpg/
+- PH https://www.producthunt.com/upcoming/the-npm-rpg
 - Reddit TBRPG https://www.reddit.com/r/boringrpg/
-- Reddit incremental https://www.reddit.com/r/incremental/
+- Reddit incremental https://www.reddit.com/r/incremental_games/
 - blog prod http://www.offirmo.net/blog/
 
 
@@ -68,3 +73,4 @@ Dependencies
 [LEGACY]oh-my-rpg:
 - npm org https://www.npmjs.com/org/oh-my-rpg
 - GH https://github.com/online-adventures/oh-my-rpg
+- last original update https://www.reddit.com/r/boringrpg/comments/eh5iv/updates_612/
