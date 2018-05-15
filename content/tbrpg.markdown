@@ -10,6 +10,7 @@ pinned:
 Admin
 - https://tlk.io/the-boring-rpg-reloaded
 
+
 Dev
 - tracking https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
 * GHOA https://github.com/online-adventures
@@ -27,22 +28,26 @@ the-boring-rpg:
 - dev+ http://localhost:8000/apps/the-boring-rpg/dist/index.html
 - dev http://localhost:8080/the-boring-rpg/
 - UI dev http://localhost:8000/9-oh-my-rpg/view-browser/doc/demo-index.html
-- storybook localhost:9009
-- offirmo http://www.offirmo.net/
+- npm https://www.npmjs.com/package/the-npm-rpg
 
 
 marketing:
+- buffer https://buffer.com/app/profile/5afad0a728473ccb464ca02d/buffer/queue/list
+- analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
+- Reddit TBRPG https://www.reddit.com/r/boringrpg/
+- all links https://linktr.ee/theboringrpg
 - Twitter https://twitter.com/TheBoringRpg
 - Instagram https://www.instagram.com/theboringrpg/
+- facebook https://www.facebook.com/theboringrpg/
 - PH https://www.producthunt.com/upcoming/the-npm-rpg
-- Reddit TBRPG https://www.reddit.com/r/boringrpg/
 - Reddit incremental https://www.reddit.com/r/incremental_games/
 - blog prod http://www.offirmo.net/blog/
+- offirmo http://www.offirmo.net/
 
 
 tech
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/edit#gid=0
-
+- unit tests 
 
 
 SAAS

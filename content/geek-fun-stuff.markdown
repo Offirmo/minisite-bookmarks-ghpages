@@ -20,6 +20,7 @@ devops
 - devops reactions http://devopsreactions.tumblr.com/
 - Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
 - bash.org top http://www.bash.org/?top
+- https://twitter.com/dmofengineering
 
 
 Enterprise life
