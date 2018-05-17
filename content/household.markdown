@@ -1,7 +1,8 @@
 # Personal bookmarks
 
 
-Pinned
+pinned:
+- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - Drive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
 - Wiki https://github.com/Offirmo-team/wiki/wiki

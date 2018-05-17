@@ -1,5 +1,6 @@
 
 pinned:
+- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - reviewers http://denis-sokolov.github.io/random-items/?items=Antoine,Bradley,Edmundas,Guillaume,Thierry,Thomas,William&count=3
 - http://www.worldtimebuddy.com/?pl=1&lid=1153671,2988507,5128581,2193733&h=2988507
 

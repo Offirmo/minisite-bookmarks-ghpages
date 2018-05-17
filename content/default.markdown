@@ -6,7 +6,8 @@ All boards
 - client01 http://www.offirmo.net/minisite-bookmarks-ghpages/client01
 - client02 http://www.offirmo.net/minisite-bookmarks-ghpages/client02
 - demo http://www.offirmo.net/minisite-bookmarks-ghpages/demo
-- geek fun stuff 
+- demo http://www.offirmo.net/minisite-bookmarks-ghpages/ecolhu
+- geek fun stuff http://www.offirmo.net/minisite-bookmarks-ghpages/
 - HH http://www.offirmo.net/minisite-bookmarks-ghpages/hh
 - HC http://www.offirmo.net/minisite-bookmarks-ghpages/humble-creative
 - perso http://www.offirmo.net/minisite-bookmarks-ghpages/perso

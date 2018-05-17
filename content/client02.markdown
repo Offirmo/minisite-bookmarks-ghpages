@@ -1,5 +1,7 @@
+# client 2
 
 pinned:
+- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
 - pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad

@@ -2,6 +2,7 @@
 
 
 pinned:
+- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - OA https://www.online-adventur.es
 - PH ship https://www.producthunt.com/upcoming/the-npm-rpg
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
