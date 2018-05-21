@@ -87,11 +87,15 @@ NUEPI 4
 - design https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments+design
 - concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI-4%3A+NUEPI+4+concept
 - poster https://extranet.atlassian.com/display/PGT/NUEPI-4+-+Google+Contacts+Experiment
+- spike https://growth.jira-dev.com/browse/KERBAL-590
+- spike results https://extranet.atlassian.com/display/PGT/NUEPI-4+-+Using+Google+APIs
+- spike repo https://bitbucket.org/atlassian/nuepi4-kerbal601/
+- ticket ??
 
 
 Origin
-- epic https://growth.jira-dev.com/browse/KERBAL-353
-- pages https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+* epic https://growth.jira-dev.com/browse/KERBAL-353
+* pages https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
 * EXJS PRs https://bitbucket.org/atlassian/experiment-js/pull-requests/
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
 * CITE PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence-invite-to-edit-plugin/pull-requests
@@ -99,6 +103,7 @@ Origin
 * AID PRs https://stash.atlassian.com/projects/AID/repos/aid-frontend/pull-requests
 * plaintes https://extranet.atlassian.com/display/~asharman/Difficulty+adding+features+in+product
 * cleanup https://jira.atlassian.com/browse/CONFDEV-59372
+* KILL ORIGIN https://extranet.atlassian.com/pages/viewpage.action?pageId=3853735467
 
 
 Fundle
@@ -113,6 +118,7 @@ Fundle
 * conflicts https://growth.jira-dev.com/browse/KERBAL-394
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
 * Final retro https://extranet.atlassian.com/plugins/servlet/ac/com.atlassian.perspectiveretros/perspective-retros?content.id=3830941873
+* KILL FUNDLE https://extranet.atlassian.com/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
 
 
 WAC Prod:
