@@ -136,6 +136,7 @@ Dev tools:
 - online regexp tester https://regex101.com/
 - Color converter http://www.cssportal.com/css-color-converter/
 - Lorem Ipsum http://www.lipsum.com/feed/html
+- favicon https://realfavicongenerator.net/
 - Online PDF editor https://www.pdfescape.com/
 - Google PageSpeed Insights https://developers.google.com/speed/pagespeed/insights/
 - Google LightHouse https://developers.google.com/web/tools/lighthouse/#devtools
@@ -204,6 +205,7 @@ toread:
 - https://medium.com/re-dom/master-the-dom-bc1a2a06089b
 - https://codingbox.io/do-you-need-service-worker-in-your-web-app-d68131d65e2c?gi=8262fb9a0ddb
 - https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711
+- https://www.factorio.com/blog/
 
 
 tosort:

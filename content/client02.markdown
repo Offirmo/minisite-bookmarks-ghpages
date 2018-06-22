@@ -13,6 +13,8 @@ pinned:
 
 
 Emergency
+- HOT go/hot
+- severity https://extranet.atlassian.com/display/BPP/How+to+decide+on+the+severity+of+an+incident
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
 - Chopper https://extranet.atlassian.com/display/JCC/Get+to+the+Chopper
@@ -133,7 +135,8 @@ WAC Prod:
 
 Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
-- 41 
+- 41 https://shipit.atlassian.net/browse/SHPXLI-60
+- 42 https://shipit.atlassian.net/browse/SHPXLII-162
 - GIW4 https://shipit.atlassian.net/projects/GIW4/
 
 Roulette
