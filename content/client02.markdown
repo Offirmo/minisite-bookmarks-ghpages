@@ -136,11 +136,11 @@ WAC Prod:
 
 
 Shipits
-- 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
-- 41 https://shipit.atlassian.net/browse/SHPXLI-60
+- GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
 - 42 https://shipit.atlassian.net/browse/SHPXLII-162
 - GIW4 https://shipit.atlassian.net/projects/GIW4/issues/GIW4-12?filter=allopenissues
-- GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
+- 41 https://shipit.atlassian.net/browse/SHPXLI-60
+- 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
 
 Roulette
 - Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
