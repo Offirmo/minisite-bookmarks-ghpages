@@ -140,6 +140,7 @@ Dev tools:
 - Online PDF editor https://www.pdfescape.com/
 - Google PageSpeed Insights https://developers.google.com/speed/pagespeed/insights/
 - Google LightHouse https://developers.google.com/web/tools/lighthouse/#devtools
+- youtube downloader https://www.onlinevideoconverter.com/video-converter
 
 
 Offline / local

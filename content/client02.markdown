@@ -4,10 +4,10 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
-- pad https://extranet.atlassian.com/display/~yjutard/Idea+Pad
+- pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Idea+Pad
 - Features lead 1 https://extranet.atlassian.com/jira/secure/Dashboard.jspa?selectPageId=35421
 - Feature lead 2 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+Dev
-- onboarding https://extranet.atlassian.com/display/PGT/Onboarding+new+members+to+the+Growth+Team
+- onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
 - good debates https://extranet.atlassian.com/display/~yjutard/Good+debates%2C+reports+and+resources
 - CTasks https://extranet.atlassian.com/plugins/inlinetasks/mytasks.action
 
@@ -86,13 +86,15 @@ Services:
 
 
 NUEPI 4
+- poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197459285/NUEPI-4+-+Google+Contacts+Experiment
+- ticket https://growth.jira-dev.com/browse/KERBAL-601
+- app notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198251374/NUEPI-4+-+Static+app
+- repo/PRs https://bitbucket.org/atlassian/nuepi4-kerbal601/pull-requests/
+- spike https://growth.jira-dev.com/browse/KERBAL-590
+- spike results https://hello.atlassian.net/wiki/spaces/PGT/pages/198255906/NUEPI-4+-+Using+Google+APIs
+- spike repo https://bitbucket.org/atlassian/nuepi4-kerbal601/
 - design https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments+design
 - concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI-4%3A+NUEPI+4+concept
-- poster https://extranet.atlassian.com/display/PGT/NUEPI-4+-+Google+Contacts+Experiment
-- spike https://growth.jira-dev.com/browse/KERBAL-590
-- spike results https://extranet.atlassian.com/display/PGT/NUEPI-4+-+Using+Google+APIs
-- spike repo https://bitbucket.org/atlassian/nuepi4-kerbal601/
-- ticket ??
 
 
 Origin
@@ -137,7 +139,8 @@ Shipits
 - 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
 - 41 https://shipit.atlassian.net/browse/SHPXLI-60
 - 42 https://shipit.atlassian.net/browse/SHPXLII-162
-- GIW4 https://shipit.atlassian.net/projects/GIW4/
+- GIW4 https://shipit.atlassian.net/projects/GIW4/issues/GIW4-12?filter=allopenissues
+- GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
 
 Roulette
 - Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
