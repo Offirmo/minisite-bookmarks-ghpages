@@ -111,18 +111,20 @@ Origin
 
 
 Fundle
-* Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
-* scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
-* F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
-* F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
-* pages https://extranet.atlassian.com/display/PGT/KERBAL-180+-+Bundle+optimisation
+* F1 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197458780/Fundle+1+-+Optimizing+bundle+evaluation
+* F2 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/198276123/Fundle+2+-+Pages+onboarding+for+bundle+evaluations
+* EAC https://hello.atlassian.net/wiki/spaces/PGT/pages/197456268/KERBAL-180+-+Bundle+optimisation
 * onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
 * notes https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
 * EPIC https://growth.jira-dev.com/browse/KERBAL-180
 * conflicts https://growth.jira-dev.com/browse/KERBAL-394
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
-* Final retro https://extranet.atlassian.com/plugins/servlet/ac/com.atlassian.perspectiveretros/perspective-retros?content.id=3830941873
+* Final retro https://hello.atlassian.net/wiki/spaces/PGT/pages/197459350
 * KILL FUNDLE https://extranet.atlassian.com/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
+* Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
+* scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
+* F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
+* F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
 
 
 WAC Prod:
@@ -160,3 +162,5 @@ Review
 
 Misc/fun:
 - hypnotoad https://extranet.atlassian.com/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
+- PR https://hello.atlassian.net/wiki/spaces/PEOP/pages/181617899/Australia+-+Residency+Sponsorship
+- 
