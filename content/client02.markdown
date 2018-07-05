@@ -4,12 +4,13 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
-- pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Idea+Pad
+- 💡 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Idea+Pad
 - Features lead 1 https://hello.atlassian.net/jira/secure/Dashboard.jspa?selectPageId=35421
 - Feature lead 2 https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+Dev
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
 - good debates https://hello.atlassian.net/display/~yjutard/Good+debates%2C+reports+and+resources
 - CTasks https://hello.atlassian.net/plugins/inlinetasks/mytasks.action
+- risk https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142256/WIP+risk+management
 
 
 Emergency
@@ -164,3 +165,7 @@ Misc/fun:
 - hypnotoad https://hello.atlassian.net/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
 - PR https://hello.atlassian.net/wiki/spaces/PEOP/pages/181617899/Australia+-+Residency+Sponsorship
 - 
+
+
+Legacy
+- EAC https://extranet.atlassian.com/
