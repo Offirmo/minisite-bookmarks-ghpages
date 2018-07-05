@@ -5,58 +5,58 @@ pinned:
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
 - pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Idea+Pad
-- Features lead 1 https://extranet.atlassian.com/jira/secure/Dashboard.jspa?selectPageId=35421
-- Feature lead 2 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+Dev
+- Features lead 1 https://hello.atlassian.net/jira/secure/Dashboard.jspa?selectPageId=35421
+- Feature lead 2 https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+Dev
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
-- good debates https://extranet.atlassian.com/display/~yjutard/Good+debates%2C+reports+and+resources
-- CTasks https://extranet.atlassian.com/plugins/inlinetasks/mytasks.action
+- good debates https://hello.atlassian.net/display/~yjutard/Good+debates%2C+reports+and+resources
+- CTasks https://hello.atlassian.net/plugins/inlinetasks/mytasks.action
 
 
 Emergency
 - HOT go/hot
-- severity https://extranet.atlassian.com/display/BPP/How+to+decide+on+the+severity+of+an+incident
+- severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
-- ADG3 bug https://extranet.atlassian.com/pages/viewpage.action?pageId=3107132607
-- Chopper https://extranet.atlassian.com/display/JCC/Get+to+the+Chopper
-- KILL FUNDLE https://extranet.atlassian.com/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
-- KILL ORIGIN https://extranet.atlassian.com/pages/viewpage.action?pageId=3853735467
+- ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
+- Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
+- KILL FUNDLE https://hello.atlassian.net/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
+- KILL ORIGIN https://hello.atlassian.net/pages/viewpage.action?pageId=3853735467
 
 
 Tangerine
-- meetings https://extranet.atlassian.com/display/JFP/Tanginerine+-+Jira+Frontend+Committee+meetings
-- article https://extranet.atlassian.com/display/JFP/Transitioning+to+tangerine+apps
+- meetings https://hello.atlassian.net/display/JFP/Tanginerine+-+Jira+Frontend+Committee+meetings
+- article https://hello.atlassian.net/display/JFP/Transitioning+to+tangerine+apps
 
 
 Strategy
-- 2021 https://extranet.atlassian.com/pages/viewpage.action?pageId=3675993305
-- FY18 VTFM https://extranet.atlassian.com/display/STRAT/Atlassian+FY18+VTFM
-- FY18 OKRs https://extranet.atlassian.com/display/PGT/FY18+Growth+OKRs
-- FY19 proposals https://extranet.atlassian.com/display/PGT/FY19+Initiative+Proposals
+- 2021 https://hello.atlassian.net/pages/viewpage.action?pageId=3675993305
+- FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
+- FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
+- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
 - ydux https://ydux.us-west-1.staging.atl-paas.net/#
 
 
 Project:
 - https://growth.jira-dev.com/secure/Dashboard.jspa
-- OKRs https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+OKRs
-- Plan https://extranet.atlassian.com/display/PGT/Expandonauts+FY18+Q3+plan
+- OKRs https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+OKRs
+- Plan https://hello.atlassian.net/display/PGT/Expandonauts+FY18+Q3+plan
 - backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
 - kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
-- sync Growth https://extranet.atlassian.com/display/PGT/Growth+Platform+Collaboration+Register
-- sync Jira https://extranet.atlassian.com/display/JPLAT/Jira+Cloud+-+Growth+Sync
+- sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
+- sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
 
 
 Engineering:
-- Freezes https://extranet.atlassian.com/display/SRE/Change+Freezes
-- Dev list https://extranet.atlassian.com/display/PGT/Fundle+dev+check+list
+- Freezes https://hello.atlassian.net/display/SRE/Change+Freezes
+- Dev list https://hello.atlassian.net/wiki/spaces/PGT/pages/198265283/Fundle+dev+check+list
 
 
 Doc interne:
-- bootcamps https://extranet.atlassian.com/display/BOOTCAMP/Classes
-- services https://extranet.atlassian.com/display/~yjutard/Notes%3A+Services
-- dev notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes
-- key repos https://extranet.atlassian.com/display/PGT/Key+repos+that+we+work+with
-- test1 https://extranet.atlassian.com/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
-- test2 https://extranet.atlassian.com/display/HAMS/Testing+Credit+Cards
+- bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
+- services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
+- dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
+- key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
+- test1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
+- test2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
 
 
 Doc externe
@@ -70,7 +70,7 @@ Doc externe
 
 
 Repos:
-- list https://extranet.atlassian.com/display/~mpuckeridge/Key+repos+that+we+work+with
+- list https://hello.atlassian.net/display/~mpuckeridge/Key+repos+that+we+work+with
 - https://bitbucket.org/atlassian/pf-home-ui/src
 
 
@@ -81,7 +81,7 @@ Tools:
 
 
 Services:
-* https://extranet.atlassian.com/display/JCC/Vertigo+Architecture+Part+1+-+Infrastructure%2C+services%2C+and+sharding
+* https://hello.atlassian.net/display/JCC/Vertigo+Architecture+Part+1+-+Infrastructure%2C+services%2C+and+sharding
 * 
 
 
@@ -93,45 +93,45 @@ NUEPI 4
 - spike https://growth.jira-dev.com/browse/KERBAL-590
 - spike results https://hello.atlassian.net/wiki/spaces/PGT/pages/198255906/NUEPI-4+-+Using+Google+APIs
 - spike repo https://bitbucket.org/atlassian/nuepi4-kerbal601/
-- design https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI+experiments+design
-- concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+NUEPI-4%3A+NUEPI+4+concept
+- design https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+NUEPI+experiments+design
+- concept https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+NUEPI-4%3A+NUEPI+4+concept
 
 
 Origin
 * epic https://growth.jira-dev.com/browse/KERBAL-353
-* pages https://extranet.atlassian.com/display/PGT/KERBAL-353+Origin+Tracing
+* pages https://hello.atlassian.net/display/PGT/KERBAL-353+Origin+Tracing
 * EXJS PRs https://bitbucket.org/atlassian/experiment-js/pull-requests/
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
 * CITE PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence-invite-to-edit-plugin/pull-requests
 * Confluence PRs https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/pull-requests
 * AID PRs https://stash.atlassian.com/projects/AID/repos/aid-frontend/pull-requests
-* plaintes https://extranet.atlassian.com/display/~asharman/Difficulty+adding+features+in+product
+* plaintes https://hello.atlassian.net/display/~asharman/Difficulty+adding+features+in+product
 * cleanup https://jira.atlassian.com/browse/CONFDEV-59372
-* KILL ORIGIN https://extranet.atlassian.com/pages/viewpage.action?pageId=3853735467
+* KILL ORIGIN https://hello.atlassian.net/pages/viewpage.action?pageId=3853735467
 
 
 Fundle
+* Final retro https://hello.atlassian.net/wiki/spaces/PGT/pages/197459350
 * F1 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197458780/Fundle+1+-+Optimizing+bundle+evaluation
 * F2 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/198276123/Fundle+2+-+Pages+onboarding+for+bundle+evaluations
-* EAC https://hello.atlassian.net/wiki/spaces/PGT/pages/197456268/KERBAL-180+-+Bundle+optimisation
-* onboarding coordination https://extranet.atlassian.com/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
-* notes https://extranet.atlassian.com/display/PGT/Bundle+investigations+notes+and+links
 * EPIC https://growth.jira-dev.com/browse/KERBAL-180
-* conflicts https://growth.jira-dev.com/browse/KERBAL-394
+* EAC https://hello.atlassian.net/wiki/spaces/PGT/pages/197456268/KERBAL-180+-+Bundle+optimisation
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
-* Final retro https://hello.atlassian.net/wiki/spaces/PGT/pages/197459350
-* KILL FUNDLE https://extranet.atlassian.com/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
-* Ideation 1 https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
-* scope https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
-* F1 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
-* F2 concept https://extranet.atlassian.com/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
+* KILL FUNDLE https://hello.atlassian.net/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
+* Ideation 1 https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
+* scope https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+activating+bundles%3A+scoping+the+experiments
+* F1 concept https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+JSWCON-1%3A+Fundle+1+concept
+* F2 concept https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+JSWCON-2%3A+Fundle+2+concept
+* onboarding coordination https://hello.atlassian.net/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
+* notes https://hello.atlassian.net/display/PGT/Bundle+investigations+notes+and+links
+* conflicts https://growth.jira-dev.com/browse/KERBAL-394
 
 
 WAC Prod:
-* PC https://extranet.atlassian.com/jira/browse/PC-3969?src=confmacro
-* notes https://extranet.atlassian.com/display/~yjutard/Notes%3A+JSWJSD-178+WAC+productioniz
-* dev help notes https://extranet.atlassian.com/display/PGT/Growth+Engineering+-+Developer+Help+Notes#GrowthEngineering-DeveloperHelpNotes-HowToTriggerMegatrontouchpoints
-* xflow https://extranet.atlassian.com/pages/viewpage.action?pageId=3573745850
+* PC https://hello.atlassian.net/jira/browse/PC-3969?src=confmacro
+* notes https://hello.atlassian.net/display/~yjutard/Notes%3A+JSWJSD-178+WAC+productioniz
+* dev help notes https://hello.atlassian.net/display/PGT/Growth+Engineering+-+Developer+Help+Notes#GrowthEngineering-DeveloperHelpNotes-HowToTriggerMegatrontouchpoints
+* xflow https://hello.atlassian.net/pages/viewpage.action?pageId=3573745850
 * magnolia https://bitbucket.org/atlassian/magnolia-resources/pull-requests/1145/wcf-91-wac-optimized-flow-simple-signup/diff
 * tech debt https://growth.jira-dev.com/browse/JSWJSD-230
 * https://growth.jira-dev.com/browse/KERBAL-296
@@ -142,25 +142,25 @@ Shipits
 - 42 https://shipit.atlassian.net/browse/SHPXLII-162
 - GIW4 https://shipit.atlassian.net/projects/GIW4/issues/GIW4-12?filter=allopenissues
 - 41 https://shipit.atlassian.net/browse/SHPXLI-60
-- 40 https://extranet.atlassian.com/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
+- 40 https://hello.atlassian.net/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
 
 Roulette
-- Accommodation https://extranet.atlassian.com/display/STAFF/Sydney+Accommodation
-- For sale https://extranet.atlassian.com/pages/viewpage.action?pageId=1871783827
+- Accommodation https://hello.atlassian.net/display/STAFF/Sydney+Accommodation
+- For sale https://hello.atlassian.net/pages/viewpage.action?pageId=1871783827
 
 
 Review
-- 1-on-1 https://extranet.atlassian.com/pages/viewpage.action?pageId=3770869722
-- training https://extranet.atlassian.com/pages/viewpage.action?pageId=3841753305
+- 1-on-1 https://hello.atlassian.net/pages/viewpage.action?pageId=3770869722
+- training https://hello.atlassian.net/pages/viewpage.action?pageId=3841753305
 - Growth profile https://trello.com/b/759wclxv/yjutard-engineering-p5
-- Pascal https://extranet.atlassian.com/pages/viewpage.action?pageId=3582838772
-- P-levels https://extranet.atlassian.com/pages/viewpage.action?pageId=3609468731
-- review Q3 https://extranet.atlassian.com/display/~yjutard/Quarterly+Performance+Review
+- Pascal https://hello.atlassian.net/pages/viewpage.action?pageId=3582838772
+- P-levels https://hello.atlassian.net/pages/viewpage.action?pageId=3609468731
+- review Q3 https://hello.atlassian.net/display/~yjutard/Quarterly+Performance+Review
 - 1000eyes https://app.thousandeyes.com/
-- rsrc https://extranet.atlassian.com/pages/viewpage.action?pageId=3841753305
+- rsrc https://hello.atlassian.net/pages/viewpage.action?pageId=3841753305
 
 
 Misc/fun:
-- hypnotoad https://extranet.atlassian.com/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
+- hypnotoad https://hello.atlassian.net/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
 - PR https://hello.atlassian.net/wiki/spaces/PEOP/pages/181617899/Australia+-+Residency+Sponsorship
 - 
