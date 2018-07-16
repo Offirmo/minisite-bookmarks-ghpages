@@ -126,6 +126,8 @@ Fundle
 * onboarding coordination https://hello.atlassian.net/display/PGT/Proposal%3A+Engagement+Platform+On-boarding+Coordination+for+JSW+and+JIRA+Platform
 * notes https://hello.atlassian.net/display/PGT/Bundle+investigations+notes+and+links
 * conflicts https://growth.jira-dev.com/browse/KERBAL-394
+* F1 cleanup https://growth.jira-dev.com/browse/KERBAL-319
+* F2 cleanup https://growth.jira-dev.com/browse/KERBAL-389
 
 
 WAC Prod:

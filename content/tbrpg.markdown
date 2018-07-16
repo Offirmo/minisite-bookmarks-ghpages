@@ -9,7 +9,8 @@ pinned:
 
 
 Admin
-- https://tlk.io/the-boring-rpg-reloaded
+- Chat https://tlk.io/the-boring-rpg-reloaded
+- Sentry https://sentry.io/offirmo/the-boring-rpg/
 
 
 Dev
