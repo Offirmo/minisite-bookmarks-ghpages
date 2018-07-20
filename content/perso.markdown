@@ -80,30 +80,26 @@ To check:
 
 
 Wiki perso:
-- + https://github.com/Offirmo-team/wiki/wiki
-- + https://github.com/Offirmo-team/wiki/wiki/administration-unix
-- + https://github.com/Offirmo-team/wiki/wiki/appli-web
-- + https://github.com/Offirmo-team/wiki/wiki/css
-- + https://github.com/Offirmo-team/wiki/wiki/git
-- + https://github.com/Offirmo-team/wiki/wiki/html
-- + https://github.com/Offirmo-team/wiki/wiki/javascript
-- + https://github.com/Offirmo-team/wiki/wiki/module-web
+- ++ https://github.com/Offirmo-team/wiki/wiki
 - + https://github.com/Offirmo-team/wiki/wiki/Sécurité
+- + https://github.com/Offirmo-team/wiki/wiki/appli-web
+- + https://github.com/Offirmo-team/wiki/wiki/module-web
+- + https://github.com/Offirmo-team/wiki/wiki/html
+- + https://github.com/Offirmo-team/wiki/wiki/css
+- + https://github.com/Offirmo-team/wiki/wiki/javascript
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
+- + https://github.com/Offirmo-team/wiki/wiki/git
 - + https://github.com/Offirmo-team/wiki/wiki/UX
-- https://github.com/Offirmo-team/wiki/wiki/bash
-- https://github.com/Offirmo-team/wiki/wiki/carrière
-- https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
-- https://github.com/Offirmo-team/wiki/wiki/ethereum
-- https://github.com/Offirmo-team/wiki/wiki/GitHub
 - https://github.com/Offirmo-team/wiki/wiki/growth
+- https://github.com/Offirmo-team/wiki/wiki/bash
+- https://github.com/Offirmo-team/wiki/wiki/eslint
+- https://github.com/Offirmo-team/wiki/wiki/GitHub
 - https://github.com/Offirmo-team/wiki/wiki/JSON
-- https://github.com/Offirmo-team/wiki/wiki/navigateur
-- https://github.com/Offirmo-team/wiki/wiki/npm
 - https://github.com/Offirmo-team/wiki/wiki/react
 - https://github.com/Offirmo-team/wiki/wiki/serveur
-- https://github.com/Offirmo-team/wiki/wiki/tachyons
-- https://github.com/Offirmo-team/wiki/wiki/YAML
+- https://github.com/Offirmo-team/wiki/wiki/carrière
+- https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
+- https://github.com/Offirmo-team/wiki/wiki/administration-unix
 
 
 Docs:

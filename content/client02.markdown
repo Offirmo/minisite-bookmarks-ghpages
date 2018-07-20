@@ -14,7 +14,7 @@ pinned:
 
 
 Emergency
-- HOT go/hot
+- ++ HOT go/hot
 - severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
@@ -30,9 +30,9 @@ Tangerine
 
 Strategy
 - 2021 https://hello.atlassian.net/pages/viewpage.action?pageId=3675993305
+- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
 - FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
 - FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
-- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
 - ydux https://ydux.us-west-1.staging.atl-paas.net/#
 
 
@@ -54,7 +54,7 @@ Engineering:
 Doc interne:
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
 - services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
-- dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
+- ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
 - key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
 - test1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
 - test2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
