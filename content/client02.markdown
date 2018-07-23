@@ -11,6 +11,7 @@ pinned:
 - good debates https://hello.atlassian.net/display/~yjutard/Good+debates%2C+reports+and+resources
 - CTasks https://hello.atlassian.net/plugins/inlinetasks/mytasks.action
 - risk https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142256/WIP+risk+management
+- XBL https://bitbucket.org/atlassian/growthkit/src/master/packages/experiment-boostrap/README.md
 
 
 Emergency
