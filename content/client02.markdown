@@ -87,6 +87,11 @@ Services:
 * 
 
 
+Spikes
+- ticket https://growth.jira-dev.com/browse/KERBAL-726
+- HAN https://hello.atlassian.net/wiki/spaces/PGT/pages/248626886/Add+People+spikes
+
+
 NUEPI 4
 - poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197459285/NUEPI-4+-+Google+Contacts+Experiment
 - ticket https://growth.jira-dev.com/browse/KERBAL-601
@@ -142,11 +147,15 @@ WAC Prod:
 
 
 Shipits
+- 43 https://shipit.atlassian.net/browse/SHPXLIII-9
 - GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
 - 42 https://shipit.atlassian.net/browse/SHPXLII-162
 - GIW4 https://shipit.atlassian.net/projects/GIW4/issues/GIW4-12?filter=allopenissues
 - 41 https://shipit.atlassian.net/browse/SHPXLI-60
-- 40 https://hello.atlassian.net/pages/resumedraft.action?draftId=3564831016&draftShareId=cc7e63dd-a00a-4a9c-a2a6-14b26aacfc17
+- GIW3 https://shipit.atlassian.net/browse/GIW3-6
+- TODO https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2017/10/29/219141981/ShipIt+40+Syd+Growth+Innovation+Week+3+Syd+-+creating+Stride+bots+and+contributing+back
+- 40 https://shipit.atlassian.net/browse/SHPXL-392
+
 
 Roulette
 - Accommodation https://hello.atlassian.net/display/STAFF/Sydney+Accommodation
