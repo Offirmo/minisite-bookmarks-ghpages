@@ -5,13 +5,13 @@ pinned:
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
 - 💡 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Idea+Pad
-- Features lead 1 https://hello.atlassian.net/jira/secure/Dashboard.jspa?selectPageId=35421
-- Feature lead 2 https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+Dev
+- risk https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142256/WIP+risk+management
+- XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
+- interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
+- F Lead https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142105/Notes+feature+lead
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
 - good debates https://hello.atlassian.net/display/~yjutard/Good+debates%2C+reports+and+resources
 - CTasks https://hello.atlassian.net/plugins/inlinetasks/mytasks.action
-- risk https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142256/WIP+risk+management
-- XBL https://bitbucket.org/atlassian/growthkit/src/master/packages/experiment-boostrap/README.md
 
 
 Emergency
@@ -92,7 +92,12 @@ Spikes
 - HAN https://hello.atlassian.net/wiki/spaces/PGT/pages/248626886/Add+People+spikes
 
 
-NUEPI 4
+NUEPI-6
+* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/256113651/NUEPI-6+-+Productionization+Invite+DRS+during+onboarding
+* https://hello.atlassian.net/wiki/spaces/PGT/pages/256237504?focusedCommentId=256836722&src=mail&src.mail.timestamp=1532969931175&src.mail.notification=com.atlassian.confluence.plugins.confluence-notifications-batch-plugin%3Abatching-notification&src.mail.recipient=8a7f80835d4dfb97015d4ef9d4760008&src.mail.action=view#comment-256836722
+
+
+NUEPI-4
 - poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197459285/NUEPI-4+-+Google+Contacts+Experiment
 - ticket https://growth.jira-dev.com/browse/KERBAL-601
 - app notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198251374/NUEPI-4+-+Static+app
@@ -158,8 +163,8 @@ Shipits
 
 
 Roulette
-- Accommodation https://hello.atlassian.net/display/STAFF/Sydney+Accommodation
-- For sale https://hello.atlassian.net/pages/viewpage.action?pageId=1871783827
+- Accommodation https://hello.atlassian.net/wiki/spaces/STAFF/pages/157201574/Sydney+Accommodation
+- For sale https://hello.atlassian.net/wiki/spaces/STAFF/pages/157201070/Sydney+s+for+sale+buy+sell+giveaway+page
 
 
 Review

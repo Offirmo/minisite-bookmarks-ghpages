@@ -176,6 +176,7 @@ Veille:
 - http://lea.verou.me/
 - https://aerotwist.com/
 - https://blog.twitter.com/engineering/en_us.html
+- https://eng.uber.com/
 
 
 Setup:
