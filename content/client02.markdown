@@ -16,12 +16,11 @@ pinned:
 
 Emergency
 - ++ HOT go/hot
-- severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
+- ++ severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
+- Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
-- KILL FUNDLE https://hello.atlassian.net/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
-- KILL ORIGIN https://hello.atlassian.net/pages/viewpage.action?pageId=3853735467
 
 
 Tangerine
@@ -98,6 +97,7 @@ NUEPI-6
 
 
 NUEPI-4
+- KILL NUEPI-4 
 - poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197459285/NUEPI-4+-+Google+Contacts+Experiment
 - ticket https://growth.jira-dev.com/browse/KERBAL-601
 - app notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198251374/NUEPI-4+-+Static+app
@@ -110,6 +110,7 @@ NUEPI-4
 
 
 Origin
+- KILL ORIGIN https://hello.atlassian.net/pages/viewpage.action?pageId=3853735467
 * epic https://growth.jira-dev.com/browse/KERBAL-353
 * pages https://hello.atlassian.net/display/PGT/KERBAL-353+Origin+Tracing
 * EXJS PRs https://bitbucket.org/atlassian/experiment-js/pull-requests/
@@ -123,6 +124,7 @@ Origin
 
 
 Fundle
+- KILL FUNDLE https://hello.atlassian.net/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
 * Final retro https://hello.atlassian.net/wiki/spaces/PGT/pages/197459350
 * F1 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197458780/Fundle+1+-+Optimizing+bundle+evaluation
 * F2 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/198276123/Fundle+2+-+Pages+onboarding+for+bundle+evaluations
