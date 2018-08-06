@@ -12,11 +12,13 @@ pinned:
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
 - good debates https://hello.atlassian.net/display/~yjutard/Good+debates%2C+reports+and+resources
 - CTasks https://hello.atlassian.net/plugins/inlinetasks/mytasks.action
+- report https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 
 
 Emergency
 - ++ HOT go/hot
 - ++ severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
+- ++ LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
 - Confluence TODO
@@ -82,8 +84,14 @@ Tools:
 
 
 Services:
-* https://hello.atlassian.net/display/JCC/Vertigo+Architecture+Part+1+-+Infrastructure%2C+services%2C+and+sharding
-* 
+* identity https://hello.atlassian.net/display/JCC/Vertigo+Architecture+Part+1+-+Infrastructure%2C+services%2C+and+sharding
+* concept https://hello.atlassian.net/wiki/spaces/PGT/pages/261657745/Team+Groot+Virality+Project+Seedling+concept
+* project https://hello.atlassian.net/wiki/spaces/PGT/pages/246416302/Project+Seedling
+
+
+
+Seedling
+* https://hello.atlassian.net/wiki/spaces/PGT/pages/258088797/Team+Groot+Virality+Identity+work+overview
 
 
 Spikes
