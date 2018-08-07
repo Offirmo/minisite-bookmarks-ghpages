@@ -101,7 +101,8 @@ Spikes
 
 NUEPI-6
 * poster https://hello.atlassian.net/wiki/spaces/PGT/pages/256113651/NUEPI-6+-+Productionization+Invite+DRS+during+onboarding
-* https://hello.atlassian.net/wiki/spaces/PGT/pages/256237504?focusedCommentId=256836722&src=mail&src.mail.timestamp=1532969931175&src.mail.notification=com.atlassian.confluence.plugins.confluence-notifications-batch-plugin%3Abatching-notification&src.mail.recipient=8a7f80835d4dfb97015d4ef9d4760008&src.mail.action=view#comment-256836722
+* ticket https://growth.jira-dev.com/browse/KERBAL-736
+* https://hello.atlassian.net/wiki/spaces/PGT/pages/256237504
 
 
 NUEPI-4
