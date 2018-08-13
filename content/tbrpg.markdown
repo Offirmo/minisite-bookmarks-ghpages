@@ -1,11 +1,19 @@
 # TBRPG
 
-
 pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - OA https://www.online-adventur.es
 - PH ship https://www.producthunt.com/upcoming/the-npm-rpg
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
+
+
+the-boring-rpg:
+- prod https://www.online-adventur.es/apps/the-boring-rpg/
+- staging https://offirmo.netlify.com/apps/the-boring-rpg/dist/index.html
+- dev+ http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
+- dev http://localhost:8080/the-boring-rpg/
+- UI dev http://localhost:1981/9-oh-my-rpg/view-browser/doc/demo-index.html
+- npm https://www.npmjs.com/package/the-npm-rpg
 
 
 Admin
@@ -24,15 +32,6 @@ Dev
 * AWS https://aws.amazon.com/
 
 
-the-boring-rpg:
-- prod https://www.online-adventur.es/apps/the-boring-rpg/
-- staging https://offirmo.netlify.com/apps/the-boring-rpg/dist/index.html
-- dev+ http://localhost:8000/apps/the-boring-rpg/dist/index.html
-- dev http://localhost:8080/the-boring-rpg/
-- UI dev http://localhost:8000/9-oh-my-rpg/view-browser/doc/demo-index.html
-- npm https://www.npmjs.com/package/the-npm-rpg
-
-
 marketing:
 - buffer https://buffer.com/app/profile/5afad0a728473ccb464ca02d/buffer/queue/list
 - analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
@@ -45,6 +44,11 @@ marketing:
 - Reddit incremental https://www.reddit.com/r/incremental_games/
 - blog prod http://www.offirmo.net/blog/
 - offirmo http://www.offirmo.net/
+- manylink https://manylink.co/
+- https://gamejolt.com/
+- https://dashboard.indieboost.com/
+- https://help.producthunt.com/posting/how-to-post-a-product
+
 
 
 tech
