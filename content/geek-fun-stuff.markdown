@@ -42,3 +42,4 @@ Webcomics
 
 Misc
 - https://what-if.xkcd.com/
+- picklecat https://dn.ht/picklecat/
