@@ -105,6 +105,8 @@ NUEPI-6
 * poster https://hello.atlassian.net/wiki/spaces/PGT/pages/256113651/NUEPI-6+-+Productionization+Invite+DRS+during+onboarding
 * ticket https://growth.jira-dev.com/browse/KERBAL-736
 * https://hello.atlassian.net/wiki/spaces/PGT/pages/256237504
+* plugin repo https://stash.atlassian.com/projects/CONF/repos/confluence-onboarding/
+* conf repo https://stash.atlassian.com/projects/CONFCLOUD/repos/confluence/
 
 
 NUEPI-4
