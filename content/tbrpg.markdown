@@ -9,9 +9,10 @@ pinned:
 
 the-boring-rpg:
 - prod    https://www.online-adventur.es/apps/the-boring-rpg/
-- staging https://offirmo.netlify.com/apps/the-boring-rpg/dist/index.html
+- staging https://offirmo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
 - dev+    http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
-- dev     http://localhost:8080/the-boring-rpg/
+- dev     http://localhost:8080/the-boring-rpg-browser/
+- module  http://localhost:1234/index.html
 - UI dev  http://localhost:1981/9-oh-my-rpg/view-browser/doc/demo-index.html
 - npm     https://www.npmjs.com/package/the-npm-rpg
 
@@ -48,7 +49,6 @@ marketing:
 - https://gamejolt.com/
 - https://dashboard.indieboost.com/
 - https://help.producthunt.com/posting/how-to-post-a-product
-
 
 
 tech
