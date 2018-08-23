@@ -82,10 +82,10 @@ To check:
 Wiki perso:
 - ++ https://github.com/Offirmo-team/wiki/wiki
 - + https://github.com/Offirmo-team/wiki/wiki/Sécurité
-- + https://github.com/Offirmo-team/wiki/wiki/appli-web
+- + Appli web https://github.com/Offirmo-team/wiki/wiki/appli-web
 - + https://github.com/Offirmo-team/wiki/wiki/API-web
 - + https://github.com/Offirmo-team/wiki/wiki/module-web
-- + https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-web
+- + dév. web https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-web
 - + https://github.com/Offirmo-team/wiki/wiki/css
 - + https://github.com/Offirmo-team/wiki/wiki/javascript
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
@@ -97,7 +97,7 @@ Wiki perso:
 - https://github.com/Offirmo-team/wiki/wiki/react
 - https://github.com/Offirmo-team/wiki/wiki/serveur
 - https://github.com/Offirmo-team/wiki/wiki/carrière
-- https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
+- dév. logiciel https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
 - https://github.com/Offirmo-team/wiki/wiki/administration-unix
 - https://github.com/Offirmo-team/wiki/wiki/cryptocurrency
 - https://github.com/Offirmo-team/wiki/wiki/RPG
