@@ -62,7 +62,7 @@ Doc interne:
 - key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
 - test1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
 - test2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
-
+- search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
 
 Doc externe
 - storybook https://storybook.js.org/basics/guide-react/
