@@ -35,7 +35,9 @@ Strips
 
 
 Webcomics
-- DM of the ring http://www.shamusyoung.com/twentysidedtale/?p=612
+- https://docs.google.com/spreadsheets/d/1yHDua-s5lk1Yon9IBacVtsjIUnThs7SyqaKYSBlWqXo/edit#gid=155590555
+- https://www.sheet2site.com/api/?key=1yHDua-s5lk1Yon9IBacVtsjIUnThs7SyqaKYSBlWqXo
+
 - OOTS http://www.giantitp.com/comics/oots0001.html
 - OOTS help http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 

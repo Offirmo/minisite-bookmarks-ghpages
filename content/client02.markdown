@@ -167,6 +167,7 @@ WAC Prod:
 
 
 Shipits
+- GIW6 https://shipit.atlassian.net/projects/GIW6/
 - 43 https://shipit.atlassian.net/browse/SHPXLIII-9
 - GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
 - 42 https://shipit.atlassian.net/browse/SHPXLII-162

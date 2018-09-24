@@ -5,7 +5,7 @@ pinned:
 - OA https://www.online-adventur.es
 - PH ship https://www.producthunt.com/upcoming/the-npm-rpg
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
-
+- skills https://docs.google.com/spreadsheets/d/1mVrIOtq09Mr_OJO7j2UxHr5-I-cJy26vSR-5mRO8Fwg/edit#gid=1575475590
 
 the-boring-rpg:
 - prod    https://www.online-adventur.es/apps/the-boring-rpg/
@@ -15,6 +15,7 @@ the-boring-rpg:
 - module  http://localhost:1234/index.html
 - UI dev  http://localhost:1981/9-oh-my-rpg/view-browser/doc/demo-index.html
 - npm     https://www.npmjs.com/package/the-npm-rpg
+- F redirect https://offirmo.netlify.com/apps/the-boring-rpg-browser/meta/index.html
 
 
 Admin
