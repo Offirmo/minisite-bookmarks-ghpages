@@ -24,6 +24,10 @@ devops
 - https://twitter.com/dmofengineering
 
 
+Data
+- Spurious correlations http://tylervigen.com/
+
+
 Enterprise life
 - le conseil corporate (fr) https://www.youtube.com/watch?v=VEPFIGMgdd0
 

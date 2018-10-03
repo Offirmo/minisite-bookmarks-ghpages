@@ -10,9 +10,10 @@ pinned:
 - interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
 - F Lead https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142105/Notes+feature+lead
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
-- good debates https://hello.atlassian.net/display/~yjutard/Good+debates%2C+reports+and+resources
+- good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
 - CTasks https://hello.atlassian.net/plugins/inlinetasks/mytasks.action
-- report https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
+- say sth https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
+- Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 
 
 Emergency
