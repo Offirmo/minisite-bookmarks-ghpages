@@ -22,6 +22,7 @@ Admin
 - Netlify https://app.netlify.com/sites/online-adventures/overview
 - G Dev https://console.developers.google.com/
 - G Webmaster https://www.google.com/webmasters/tools/home
+- G Tab manager https://tagmanager.google.com/
 
 
 Dev
