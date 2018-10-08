@@ -7,6 +7,7 @@ pinned:
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 - skills https://docs.google.com/spreadsheets/d/1mVrIOtq09Mr_OJO7j2UxHr5-I-cJy26vSR-5mRO8Fwg/edit#gid=1575475590
 
+
 the-boring-rpg:
 - prod    https://www.online-adventur.es/apps/the-boring-rpg/
 - staging https://offirmo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
@@ -41,7 +42,7 @@ marketing:
 - all links https://linktr.ee/theboringrpg
 - Twitter https://twitter.com/TheBoringRpg
 - Instagram https://www.instagram.com/theboringrpg/
-- facebook https://www.facebook.com/theboringrpg/
+- facebook https://www.facebook.com/boringrpg/
 - PH https://www.producthunt.com/upcoming/the-npm-rpg
 - Reddit incremental https://www.reddit.com/r/incremental_games/
 - blog prod http://www.offirmo.net/blog/
