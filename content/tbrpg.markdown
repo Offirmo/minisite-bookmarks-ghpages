@@ -11,16 +11,16 @@ the-boring-rpg:
 - prod    https://www.online-adventur.es/apps/the-boring-rpg/
 - staging https://offirmo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
 - dev+    http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
-- dev     http://localhost:8080/the-boring-rpg/
+- dev     http://localhost:8080
 - module  http://localhost:1234/index.html
-- UI dev  http://localhost:1981/9-oh-my-rpg/view-browser/doc/demo-index.html
-- npm     https://www.npmjs.com/package/the-npm-rpg
-- F redirect https://offirmo.netlify.com/apps/the-boring-rpg-browser/meta/index.html
 
 
 Admin
 - Chat https://tlk.io/the-boring-rpg-reloaded
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
+- Netlify https://app.netlify.com/sites/online-adventures/overview
+- G Dev https://console.developers.google.com/
+- G Webmaster https://www.google.com/webmasters/tools/home
 
 
 Dev
@@ -57,21 +57,10 @@ tech
 - unit tests 
 
 
-SAAS
-- netlify.com
-- https://getstream.io/get_started/#flat_feed
-- https://humio.com/pricing.html
-- https://pwdless.github.io/Cierge-Website/
-
-
 Content
-- https://www.pinterest.com/
+- artstation
 - https://www.deviantart.com/
-
-
-Monetize
-- https://opencollective.com/
-- patreon
+- https://www.pinterest.com/
 
 
 Dependencies
@@ -82,7 +71,20 @@ Dependencies
 - https://github.com/Offirmo/hello-world-aws-cognito
 
 
-[LEGACY]oh-my-rpg:
+Monetize
+- https://opencollective.com/
+- patreon
+
+
+Misc
+- npm     https://www.npmjs.com/package/the-npm-rpg
+- F redirect https://offirmo.netlify.com/apps/the-boring-rpg-browser/meta/index.html
 - npm org https://www.npmjs.com/org/oh-my-rpg
+- https://getstream.io/get_started/#flat_feed
+- https://humio.com/pricing.html
+- https://pwdless.github.io/Cierge-Website/
+
+
+[LEGACY]oh-my-rpg:
 - GH https://github.com/online-adventures/oh-my-rpg
 - last original update https://www.reddit.com/r/boringrpg/comments/eh5iv/updates_612/
