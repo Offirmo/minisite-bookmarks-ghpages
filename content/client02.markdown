@@ -65,6 +65,7 @@ Doc interne:
 - test2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
 - search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
 
+
 Doc externe
 - storybook https://storybook.js.org/basics/guide-react/
 - assertions https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
