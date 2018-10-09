@@ -9,17 +9,19 @@ pinned:
 
 
 the-boring-rpg:
-- prod    https://www.online-adventur.es/apps/the-boring-rpg/
-- staging https://offirmo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
-- dev+    http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
-- dev     http://localhost:8080
-- module  http://localhost:1234/index.html
+- prod        https://www.online-adventur.es/apps/the-boring-rpg/
+- staging     https://offirmo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
+- dev+        http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
+- dev         http://localhost:8080
+- dev module  http://localhost:1234/index.html
 
 
 Admin
 - Chat https://tlk.io/the-boring-rpg-reloaded
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/overview
+- AWS https://aws.amazon.com/
+- G analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
 - G Dev https://console.developers.google.com/
 - G Webmaster https://www.google.com/webmasters/tools/home
 - G Tab manager https://tagmanager.google.com/
@@ -27,18 +29,16 @@ Admin
 
 Dev
 - tracking https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
-* GHOA https://github.com/online-adventures
-* GH mono https://github.com/Offirmo/offirmo-monorepo
-* GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
-* GH TBRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg/README.md
-* GH TNRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-npm-rpg/README.md
-* npm https://www.npmjs.com/package/the-npm-rpg
-* AWS https://aws.amazon.com/
+- GHOA https://github.com/online-adventures
+- GH mono https://github.com/Offirmo/offirmo-monorepo
+- GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
+- GH TBRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg-browser/README.md
+- GH TNRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg-node/README.md
+- npm https://www.npmjs.com/package/the-npm-rpg
 
 
 marketing:
 - buffer https://buffer.com/app/profile/5afad0a728473ccb464ca02d/buffer/queue/list
-- analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
 - Reddit TBRPG https://www.reddit.com/r/boringrpg/
 - all links https://linktr.ee/theboringrpg
 - Twitter https://twitter.com/TheBoringRpg
@@ -48,9 +48,8 @@ marketing:
 - Reddit incremental https://www.reddit.com/r/incremental_games/
 - blog prod http://www.offirmo.net/blog/
 - offirmo http://www.offirmo.net/
-- manylink https://manylink.co/
-- https://gamejolt.com/
-- https://dashboard.indieboost.com/
+- gamejolt https://gamejolt.com/
+- indieboost https://dashboard.indieboost.com/
 - https://help.producthunt.com/posting/how-to-post-a-product
 
 
@@ -60,9 +59,9 @@ tech
 
 
 Content
-- artstation
-- https://www.deviantart.com/
-- https://www.pinterest.com/
+- artstation  https://www.artstation.com/
+- deviantart  https://www.deviantart.com/
+- pinterest   https://www.pinterest.com/
 
 
 Dependencies
@@ -79,12 +78,12 @@ Monetize
 
 
 Misc
-- npm     https://www.npmjs.com/package/the-npm-rpg
 - F redirect https://offirmo.netlify.com/apps/the-boring-rpg-browser/meta/index.html
 - npm org https://www.npmjs.com/org/oh-my-rpg
 - https://getstream.io/get_started/#flat_feed
 - https://humio.com/pricing.html
 - https://pwdless.github.io/Cierge-Website/
+- manylink https://manylink.co/
 
 
 [LEGACY]oh-my-rpg:

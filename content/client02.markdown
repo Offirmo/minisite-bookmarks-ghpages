@@ -84,6 +84,7 @@ Tools:
 * https://packages.atlassian.com/
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
 * VMs https://vmac-server.internal.uswest.atlassian.io/
+* significance https://www.optimizely.com/anz/sample-size-calculator/?conversion=66&effect=8&significance=95
 
 
 Services:
