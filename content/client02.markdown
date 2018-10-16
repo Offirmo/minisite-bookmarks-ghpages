@@ -42,7 +42,8 @@ Team
 
 
 Project:
-- https://growth.jira-dev.com/secure/Dashboard.jspa
+- Groot dashboard https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL
+- Grrot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - OKRs https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+OKRs
 - Plan https://hello.atlassian.net/display/PGT/Expandonauts+FY18+Q3+plan
 - backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
@@ -106,7 +107,8 @@ Spikes
 
 Grafting
 * poster https://hello.atlassian.net/wiki/spaces/PGT/pages/321713452/Project+Grafting
-* ticket 
+* epic https://hello.atlassian.net/browse/GL-61
+* backlog https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible&selectedEpic=GL-61
 * 
 
 
@@ -176,6 +178,7 @@ WAC Prod:
 
 
 Shipits
+- 44 https://shipit.atlassian.net/projects/SHPXLIV
 - GIW6 https://shipit.atlassian.net/projects/GIW6/
 - 43 https://shipit.atlassian.net/browse/SHPXLIII-9
 - GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
@@ -216,3 +219,4 @@ TOREVIEW
 
 Legacy
 - EAC https://extranet.atlassian.com/
+- growth.jira-dev https://growth.jira-dev.com/secure/Dashboard.jspa
