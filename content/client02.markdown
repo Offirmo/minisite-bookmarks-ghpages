@@ -105,8 +105,11 @@ Spikes
 - HAN https://hello.atlassian.net/wiki/spaces/PGT/pages/248626886/Add+People+spikes
 
 
-Grafting
-* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/321713452/Project+Grafting
+GRAPE
+* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/321713452/GRAPE+-+GRant+Access+in+JSW+PagEs+-+poster
+* PC https://hello.atlassian.net/browse/PC-7765
+* FD https://hello.atlassian.net/browse/FD-3944
+* FF https://app.launchdarkly.com/jira/production/features/jsw.fd-3944.pages.allow-join-or-request-access-to-confluence/targeting
 * epic https://hello.atlassian.net/browse/GL-61
 * backlog https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible&selectedEpic=GL-61
 * 

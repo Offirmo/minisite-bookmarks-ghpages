@@ -10,14 +10,17 @@ pinned:
 
 the-boring-rpg:
 - prod        https://www.online-adventur.es/apps/the-boring-rpg/
-- staging     https://offirmo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
+- preprod     https://www.online-adventur.es/apps/the-boring-rpg-preprod/
+- staging     https://offirmo-monorepo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
+- GH pages    https://www.offirmo.net/offirmo-monorepo/apps/the-boring-rpg-browser/dist/
 - dev+        http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
 - dev         http://localhost:8080
-- dev module  http://localhost:1234/index.html
+- submodule   http://localhost:1234/index.html
 
 
 Admin
 - Chat https://tlk.io/the-boring-rpg-reloaded
+- Reddit https://www.reddit.com/r/boringrpg/
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/overview
 - AWS https://aws.amazon.com/
@@ -28,7 +31,7 @@ Admin
 
 
 Dev
-- tracking https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
+- PM https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
 - GHOA https://github.com/online-adventures
 - GH mono https://github.com/Offirmo/offirmo-monorepo
 - GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
