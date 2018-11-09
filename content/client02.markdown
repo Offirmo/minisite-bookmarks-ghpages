@@ -17,39 +17,13 @@ pinned:
 
 
 Emergency
-- ++ HOT go/hot
-- ++ severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
-- ++ LD https://app.launchdarkly.com/default/production/features
+- + HOT go/hot
+- + severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
+- + LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
 - Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
-
-
-Tangerine
-- meetings https://hello.atlassian.net/display/JFP/Tanginerine+-+Jira+Frontend+Committee+meetings
-- article https://hello.atlassian.net/display/JFP/Transitioning+to+tangerine+apps
-
-
-Team
-- 2021 https://hello.atlassian.net/pages/viewpage.action?pageId=3675993305
-- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
-- FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
-- FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
-- ydux https://ydux.us-west-1.staging.atl-paas.net/#
-- suggestions http://go.atlassian.com/suggestion-box
-- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
-
-
-Project:
-- Groot dashboard https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL
-- Grrot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
-- OKRs https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+OKRs
-- Plan https://hello.atlassian.net/display/PGT/Expandonauts+FY18+Q3+plan
-- backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
-- kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
-- sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
-- sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
 
 
 Engineering:
@@ -57,13 +31,23 @@ Engineering:
 - Dev list https://hello.atlassian.net/wiki/spaces/PGT/pages/198265283/Fundle+dev+check+list
 
 
+Team
+- + Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL
+- + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
+- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
+- FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
+- FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
+- suggestions http://go.atlassian.com/suggestion-box
+- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
+
+
 Doc interne:
+- ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
+- + key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
 - services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
-- ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
-- key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
-- test1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
-- test2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
+- QA1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
+- QA2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
 - search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
 
 
@@ -71,8 +55,9 @@ Doc externe
 - storybook https://storybook.js.org/basics/guide-react/
 - assertions https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
 - sinon https://github.com/Offirmo-team/wiki/wiki/sinon
-- jest https://facebook.github.io/jest/
-- enzyme http://airbnb.io/enzyme/
+- jest https://github.com/Offirmo-team/wiki/wiki/Jest
+- enzyme https://airbnb.io/enzyme/docs/api/shallow.html
+- prop-types https://github.com/facebook/prop-types
 - fetch-mock http://www.wheresrhys.co.uk/fetch-mock/
 - styled components https://github.com/styled-components/styled-components
 
@@ -181,7 +166,7 @@ WAC Prod:
 
 
 Shipits
-- 45 https://shipit.atlassian.net/projects/SHPXLV
+- *45 https://shipit.atlassian.net/projects/SHPXLV
 - GIW7 https://shipit.atlassian.net/projects/GIW7/
 - 44 https://shipit.atlassian.net/browse/SHPXLIV-139
 - GIW6 https://shipit.atlassian.net/projects/GIW6/
@@ -223,8 +208,19 @@ TOREVIEW
 - VR https://hello.atlassian.net/wiki/spaces/LABS/pages/139821846/VR+Lab
 - PLP https://hello.atlassian.net/wiki/spaces/PEOP/pages/181603353/Australia+-+Parental+Leave+Policy
 - HRF https://www.humanservices.gov.au/individuals/families
+- Tangerine meetings https://hello.atlassian.net/display/JFP/Tanginerine+-+Jira+Frontend+Committee+meetings
+- Tangerine article https://hello.atlassian.net/display/JFP/Transitioning+to+tangerine+apps
+- 2021 https://hello.atlassian.net/pages/viewpage.action?pageId=3675993305
+- ydux https://ydux.us-west-1.staging.atl-paas.net/#
+
 
 
 Legacy
 - EAC https://extranet.atlassian.com/
 - growth.jira-dev https://growth.jira-dev.com/secure/Dashboard.jspa
+- OKRs https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+OKRs
+- Plan https://hello.atlassian.net/display/PGT/Expandonauts+FY18+Q3+plan
+- backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
+- kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
+- sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
+- sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
