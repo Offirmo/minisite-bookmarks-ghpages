@@ -112,7 +112,7 @@ GRAPE
 * FF https://app.launchdarkly.com/jira/production/features/jsw.fd-3944.pages.allow-join-or-request-access-to-confluence/targeting
 * epic https://hello.atlassian.net/browse/GL-61
 * backlog https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible&selectedEpic=GL-61
-* 
+* identity-common-frontend https://stash.atlassian.com/projects/IPS/repos/identity-common-frontend/browse
 
 
 NUEPI-6
@@ -151,12 +151,12 @@ Origin
 
 
 Fundle
-- KILL FUNDLE https://hello.atlassian.net/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
+- KILL FUNDLE https://hello.atlassian.net/wiki/spaces/PGT/pages/198247931/Runbook+-+Growth's+Fundle+experiment%3A+how+to+kill+it
 * Final retro https://hello.atlassian.net/wiki/spaces/PGT/pages/197459350
 * F1 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197458780/Fundle+1+-+Optimizing+bundle+evaluation
 * F2 poster https://hello.atlassian.net/wiki/spaces/PGT/pages/198276123/Fundle+2+-+Pages+onboarding+for+bundle+evaluations
 * EPIC https://growth.jira-dev.com/browse/KERBAL-180
-* EAC https://hello.atlassian.net/wiki/spaces/PGT/pages/197456268/KERBAL-180+-+Bundle+optimisation
+* hello https://hello.atlassian.net/wiki/spaces/PGT/pages/197456268/KERBAL-180+-+Bundle+optimisation
 * JFE PRs https://stash.atlassian.com/projects/JIRACLOUD/repos/jira-frontend/pull-requests
 * KILL FUNDLE https://hello.atlassian.net/display/PGT/Runbook+-+Growth%27s+Fundle+experiment%3A+how+to+kill+it
 * Ideation 1 https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+activating+bundles%3A+%27persuaded%27+evaluator+ideation%2C+current+flow+capture
@@ -181,7 +181,9 @@ WAC Prod:
 
 
 Shipits
-- 44 https://shipit.atlassian.net/projects/SHPXLIV
+- 45 https://shipit.atlassian.net/projects/SHPXLV
+- GIW7 https://shipit.atlassian.net/projects/GIW7/
+- 44 https://shipit.atlassian.net/browse/SHPXLIV-139
 - GIW6 https://shipit.atlassian.net/projects/GIW6/
 - 43 https://shipit.atlassian.net/browse/SHPXLIII-9
 - GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
@@ -213,11 +215,14 @@ Misc/fun:
 - hypnotoad https://hello.atlassian.net/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
 - PR https://hello.atlassian.net/wiki/spaces/PEOP/pages/181617899/Australia+-+Residency+Sponsorship
 - donuts https://hello.atlassian.net/wiki/spaces/~briosa/pages/256228848/Sydney+review
+- movember https://hello.atlassian.net/wiki/spaces/FOUNDATION/blog/2018/10/30/332214904/Grow+a+mo+save+a+bro
 
 
 TOREVIEW
 - VR https://hello.atlassian.net/wiki/spaces/~paksenkin/blog/2018/07/13/239932235/VR+Web+and+Beyond?atlOrigin=eyJpIjoiN2E0ZDgzYTY3YTgzNDRkZmJjODAxMTY1N2Y3M2E4MjQiLCJwIjoiYyJ9
 - VR https://hello.atlassian.net/wiki/spaces/LABS/pages/139821846/VR+Lab
+- PLP https://hello.atlassian.net/wiki/spaces/PEOP/pages/181603353/Australia+-+Parental+Leave+Policy
+- HRF https://www.humanservices.gov.au/individuals/families
 
 
 Legacy

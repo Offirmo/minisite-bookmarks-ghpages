@@ -11,6 +11,7 @@ Dev
 - worst bug https://dev.to/ben/what-was-the-worst-bug-youve-ever-written-2cn7
 - node.js reactions https://nodejsreactions.tumblr.com/
 - web dev memes http://www.webdevelopersmeme.com/
+- dev strips https://www.monkeyuser.com/
 
 
 Design
