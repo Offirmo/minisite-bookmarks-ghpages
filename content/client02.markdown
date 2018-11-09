@@ -62,11 +62,6 @@ Doc externe
 - styled components https://github.com/styled-components/styled-components
 
 
-Repos:
-- list https://hello.atlassian.net/display/~mpuckeridge/Key+repos+that+we+work+with
-- https://bitbucket.org/atlassian/pf-home-ui/src
-
-
 Tools:
 * https://packages.atlassian.com/
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
