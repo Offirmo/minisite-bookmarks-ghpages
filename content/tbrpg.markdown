@@ -22,7 +22,7 @@ Admin
 - Chat https://tlk.io/the-boring-rpg-reloaded
 - Reddit https://www.reddit.com/r/boringrpg/
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
-- Netlify https://app.netlify.com/sites/online-adventures/overview
+- Netlify https://app.netlify.com/sites/online-adventures/identity
 - AWS https://aws.amazon.com/
 - G analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
 - G Dev https://console.developers.google.com/

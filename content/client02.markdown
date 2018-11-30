@@ -32,7 +32,7 @@ Engineering:
 
 
 Team
-- + Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL
+- + Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
 - FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
@@ -44,6 +44,10 @@ Team
 Doc interne:
 - ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
 - + key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
+- DN JFE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456530/Jira+Frontend+Cloud+-+Growth+Engineering+-+Developer+Help+Notes
+- DN JBE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456533/Jira+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
+- DN CBE https://hello.atlassian.net/wiki/spaces/PGT/pages/198256505/Confluence+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
+- DN CFE https://hello.atlassian.net/wiki/spaces/PGT/pages/198260243/Confluence+Frontend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
 - services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
 - QA1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
