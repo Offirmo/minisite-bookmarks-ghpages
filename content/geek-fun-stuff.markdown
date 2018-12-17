@@ -12,7 +12,7 @@ Dev
 - node.js reactions https://nodejsreactions.tumblr.com/
 - web dev memes http://www.webdevelopersmeme.com/
 - dev strips https://www.monkeyuser.com/
-
+- r/ProgrammerHumor https://www.reddit.com/r/ProgrammerHumor/
 
 Design
 - The design team https://thedesignteam.io/
