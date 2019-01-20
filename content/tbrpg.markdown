@@ -11,8 +11,8 @@ pinned:
 the-boring-rpg:
 - prod        https://www.online-adventur.es/apps/the-boring-rpg/
 - preprod     https://www.online-adventur.es/apps/the-boring-rpg-preprod/
-- staging     https://offirmo-monorepo.netlify.com/apps/the-boring-rpg-browser/dist/index.html
-- GH pages    https://www.offirmo.net/offirmo-monorepo/apps/the-boring-rpg-browser/dist/
+- staging     https://offirmo-monorepo.netlify.com/apps/the-boring-rpg/client-browser/dist/index.html
+- GH pages    https://www.offirmo.net/offirmo-monorepo/apps/the-boring-rpg/client-browser/dist/
 - dev+        http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
 - dev         http://localhost:8080
 - submodule   http://localhost:1234/index.html
@@ -35,8 +35,8 @@ Dev
 - GHOA https://github.com/online-adventures
 - GH mono https://github.com/Offirmo/offirmo-monorepo
 - GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
-- GH TBRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg-browser/README.md
-- GH TNRPG https://github.com/Offirmo/offirmo-monorepo/blob/master/apps/the-boring-rpg-node/README.md
+- TBRPG-browser https://github.com/Offirmo/offirmo-monorepo/tree/master/apps/the-boring-rpg/client-browser
+- TBRPG-term https://github.com/Offirmo/offirmo-monorepo/tree/master/apps/the-boring-rpg/client-node
 - npm https://www.npmjs.com/package/the-npm-rpg
 
 

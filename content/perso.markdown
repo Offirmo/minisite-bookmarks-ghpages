@@ -15,6 +15,7 @@ pinned:
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 - pocket https://getpocket.com/a?src=ff_ext_saved
 - https://www.worldtimebuddy.com/
+- outline https://outline.com/
 
 
 Projects
