@@ -2,6 +2,7 @@
 
 Dev
 - CommitStrip http://www.commitstrip.com/en/
+- Classic Programmer Paintings http://classicprogrammerpaintings.com/
 - the coding love https://thecodinglove.com/
 - Les joies du code (fr) https://lesjoiesducode.fr/
 - CSS puns https://saijogeorge.com/css-puns/

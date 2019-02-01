@@ -13,9 +13,9 @@ the-boring-rpg:
 - preprod     https://www.online-adventur.es/apps/the-boring-rpg-preprod/
 - staging     https://offirmo-monorepo.netlify.com/apps/the-boring-rpg/client-browser/dist/index.html
 - GH pages    https://www.offirmo.net/offirmo-monorepo/apps/the-boring-rpg/client-browser/dist/
-- dev+        http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
-- dev         http://localhost:8080
-- submodule   http://localhost:1234/index.html
+- dev:1981    http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
+- dev:8080    http://localhost:8080
+- :1234       http://localhost:1234/index.html
 
 
 Admin
