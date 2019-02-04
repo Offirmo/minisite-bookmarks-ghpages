@@ -13,7 +13,7 @@ the-boring-rpg:
 - preprod     https://www.online-adventur.es/apps/the-boring-rpg-preprod/
 - staging     https://offirmo-monorepo.netlify.com/apps/the-boring-rpg/client-browser/dist/index.html
 - GH pages    https://www.offirmo.net/offirmo-monorepo/apps/the-boring-rpg/client-browser/dist/
-- dev:1981    http://localhost:1981/apps/the-boring-rpg-browser/dist/index.html
+- dev:1981    http://localhost:1981/apps/the-boring-rpg/client-browser/dist/index.html
 - dev:8080    http://localhost:8080
 - :1234       http://localhost:1234/index.html
 
@@ -23,6 +23,7 @@ Admin
 - Reddit https://www.reddit.com/r/boringrpg/
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/identity
+- Heroku https://dashboard.heroku.com/apps/online-adventures/resources
 - AWS https://aws.amazon.com/
 - G analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
 - G Dev https://console.developers.google.com/
@@ -68,11 +69,14 @@ Content
 
 
 Dependencies
+- enums https://github.com/dphilipson/typescript-string-enums
+- fraction.js https://github.com/infusion/Fraction.js/
+- massive.js https://github.com/dmfay/massive-js
+- react-overlays https://github.com/react-bootstrap/react-overlays
 - nanoid https://github.com/ai/nanoid
 - random https://github.com/Offirmo/random-js
 - chalk https://github.com/chalk/chalk
 - bolt https://github.com/boltpkg/bolt
-- https://github.com/Offirmo/hello-world-aws-cognito
 
 
 Monetize
@@ -91,4 +95,5 @@ Misc
 
 [LEGACY]oh-my-rpg:
 - GH https://github.com/online-adventures/oh-my-rpg
-- last original update https://www.reddit.com/r/boringrpg/comments/eh5iv/updates_612/
+- last original update https://www.reddit.com/r/boringrpg/
+- https://github.com/react-bootstrap/react-overlayscomments/eh5iv/updates_612/
