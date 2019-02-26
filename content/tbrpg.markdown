@@ -60,6 +60,9 @@ marketing:
 tech
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/edit#gid=0
 - unit tests 
+- Fraction.js https://github.com/infusion/Fraction.js/
+- Enum https://github.com/dphilipson/typescript-string-enums
+- react-overlays https://github.com/react-bootstrap/react-overlays
 
 
 Content
