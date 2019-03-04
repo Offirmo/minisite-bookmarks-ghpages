@@ -89,6 +89,12 @@ Spikes
 - HAN https://hello.atlassian.net/wiki/spaces/PGT/pages/248626886/Add+People+spikes
 
 
+FORCE
+* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/382048653/Force+Invitees+to+Join+with+Google
+* https://experimentation-platform.atlassian.net/browse/VIRAL-19
+* https://hello.atlassian.net/wiki/spaces/PGT/pages/404925452/GRAPE+-+Smart+Links
+
+
 GRAPE
 * poster https://hello.atlassian.net/wiki/spaces/PGT/pages/321713452/GRAPE+-+GRant+Access+in+JSW+PagEs+-+poster
 * PC https://hello.atlassian.net/browse/PC-7765
@@ -167,7 +173,7 @@ WAC Prod:
 Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
-- GIW8 TODO
+- GIW8 https://shipit.atlassian.net/browse/GIWN8-1
 - 45 https://shipit.atlassian.net/browse/SHPXLV-172
 - GIW7 https://shipit.atlassian.net/projects/GIW7/
 - 44 https://shipit.atlassian.net/browse/SHPXLIV-139
