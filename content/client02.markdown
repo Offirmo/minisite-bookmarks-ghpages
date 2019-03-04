@@ -174,14 +174,14 @@ Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
 - GIW8 https://shipit.atlassian.net/browse/GIWN8-1
-- 45 https://shipit.atlassian.net/browse/SHPXLV-172
+- 45 https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/02/28/406060531/ShipIt+45+-+an+universal+debug+webextension
 - GIW7 https://shipit.atlassian.net/projects/GIW7/
 - 44 https://shipit.atlassian.net/browse/SHPXLIV-139
 - GIW6 https://shipit.atlassian.net/projects/GIW6/
 - 43 https://shipit.atlassian.net/browse/SHPXLIII-9
-- GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6?filter=allopenissues
+- GIW5 https://shipit.atlassian.net/projects/GIW5/issues/GIW5-6
 - 42 https://shipit.atlassian.net/browse/SHPXLII-162
-- GIW4 https://shipit.atlassian.net/projects/GIW4/issues/GIW4-12?filter=allopenissues
+- GIW4 https://shipit.atlassian.net/projects/GIW4/issues/GIW4-12
 - 41 https://shipit.atlassian.net/browse/SHPXLI-60
 - GIW3 https://shipit.atlassian.net/browse/GIW3-6
 - TODO https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2017/10/29/219141981/ShipIt+40+Syd+Growth+Innovation+Week+3+Syd+-+creating+Stride+bots+and+contributing+back
