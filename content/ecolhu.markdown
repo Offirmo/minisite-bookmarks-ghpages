@@ -5,15 +5,20 @@ pinned:
 - login http://www.ecologiehumaine.eu/wp-login.php
 
 
+Outils
+- mailjet
+- socially map http://www.sociallymap.com/
+
 
 À trier
 - agora http://agora.ecologiehumaine.eu/index.php
+
 
 Coordination
 - https://extranet.atlassian.com/display/FOUNDATION/2017-11-24+work
 
 
-setup:
+Dev:
 - https://www.virtualbox.org/
 - https://coolestguidesontheplanet.com/using-vvv-varying-vagrant-vagrants-wordpress-local-development-environment/
 - repo https://bitbucket.org/drpotato_atlassian/humble-creatives
