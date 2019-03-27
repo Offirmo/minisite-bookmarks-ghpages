@@ -16,6 +16,7 @@ the-boring-rpg:
 - dev:1981    http://localhost:1981/apps/the-boring-rpg/client-browser/dist/index.html
 - dev:8080    http://localhost:8080
 - :1234       http://localhost:1234/index.html
+- legacy      https://www.online-adventur.es/apps/legacy/tbrpg-20190307/index.html
 
 
 Admin
@@ -59,7 +60,7 @@ marketing:
 
 tech
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/edit#gid=0
-- unit tests 
+- unit tests https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
 - Fraction.js https://github.com/infusion/Fraction.js/
 - Enum https://github.com/dphilipson/typescript-string-enums
 - react-overlays https://github.com/react-bootstrap/react-overlays

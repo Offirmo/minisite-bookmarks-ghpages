@@ -5,6 +5,7 @@ pinned:
 - All http://www.offirmo.net/minisite-bookmarks-ghpages/
 - Drive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
+- recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - Maps https://framindmap.org/c/maps/
 - devdocs http://devdocs.io/

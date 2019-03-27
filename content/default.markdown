@@ -9,7 +9,7 @@ All boards
 - demo http://www.offirmo.net/minisite-bookmarks-ghpages/demo
 - eco http://www.offirmo.net/minisite-bookmarks-ghpages/ecolhu
 - geek fun stuff http://www.offirmo.net/minisite-bookmarks-ghpages/geek-fun-stuff
-- HH http://www.offirmo.net/minisite-bookmarks-ghpages/hh
+- Household http://www.offirmo.net/minisite-bookmarks-ghpages/household
 - HC http://www.offirmo.net/minisite-bookmarks-ghpages/humble-creative
 - strips-mangas-comics http://www.offirmo.net/minisite-bookmarks-ghpages/strips-mangas-comics
 - tbrpg http://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg

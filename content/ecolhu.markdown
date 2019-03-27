@@ -1,9 +1,13 @@
 
 pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
-- prod http://www.humblecreatives.ssi.org.au/
-- login http://www.humblecreatives.ssi.org.au/wp-login.php
+- prod http://www.ecologiehumaine.eu/
+- login http://www.ecologiehumaine.eu/wp-login.php
 
+
+
+À trier
+- agora http://agora.ecologiehumaine.eu/index.php
 
 Coordination
 - https://extranet.atlassian.com/display/FOUNDATION/2017-11-24+work
