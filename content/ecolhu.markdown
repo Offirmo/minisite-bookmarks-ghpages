@@ -9,6 +9,10 @@ Outils
 - mailjet
 - socially map http://www.sociallymap.com/
 
+Dev:
+- CHANGELOG GDoc https://docs.google.com/document/d/1pW9dpXnhLYsl6LNnF12o3xbsI3IaCKDwOKc92WOkrhQ/edit
+- agence originale: https://www.b2w.fr/
+
 
 À trier
 - agora http://agora.ecologiehumaine.eu/index.php

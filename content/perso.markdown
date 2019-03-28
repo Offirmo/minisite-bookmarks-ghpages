@@ -33,6 +33,7 @@ Projects
 - TBRPG https://docs.google.com/spreadsheets/d/1EZHJQN0qBWuIjOHvCUQl2HoA37dO86tvfCh_MArNqFY/edit#gid=859684177
 - TBRPG frags https://docs.google.com/presentation/d/17V7ID-F3OCJlbaXrGcvcjS5C20LRgBHEqD1Pn0aK-kg/edit#slide=id.g28918c0c560567f1_16
 - Incrémental https://docs.google.com/spreadsheets/d/16UfXJFIM_scFSS8jEGKaKwFWk4kB2vD7D87dKixvxKo/edit#gid=0
+- recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 
 
 Banque:
