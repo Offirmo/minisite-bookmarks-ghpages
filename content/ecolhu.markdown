@@ -1,8 +1,8 @@
 
 pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
-- prod http://www.ecologiehumaine.eu/
-- login http://www.ecologiehumaine.eu/wp-login.php
+- prod https://www.ecologiehumaine.eu/
+- login https://www.ecologiehumaine.eu/wp-login.php
 
 
 Outils
@@ -11,6 +11,7 @@ Outils
 
 Dev:
 - CHANGELOG GDoc https://docs.google.com/document/d/1pW9dpXnhLYsl6LNnF12o3xbsI3IaCKDwOKc92WOkrhQ/edit
+- login OVH https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr
 - agence originale: https://www.b2w.fr/
 
 
@@ -27,10 +28,6 @@ Dev:
 - https://coolestguidesontheplanet.com/using-vvv-varying-vagrant-vagrants-wordpress-local-development-environment/
 - repo https://bitbucket.org/drpotato_atlassian/humble-creatives
 - https://varyingvagrantvagrants.org/docs/en-US/installation/
-
-
-project:
-- https://trello.com/b/jVxXIJht/humble-creatives-website-dev
 
 
 local dev:
