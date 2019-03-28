@@ -8,8 +8,11 @@ pinned:
 Outils
 - mailjet
 - socially map http://www.sociallymap.com/
+- hubic https://hubic.com/fr/
 
-Dev:
+
+Dev site
+- Trello https://trello.com/b/qpJfSUXJ/site-%C3%A9cologie-humaine
 - CHANGELOG GDoc https://docs.google.com/document/d/1pW9dpXnhLYsl6LNnF12o3xbsI3IaCKDwOKc92WOkrhQ/edit
 - login OVH https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr
 - agence originale: https://www.b2w.fr/
