@@ -16,6 +16,7 @@ Dev site
 - CHANGELOG GDoc https://docs.google.com/document/d/1pW9dpXnhLYsl6LNnF12o3xbsI3IaCKDwOKc92WOkrhQ/edit
 - login OVH https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr
 - agence originale: https://www.b2w.fr/
+- BackupBuddy https://ithemes.com/purchase/backupbuddy/
 
 
 À trier
