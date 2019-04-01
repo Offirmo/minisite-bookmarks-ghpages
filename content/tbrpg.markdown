@@ -64,6 +64,7 @@ tech
 - Fraction.js https://github.com/infusion/Fraction.js/
 - Enum https://github.com/dphilipson/typescript-string-enums
 - react-overlays https://github.com/react-bootstrap/react-overlays
+- LS polyfill https://github.com/azu/localstorage-ponyfill
 
 
 Content
