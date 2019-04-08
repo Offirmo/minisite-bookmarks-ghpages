@@ -4,7 +4,7 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
-- 💡 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Idea+Pad
+- 💡 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - risk https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142256/WIP+risk+management
 - XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
 - interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
@@ -45,6 +45,7 @@ Team
 
 Doc interne:
 - ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
+- ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - + key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
 - DN JFE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456530/Jira+Frontend+Cloud+-+Growth+Engineering+-+Developer+Help+Notes
 - DN JBE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456533/Jira+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
