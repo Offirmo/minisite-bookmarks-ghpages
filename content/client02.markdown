@@ -32,7 +32,7 @@ Engineering:
 
 
 Team
-- + Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
+- + Groot board https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
 - + tech debt https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
@@ -234,3 +234,4 @@ Legacy
 - kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
 - sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
 - sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
+- Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
