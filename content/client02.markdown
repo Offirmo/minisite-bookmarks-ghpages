@@ -92,7 +92,6 @@ ATL-LINK
 * share component poster https://hello.atlassian.net/wiki/spaces/PGT/pages/287348568/Common+share+component
 
 
-
 FORCE
 * poster https://hello.atlassian.net/wiki/spaces/PGT/pages/382048653/Force+Invitees+to+Join+with+Google
 * https://experimentation-platform.atlassian.net/browse/VIRAL-19
