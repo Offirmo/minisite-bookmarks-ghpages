@@ -25,7 +25,7 @@ Projects
 - NW https://docs.google.com/spreadsheets/d/1gw6oq6Y-lBK7dwHbHFAVsXwU0UsBMPSa6vW84FZwtS0/edit
 - RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit#gid=0
 - xP https://docs.google.com/spreadsheets/d/1fLPvAOTpolX8EksJt6zHNzoCN4fN_yaGexwJYNCQipc/edit#gid=0
-- ids https://docs.google.com/document/d/1WTrvvYJ27W1BrdhXjjRftheRiFvT01ZvBfrD_6UnQ9A/edit
+- ids https://docs.google.com/document/d/10L3prYlWyT33kEajSxcZwMkVRAWFotaDXEBmMTgYlRU/edit
 - script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
 - Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
 - http://www.offirmo.net/
@@ -63,6 +63,7 @@ Admin:
 - http://javerzac.jutard.com
 - demoetendard http://demoetendard-ef001.rhcloud.com/connexion
 - bac à sable WP http://bacasable-ef001.rhcloud.com/connexion
+- webextension Firefox https://addons.mozilla.org/en-US/developers/addons
 
 
 Loterie:
