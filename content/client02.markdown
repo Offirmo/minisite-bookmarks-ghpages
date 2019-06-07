@@ -46,7 +46,7 @@ Team
 Doc interne:
 - ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
 - ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
-- + key repos https://hello.atlassian.net/display/PGT/Key+repos+that+we+work+with
+- + key repos https://hello.atlassian.net/wiki/spaces/PGT/pages/198246747/Key+repos+that+we+work+with
 - DN JFE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456530/Jira+Frontend+Cloud+-+Growth+Engineering+-+Developer+Help+Notes
 - DN JBE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456533/Jira+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
 - DN CBE https://hello.atlassian.net/wiki/spaces/PGT/pages/198256505/Confluence+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
