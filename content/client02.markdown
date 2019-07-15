@@ -36,11 +36,12 @@ Team
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
 - + tech debt https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
+- suggestions http://go.atlassian.com/suggestion-box
+- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
+- FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
 - FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
 - FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
 - FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
-- suggestions http://go.atlassian.com/suggestion-box
-- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
 
 
 Doc interne:
@@ -94,12 +95,17 @@ ATL-LINK
 
 FORCE
 * poster https://hello.atlassian.net/wiki/spaces/PGT/pages/382048653/Force+Invitees+to+Join+with+Google
+* https://experimentation-platform.atlassian.net/browse/VIRAL-128
+* https://experimentation-platform.atlassian.net/browse/VIRAL-18
 * https://experimentation-platform.atlassian.net/browse/VIRAL-19
-* https://hello.atlassian.net/wiki/spaces/PGT/pages/404925452/GRAPE+-+Smart+Links
+* https://experimentation-platform.atlassian.net/browse/VIRAL-20
+* cleanup https://experimentation-platform.atlassian.net/browse/VD-31
+
 
 Spikes
-- ticket https://growth.jira-dev.com/browse/KERBAL-726
+- poster https://growth.jira-dev.com/browse/KERBAL-726
 - HAN https://hello.atlassian.net/wiki/spaces/PGT/pages/248626886/Add+People+spikes
+- https://hello.atlassian.net/wiki/spaces/PGT/pages/404925452/GRAPE+-+Smart+Links
 
 
 GRAPE

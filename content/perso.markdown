@@ -15,7 +15,7 @@ pinned:
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 - pocket https://getpocket.com/a?src=ff_ext_saved
-- https://www.worldtimebuddy.com/
+- https://www.worldtimebuddy.com/?pl=1&lid=2147714,2988507,5375480&h=2147714
 - outline https://outline.com/
 
 
@@ -37,13 +37,14 @@ Projects
 
 
 Banque:
+- Transferwise https://transferwise.com/user/account
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/
 - ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
-- Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 - WeSwap https://app.weswap.com/#/fr/login
+- Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
 
 
 Misc
@@ -53,7 +54,6 @@ Misc
 - Lenny face https://lennyfaces.org/
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
-
 
 
 Admin:
