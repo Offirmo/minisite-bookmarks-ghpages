@@ -5,3 +5,4 @@ pinned:
 
 Web:
 - Ouigo pinball http://letsplay.ouigo.com/
+- minesweeper https://proxx.app/

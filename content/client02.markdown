@@ -46,16 +46,13 @@ Team
 
 Doc interne:
 - ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
-- ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - + key repos https://hello.atlassian.net/wiki/spaces/PGT/pages/198246747/Key+repos+that+we+work+with
-- DN JFE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456530/Jira+Frontend+Cloud+-+Growth+Engineering+-+Developer+Help+Notes
-- DN JBE https://hello.atlassian.net/wiki/spaces/PGT/pages/197456533/Jira+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
-- DN CBE https://hello.atlassian.net/wiki/spaces/PGT/pages/198256505/Confluence+Backend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
-- DN CFE https://hello.atlassian.net/wiki/spaces/PGT/pages/198260243/Confluence+Frontend+%28Cloud%29+-+Growth+Engineering+-+Developer+Help+Notes
+- ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
+- ++ my blog https://hello.atlassian.net/wiki/spaces/~yjutard/blog/
+- blog/LD https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/07/22/514631777/Up+to+date+list+of+LaunchDarkly+gotchas+to+watch+out+for
+- QA https://hello.atlassian.net/wiki/spaces/~yjutard/pages/328770398/2018+11+Better+QA+less+incidents
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
-- services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
-- QA1 https://hello.atlassian.net/questions/3781625328/what-alternative-email-domains-can-we-use-for-testing
-- QA2 https://hello.atlassian.net/display/HAMS/Testing+Credit+Cards
+- notes/services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
 - search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
 
 
