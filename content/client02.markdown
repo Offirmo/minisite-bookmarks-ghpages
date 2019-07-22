@@ -48,9 +48,9 @@ Doc interne:
 - ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
 - + key repos https://hello.atlassian.net/wiki/spaces/PGT/pages/198246747/Key+repos+that+we+work+with
 - ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
-- ++ my blog https://hello.atlassian.net/wiki/spaces/~yjutard/blog/
+- ++ Yves' blog https://hello.atlassian.net/wiki/spaces/~yjutard/blog/
 - blog/LD https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/07/22/514631777/Up+to+date+list+of+LaunchDarkly+gotchas+to+watch+out+for
-- QA https://hello.atlassian.net/wiki/spaces/~yjutard/pages/328770398/2018+11+Better+QA+less+incidents
+- better QA https://hello.atlassian.net/wiki/spaces/~yjutard/pages/328770398/2018+11+Better+QA+less+incidents
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
 - notes/services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
 - search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
@@ -81,17 +81,18 @@ Services:
 
 
 BETTER LINKS
-* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
+* + poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
 * Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-715
 * Epic 2 TODO
 * FD TODO
 * PC TODO
 * EP ticket TODO
+* FF TODO
 * cleanup ticket
 
 
 ATL-LINK
-* ++ go/atl-link https://hello.atlassian.net/wiki/spaces/PGT/pages/412105296/atl-link+Atlassian+URL+Shortener
+* + go/atl-link https://hello.atlassian.net/wiki/spaces/PGT/pages/412105296/atl-link+Atlassian+URL+Shortener
 * integrating https://hello.atlassian.net/wiki/spaces/PGT/pages/451614927/atl-link+Integrating+with+the+Service
 * share service source https://bitbucket.org/atlassian/pf-share-service
 * share component source https://bitbucket.org/atlassian/atlaskit-mk-2/src/master/packages/elements/share/
@@ -101,7 +102,7 @@ ATL-LINK
 
 
 FORCE
-* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/382048653/Force+Invitees+to+Join+with+Google
+* + poster https://hello.atlassian.net/wiki/spaces/PGT/pages/382048653/Force+Invitees+to+Join+with+Google
 * https://experimentation-platform.atlassian.net/browse/VIRAL-128
 * https://experimentation-platform.atlassian.net/browse/VIRAL-18
 * https://experimentation-platform.atlassian.net/browse/VIRAL-19
