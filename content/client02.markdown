@@ -80,6 +80,16 @@ Services:
 * project https://hello.atlassian.net/wiki/spaces/PGT/pages/246416302/Project+Seedling
 
 
+BETTER LINKS
+* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
+* Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-715
+* Epic 2 TODO
+* FD TODO
+* PC TODO
+* EP ticket TODO
+* cleanup ticket
+
+
 ATL-LINK
 * ++ go/atl-link https://hello.atlassian.net/wiki/spaces/PGT/pages/412105296/atl-link+Atlassian+URL+Shortener
 * integrating https://hello.atlassian.net/wiki/spaces/PGT/pages/451614927/atl-link+Integrating+with+the+Service
