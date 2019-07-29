@@ -40,6 +40,7 @@ Dev
 - TBRPG-browser https://github.com/Offirmo/offirmo-monorepo/tree/master/apps/the-boring-rpg/client-browser
 - TBRPG-term https://github.com/Offirmo/offirmo-monorepo/tree/master/apps/the-boring-rpg/client-node
 - npm https://www.npmjs.com/package/the-npm-rpg
+- npm modules https://github.com/Offirmo/offirmo-monorepo/wiki/npm-modules
 
 
 marketing:

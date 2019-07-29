@@ -143,8 +143,9 @@ Dev tools:
 - Online PDF editor https://www.pdfescape.com/
 - Google PageSpeed Insights https://developers.google.com/speed/pagespeed/insights/
 - Google LightHouse https://developers.google.com/web/tools/lighthouse/#devtools
-- youtube downloader https://www.onlinevideoconverter.com/video-converter
-
+- YT https://ytmp3.cc/
+- YT2 https://www.onlinevideoconverter.com/video-converter
+* transform.tools https://transform.tools/graphql-to-typescript
 
 Offline / local
 - devdocs.io http://0.0.0.0:9292/

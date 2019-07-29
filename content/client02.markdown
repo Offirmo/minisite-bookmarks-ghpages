@@ -35,7 +35,6 @@ Team
 - + Groot board https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
-- + tech debt https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
 - suggestions http://go.atlassian.com/suggestion-box
 - demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
 - FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
@@ -84,10 +83,10 @@ BETTER LINKS
 * + poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
 * Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-715
 * Epic 2 TODO
-* FD TODO
-* PC TODO
+* FD https://hello.atlassian.net/browse/FD-7763
+* PC https://hello.atlassian.net/browse/PC-9753
 * EP ticket TODO
-* FF TODO
+* FF https://app.launchdarkly.com/cloud-admin/production/features/admin.promote-invite-links/targeting
 * cleanup ticket
 
 
