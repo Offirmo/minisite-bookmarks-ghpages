@@ -32,7 +32,7 @@ Engineering:
 
 
 Team
-- + Groot board https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
+- + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
 - suggestions http://go.atlassian.com/suggestion-box
@@ -82,12 +82,13 @@ Services:
 BETTER LINKS
 * + poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
 * Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-715
-* Epic 2 TODO
+* Epic 2 https://experimentation-platform.atlassian.net/browse/VIRAL-752
+* Epic 3 https://experimentation-platform.atlassian.net/browse/VIRAL-770
 * FD https://hello.atlassian.net/browse/FD-7763
 * PC https://hello.atlassian.net/browse/PC-9753
-* EP ticket TODO
+* EP ticket https://experimentation-platform.atlassian.net/browse/EC-66
 * FF https://app.launchdarkly.com/cloud-admin/production/features/admin.promote-invite-links/targeting
-* cleanup ticket
+* cleanup ticket TODO
 
 
 ATL-LINK
