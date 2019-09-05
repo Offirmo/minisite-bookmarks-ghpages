@@ -41,6 +41,7 @@ Team
 - FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
 - FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
 - FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
+- holidays https://hello.atlassian.net/wiki/spaces/PEOP/pages/181621547/Atlassian+Holidays
 
 
 Doc interne:
