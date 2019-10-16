@@ -78,6 +78,9 @@ Loterie:
 
 
 To check:
+- myGov https://my.gov.au/
+- https://my.bupa.com.au/
+- ATO.gov.au https://www.ato.gov.au/
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
 - https://www.impots.gouv.fr/portail/
 - https://www.info-retraite.fr/
@@ -166,7 +169,7 @@ Veille:
 - http://www.stackoverflow.blog/code-for-a-living
 - http://stackoverflow.blog/engineering/
 - https://github.com/dominictarr
-- https://github.com/trending
+- https://github.com/trending/javascript?since=monthly
 - https://www.npmjs.com/browse/star
 - http://blog.npmjs.org/
 - http://www.echojs.com/

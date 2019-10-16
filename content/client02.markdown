@@ -195,6 +195,7 @@ WAC Prod:
 Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
+- GIW10 https://shipit.atlassian.net/projects/GIW10/issues
 - GIW8 https://shipit.atlassian.net/browse/GIWN8-1
 - 45 https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/02/28/406060531/ShipIt+45+-+an+universal+debug+webextension
 - GIW7 https://shipit.atlassian.net/projects/GIW7/

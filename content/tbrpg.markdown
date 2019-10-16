@@ -45,7 +45,7 @@ Dev
 
 marketing:
 - buffer https://buffer.com/app/profile/5afad0a728473ccb464ca02d/buffer/queue/list
-- Reddit TBRPG https://www.reddit.com/r/boringrpg/
+- r/boringrpg TBRPG https://www.reddit.com/r/boringrpg/
 - all links https://linktr.ee/theboringrpg
 - Twitter https://twitter.com/TheBoringRpg
 - Instagram https://www.instagram.com/theboringrpg/
@@ -57,6 +57,8 @@ marketing:
 - gamejolt https://gamejolt.com/
 - indieboost https://dashboard.indieboost.com/
 - https://help.producthunt.com/posting/how-to-post-a-product
+- r/gamedev https://www.reddit.com/r/gamedev/
+
 
 
 tech
