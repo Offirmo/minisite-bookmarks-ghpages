@@ -80,6 +80,9 @@ Services:
 * project https://hello.atlassian.net/wiki/spaces/PGT/pages/246416302/Project+Seedling
 
 
+PINT
+* Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-1130
+
 BETTER LINKS
 * + poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
 * Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-715
