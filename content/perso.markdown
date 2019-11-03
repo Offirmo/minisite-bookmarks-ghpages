@@ -163,7 +163,7 @@ Offline / local
 
 Veille:
 - https://www.w3.org/blog/CSS/
-- http://boz.com/
+- https://philipwalton.com/
 - http://gamesfromwithin.com/
 - https://blog.risingstack.com/
 - http://www.stackoverflow.blog/code-for-a-living
@@ -185,11 +185,11 @@ Veille:
 - http://crushlovely.com/journal/
 - https://news.js.org/
 - https://jslive.com/
-- https://philipwalton.com/
 - http://lea.verou.me/
 - https://aerotwist.com/
 - https://blog.twitter.com/engineering/en_us.html
 - https://eng.uber.com/
+- http://boz.com/
 
 
 Setup:
