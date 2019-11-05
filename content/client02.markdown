@@ -81,7 +81,12 @@ Services:
 
 
 PINT
+* poster https://hello.atlassian.net/wiki/spaces/PGT/pages/580407836/Pint+-+Invite+users+to+Confluence+Jira+from+Slack
+* notes + spikes https://hello.atlassian.net/wiki/spaces/PGT/pages/574920300/Pint+-+Notes
 * Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-1130
+* Epic 2 https://experimentation-platform.atlassian.net/browse/VIRAL-1200
+* PRs https://bitbucket.org/atlassian/confluence-chats-integration/pull-requests/
+
 
 BETTER LINKS
 * + poster https://hello.atlassian.net/wiki/spaces/PGT/pages/514668229/Better+Invite+Links
