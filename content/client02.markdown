@@ -86,6 +86,8 @@ PINT
 * Epic 1 https://experimentation-platform.atlassian.net/browse/VIRAL-1130
 * Epic 2 https://experimentation-platform.atlassian.net/browse/VIRAL-1200
 * PRs https://bitbucket.org/atlassian/confluence-chats-integration/pull-requests/
+* https://hello.atlassian.net/wiki/spaces/PI/pages/383751321/Slack+App+Deployment+Guide
+* https://hello.atlassian.net/wiki/spaces/PGT/pages/580600773/Origin+Tracing+in+Jira+Confluence+Slack+Integrations
 
 
 BETTER LINKS

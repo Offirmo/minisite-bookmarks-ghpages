@@ -29,6 +29,7 @@ Projects
 - script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
 - Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
 - http://www.offirmo.net/
+- monorepo https://www.offirmo.net/offirmo-monorepo/
 - OA www.online-adventur.es
 - TBRPG https://docs.google.com/spreadsheets/d/1EZHJQN0qBWuIjOHvCUQl2HoA37dO86tvfCh_MArNqFY/edit#gid=859684177
 - TBRPG frags https://docs.google.com/presentation/d/17V7ID-F3OCJlbaXrGcvcjS5C20LRgBHEqD1Pn0aK-kg/edit#slide=id.g28918c0c560567f1_16
