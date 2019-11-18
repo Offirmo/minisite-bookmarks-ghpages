@@ -14,6 +14,7 @@ pinned:
 - CTasks https://hello.atlassian.net/wiki/plugins/inlinetasks/mytasks.action
 - say sth https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 - Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
+- https://cyanharlow.bitbucket.io/
 
 
 Emergency
@@ -205,6 +206,7 @@ WAC Prod:
 Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
+- 47 https://shipit.atlassian.net/browse/SHPXLVII-335
 - GIW10 https://shipit.atlassian.net/projects/GIW10/issues
 - GIW8 https://shipit.atlassian.net/browse/GIWN8-1
 - 45 https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/02/28/406060531/ShipIt+45+-+an+universal+debug+webextension
