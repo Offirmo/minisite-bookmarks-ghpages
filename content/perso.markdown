@@ -46,10 +46,7 @@ Projects
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/
-- ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
-- Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 - WeSwap https://app.weswap.com/#/fr/login
-- Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
 
 
 Misc
@@ -239,3 +236,8 @@ Entreprise
 - services https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=1741795070
 - .com https://docs.google.com/spreadsheets/d/1T7_syHUrNXXvgT8Eh8oJqxeWRXObTzQyPu7mRrDp5Og/edit#gid=0
 - https://www.eseo-alumni.com/#
+
+Legacy
+- ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
+- Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
+- Compte Nickel https://mon.compte-nickel.fr/identifiez-vous

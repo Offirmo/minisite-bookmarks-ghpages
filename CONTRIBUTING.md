@@ -14,7 +14,7 @@ yarn copy-third-party
 yarn dev
 yarn start
 ## if ok
-
+yarn build
 ```
 
 ## Learn
