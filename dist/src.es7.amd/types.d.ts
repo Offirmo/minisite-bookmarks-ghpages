@@ -19,4 +19,4 @@ interface Data {
     title: string;
     rows: BookmarkGroup[];
 }
-export { Bookmark, BookmarkGroup, Data };
+export { Bookmark, BookmarkGroup, Data, };

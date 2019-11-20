@@ -14,4 +14,4 @@ interface RetryingFetchOptions {
     logger: Console;
 }
 declare function retrying_fetch<T>(param1: any, param2: any, raw_options: Partial<RetryingFetchOptions>): Promise<T>;
-export { RetryScheme, RetryingFetchOptions, retrying_fetch };
+export { RetryScheme, RetryingFetchOptions, retrying_fetch, };

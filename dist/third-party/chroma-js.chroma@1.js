@@ -34,7 +34,7 @@
  */
 
 (function() {
-  var Color, DEG2RAD, LAB_CONSTANTS, PI, PITHIRD, RAD2DEG, TWOPI, _guess_formats, _guess_formats_sorted, _input, _interpolators, abs, atan2, bezier, blend, blend_f, brewer, burn, chroma, clip_rgb, cmyk2rgb, colors, cos, css2rgb, darken, dodge, each, floor, hcg2rgb, hex2rgb, hsi2rgb, hsl2css, hsl2rgb, hsv2rgb, interpolate, interpolate_hsx, interpolate_lab, interpolate_num, interpolate_rgb, lab2lch, lab2rgb, lab_xyz, lch2lab, lch2rgb, lighten, limit, log, luminance_x, m, max, multiply, normal, num2rgb, overlay, pow, rgb2cmyk, rgb2css, rgb2hcg, rgb2hex, rgb2hsi, rgb2hsl, rgb2hsv, rgb2lab, rgb2lch, rgb2luminance, rgb2num, rgb2temperature, rgb2xyz, rgb_xyz, rnd, root, round, screen, sin, sqrt, temperature2rgb, type, unpack, w3cx11, xyz_lab, xyz_rgb,
+  var Color, DEG2RAD, LAB_CONSTANTS, PI, PITHIRD, RAD2DEG, TWOPI, _average_lrgb, _guess_formats, _guess_formats_sorted, _input, _interpolators, abs, atan2, bezier, blend, blend_f, brewer, burn, chroma, clip_rgb, cmyk2rgb, colors, cos, css2rgb, darken, dodge, each, floor, hcg2rgb, hex2rgb, hsi2rgb, hsl2css, hsl2rgb, hsv2rgb, interpolate, interpolate_hsx, interpolate_lab, interpolate_lrgb, interpolate_num, interpolate_rgb, lab2lch, lab2rgb, lab_xyz, lch2lab, lch2rgb, lighten, limit, log, luminance_x, m, max, multiply, normal, num2rgb, overlay, pow, rgb2cmyk, rgb2css, rgb2hcg, rgb2hex, rgb2hsi, rgb2hsl, rgb2hsv, rgb2lab, rgb2lch, rgb2luminance, rgb2num, rgb2temperature, rgb2xyz, rgb_xyz, rnd, root, round, screen, sin, sqrt, temperature2rgb, type, unpack, w3cx11, xyz_lab, xyz_rgb,
     slice = [].slice;
 
   type = (function() {
@@ -75,7 +75,7 @@
 
   unpack = function(args) {
     if (args.length >= 3) {
-      return [].slice.call(args);
+      return Array.prototype.slice.call(args);
     } else {
       return args[0];
     }
@@ -132,6 +132,8 @@
     })(Color, arguments, function(){});
   };
 
+  chroma["default"] = chroma;
+
   _interpolators = [];
 
   if ((typeof module !== "undefined" && module !== null) && (module.exports != null)) {
@@ -147,7 +149,7 @@
     root.chroma = chroma;
   }
 
-  chroma.version = '1.3.4';
+  chroma.version = '1.4.1';
 
   _input = {};
 
@@ -166,7 +168,9 @@
           args.push(arg);
         }
       }
-      mode = args[args.length - 1];
+      if (args.length > 1) {
+        mode = args[args.length - 1];
+      }
       if (_input[mode] != null) {
         me._rgb = clip_rgb(_input[mode](unpack(args.slice(0, -1))));
       } else {
@@ -200,10 +204,6 @@
 
     Color.prototype.toString = function() {
       return this.hex();
-    };
-
-    Color.prototype.clone = function() {
-      return chroma(me._rgb);
     };
 
     return Color;
@@ -635,40 +635,6 @@
     return f;
   };
 
-
-  /*
-      chroma.js
-  
-      Copyright (c) 2011-2013, Gregor Aisch
-      All rights reserved.
-  
-      Redistribution and use in source and binary forms, with or without
-      modification, are permitted provided that the following conditions are met:
-  
-      * Redistributions of source code must retain the above copyright notice, this
-        list of conditions and the following disclaimer.
-  
-      * Redistributions in binary form must reproduce the above copyright notice,
-        this list of conditions and the following disclaimer in the documentation
-        and/or other materials provided with the distribution.
-  
-      * The name Gregor Aisch may not be used to endorse or promote products
-        derived from this software without specific prior written permission.
-  
-      THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-      AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-      IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-      DISCLAIMED. IN NO EVENT SHALL GREGOR AISCH OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
-      INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-      BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-      DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
-      OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-      NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-      EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  
-      @source: https://github.com/gka/chroma.js
-   */
-
   chroma.cubehelix = function(start, rotations, hue, gamma, lightness) {
     var dh, dl, f;
     if (start == null) {
@@ -704,7 +670,7 @@
       r = l + amp * (-0.14861 * cos_a + 1.78277 * sin_a);
       g = l + amp * (-0.29227 * cos_a - 0.90649 * sin_a);
       b = l + amp * (+1.97294 * cos_a);
-      return chroma(clip_rgb([r * 255, g * 255, b * 255]));
+      return chroma(clip_rgb([r * 255, g * 255, b * 255, 1]));
     };
     f.start = function(s) {
       if (s == null) {
@@ -772,61 +738,50 @@
     return new Color(code);
   };
 
-  chroma.average = function(colors, mode) {
-    var A, alpha, c, cnt, dx, dy, first, i, l, len, o, xyz, xyz2;
-    if (mode == null) {
-      mode = 'rgb';
+  _interpolators = [];
+
+  interpolate = function(col1, col2, f, m) {
+    var interpol, len, o, res;
+    if (f == null) {
+      f = 0.5;
     }
-    l = colors.length;
-    colors = colors.map(function(c) {
-      return chroma(c);
-    });
-    first = colors.splice(0, 1)[0];
-    xyz = first.get(mode);
-    cnt = [];
-    dx = 0;
-    dy = 0;
-    for (i in xyz) {
-      xyz[i] = xyz[i] || 0;
-      cnt.push(!isNaN(xyz[i]) ? 1 : 0);
-      if (mode.charAt(i) === 'h' && !isNaN(xyz[i])) {
-        A = xyz[i] / 180 * PI;
-        dx += cos(A);
-        dy += sin(A);
+    if (m == null) {
+      m = 'rgb';
+    }
+
+    /*
+    interpolates between colors
+    f = 0 --> me
+    f = 1 --> col
+     */
+    if (type(col1) !== 'object') {
+      col1 = chroma(col1);
+    }
+    if (type(col2) !== 'object') {
+      col2 = chroma(col2);
+    }
+    for (o = 0, len = _interpolators.length; o < len; o++) {
+      interpol = _interpolators[o];
+      if (m === interpol[0]) {
+        res = interpol[1](col1, col2, f, m);
+        break;
       }
     }
-    alpha = first.alpha();
-    for (o = 0, len = colors.length; o < len; o++) {
-      c = colors[o];
-      xyz2 = c.get(mode);
-      alpha += c.alpha();
-      for (i in xyz) {
-        if (!isNaN(xyz2[i])) {
-          xyz[i] += xyz2[i];
-          cnt[i] += 1;
-          if (mode.charAt(i) === 'h') {
-            A = xyz[i] / 180 * PI;
-            dx += cos(A);
-            dy += sin(A);
-          }
-        }
-      }
+    if (res == null) {
+      throw "color mode " + m + " is not supported";
     }
-    for (i in xyz) {
-      xyz[i] = xyz[i] / cnt[i];
-      if (mode.charAt(i) === 'h') {
-        A = atan2(dy / cnt[i], dx / cnt[i]) / PI * 180;
-        while (A < 0) {
-          A += 360;
-        }
-        while (A >= 360) {
-          A -= 360;
-        }
-        xyz[i] = A;
-      }
-    }
-    return chroma(xyz, mode).alpha(alpha / l);
+    return res.alpha(col1.alpha() + f * (col2.alpha() - col1.alpha()));
   };
+
+  chroma.interpolate = interpolate;
+
+  Color.prototype.interpolate = function(col2, f, m) {
+    return interpolate(this, col2, f, m);
+  };
+
+  chroma.mix = interpolate;
+
+  Color.prototype.mix = Color.prototype.interpolate;
 
   _input.rgb = function() {
     var k, ref, results, v;
@@ -882,6 +837,99 @@
     }
   });
 
+  _input.lrgb = _input.rgb;
+
+  interpolate_lrgb = function(col1, col2, f, m) {
+    var xyz0, xyz1;
+    xyz0 = col1._rgb;
+    xyz1 = col2._rgb;
+    return new Color(sqrt(pow(xyz0[0], 2) * (1 - f) + pow(xyz1[0], 2) * f), sqrt(pow(xyz0[1], 2) * (1 - f) + pow(xyz1[1], 2) * f), sqrt(pow(xyz0[2], 2) * (1 - f) + pow(xyz1[2], 2) * f), m);
+  };
+
+  _average_lrgb = function(colors) {
+    var col, f, len, o, rgb, xyz;
+    f = 1 / colors.length;
+    xyz = [0, 0, 0, 0];
+    for (o = 0, len = colors.length; o < len; o++) {
+      col = colors[o];
+      rgb = col._rgb;
+      xyz[0] += pow(rgb[0], 2) * f;
+      xyz[1] += pow(rgb[1], 2) * f;
+      xyz[2] += pow(rgb[2], 2) * f;
+      xyz[3] += rgb[3] * f;
+    }
+    xyz[0] = sqrt(xyz[0]);
+    xyz[1] = sqrt(xyz[1]);
+    xyz[2] = sqrt(xyz[2]);
+    if (xyz[3] > 1) {
+      xyz[3] = 1;
+    }
+    return new Color(clip_rgb(xyz));
+  };
+
+  _interpolators.push(['lrgb', interpolate_lrgb]);
+
+  chroma.average = function(colors, mode) {
+    var A, alpha, c, cnt, dx, dy, first, i, l, len, o, xyz, xyz2;
+    if (mode == null) {
+      mode = 'rgb';
+    }
+    l = colors.length;
+    colors = colors.map(function(c) {
+      return chroma(c);
+    });
+    first = colors.splice(0, 1)[0];
+    if (mode === 'lrgb') {
+      return _average_lrgb(colors);
+    }
+    xyz = first.get(mode);
+    cnt = [];
+    dx = 0;
+    dy = 0;
+    for (i in xyz) {
+      xyz[i] = xyz[i] || 0;
+      cnt.push(isNaN(xyz[i]) ? 0 : 1);
+      if (mode.charAt(i) === 'h' && !isNaN(xyz[i])) {
+        A = xyz[i] / 180 * PI;
+        dx += cos(A);
+        dy += sin(A);
+      }
+    }
+    alpha = first.alpha();
+    for (o = 0, len = colors.length; o < len; o++) {
+      c = colors[o];
+      xyz2 = c.get(mode);
+      alpha += c.alpha();
+      for (i in xyz) {
+        if (!isNaN(xyz2[i])) {
+          cnt[i] += 1;
+          if (mode.charAt(i) === 'h') {
+            A = xyz2[i] / 180 * PI;
+            dx += cos(A);
+            dy += sin(A);
+          } else {
+            xyz[i] += xyz2[i];
+          }
+        }
+      }
+    }
+    for (i in xyz) {
+      if (mode.charAt(i) === 'h') {
+        A = atan2(dy / cnt[i], dx / cnt[i]) / PI * 180;
+        while (A < 0) {
+          A += 360;
+        }
+        while (A >= 360) {
+          A -= 360;
+        }
+        xyz[i] = A;
+      } else {
+        xyz[i] = xyz[i] / cnt[i];
+      }
+    }
+    return chroma(xyz, mode).alpha(alpha / l);
+  };
+
   hex2rgb = function(hex) {
     var a, b, g, r, rgb, u;
     if (hex.match(/^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/)) {
@@ -918,9 +966,12 @@
   rgb2hex = function(channels, mode) {
     var a, b, g, hxa, r, str, u;
     if (mode == null) {
-      mode = 'rgb';
+      mode = 'auto';
     }
     r = channels[0], g = channels[1], b = channels[2], a = channels[3];
+    if (mode === 'auto') {
+      mode = a < 1 ? 'rgba' : 'rgb';
+    }
     r = Math.round(r);
     g = Math.round(g);
     b = Math.round(b);
@@ -955,7 +1006,7 @@
 
   Color.prototype.hex = function(mode) {
     if (mode == null) {
-      mode = 'rgb';
+      mode = 'auto';
     }
     return rgb2hex(this._rgb, mode);
   };
@@ -1393,7 +1444,7 @@
       this._rgb[3] = 1;
       this;
     }
-    h = this.hex();
+    h = this.hex('rgb');
     for (k in w3cx11) {
       if (h === w3cx11[k]) {
         return k;
@@ -1569,51 +1620,6 @@
     }
   };
 
-  _interpolators = [];
-
-  interpolate = function(col1, col2, f, m) {
-    var interpol, len, o, res;
-    if (f == null) {
-      f = 0.5;
-    }
-    if (m == null) {
-      m = 'rgb';
-    }
-
-    /*
-    interpolates between colors
-    f = 0 --> me
-    f = 1 --> col
-     */
-    if (type(col1) !== 'object') {
-      col1 = chroma(col1);
-    }
-    if (type(col2) !== 'object') {
-      col2 = chroma(col2);
-    }
-    for (o = 0, len = _interpolators.length; o < len; o++) {
-      interpol = _interpolators[o];
-      if (m === interpol[0]) {
-        res = interpol[1](col1, col2, f, m);
-        break;
-      }
-    }
-    if (res == null) {
-      throw "color mode " + m + " is not supported";
-    }
-    return res.alpha(col1.alpha() + f * (col2.alpha() - col1.alpha()));
-  };
-
-  chroma.interpolate = interpolate;
-
-  Color.prototype.interpolate = function(col2, f, m) {
-    return interpolate(this, col2, f, m);
-  };
-
-  chroma.mix = interpolate;
-
-  Color.prototype.mix = Color.prototype.interpolate;
-
   interpolate_rgb = function(col1, col2, f, m) {
     var xyz0, xyz1;
     xyz0 = col1._rgb;
@@ -1624,18 +1630,20 @@
   _interpolators.push(['rgb', interpolate_rgb]);
 
   Color.prototype.luminance = function(lum, mode) {
-    var cur_lum, eps, max_iter, test;
+    var cur_lum, eps, max_iter, rgba, test;
     if (mode == null) {
       mode = 'rgb';
     }
     if (!arguments.length) {
       return rgb2luminance(this._rgb);
     }
+    rgba = this._rgb;
     if (lum === 0) {
-      this._rgb = [0, 0, 0, this._rgb[3]];
+      rgba = [0, 0, 0, this._rgb[3]];
     } else if (lum === 1) {
-      this._rgb = [255, 255, 255, this._rgb[3]];
+      rgba = [255, 255, 255, this[3]];
     } else {
+      cur_lum = rgb2luminance(this._rgb);
       eps = 1e-7;
       max_iter = 20;
       test = function(l, h) {
@@ -1650,10 +1658,13 @@
         }
         return test(m, h);
       };
-      cur_lum = rgb2luminance(this._rgb);
-      this._rgb = (cur_lum > lum ? test(chroma('black'), this) : test(this, chroma('white'))).rgba();
+      if (cur_lum > lum) {
+        rgba = test(chroma('black'), this).rgba();
+      } else {
+        rgba = test(this, chroma('white')).rgba();
+      }
     }
-    return this;
+    return chroma(rgba).alpha(this.alpha());
   };
 
   temperature2rgb = function(kelvin) {
@@ -2028,7 +2039,7 @@
   };
 
   chroma.scale = function(colors, positions) {
-    var _classes, _colorCache, _colors, _correctLightness, _domain, _fixed, _max, _min, _mode, _nacol, _out, _padding, _pos, _spread, _useCache, classifyValue, f, getClass, getColor, resetCache, setColors, tmap;
+    var _classes, _colorCache, _colors, _correctLightness, _domain, _fixed, _gamma, _max, _min, _mode, _nacol, _out, _padding, _pos, _spread, _useCache, classifyValue, f, getClass, getColor, resetCache, setColors, tmap;
     _mode = 'rgb';
     _nacol = chroma('#ccc');
     _spread = 0;
@@ -2044,6 +2055,7 @@
     _correctLightness = false;
     _colorCache = {};
     _useCache = true;
+    _gamma = 1;
     setColors = function(colors) {
       var c, col, o, ref, ref1, w;
       if (colors == null) {
@@ -2053,6 +2065,9 @@
         colors = chroma.brewer[colors] || chroma.brewer[colors.toLowerCase()] || colors;
       }
       if (type(colors) === 'array') {
+        if (colors.length === 1) {
+          colors = [colors[0], colors[0]];
+        }
         colors = colors.slice(0);
         for (c = o = 0, ref = colors.length - 1; 0 <= ref ? o <= ref : o >= ref; c = 0 <= ref ? ++o : --o) {
           col = colors[c];
@@ -2100,18 +2115,15 @@
       if (bypassMap == null) {
         bypassMap = false;
       }
-      if (isNaN(val)) {
+      if (isNaN(val) || val === null) {
         return _nacol;
       }
       if (!bypassMap) {
         if (_classes && _classes.length > 2) {
           c = getClass(val);
           t = c / (_classes.length - 2);
-          t = _padding[0] + (t * (1 - _padding[0] - _padding[1]));
         } else if (_max !== _min) {
           t = (val - _min) / (_max - _min);
-          t = _padding[0] + (t * (1 - _padding[0] - _padding[1]));
-          t = Math.min(1, Math.max(0, t));
         } else {
           t = 1;
         }
@@ -2121,6 +2133,11 @@
       if (!bypassMap) {
         t = tmap(t);
       }
+      if (_gamma !== 1) {
+        t = pow(t, _gamma);
+      }
+      t = _padding[0] + (t * (1 - _padding[0] - _padding[1]));
+      t = Math.min(1, Math.max(0, t));
       k = Math.floor(t * 10000);
       if (_useCache && _colorCache[k]) {
         col = _colorCache[k];
@@ -2324,9 +2341,26 @@
     };
     f.cache = function(c) {
       if (c != null) {
-        return _useCache = c;
+        _useCache = c;
+        return f;
       } else {
         return _useCache;
+      }
+    };
+    f.gamma = function(g) {
+      if (g != null) {
+        _gamma = g;
+        return f;
+      } else {
+        return _gamma;
+      }
+    };
+    f.nodata = function(d) {
+      if (d != null) {
+        _nacol = chroma(d);
+        return f;
+      } else {
+        return _nacol;
       }
     };
     return f;

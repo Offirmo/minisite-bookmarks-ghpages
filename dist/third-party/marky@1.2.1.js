@@ -73,7 +73,10 @@ if (perf && perf.mark) {
     return entry
   };
   exports.getEntries = function () { return entries; };
-  exports.clear = function () { entries = []; };
+  exports.clear = function () {
+    marks = {};
+    entries = [];
+  };
 }
 
 }((this.marky = this.marky || {})));

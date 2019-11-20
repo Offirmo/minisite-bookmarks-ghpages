@@ -47,7 +47,7 @@ requirejs.config({
         'requirejs': 'dist/third-party/requirejs@2',
         'tachyons': 'dist/src.es7.amd/empty',
         'tslib': 'dist/third-party/tslib@1',
-        'typescript-string-enums': 'dist/third-party/typescript-string-enums@0',
+        'typescript-string-enums': 'dist/third-party/typescript-string-enums@1',
         /////// our app, as a module, so that we can reference it when inside the bundle
         'app-mod': 'src/index',
     },

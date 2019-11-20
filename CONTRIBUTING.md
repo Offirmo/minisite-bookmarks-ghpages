@@ -5,10 +5,22 @@ npm i -g yarn
 yarn
 ```
 
+Rebuild
+```bash
+yarn clean
+yarn copy-third-party
+## copy stuff as requested
+## test locally:
+yarn dev
+yarn start
+## if ok
+
+```
+
 ## Learn
 
 ### stack
-* typescript 2
+* typescript
 * http://reactivex.io/rxjs/
 * RandomColor https://github.com/davidmerfield/randomColor
 * marky https://github.com/nolanlawson/marky

@@ -37,11 +37,12 @@ Projects
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 
 
-Banque:
-- NAB
+💸💸💸
+- NAB https://ib.nab.com.au/nabib/index.jsp
 - Transferwise https://transferwise.com/user/account
-- OFX
-- https://ib.mebank.com.au/
+- OFX https://authserver.ofx.com/account/login
+- me https://ib.mebank.com.au/
+- solium https://atlassian.solium.com/solium/servlet/userLogin.do
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/

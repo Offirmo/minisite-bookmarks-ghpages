@@ -378,9 +378,13 @@ var Subscriber = (function (_super) {
                     break;
                 }
                 if (typeof destinationOrNext === 'object') {
-                    if (destinationOrNext instanceof Subscriber) {
-                        this.destination = destinationOrNext;
-                        this.destination.add(this);
+                    // HACK(benlesh): To resolve an issue where Node users may have multiple
+                    // copies of rxjs in their node_modules directory.
+                    if (isTrustedSubscriber(destinationOrNext)) {
+                        var trustedSubscriber = destinationOrNext[rxSubscriber]();
+                        this.syncErrorThrowable = trustedSubscriber.syncErrorThrowable;
+                        this.destination = trustedSubscriber;
+                        trustedSubscriber.add(this);
                     }
                     else {
                         this.syncErrorThrowable = true;
@@ -466,7 +470,7 @@ var Subscriber = (function (_super) {
         this.destination.complete();
         this.unsubscribe();
     };
-    Subscriber.prototype._unsubscribeAndRecycle = function () {
+    /** @deprecated internal use only */ Subscriber.prototype._unsubscribeAndRecycle = function () {
         var _a = this, _parent = _a._parent, _parents = _a._parents;
         this._parent = null;
         this._parents = null;
@@ -586,7 +590,7 @@ var SafeSubscriber = (function (_super) {
         }
         return false;
     };
-    SafeSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ SafeSubscriber.prototype._unsubscribe = function () {
         var _parentSubscriber = this._parentSubscriber;
         this._context = null;
         this._parentSubscriber = null;
@@ -594,6 +598,9 @@ var SafeSubscriber = (function (_super) {
     };
     return SafeSubscriber;
 }(Subscriber));
+function isTrustedSubscriber(obj) {
+    return obj instanceof Subscriber || ('syncErrorThrowable' in obj && obj[rxSubscriber]);
+}
 
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
@@ -810,7 +817,7 @@ var Observable = (function () {
             operator.call(sink, this.source);
         }
         else {
-            sink.add(this.source ? this._subscribe(sink) : this._trySubscribe(sink));
+            sink.add(this.source || !sink.syncErrorThrowable ? this._subscribe(sink) : this._trySubscribe(sink));
         }
         if (sink.syncErrorThrowable) {
             sink.syncErrorThrowable = false;
@@ -880,7 +887,7 @@ var Observable = (function () {
             }, reject, resolve);
         });
     };
-    Observable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ Observable.prototype._subscribe = function (subscriber) {
         return this.source.subscribe(subscriber);
     };
     /**
@@ -1093,7 +1100,7 @@ var Subject = (function (_super) {
             return _super.prototype._trySubscribe.call(this, subscriber);
         }
     };
-    Subject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ Subject.prototype._subscribe = function (subscriber) {
         if (this.closed) {
             throw new ObjectUnsubscribedError();
         }
@@ -1148,7 +1155,7 @@ var AnonymousSubject = (function (_super) {
             this.destination.complete();
         }
     };
-    AnonymousSubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ AnonymousSubject.prototype._subscribe = function (subscriber) {
         var source = this.source;
         if (source) {
             return this.source.subscribe(subscriber);
@@ -1171,7 +1178,7 @@ var AsyncSubject = (function (_super) {
         this.hasNext = false;
         this.hasCompleted = false;
     }
-    AsyncSubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ AsyncSubject.prototype._subscribe = function (subscriber) {
         if (this.hasError) {
             subscriber.error(this.thrownError);
             return Subscription.EMPTY;
@@ -1228,62 +1235,58 @@ var BoundCallbackObservable = (function (_super) {
      * Observable.</span>
      *
      * `bindCallback` is not an operator because its input and output are not
-     * Observables. The input is a function `func` with some parameters, but the
+     * Observables. The input is a function `func` with some parameters, the
      * last parameter must be a callback function that `func` calls when it is
      * done.
      *
      * The output of `bindCallback` is a function that takes the same parameters
      * as `func`, except the last one (the callback). When the output function
-     * is called with arguments, it will return an Observable. If `func` function
-     * calls its callback with one argument, the Observable will emit that value.
-     * If on the other hand callback is called with multiple values, resulting
-     * Observable will emit an array with these arguments.
+     * is called with arguments it will return an Observable. If function `func`
+     * calls its callback with one argument the Observable will emit that value.
+     * If on the other hand the callback is called with multiple values the resulting
+     * Observable will emit an array with said values as arguments.
      *
-     * It is very important to remember, that input function `func` is not called
-     * when output function is, but rather when Observable returned by output
-     * function is subscribed. This means if `func` makes AJAX request, that request
-     * will be made every time someone subscribes to resulting Observable, but not before.
+     * It is very important to remember that input function `func` is not called
+     * when the output function is, but rather when the Observable returned by the output
+     * function is subscribed. This means if `func` makes an AJAX request, that request
+     * will be made every time someone subscribes to the resulting Observable, but not before.
      *
-     * Optionally, selector function can be passed to `bindObservable`. That function
-     * takes the same arguments as callback, and returns value
-     * that will be emitted by Observable instead of callback parameters themselves.
-     * Even though by default multiple arguments passed to callback appear in the stream as array,
-     * selector function will be called with arguments directly, just as callback would.
-     * This means you can imagine default selector (when one is not provided explicitly)
-     * as function that aggregates all its arguments into array, or simply returns first argument,
+     * Optionally, a selector function can be passed to `bindObservable`. The selector function
+     * takes the same arguments as the callback and returns the value that will be emitted by the Observable.
+     * Even though by default multiple arguments passed to callback appear in the stream as an array
+     * the selector function will be called with arguments directly, just as the callback would.
+     * This means you can imagine the default selector (when one is not provided explicitly)
+     * as a function that aggregates all its arguments into an array, or simply returns first argument
      * if there is only one.
      *
-     * Last optional parameter - {@link Scheduler} - can be used to control when call
+     * The last optional parameter - {@link Scheduler} - can be used to control when the call
      * to `func` happens after someone subscribes to Observable, as well as when results
-     * passed to callback will be emitted. By default subscription to Observable calls `func`
-     * synchronously, but using `Scheduler.async` as last parameter will defer call to input function,
-     * just like wrapping that call in `setTimeout` with time `0` would. So if you use async Scheduler
-     * and call `subscribe` on output Observable, all function calls that are currently executing,
+     * passed to callback will be emitted. By default, the subscription to  an Observable calls `func`
+     * synchronously, but using `Scheduler.async` as the last parameter will defer the call to `func`,
+     * just like wrapping the call in `setTimeout` with a timeout of `0` would. If you use the async Scheduler
+     * and call `subscribe` on the output Observable all function calls that are currently executing
      * will end before `func` is invoked.
      *
-     * When it comes to emitting results passed to callback, by default they are emitted
-     * immediately after `func` invokes callback. In particular, if callback is called synchronously,
-     * then subscription to resulting Observable will call `next` function synchronously as well.
-     * If you want to defer that call, using `Scheduler.async` will, again, do the job.
-     * This means that by using `Scheduler.async` you can, in a sense, ensure that `func`
-     * always calls its callback asynchronously, thus avoiding terrifying Zalgo.
+     * By default results passed to the callback are emitted immediately after `func` invokes the callback.
+     * In particular, if the callback is called synchronously the subscription of the resulting Observable
+     * will call the `next` function synchronously as well.  If you want to defer that call,
+     * you may use `Scheduler.async` just as before.  This means that by using `Scheduler.async` you can
+     * ensure that `func` always calls its callback asynchronously, thus avoiding terrifying Zalgo.
      *
-     * Note that Observable created by output function will always emit only one value
-     * and then complete right after. Even if `func` calls callback multiple times, values from
-     * second and following calls will never appear in the stream. If you need to
-     * listen for multiple calls, you probably want to use {@link fromEvent} or
-     * {@link fromEventPattern} instead.
+     * Note that the Observable created by the output function will always emit a single value
+     * and then complete immediately. If `func` calls the callback multiple times, values from subsequent
+     * calls will not appear in the stream. If you need to listen for multiple calls,
+     *  you probably want to use {@link fromEvent} or {@link fromEventPattern} instead.
      *
-     * If `func` depends on some context (`this` property), that context will be set
-     * to the same context that output function has at call time. In particular, if `func`
-     * is called as method of some object, in order to preserve proper behaviour,
-     * it is recommended to set context of output function to that object as well,
-     * provided `func` is not already bound.
+     * If `func` depends on some context (`this` property) and is not already bound the context of `func`
+     * will be the context that the output function has at call time. In particular, if `func`
+     * is called as a method of some objec and if `func` is not already bound, in order to preserve the context
+     * it is recommended that the context of the output function is set to that object as well.
      *
-     * If input function calls its callback in "node style" (i.e. first argument to callback is
-     * optional error parameter signaling whether call failed or not), {@link bindNodeCallback}
+     * If the input function calls its callback in the "node style" (i.e. first argument to callback is
+     * optional error parameter signaling whether the call failed or not), {@link bindNodeCallback}
      * provides convenient error handling and probably is a better choice.
-     * `bindCallback` will treat such functions without any difference and error parameter
+     * `bindCallback` will treat such functions the same as any other and error parameters
      * (whether passed or not) will always be interpreted as regular callback argument.
      *
      *
@@ -1294,7 +1297,7 @@ var BoundCallbackObservable = (function (_super) {
      * result.subscribe(x => console.log(x), e => console.error(e));
      *
      *
-     * @example <caption>Receive array of arguments passed to callback</caption>
+     * @example <caption>Receive an array of arguments passed to a callback</caption>
      * someFunction((a, b, c) => {
      *   console.log(a); // 5
      *   console.log(b); // 'some string'
@@ -1307,7 +1310,7 @@ var BoundCallbackObservable = (function (_super) {
      * });
      *
      *
-     * @example <caption>Use bindCallback with selector function</caption>
+     * @example <caption>Use bindCallback with a selector function</caption>
      * someFunction((a, b, c) => {
      *   console.log(a); // 'a'
      *   console.log(b); // 'b'
@@ -1338,7 +1341,7 @@ var BoundCallbackObservable = (function (_super) {
      * // I was async!
      *
      *
-     * @example <caption>Use bindCallback on object method</caption>
+     * @example <caption>Use bindCallback on an object method</caption>
      * const boundMethod = Rx.Observable.bindCallback(someObject.methodWithCallback);
      * boundMethod.call(someObject) // make sure methodWithCallback has access to someObject
      * .subscribe(subscriber);
@@ -1348,9 +1351,9 @@ var BoundCallbackObservable = (function (_super) {
      * @see {@link from}
      * @see {@link fromPromise}
      *
-     * @param {function} func Function with a callback as the last parameter.
+     * @param {function} func A function with a callback as the last parameter.
      * @param {function} [selector] A function which takes the arguments from the
-     * callback and maps those to a value to emit on the output Observable.
+     * callback and maps them to a value that is emitted on the output Observable.
      * @param {Scheduler} [scheduler] The scheduler on which to schedule the
      * callbacks.
      * @return {function(...params: *): Observable} A function which returns the
@@ -1369,7 +1372,7 @@ var BoundCallbackObservable = (function (_super) {
             return new BoundCallbackObservable(func, selector, args, this, scheduler);
         };
     };
-    BoundCallbackObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ BoundCallbackObservable.prototype._subscribe = function (subscriber) {
         var callbackFunc = this.callbackFunc;
         var args = this.args;
         var scheduler = this.scheduler;
@@ -1616,7 +1619,7 @@ var BoundNodeCallbackObservable = (function (_super) {
             return new BoundNodeCallbackObservable(func, selector, args, this, scheduler);
         };
     };
-    BoundNodeCallbackObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ BoundNodeCallbackObservable.prototype._subscribe = function (subscriber) {
         var callbackFunc = this.callbackFunc;
         var args = this.args;
         var scheduler = this.scheduler;
@@ -1757,7 +1760,7 @@ var ScalarObservable = (function (_super) {
         state.done = true;
         this.schedule(state);
     };
-    ScalarObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ScalarObservable.prototype._subscribe = function (subscriber) {
         var value = this.value;
         var scheduler = this.scheduler;
         if (scheduler) {
@@ -1836,7 +1839,7 @@ var EmptyObservable = (function (_super) {
         var subscriber = arg.subscriber;
         subscriber.complete();
     };
-    EmptyObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ EmptyObservable.prototype._subscribe = function (subscriber) {
         var scheduler = this.scheduler;
         if (scheduler) {
             return scheduler.schedule(EmptyObservable.dispatch, 0, { subscriber: subscriber });
@@ -1939,7 +1942,7 @@ var ArrayObservable = (function (_super) {
         state.index = index + 1;
         this.schedule(state);
     };
-    ArrayObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ArrayObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var array = this.array;
         var count = array.length;
@@ -2431,7 +2434,7 @@ var PromiseObservable = (function (_super) {
     PromiseObservable.create = function (promise, scheduler) {
         return new PromiseObservable(promise, scheduler);
     };
-    PromiseObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ PromiseObservable.prototype._subscribe = function (subscriber) {
         var _this = this;
         var promise = this.promise;
         var scheduler = this.scheduler;
@@ -2541,7 +2544,7 @@ var IteratorObservable = (function (_super) {
         }
         this.schedule(state);
     };
-    IteratorObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ IteratorObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var _a = this, iterator$$1 = _a.iterator, scheduler = _a.scheduler;
         if (scheduler) {
@@ -2696,7 +2699,7 @@ var ArrayLikeObservable = (function (_super) {
         state.index = index + 1;
         this.schedule(state);
     };
-    ArrayLikeObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ArrayLikeObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var _a = this, arrayLike = _a.arrayLike, scheduler = _a.scheduler;
         var length = arrayLike.length;
@@ -3033,7 +3036,7 @@ var FromObservable = (function (_super) {
         }
         throw new TypeError((ish !== null && typeof ish || ish) + ' is not observable');
     };
-    FromObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ FromObservable.prototype._subscribe = function (subscriber) {
         var ish = this.ish;
         var scheduler = this.scheduler;
         if (scheduler == null) {
@@ -3482,7 +3485,7 @@ var DeferObservable = (function (_super) {
     DeferObservable.create = function (observableFactory) {
         return new DeferObservable(observableFactory);
     };
-    DeferObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ DeferObservable.prototype._subscribe = function (subscriber) {
         return new DeferSubscriber(subscriber, this.observableFactory);
     };
     return DeferObservable;
@@ -3651,7 +3654,7 @@ var ForkJoinObservable = (function (_super) {
         }
         return new ForkJoinObservable(sources, resultSelector);
     };
-    ForkJoinObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ForkJoinObservable.prototype._subscribe = function (subscriber) {
         return new ForkJoinSubscriber(subscriber, this.sources, this.resultSelector);
     };
     return ForkJoinObservable;
@@ -3879,7 +3882,7 @@ var FromEventObservable = (function (_super) {
         else if (isEventTarget(sourceObj)) {
             var source_1 = sourceObj;
             sourceObj.addEventListener(eventName, handler, options);
-            unsubscribe = function () { return source_1.removeEventListener(eventName, handler); };
+            unsubscribe = function () { return source_1.removeEventListener(eventName, handler, options); };
         }
         else if (isJQueryStyleEventEmitter(sourceObj)) {
             var source_2 = sourceObj;
@@ -3896,7 +3899,7 @@ var FromEventObservable = (function (_super) {
         }
         subscriber.add(new Subscription(unsubscribe));
     };
-    FromEventObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ FromEventObservable.prototype._subscribe = function (subscriber) {
         var sourceObj = this.sourceObj;
         var eventName = this.eventName;
         var options = this.options;
@@ -3987,7 +3990,7 @@ var FromEventPatternObservable = (function (_super) {
     FromEventPatternObservable.create = function (addHandler, removeHandler, selector) {
         return new FromEventPatternObservable(addHandler, removeHandler, selector);
     };
-    FromEventPatternObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ FromEventPatternObservable.prototype._subscribe = function (subscriber) {
         var _this = this;
         var removeHandler = this.removeHandler;
         var handler = !!this.selector ? function () {
@@ -4059,7 +4062,7 @@ var GenerateObservable = (function (_super) {
         }
         return new GenerateObservable(initialStateOrOptions, condition, iterate, resultSelectorOrObservable, scheduler);
     };
-    GenerateObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ GenerateObservable.prototype._subscribe = function (subscriber) {
         var state = this.initialState;
         if (this.scheduler) {
             return this.scheduler.schedule(GenerateObservable.dispatch, 0, {
@@ -4180,7 +4183,7 @@ var IfObservable = (function (_super) {
     IfObservable.create = function (condition, thenSource, elseSource) {
         return new IfObservable(condition, thenSource, elseSource);
     };
-    IfObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ IfObservable.prototype._subscribe = function (subscriber) {
         var _a = this, condition = _a.condition, thenSource = _a.thenSource, elseSource = _a.elseSource;
         return new IfSubscriber(subscriber, condition, thenSource, elseSource);
     };
@@ -4273,8 +4276,8 @@ var AsyncAction = (function (_super) {
     function AsyncAction(scheduler, work) {
         _super.call(this, scheduler, work);
         this.scheduler = scheduler;
-        this.work = work;
         this.pending = false;
+        this.work = work;
     }
     AsyncAction.prototype.schedule = function (state, delay) {
         if (delay === void 0) { delay = 0; }
@@ -4376,7 +4379,7 @@ var AsyncAction = (function (_super) {
             return errorValue;
         }
     };
-    AsyncAction.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ AsyncAction.prototype._unsubscribe = function () {
         var id = this.id;
         var scheduler = this.scheduler;
         var actions = scheduler.actions;
@@ -4597,7 +4600,7 @@ var IntervalObservable = (function (_super) {
         state.index += 1;
         this.schedule(state, period);
     };
-    IntervalObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ IntervalObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var period = this.period;
         var scheduler = this.scheduler;
@@ -4612,14 +4615,6 @@ var interval = IntervalObservable.create;
 
 Observable.interval = interval;
 
-/* tslint:enable:max-line-length */
-function merge$2() {
-    var observables = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        observables[_i - 0] = arguments[_i];
-    }
-    return function (source) { return source.lift.call(mergeStatic.apply(void 0, [source].concat(observables))); };
-}
 /* tslint:enable:max-line-length */
 /**
  * Creates an output Observable which concurrently emits all values from every
@@ -4681,7 +4676,7 @@ function merge$2() {
  * @name merge
  * @owner Observable
  */
-function mergeStatic() {
+function merge() {
     var observables = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         observables[_i - 0] = arguments[_i];
@@ -4704,64 +4699,7 @@ function mergeStatic() {
     return mergeAll(concurrent)(new ArrayObservable(observables, scheduler));
 }
 
-/* tslint:enable:max-line-length */
-/**
- * Creates an output Observable which concurrently emits all values from every
- * given input Observable.
- *
- * <span class="informal">Flattens multiple Observables together by blending
- * their values into one Observable.</span>
- *
- * <img src="./img/merge.png" width="100%">
- *
- * `merge` subscribes to each given input Observable (either the source or an
- * Observable given as argument), and simply forwards (without doing any
- * transformation) all the values from all the input Observables to the output
- * Observable. The output Observable only completes once all input Observables
- * have completed. Any error delivered by an input Observable will be immediately
- * emitted on the output Observable.
- *
- * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var timer = Rx.Observable.interval(1000);
- * var clicksOrTimer = clicks.merge(timer);
- * clicksOrTimer.subscribe(x => console.log(x));
- *
- * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
- * var timer1 = Rx.Observable.interval(1000).take(10);
- * var timer2 = Rx.Observable.interval(2000).take(6);
- * var timer3 = Rx.Observable.interval(500).take(10);
- * var concurrent = 2; // the argument
- * var merged = timer1.merge(timer2, timer3, concurrent);
- * merged.subscribe(x => console.log(x));
- *
- * @see {@link mergeAll}
- * @see {@link mergeMap}
- * @see {@link mergeMapTo}
- * @see {@link mergeScan}
- *
- * @param {ObservableInput} other An input Observable to merge with the source
- * Observable. More than one input Observables may be given as argument.
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
- * concurrency of input Observables.
- * @return {Observable} An Observable that emits items that are the result of
- * every input Observable.
- * @method merge
- * @owner Observable
- */
-function merge$1() {
-    var observables = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        observables[_i - 0] = arguments[_i];
-    }
-    return merge$2.apply(void 0, observables)(this);
-}
-
-var merge$$1 = mergeStatic;
-
-Observable.merge = merge$$1;
+Observable.merge = merge;
 
 function race() {
     var observables = [];
@@ -4885,7 +4823,7 @@ var NeverObservable = (function (_super) {
     NeverObservable.create = function () {
         return new NeverObservable();
     };
-    NeverObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ NeverObservable.prototype._subscribe = function (subscriber) {
         noop();
     };
     return NeverObservable;
@@ -5084,7 +5022,7 @@ var PairsObservable = (function (_super) {
     PairsObservable.create = function (obj, scheduler) {
         return new PairsObservable(obj, scheduler);
     };
-    PairsObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ PairsObservable.prototype._subscribe = function (subscriber) {
         var _a = this, keys = _a.keys, scheduler = _a.scheduler;
         var length = keys.length;
         if (scheduler) {
@@ -5169,7 +5107,7 @@ var RangeObservable = (function (_super) {
         state.start = start + 1;
         this.schedule(state);
     };
-    RangeObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ RangeObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var start = this.start;
         var count = this._count;
@@ -5214,7 +5152,7 @@ var UsingObservable = (function (_super) {
     UsingObservable.create = function (resourceFactory, observableFactory) {
         return new UsingObservable(resourceFactory, observableFactory);
     };
-    UsingObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ UsingObservable.prototype._subscribe = function (subscriber) {
         var _a = this, resourceFactory = _a.resourceFactory, observableFactory = _a.observableFactory;
         var resource;
         try {
@@ -5313,7 +5251,7 @@ var ErrorObservable = (function (_super) {
         var error = arg.error, subscriber = arg.subscriber;
         subscriber.error(error);
     };
-    ErrorObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ErrorObservable.prototype._subscribe = function (subscriber) {
         var error = this.error;
         var scheduler = this.scheduler;
         subscriber.syncErrorThrowable = true;
@@ -5422,7 +5360,7 @@ var TimerObservable = (function (_super) {
         state.index = index + 1;
         action.schedule(state, period);
     };
-    TimerObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ TimerObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var _a = this, period = _a.period, dueTime = _a.dueTime, scheduler = _a.scheduler;
         return scheduler.schedule(TimerObservable.dispatch, dueTime, {
@@ -5885,7 +5823,7 @@ var AjaxObservable = (function (_super) {
         }
         this.request = request;
     }
-    AjaxObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ AjaxObservable.prototype._subscribe = function (subscriber) {
         return new AjaxSubscriber(subscriber, this.request);
     };
     /**
@@ -6018,7 +5956,7 @@ var AjaxSubscriber = (function (_super) {
         }
         switch (contentType) {
             case 'application/x-www-form-urlencoded':
-                return Object.keys(body).map(function (key) { return (encodeURI(key) + "=" + encodeURI(body[key])); }).join('&');
+                return Object.keys(body).map(function (key) { return (encodeURIComponent(key) + "=" + encodeURIComponent(body[key])); }).join('&');
             case 'application/json':
                 return JSON.stringify(body);
             default:
@@ -6162,12 +6100,16 @@ function parseXhrResponse(responseType, xhr) {
                 return xhr.responseType ? xhr.response : JSON.parse(xhr.response || xhr.responseText || 'null');
             }
             else {
+                // HACK(benlesh): TypeScript shennanigans
+                // tslint:disable-next-line:no-any latest TS seems to think xhr is "never" here.
                 return JSON.parse(xhr.responseText || 'null');
             }
         case 'xml':
             return xhr.responseXML;
         case 'text':
         default:
+            // HACK(benlesh): TypeScript shennanigans
+            // tslint:disable-next-line:no-any latest TS seems to think xhr is "never" here.
             return ('response' in xhr) ? xhr.response : xhr.responseText;
     }
 }
@@ -6320,7 +6262,7 @@ var ReplaySubject = (function (_super) {
         this._trimBufferThenGetEvents();
         _super.prototype.next.call(this, value);
     };
-    ReplaySubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ReplaySubject.prototype._subscribe = function (subscriber) {
         var _events = this._trimBufferThenGetEvents();
         var scheduler = this.scheduler;
         var subscription;
@@ -6609,7 +6551,7 @@ var WebSocketSubject = (function (_super) {
             }
         };
     };
-    WebSocketSubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ WebSocketSubject.prototype._subscribe = function (subscriber) {
         var _this = this;
         var source = this.source;
         if (source) {
@@ -7074,7 +7016,7 @@ var BufferTimeSubscriber = (function (_super) {
         }
         _super.prototype._complete.call(this);
     };
-    BufferTimeSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ BufferTimeSubscriber.prototype._unsubscribe = function () {
         this.contexts = null;
     };
     BufferTimeSubscriber.prototype.onBufferFull = function (context) {
@@ -7451,7 +7393,7 @@ var BufferWhenSubscriber = (function (_super) {
         }
         _super.prototype._complete.call(this);
     };
-    BufferWhenSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ BufferWhenSubscriber.prototype._unsubscribe = function () {
         this.buffer = null;
         this.subscribing = false;
     };
@@ -9024,6 +8966,7 @@ var DelaySubscriber = (function (_super) {
             this.schedule(state, delay_1);
         }
         else {
+            this.unsubscribe();
             source.active = false;
         }
     };
@@ -9251,12 +9194,12 @@ var DelayWhenSubscriber = (function (_super) {
  */
 var SubscriptionDelayObservable = (function (_super) {
     __extends(SubscriptionDelayObservable, _super);
-    function SubscriptionDelayObservable(source, subscriptionDelay) {
+    function SubscriptionDelayObservable(/** @deprecated internal use only */ source, subscriptionDelay) {
         _super.call(this);
         this.source = source;
         this.subscriptionDelay = subscriptionDelay;
     }
-    SubscriptionDelayObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ SubscriptionDelayObservable.prototype._subscribe = function (subscriber) {
         this.subscriptionDelay.subscribe(new SubscriptionDelaySubscriber(subscriber, this.source));
     };
     return SubscriptionDelayObservable;
@@ -11501,7 +11444,7 @@ var GroupDurationSubscriber = (function (_super) {
     GroupDurationSubscriber.prototype._next = function (value) {
         this.complete();
     };
-    GroupDurationSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ GroupDurationSubscriber.prototype._unsubscribe = function () {
         var _a = this, parent = _a.parent, key = _a.key;
         this.key = this.parent = null;
         if (parent) {
@@ -11526,7 +11469,7 @@ var GroupedObservable = (function (_super) {
         this.groupSubject = groupSubject;
         this.refCountSubscription = refCountSubscription;
     }
-    GroupedObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ GroupedObservable.prototype._subscribe = function (subscriber) {
         var subscription = new Subscription();
         var _a = this, refCountSubscription = _a.refCountSubscription, groupSubject = _a.groupSubject;
         if (refCountSubscription && !refCountSubscription.closed) {
@@ -12832,6 +12775,116 @@ function max$$1(comparer) {
 
 Observable.prototype.max = max$$1;
 
+/* tslint:enable:max-line-length */
+/**
+ * Creates an output Observable which concurrently emits all values from every
+ * given input Observable.
+ *
+ * <span class="informal">Flattens multiple Observables together by blending
+ * their values into one Observable.</span>
+ *
+ * <img src="./img/merge.png" width="100%">
+ *
+ * `merge` subscribes to each given input Observable (either the source or an
+ * Observable given as argument), and simply forwards (without doing any
+ * transformation) all the values from all the input Observables to the output
+ * Observable. The output Observable only completes once all input Observables
+ * have completed. Any error delivered by an input Observable will be immediately
+ * emitted on the output Observable.
+ *
+ * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var timer = Rx.Observable.interval(1000);
+ * var clicksOrTimer = clicks.merge(timer);
+ * clicksOrTimer.subscribe(x => console.log(x));
+ *
+ * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
+ * var timer1 = Rx.Observable.interval(1000).take(10);
+ * var timer2 = Rx.Observable.interval(2000).take(6);
+ * var timer3 = Rx.Observable.interval(500).take(10);
+ * var concurrent = 2; // the argument
+ * var merged = timer1.merge(timer2, timer3, concurrent);
+ * merged.subscribe(x => console.log(x));
+ *
+ * @see {@link mergeAll}
+ * @see {@link mergeMap}
+ * @see {@link mergeMapTo}
+ * @see {@link mergeScan}
+ *
+ * @param {ObservableInput} other An input Observable to merge with the source
+ * Observable. More than one input Observables may be given as argument.
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
+ * Observables being subscribed to concurrently.
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
+ * concurrency of input Observables.
+ * @return {Observable} An Observable that emits items that are the result of
+ * every input Observable.
+ * @method merge
+ * @owner Observable
+ */
+function merge$2() {
+    var observables = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        observables[_i - 0] = arguments[_i];
+    }
+    return function (source) { return source.lift.call(merge.apply(void 0, [source].concat(observables))); };
+}
+
+/* tslint:enable:max-line-length */
+/**
+ * Creates an output Observable which concurrently emits all values from every
+ * given input Observable.
+ *
+ * <span class="informal">Flattens multiple Observables together by blending
+ * their values into one Observable.</span>
+ *
+ * <img src="./img/merge.png" width="100%">
+ *
+ * `merge` subscribes to each given input Observable (either the source or an
+ * Observable given as argument), and simply forwards (without doing any
+ * transformation) all the values from all the input Observables to the output
+ * Observable. The output Observable only completes once all input Observables
+ * have completed. Any error delivered by an input Observable will be immediately
+ * emitted on the output Observable.
+ *
+ * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var timer = Rx.Observable.interval(1000);
+ * var clicksOrTimer = clicks.merge(timer);
+ * clicksOrTimer.subscribe(x => console.log(x));
+ *
+ * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
+ * var timer1 = Rx.Observable.interval(1000).take(10);
+ * var timer2 = Rx.Observable.interval(2000).take(6);
+ * var timer3 = Rx.Observable.interval(500).take(10);
+ * var concurrent = 2; // the argument
+ * var merged = timer1.merge(timer2, timer3, concurrent);
+ * merged.subscribe(x => console.log(x));
+ *
+ * @see {@link mergeAll}
+ * @see {@link mergeMap}
+ * @see {@link mergeMapTo}
+ * @see {@link mergeScan}
+ *
+ * @param {ObservableInput} other An input Observable to merge with the source
+ * Observable. More than one input Observables may be given as argument.
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
+ * Observables being subscribed to concurrently.
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
+ * concurrency of input Observables.
+ * @return {Observable} An Observable that emits items that are the result of
+ * every input Observable.
+ * @method merge
+ * @owner Observable
+ */
+function merge$1() {
+    var observables = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        observables[_i - 0] = arguments[_i];
+    }
+    return merge$2.apply(void 0, observables)(this);
+}
+
 Observable.prototype.merge = merge$1;
 
 /**
@@ -13404,7 +13457,7 @@ var RefCountSubscriber$1 = (function (_super) {
         _super.call(this, destination);
         this.connectable = connectable;
     }
-    RefCountSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ RefCountSubscriber.prototype._unsubscribe = function () {
         var connectable = this.connectable;
         if (!connectable) {
             this.connection = null;
@@ -13459,17 +13512,18 @@ var RefCountSubscriber$1 = (function (_super) {
  */
 var ConnectableObservable = (function (_super) {
     __extends(ConnectableObservable, _super);
-    function ConnectableObservable(source, subjectFactory) {
+    function ConnectableObservable(/** @deprecated internal use only */ source, 
+        /** @deprecated internal use only */ subjectFactory) {
         _super.call(this);
         this.source = source;
         this.subjectFactory = subjectFactory;
-        this._refCount = 0;
+        /** @deprecated internal use only */ this._refCount = 0;
         this._isComplete = false;
     }
-    ConnectableObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ConnectableObservable.prototype._subscribe = function (subscriber) {
         return this.getSubject().subscribe(subscriber);
     };
-    ConnectableObservable.prototype.getSubject = function () {
+    /** @deprecated internal use only */ ConnectableObservable.prototype.getSubject = function () {
         var subject = this._subject;
         if (!subject || subject.isStopped) {
             this._subject = this.subjectFactory();
@@ -13525,7 +13579,7 @@ var ConnectableSubscriber = (function (_super) {
         this._unsubscribe();
         _super.prototype._complete.call(this);
     };
-    ConnectableSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ ConnectableSubscriber.prototype._unsubscribe = function () {
         var connectable = this.connectable;
         if (connectable) {
             this.connectable = null;
@@ -13546,7 +13600,7 @@ var RefCountSubscriber = (function (_super) {
         _super.call(this, destination);
         this.connectable = connectable;
     }
-    RefCountSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ RefCountSubscriber.prototype._unsubscribe = function () {
         var connectable = this.connectable;
         if (!connectable) {
             this.connection = null;
@@ -14237,7 +14291,7 @@ var BehaviorSubject = (function (_super) {
         enumerable: true,
         configurable: true
     });
-    BehaviorSubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ BehaviorSubject.prototype._subscribe = function (subscriber) {
         var subscription = _super.prototype._subscribe.call(this, subscriber);
         if (subscription && !subscription.closed) {
             subscriber.next(this._value);
@@ -14563,14 +14617,14 @@ var RepeatWhenSubscriber = (function (_super) {
             if (!this.retries) {
                 this.subscribeToRetries();
             }
-            else if (this.retriesSubscription.closed) {
+            if (!this.retriesSubscription || this.retriesSubscription.closed) {
                 return _super.prototype.complete.call(this);
             }
             this._unsubscribeAndRecycle();
             this.notifications.next();
         }
     };
-    RepeatWhenSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ RepeatWhenSubscriber.prototype._unsubscribe = function () {
         var _a = this, notifications = _a.notifications, retriesSubscription = _a.retriesSubscription;
         if (notifications) {
             notifications.unsubscribe();
@@ -14582,7 +14636,7 @@ var RepeatWhenSubscriber = (function (_super) {
         }
         this.retries = null;
     };
-    RepeatWhenSubscriber.prototype._unsubscribeAndRecycle = function () {
+    /** @deprecated internal use only */ RepeatWhenSubscriber.prototype._unsubscribeAndRecycle = function () {
         var _a = this, notifications = _a.notifications, retries = _a.retries, retriesSubscription = _a.retriesSubscription;
         this.notifications = null;
         this.retries = null;
@@ -14768,7 +14822,7 @@ var RetryWhenSubscriber = (function (_super) {
             errors.next(err);
         }
     };
-    RetryWhenSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ RetryWhenSubscriber.prototype._unsubscribe = function () {
         var _a = this, errors = _a.errors, retriesSubscription = _a.retriesSubscription;
         if (errors) {
             errors.unsubscribe();
@@ -16264,7 +16318,7 @@ var SubscribeOnObservable = (function (_super) {
         var source = arg.source, subscriber = arg.subscriber;
         return this.add(source.subscribe(subscriber));
     };
-    SubscribeOnObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ SubscribeOnObservable.prototype._subscribe = function (subscriber) {
         var delay = this.delayTime;
         var source = this.source;
         var scheduler = this.scheduler;
@@ -16422,7 +16476,7 @@ var SwitchMapSubscriber = (function (_super) {
             _super.prototype._complete.call(this);
         }
     };
-    SwitchMapSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ SwitchMapSubscriber.prototype._unsubscribe = function () {
         this.innerSubscription = null;
     };
     SwitchMapSubscriber.prototype.notifyComplete = function (innerSub) {
@@ -16643,7 +16697,7 @@ var SwitchMapToSubscriber = (function (_super) {
             _super.prototype._complete.call(this);
         }
     };
-    SwitchMapToSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ SwitchMapToSubscriber.prototype._unsubscribe = function () {
         this.innerSubscription = null;
     };
     SwitchMapToSubscriber.prototype.notifyComplete = function (innerSub) {
@@ -17223,7 +17277,7 @@ var ThrottleSubscriber = (function (_super) {
             return null;
         }
     };
-    ThrottleSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ ThrottleSubscriber.prototype._unsubscribe = function () {
         var _a = this, throttled = _a.throttled, _trailingValue = _a._trailingValue, _hasTrailingValue = _a._hasTrailingValue, _trailing = _a._trailing;
         this._trailingValue = null;
         this._hasTrailingValue = false;
@@ -17648,7 +17702,7 @@ var TimeoutSubscriber = (function (_super) {
         }
         _super.prototype._next.call(this, value);
     };
-    TimeoutSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ TimeoutSubscriber.prototype._unsubscribe = function () {
         this.action = null;
         this.scheduler = null;
         this.errorInstance = null;
@@ -17837,7 +17891,7 @@ var TimeoutWithSubscriber = (function (_super) {
         }
         _super.prototype._next.call(this, value);
     };
-    TimeoutWithSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ TimeoutWithSubscriber.prototype._unsubscribe = function () {
         this.action = null;
         this.scheduler = null;
         this.withObservable = null;
@@ -17933,6 +17987,9 @@ function timestamp$$1(scheduler) {
 Observable.prototype.timestamp = timestamp$$1;
 
 function toArrayReducer(arr, item, index) {
+    if (index === 0) {
+        return [item];
+    }
     arr.push(item);
     return arr;
 }
@@ -18059,7 +18116,7 @@ var WindowSubscriber = (function (_super) {
         this.window.complete();
         this.destination.complete();
     };
-    WindowSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ WindowSubscriber.prototype._unsubscribe = function () {
         this.window = null;
     };
     WindowSubscriber.prototype.openWindow = function () {
@@ -18233,7 +18290,7 @@ var WindowCountSubscriber = (function (_super) {
         }
         this.destination.complete();
     };
-    WindowCountSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ WindowCountSubscriber.prototype._unsubscribe = function () {
         this.count = 0;
         this.windows = null;
     };
@@ -18575,7 +18632,7 @@ var WindowToggleSubscriber = (function (_super) {
         }
         _super.prototype._complete.call(this);
     };
-    WindowToggleSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ WindowToggleSubscriber.prototype._unsubscribe = function () {
         var contexts = this.contexts;
         this.contexts = null;
         if (contexts) {
@@ -19134,7 +19191,7 @@ var HotObservable = (function (_super) {
         this.subscriptions = [];
         this.scheduler = scheduler;
     }
-    HotObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ HotObservable.prototype._subscribe = function (subscriber) {
         var subject = this;
         var index = subject.logSubscribedFrame();
         subscriber.add(new Subscription(function () {
