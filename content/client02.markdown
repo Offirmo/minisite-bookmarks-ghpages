@@ -33,6 +33,7 @@ Engineering:
 
 
 Team
+- + Jira https://atl-growth.atlassian.net/secure/BrowseProjects.jspa
 - + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16

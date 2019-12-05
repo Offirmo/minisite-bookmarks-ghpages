@@ -44,6 +44,7 @@ Dev
 
 
 marketing:
+- liste https://cobeats.com/folder/SkZNevS9H
 - buffer https://buffer.com/app/profile/5afad0a728473ccb464ca02d/buffer/queue/list
 - r/boringrpg TBRPG https://www.reddit.com/r/boringrpg/
 - all links https://linktr.ee/theboringrpg
@@ -65,6 +66,8 @@ marketing:
 tech
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/edit#gid=0
 - unit tests https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
+* offirmo-practical-js-logger https://offirmo-practical-js-logger.netlify.com/
+* universal-debug-api-js https://universal-debug-api-js.netlify.com/
 - Fraction.js https://github.com/infusion/Fraction.js/
 - Enum https://github.com/dphilipson/typescript-string-enums
 - react-overlays https://github.com/react-bootstrap/react-overlays

@@ -59,6 +59,7 @@ Misc
 
 
 Admin:
+- Chrome Web Store https://chrome.google.com/webstore/devconsole/g06317458645218047812
 - mutadis.org http://www.mutadis.org/connexion/
 - FDC http://fundfordemocraticculture.org/connexion
 - ameliedescamps.com http://www.ameliedescamps.com/connexion
