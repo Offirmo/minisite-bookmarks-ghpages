@@ -148,7 +148,7 @@ NUEPI-6
 
 
 NUEPI-4
-- KILL NUEPI-4 
+- KILL NUEPI-4
 - poster https://hello.atlassian.net/wiki/spaces/PGT/pages/197459285/NUEPI-4+-+Google+Contacts+Experiment
 - ticket https://growth.jira-dev.com/browse/KERBAL-601
 - app notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198251374/NUEPI-4+-+Static+app
@@ -207,8 +207,9 @@ WAC Prod:
 Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
+- GIW11 https://shipit.atlassian.net/browse/GIW11-11
 - 47 https://shipit.atlassian.net/browse/SHPXLVII-335
-- GIW10 https://shipit.atlassian.net/projects/GIW10/issues
+- GIW10 https://shipit.atlassian.net/projects/GIW10
 - GIW8 https://shipit.atlassian.net/browse/GIWN8-1
 - 45 https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/02/28/406060531/ShipIt+45+-+an+universal+debug+webextension
 - GIW7 https://shipit.atlassian.net/projects/GIW7/
