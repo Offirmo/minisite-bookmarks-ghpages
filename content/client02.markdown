@@ -242,6 +242,7 @@ Review
 
 
 Misc/fun:
+- haircut https://beards-and-bobs.cliniko.com/bookings#service
 - hypnotoad https://hello.atlassian.net/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
 - PR https://hello.atlassian.net/wiki/spaces/PEOP/pages/181617899/Australia+-+Residency+Sponsorship
 - donuts https://hello.atlassian.net/wiki/spaces/~briosa/pages/256228848/Sydney+review

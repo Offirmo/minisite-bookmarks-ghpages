@@ -51,9 +51,9 @@ Projects
 
 Misc
 - https://framindmap.org/c/maps/
+- slack text https://cyanharlow.bitbucket.io/
 - Emoji www.emoji-cheat-sheet.com
 - Emoji http://emojihomepage.com/
-- Lenny face https://lennyfaces.org/
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
 

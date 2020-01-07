@@ -44,7 +44,7 @@ Strips
 Webcomics
 - https://docs.google.com/spreadsheets/d/1yHDua-s5lk1Yon9IBacVtsjIUnThs7SyqaKYSBlWqXo/edit#gid=155590555
 - https://www.sheet2site.com/api/?key=1yHDua-s5lk1Yon9IBacVtsjIUnThs7SyqaKYSBlWqXo
-
+- https://www.smbc-comics.com/index.php
 - OOTS http://www.giantitp.com/comics/oots0001.html
 - OOTS help http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 
