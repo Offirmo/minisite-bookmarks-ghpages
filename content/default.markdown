@@ -14,3 +14,4 @@ All boards
 - strips-mangas-comics http://www.offirmo.net/minisite-bookmarks-ghpages/strips-mangas-comics
 - tbrpg http://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 - videogames http://www.offirmo.net/minisite-bookmarks-ghpages/videogames
+- open source

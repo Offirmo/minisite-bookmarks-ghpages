@@ -47,9 +47,11 @@ Projects
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - Boursorama https://clients.boursorama.com/connexion/
 - WeSwap https://app.weswap.com/#/fr/login
+- http://allianz.fr/
 
 
 Misc
+- library https://library.cityofsydney.nsw.gov.au/Montage/Books.aspx
 - https://framindmap.org/c/maps/
 - slack text https://cyanharlow.bitbucket.io/
 - Emoji www.emoji-cheat-sheet.com

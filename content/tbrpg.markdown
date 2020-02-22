@@ -17,6 +17,7 @@ the-boring-rpg:
 - dev:8080    http://localhost:8080
 - :1234       http://localhost:1234/index.html
 - legacy      https://www.online-adventur.es/apps/legacy/tbrpg-20190307/index.html
+- itch https://offirmo.itch.io/the-boring-rpg-reloaded
 
 
 Admin
