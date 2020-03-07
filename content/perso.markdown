@@ -4,7 +4,8 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - All http://www.offirmo.net/minisite-bookmarks-ghpages/
 - Drive https://drive.google.com/drive/#my-drive
-- Inbox https://inbox.google.com/
+- mail https://inbox.google.com/
+- maps https://www.google.com/maps/d/home
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - Maps https://framindmap.org/c/maps/
@@ -39,7 +40,7 @@ Projects
 
 💸💸💸
 - NAB https://ib.nab.com.au/nabib/index.jsp
-- Transferwise https://transferwise.com/user/account
+- Transferwise https://transferwise.com/login
 - OFX https://authserver.ofx.com/account/login
 - me https://ib.mebank.com.au/
 - solium https://atlassian.solium.com/solium/servlet/userLogin.do
