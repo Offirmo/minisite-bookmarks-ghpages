@@ -5,10 +5,11 @@ pinned:
 - All http://www.offirmo.net/minisite-bookmarks-ghpages/
 - Drive https://drive.google.com/drive/#my-drive
 - mail https://inbox.google.com/
-- maps https://www.google.com/maps/d/home
+- maps https://www.google.com/maps
+- mymaps https://www.google.com/maps/d/home
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
-- Maps https://framindmap.org/c/maps/
+- mindmaps https://framindmap.org/c/maps/
 - devdocs http://devdocs.io/
 - GitHub https://github.com/Offirmo?tab=repositories
 - Deezer www.deezer.com
@@ -41,14 +42,15 @@ Projects
 💸💸💸
 - NAB https://ib.nab.com.au/nabib/index.jsp
 - Transferwise https://transferwise.com/login
-- OFX https://authserver.ofx.com/account/login
-- me https://ib.mebank.com.au/
 - solium https://atlassian.solium.com/solium/servlet/userLogin.do
+- Me https://ib.mebank.com.au/
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
+- BT super https://bt.com.au/btsuperportal
 - Boursorama https://clients.boursorama.com/connexion/
 - WeSwap https://app.weswap.com/#/fr/login
-- http://allianz.fr/
+- allianz fr http://allianz.fr/
+- OFX https://authserver.ofx.com/account/login
 
 
 Misc
