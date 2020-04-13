@@ -26,6 +26,17 @@ Emergency
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
 
+Team
+- team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
+- 🔒 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
+- 🔐 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862/Team+Lead+of+Essentials
+
+
+
+Growth
+- Career https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142189/Career+growth
+-
+
 Engineering:
 - Freezes https://hello.atlassian.net/display/SRE/Change+Freezes
 - Dev list https://hello.atlassian.net/wiki/spaces/PGT/pages/198265283/Fundle+dev+check+list
