@@ -28,13 +28,15 @@ Emergency
 
 Team
 - team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
-- 🔒 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
+- 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
 - 🔐 1:1 common notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
 - 🔐 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862/Team+Lead+of+Essentials
 - 1:1 common https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
 - 1:1 ME https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684624963/Yves+-+1+1
-- 1:1 Dima
 
+
+Delivery
+* PC-12993 Standardised cross-flow integration https://hello.atlassian.net/browse/PC-12993
 
 
 Growth

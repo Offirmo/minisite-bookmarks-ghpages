@@ -4,25 +4,26 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - All http://www.offirmo.net/minisite-bookmarks-ghpages/
 - Drive https://drive.google.com/drive/#my-drive
-- mail https://inbox.google.com/
-- maps https://www.google.com/maps
-- mymaps https://www.google.com/maps/d/home
+- Gmail https://inbox.google.com/
+- Gmaps https://www.google.com/maps
+- myGmaps https://www.google.com/maps/d/home
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
-- S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
-- mindmaps https://framindmap.org/c/maps/
 - devdocs http://devdocs.io/
 - GitHub https://github.com/Offirmo?tab=repositories
 - Deezer www.deezer.com
 - tops http://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
-- langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 - pocket https://getpocket.com/a?src=ff_ext_saved
-- https://www.worldtimebuddy.com/?pl=1&lid=2147714,2988507,5375480&h=2147714
-- outline https://outline.com/
 - Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FAM/boards/1
+- TZ https://www.worldtimebuddy.com/?pl=1&lid=2147714,2988507,5375480&h=2147714
+- outline https://outline.com/
+- langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
+- S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
+- mindmaps https://framindmap.org/c/maps/
 
 
 Projects
+- TBRPG https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 - W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
 - H https://docs.google.com/spreadsheets/d/1o8K0pv5QZVcopl4-6RZoot8ixmLZAJqFX99W7ec-wao/edit#gid=2075720335
 - NW https://docs.google.com/spreadsheets/d/1gw6oq6Y-lBK7dwHbHFAVsXwU0UsBMPSa6vW84FZwtS0/edit
@@ -33,10 +34,6 @@ Projects
 - Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
 - http://www.offirmo.net/
 - monorepo https://www.offirmo.net/offirmo-monorepo/
-- OA www.online-adventur.es
-- TBRPG https://docs.google.com/spreadsheets/d/1EZHJQN0qBWuIjOHvCUQl2HoA37dO86tvfCh_MArNqFY/edit#gid=859684177
-- TBRPG frags https://docs.google.com/presentation/d/17V7ID-F3OCJlbaXrGcvcjS5C20LRgBHEqD1Pn0aK-kg/edit#slide=id.g28918c0c560567f1_16
-- Incrémental https://docs.google.com/spreadsheets/d/16UfXJFIM_scFSS8jEGKaKwFWk4kB2vD7D87dKixvxKo/edit#gid=0
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 
 
@@ -55,6 +52,7 @@ Projects
 
 
 Misc
+- Tree helper http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
 - library https://library.cityofsydney.nsw.gov.au/Montage/Books.aspx
 - https://framindmap.org/c/maps/
 - slack text https://cyanharlow.bitbucket.io/
@@ -130,14 +128,9 @@ Docs:
 - Git solving http://justinhileman.info/article/git-pretty/full/
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
 - + TS compiler options https://www.typescriptlang.org/docs/handbook/compiler-options.html
-- TS What's new 2.3 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html
-- TS What's new 2.2 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html
-- TS What's new 2.1 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html
-- TS What's new 2.0 https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html
-- RxJS http://reactivex.io/rxjs/
+- TS What's new https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html
 - unminifier http://unminify.com/
 - https://github.com/caolan/async
-- http://epeli.github.io/underscore.string/
 - http://momentjs.com/docs/
 - http://mochajs.org/
 - http://chaijs.com/api/bdd/
@@ -145,7 +138,6 @@ Docs:
 - http://chaijs.com/plugins/chai-sinon/
 - http://usejsdoc.org/
 - https://httpstatuses.com/
-- http://facebook.github.io/immutable-js/
 - ES6 http://exploringjs.com/es6/ch_modules.html
 
 
@@ -161,6 +153,9 @@ Dev tools:
 - YT https://ytmp3.cc/
 - YT2 https://www.onlinevideoconverter.com/video-converter
 - transform.tools https://transform.tools/graphql-to-typescript
+- https://ezgif.com/video-to-gif
+- diagraming https://github.com/excalidraw/excalidraw
+
 
 Offline / local
 - devdocs.io http://0.0.0.0:9292/
