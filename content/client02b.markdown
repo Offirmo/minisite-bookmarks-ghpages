@@ -223,6 +223,7 @@ WAC Prod:
 Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
+- GIW12 https://shipit.atlassian.net/browse/GIW12-6
 - 48 https://shipit.atlassian.net/browse/SHPXLVIII-223
 - GIW11 https://shipit.atlassian.net/browse/GIW11-11
 - 47 https://shipit.atlassian.net/browse/SHPXLVII-335
