@@ -169,6 +169,7 @@ Offline / local
 
 
 Veille:
+- https://web.dev/blog/
 - https://www.w3.org/blog/CSS/
 - https://philipwalton.com/
 - http://gamesfromwithin.com/
