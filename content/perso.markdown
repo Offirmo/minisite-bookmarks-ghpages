@@ -88,6 +88,7 @@ To check:
 - myGov https://my.gov.au/
 - service NSW https://www.service.nsw.gov.au/
 - online forms https://onlineforms.bdm.nsw.gov.au/
+- Sydney https://online.cityofsydney.nsw.gov.au/Account
 - BUPA https://my.bupa.com.au/
 - ATO.gov.au https://www.ato.gov.au/
 - centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
@@ -123,6 +124,7 @@ Wiki perso:
 
 Docs:
 - +++ http://devdocs.io/
+- http://youmightnotneedjquery.com/
 - http://htmlreference.io/
 - http://cssreference.io/
 - Git solving http://justinhileman.info/article/git-pretty/full/
@@ -216,6 +218,8 @@ Setup:
 
 
 toread:
+- https://www.artofmanliness.com/
+- https://illimitablemen.com/
 - https://blog.risingstack.com/10-most-important-node-js-articles-2016/
 - http://thejsguy.com/2016/10/15/a-practical-introduction-to-es6-generator-functions.html
 - https://developers.google.com/web/fundamentals/getting-started/primers/async-functions

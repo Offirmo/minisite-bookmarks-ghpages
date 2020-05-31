@@ -53,4 +53,12 @@ Webcomics
 Misc
 - https://what-if.xkcd.com/
 - picklecat https://dn.ht/picklecat/
-* List_of_best-selling_manga https://en.wikipedia.org/wiki/List_of_best-selling_manga
+- List_of_best-selling_manga https://en.wikipedia.org/wiki/List_of_best-selling_manga
+- http://www.scp-wiki.net/
+
+Games
+- http://www.thegreatestgameyouwilleverplay.com/
+
+
+Videos
+- https://www.youtube.com/channel/UCFMtdiQILuTZr22sKUeAOOA
