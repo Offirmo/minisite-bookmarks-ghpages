@@ -13,6 +13,7 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.murmurhash_v3_32_gc = void 0;
     function murmurhash_v3_32_gc(key, seed) {
         let remainder, bytes, h1, h1b, c1, c2, k1, i;
         remainder = key.length & 3; // key.length % 4

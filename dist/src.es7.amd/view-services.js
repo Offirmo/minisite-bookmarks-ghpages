@@ -2,6 +2,7 @@
 define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", "./templates", "./incubator/murmur_v3_32"], function (require, exports, _, typescript_string_enums_1, chroma, templates_1, murmur_v3_32_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.evaluate_string_width = exports.generate_background_color_for_url = exports.generate_label_from_url = void 0;
     const marky = window.marky;
     ////////////////////////////////////
     const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .com.xy, .biz

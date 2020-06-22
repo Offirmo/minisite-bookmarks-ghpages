@@ -1,6 +1,6 @@
 {
   "name": "minisite-bookmarks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a minisite pleasingly displaying bookmarks",
   "main": "index.js",
   "repository": "git@github.com:Offirmo/minisite-bookmarks.git",
@@ -26,8 +26,8 @@
     "__shortcuts": "~~~~~~ Shortcuts ~~~~~~"
   },
   "dependencies": {
-    "@offirmo/rx-auto": "^0.2.0",
-    "@offirmo/simple-querystring-parser": "^1.1.0",
+    "@offirmo/rx-auto": "^0.2",
+    "@offirmo/simple-querystring-parser": "^1",
     "@reactivex/rxjs": "^5",
     "chroma-js": "^1",
     "lodash": "^4",
@@ -36,7 +36,7 @@
     "require-css": "^0.1",
     "requirejs": "^2",
     "tachyons": "^4",
-    "tslib": "^1",
+    "tslib": "^2",
     "typescript-string-enums": "^1"
   },
   "devDependencies": {
@@ -46,9 +46,9 @@
     "@types/packery": "^1",
     "browser-sync": "^2",
     "node-typescript-compiler": "^2",
-    "nodemon": "^1",
+    "nodemon": "^2",
     "npm-run-all": "^4",
-    "semver": "^6",
+    "semver": "^7",
     "typescript": "^3"
   }
 }

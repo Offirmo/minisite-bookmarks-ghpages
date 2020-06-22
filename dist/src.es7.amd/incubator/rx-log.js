@@ -6,6 +6,7 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.log_observable = void 0;
     const PAD_SIZE = 6;
     const start_date = Date.now();
     const zeros_for_pad = '000000';

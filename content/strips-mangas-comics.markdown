@@ -42,3 +42,9 @@ Finished mangas
 
 Abandoned mangas
 - http://mangakakalot.com/manga/mahou_shoujo_nante_mou_ii_desu_kara
+
+
+Marial peak
+rankers
+live the second life
+beginning after the end

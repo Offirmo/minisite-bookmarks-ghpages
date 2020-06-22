@@ -2,6 +2,7 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.page = exports.FOREGROUND_COLOR = exports.BACKGROUND_COLOR = void 0;
     //import { evaluate_string_width } from './view-services'
     ////////////////////////////////////
     const BACKGROUND_COLOR = '#fafbfc';
@@ -32,7 +33,7 @@ define(["require", "exports"], function (require, exports) {
         }
         else if (parsed_url.protocol === 'https:' || parsed_url.protocol === 'http:') {
             // http://stackoverflow.com/questions/5119041/how-can-i-get-a-web-sites-favicon
-            favicon = `<span class="icon"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>`;
+            favicon = `<span class="icon"><img height="16" width="16" src='https://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>`;
             //favicon = `<span class="icon"><img height="20" width="20" src='http://f1.allesedv.com/24/${parsed_url.hostname}' /></span>`
             //favicon = `<span class="icon"><img height="16" width="16" src='http://favicon.yandex.net/favicon/${parsed_url.hostname}' /></span>`
         }

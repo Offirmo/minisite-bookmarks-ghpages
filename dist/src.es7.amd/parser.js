@@ -2,6 +2,7 @@
 define(["require", "exports", "lodash", "./view-services"], function (require, exports, _, view_services_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.factory = void 0;
     const marky = window.marky;
     //////////// CONSTANTS ////////////
     const DEFAULT_PAGE_TITLE = 'Awesome bookmarks';
@@ -98,7 +99,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             let url = params.slice(-1)[0] || BOOKMARK_URL_ERROR;
             logger.log('raw url extracted:', url);
             if (!url.includes('://'))
-                url = 'http://' + url;
+                url = 'https://' + url;
             const parsed_url = parse_url(url);
             // bookmark title may have spaces, so we must be smarter
             let label = params.slice(0, -1).join(' ');

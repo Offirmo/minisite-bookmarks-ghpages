@@ -131,7 +131,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 		let url = params.slice(-1)[0] || BOOKMARK_URL_ERROR
 		logger.log('raw url extracted:', url)
 		if (!url.includes('://'))
-			url = 'http://' + url
+			url = 'https://' + url
 		const parsed_url = parse_url(url)
 
 		// bookmark title may have spaces, so we must be smarter
