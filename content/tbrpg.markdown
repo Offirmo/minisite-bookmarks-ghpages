@@ -23,6 +23,7 @@ the-boring-rpg:
 Admin
 - Chat https://tlk.io/the-boring-rpg-reloaded
 - Reddit https://www.reddit.com/r/boringrpg/
+- OVH https://www.ovh.com/manager/web/#/configuration
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/identity
 - Heroku https://dashboard.heroku.com/apps/online-adventures/resources
@@ -32,6 +33,8 @@ Admin
 - G Webmaster https://www.google.com/webmasters/tools/home
 - G Tag manager https://tagmanager.google.com/
 - G Search https://search.google.com/search-console/welcome
+- G play https://play.google.com/apps/publish/
+- MS Apps https://appcenter.ms/apps
 
 
 Dev
