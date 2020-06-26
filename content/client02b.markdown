@@ -35,7 +35,7 @@ Team
 - 🔐 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862/Team+Lead+of+Essentials
 - 1:1 common https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
 - 1:1 ME https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684624963/Yves+-+1+1
-
+* https://skribbl.io/
 
 Delivery
 * PC-12993 Standardised cross-flow integration https://hello.atlassian.net/browse/PC-12993
