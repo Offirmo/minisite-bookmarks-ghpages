@@ -87,8 +87,9 @@ Loterie:
 To check:
 - myGov https://my.gov.au/
 - service NSW https://www.service.nsw.gov.au/
-- online forms https://onlineforms.bdm.nsw.gov.au/
+- forms NSW https://onlineforms.bdm.nsw.gov.au/
 - Sydney https://online.cityofsydney.nsw.gov.au/Account
+- Water https://ebill.sydneywater.com.au/vpo/
 - BUPA https://my.bupa.com.au/
 - ATO.gov.au https://www.ato.gov.au/
 - centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
@@ -171,6 +172,7 @@ Offline / local
 
 
 Veille:
+- https://cordova.apache.org/blog/
 - https://web.dev/blog/
 - https://www.w3.org/blog/CSS/
 - https://philipwalton.com/
