@@ -26,7 +26,13 @@ Emergency
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
 
-Team
+Ohmu
+- team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/JSW+Onboarding+Team
+- 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
+- people https://hello.atlassian.net/wiki/people/team/c814de94-1f14-4dbc-ae26-52e79ae2432a
+- trello https://trello.com/b/TP1rryir/jsw-agile-team
+
+Essentials
 - rr CF https://remotereactions.com/cross-flow
 - rr CFE https://remotereactions.com/cross-flow-essentials
 - team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam

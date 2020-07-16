@@ -21,13 +21,12 @@ the-boring-rpg:
 
 
 Admin
-- Chat https://tlk.io/the-boring-rpg-reloaded
+- tlk.io https://tlk.io/the-boring-rpg-reloaded
 - Reddit https://www.reddit.com/r/boringrpg/
 - OVH https://www.ovh.com/manager/web/#/configuration
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/identity
-- Heroku https://dashboard.heroku.com/apps/online-adventures/resources
-- AWS https://aws.amazon.com/
+- Heroku https://dashboard.heroku.com/pipelines/3da19b18-c3a6-4a10-bd8c-ae45c236da98
 - G analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
 - G Dev https://console.developers.google.com/
 - G Webmaster https://www.google.com/webmasters/tools/home
@@ -35,11 +34,12 @@ Admin
 - G Search https://search.google.com/search-console/welcome
 - G play https://play.google.com/apps/publish/
 - MS Apps https://appcenter.ms/apps
+- AWS https://aws.amazon.com/
 
 
 Dev
 - PM https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
-- GHOA https://github.com/online-adventures
+- GH OA https://github.com/online-adventures
 - GH mono https://github.com/Offirmo/offirmo-monorepo
 - GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
 - TBRPG-browser https://github.com/Offirmo/offirmo-monorepo/tree/master/A-apps/the-boring-rpg/client-browser
@@ -51,10 +51,10 @@ Dev
 marketing:
 - liste https://cobeats.com/folder/SkZNevS9H
 - buffer https://buffer.com/app/profile/5afad0a728473ccb464ca02d/buffer/queue/list
-- r/boringrpg TBRPG https://www.reddit.com/r/boringrpg/
 - all links https://linktr.ee/theboringrpg
-- Twitter https://twitter.com/TheBoringRpg
-- Instagram https://www.instagram.com/theboringrpg/
+- Twitter O https://twitter.com/Offirmo
+- Twitter TB https://twitter.com/TheBoringRpg
+- Instagram https://www.instagram.com/offirmo/
 - facebook https://www.facebook.com/boringrpg/
 - PH https://www.producthunt.com/upcoming/the-npm-rpg
 - Reddit incremental https://www.reddit.com/r/incremental_games/
