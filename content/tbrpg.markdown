@@ -22,7 +22,7 @@ the-boring-rpg:
 
 Admin
 - tlk.io https://tlk.io/the-boring-rpg-reloaded
-- Reddit https://www.reddit.com/r/boringrpg/
+- r/boringrpg https://www.reddit.com/r/boringrpg/
 - OVH https://www.ovh.com/manager/web/#/configuration
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/identity
@@ -57,7 +57,7 @@ marketing:
 - Instagram https://www.instagram.com/offirmo/
 - facebook https://www.facebook.com/boringrpg/
 - PH https://www.producthunt.com/upcoming/the-npm-rpg
-- Reddit incremental https://www.reddit.com/r/incremental_games/
+- r/incremental_games https://www.reddit.com/r/incremental_games/
 - blog prod http://www.offirmo.net/blog/
 - offirmo http://www.offirmo.net/
 - gamejolt https://gamejolt.com/
