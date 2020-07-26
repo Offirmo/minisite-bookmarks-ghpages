@@ -65,6 +65,7 @@ marketing:
 - https://help.producthunt.com/posting/how-to-post-a-product
 - r/gamedev https://www.reddit.com/r/gamedev/
 - r/gameassets https://www.reddit.com/r/gameassets/
+- r/MMORPG https://www.reddit.com/r/MMORPG/
 - https://plaza.dsolver.ca/
 - https://www.ironhorsegames.org/
 
