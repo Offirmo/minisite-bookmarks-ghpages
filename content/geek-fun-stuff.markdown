@@ -40,6 +40,8 @@ Strips
 - SMBC https://www.smbc-comics.com/index.php
 - Dilbert http://dilbert.com/
 - Bootstrapped http://bootstrappedcomic.com/post/136384581922
+- SMBC https://www.smbc-comics.com/comic/2002-09-05
+- Law & sausages https://www.lawsandsausagescomic.com/comic/101
 
 
 Webcomics
@@ -48,6 +50,9 @@ Webcomics
 - https://www.smbc-comics.com/index.php
 - OOTS http://www.giantitp.com/comics/oots0001.html
 - OOTS help http://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
+- Stevostin (fr) https://worldofwarcraft.judgehype.com/galerie/31161/
+- Les voisins du chaos https://www.lesvoisinsduchaos.com/fr/album1/chapter1
+- directory https://hiveworkscomics.com/
 
 
 Misc

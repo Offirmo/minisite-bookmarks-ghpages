@@ -86,6 +86,7 @@ Loterie:
 
 
 To check:
+- https://parentslogin.kidsoft.com.au/
 - myGov https://my.gov.au/
 - service NSW https://www.service.nsw.gov.au/
 - forms NSW https://onlineforms.bdm.nsw.gov.au/

@@ -25,23 +25,22 @@ Emergency
 - Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
+Management
+* veille https://www.thoughtworks.com/radar/techniques
+* Notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 
-Ohmu
-- team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/JSW+Onboarding+Team
+Makkuro
+- root https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
+- team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
+- my portal https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
+- SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
-- people https://hello.atlassian.net/wiki/people/team/c814de94-1f14-4dbc-ae26-52e79ae2432a
+- learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
+- Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
+- value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
 - trello https://trello.com/b/TP1rryir/jsw-agile-team
 
-Essentials
-- rr CF https://remotereactions.com/cross-flow
-- rr CFE https://remotereactions.com/cross-flow-essentials
-- team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
-- 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
-- 🔐 1:1 common notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
-- 🔐 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862/Team+Lead+of+Essentials
-- 1:1 common https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
-- 1:1 ME https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684624963/Yves+-+1+1
-* https://skribbl.io/
+
 
 Delivery
 * PC-12993 Standardised cross-flow integration https://hello.atlassian.net/browse/PC-12993
@@ -231,6 +230,7 @@ WAC Prod:
 Shipits
 
 - GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
+- 49 https://shipit.atlassian.net/browse/SHPXLIX-268
 - GIW12 https://shipit.atlassian.net/browse/GIW12-6
 - 48 https://shipit.atlassian.net/browse/SHPXLVIII-223
 - GIW11 https://shipit.atlassian.net/browse/GIW11-11
@@ -297,3 +297,15 @@ Legacy
 - sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
 - sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
 - Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
+
+
+LEGACY Essentials
+- rr CF https://remotereactions.com/cross-flow
+- rr CFE https://remotereactions.com/cross-flow-essentials
+- team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
+- 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
+- 🔐 1:1 common notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
+- 🔐 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862/Team+Lead+of+Essentials
+- 1:1 common https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
+- 1:1 ME https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684624963/Yves+-+1+1
+* https://skribbl.io/
