@@ -30,9 +30,9 @@ Management
 * Notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 
 Makkuro
-- root https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
+- █ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
 - team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
-- my portal https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
+- 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
 - learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
@@ -40,7 +40,9 @@ Makkuro
 - value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
 - trello https://trello.com/b/TP1rryir/jsw-agile-team
 
-
+Essentials
+- team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
+- 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
 
 Delivery
 * PC-12993 Standardised cross-flow integration https://hello.atlassian.net/browse/PC-12993
