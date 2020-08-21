@@ -1,4 +1,4 @@
-# client 2b
+# client 2b https://www.offirmo.net/minisite-bookmarks-ghpages/client02b
 
 pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
@@ -25,20 +25,27 @@ Emergency
 - Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
+Recent
+* https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
+* https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
+
 Management
 * veille https://www.thoughtworks.com/radar/techniques
 * Notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
+* spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
 
 Makkuro
-- █ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
-- team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
-- 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
+- ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
+- ▒ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Secondary+v3
+- ░ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Side+v3
+- + team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
+- + 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
 - learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
 - value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
-- trello https://trello.com/b/TP1rryir/jsw-agile-team
+- trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 
 Essentials
 - team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
