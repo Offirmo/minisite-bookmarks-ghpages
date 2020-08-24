@@ -39,9 +39,10 @@ Management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
 
 Makkuro
-- + team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
+- ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
 - + 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
+- + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
 - 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
 - ⚡️learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - ⚡️Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
