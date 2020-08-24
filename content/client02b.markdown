@@ -28,6 +28,10 @@ Emergency
 Recent
 * https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
 * https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
+* ▓DACIs http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=DACIs
+* Userseg https://hello.atlassian.net/wiki/spaces/PGT/pages/736211791/DACI+-+Which+team+should+own+User+Segmentation
+* build https://hello.atlassian.net/wiki/spaces/agile/pages/824763063/Makkuro+-+Engineering+FE+build+notes
+* mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+mission+vision+pillars+-+candidates
 
 Management
 * veille https://www.thoughtworks.com/radar/techniques
@@ -35,17 +39,19 @@ Management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
 
 Makkuro
-- ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
-- ▒ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Secondary+v3
-- ░ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Side+v3
 - + team portal https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
 - + 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
-- learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
-- Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
-- value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
+- ⚡️learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
+- ⚡️Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
+- ⚡️value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
+- ⚡️retro https://hello.atlassian.net/wiki/spaces/agile/pages/736299978/Makkuro+-+Ceremonies+-+Retrospectives
+- ⚡️quick pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/816581084/TLM+-+Quick+pad
 - trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
+- ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
+- ▒ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Secondary+v3
+- ░ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Side+v3
 
 Essentials
 - team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam

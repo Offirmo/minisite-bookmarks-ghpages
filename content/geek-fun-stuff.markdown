@@ -2,6 +2,7 @@
 
 Dev
 - CommitStrip http://www.commitstrip.com/en/
+- Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 - Classic Programmer Paintings http://classicprogrammerpaintings.com/
 - the coding love https://thecodinglove.com/
 - Les joies du code (fr) https://lesjoiesducode.fr/
@@ -14,6 +15,7 @@ Dev
 - web dev memes http://www.webdevelopersmeme.com/
 - dev strips https://www.monkeyuser.com/
 - r/ProgrammerHumor https://www.reddit.com/r/ProgrammerHumor/
+
 
 Design
 - The design team https://thedesignteam.io/
