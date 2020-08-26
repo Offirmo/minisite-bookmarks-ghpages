@@ -25,7 +25,8 @@ Emergency
 - Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
-Recent
+
+Hot
 * https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
 * https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
 * ▓DACIs http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=DACIs
@@ -33,16 +34,19 @@ Recent
 * build https://hello.atlassian.net/wiki/spaces/agile/pages/824763063/Makkuro+-+Engineering+FE+build+notes
 * mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+mission+vision+pillars+-+candidates
 
+
 Management
+* 🏆Tracking https://hello.atlassian.net/wiki/spaces/~yjutard/pages/365090480/Tracking
 * veille https://www.thoughtworks.com/radar/techniques
 * Notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
 
+
 Makkuro
 - ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
-- + 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
-- SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
+- ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
+- SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
 - ⚡️learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - ⚡️Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
@@ -57,10 +61,7 @@ Makkuro
 Essentials
 - team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
 - 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
-
-Delivery
-* PC-12993 Standardised cross-flow integration https://hello.atlassian.net/browse/PC-12993
-* backlog https://hello.atlassian.net/jira/software/projects/CROSSFLOW/boards/3730/backlog
+- backlog https://hello.atlassian.net/jira/software/projects/CROSSFLOW/boards/3730/backlog
 
 Growth
 - Career https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142189/Career+growth
