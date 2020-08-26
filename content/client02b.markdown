@@ -4,16 +4,17 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
-- 💡 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
+- 💡notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
 - interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
-- TLead https://hello.atlassian.net/wiki/spaces/~yjutard/pages/630663320/Notes+Team+lead
+- EngMag https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
 - good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
-- CFTasks https://hello.atlassian.net/wiki/plugins/inlinetasks/mytasks.action
+- CFTasks https://hello.atlassian.net/wiki/spaces/~yjutard/pages/719442679/Tasks
 - say sth https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 - Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 - https://cyanharlow.bitbucket.io/
+- directory https://directory.prod.atl-paas.net/
 
 
 Emergency
@@ -33,12 +34,13 @@ Hot
 * Userseg https://hello.atlassian.net/wiki/spaces/PGT/pages/736211791/DACI+-+Which+team+should+own+User+Segmentation
 * build https://hello.atlassian.net/wiki/spaces/agile/pages/824763063/Makkuro+-+Engineering+FE+build+notes
 * mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+mission+vision+pillars+-+candidates
+* terminology https://hello.atlassian.net/wiki/spaces/~yjutard/pages/727728957/RFC+-+Experiment+engineering+terminology+clarification
 
 
 Management
 * 🏆Tracking https://hello.atlassian.net/wiki/spaces/~yjutard/pages/365090480/Tracking
 * veille https://www.thoughtworks.com/radar/techniques
-* Notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
+* Notes:mgmt https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
 
 
