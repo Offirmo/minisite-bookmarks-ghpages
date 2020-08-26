@@ -180,6 +180,12 @@ define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", 
     ////////////////////////////////////
     const get_category_for_url = _.memoize(function get_category1_for_url(hostname, protocol) {
         let cat = 'other';
+        switch (hostname.slice(-14)) {
+            case '.atlassian.net':
+                return UrlCategory.pro;
+            default:
+                break;
+        }
         switch (hostname.slice(-5)) {
             case '.name':
             case '.blog':

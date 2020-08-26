@@ -50,6 +50,8 @@ logger.log('App: Hello world !', { constants: CONSTS })
 ////////////////////////////////////
 
 function get_vault_id() {
+	//return 'client02b'
+
 	let slug =
 		window.location.hash.slice(1)
 		// http://lea.verou.me/2016/11/url-rewriting-with-github-pages/

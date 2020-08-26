@@ -46217,6 +46217,12 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     ////////////////////////////////////
     const get_category_for_url = _.memoize(function get_category1_for_url(hostname, protocol) {
         let cat = 'other';
+        switch (hostname.slice(-14)) {
+            case '.atlassian.net':
+                return UrlCategory.pro;
+            default:
+                break;
+        }
         switch (hostname.slice(-5)) {
             case '.name':
             case '.blog':
@@ -46976,6 +46982,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
     logger.log('App: Hello world !', { constants: CONSTS });
     ////////////////////////////////////
     function get_vault_id() {
+        //return 'client02b'
         let slug = window.location.hash.slice(1)
             // http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
             || location.pathname.split('/').filter(x => x).slice(-1)[0]

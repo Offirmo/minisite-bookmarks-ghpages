@@ -30,6 +30,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     logger.log('App: Hello world !', { constants: CONSTS });
     ////////////////////////////////////
     function get_vault_id() {
+        //return 'client02b'
         let slug = window.location.hash.slice(1)
             // http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
             || location.pathname.split('/').filter(x => x).slice(-1)[0]

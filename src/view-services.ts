@@ -243,7 +243,7 @@ function get_color_range_for(category: UrlCategory): string[] {
 
 ////////////////////////////////////
 
-const get_category_for_url = _.memoize(function get_category1_for_url(hostname: string, protocol: string) {
+const get_category_for_url = _.memoize(function get_category1_for_url(hostname: string, protocol: string): UrlCategory {
 	let cat: UrlCategory = 'other'
 
 	switch (hostname.slice(-14)) {

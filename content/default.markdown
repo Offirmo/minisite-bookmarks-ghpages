@@ -5,7 +5,7 @@ All boards
 - ++ perso http://www.offirmo.net/minisite-bookmarks-ghpages/perso
 - bootstrap http://www.offirmo.net/minisite-bookmarks-ghpages/bootstrap
 - client01 http://www.offirmo.net/minisite-bookmarks-ghpages/client01
-- client02 http://www.offirmo.net/minisite-bookmarks-ghpages/client02
+- client02b http://www.offirmo.net/minisite-bookmarks-ghpages/client02b
 - demo http://www.offirmo.net/minisite-bookmarks-ghpages/demo
 - eco http://www.offirmo.net/minisite-bookmarks-ghpages/ecolhu
 - geek fun stuff http://www.offirmo.net/minisite-bookmarks-ghpages/geek-fun-stuff
