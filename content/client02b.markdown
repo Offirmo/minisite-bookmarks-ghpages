@@ -51,6 +51,7 @@ Makkuro
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
+- 🤯 Squad https://docs.google.com/presentation/d/1YEU35xK9Y6M7ogo9kHCm3rHVjURFmccstZbz-ltRfV8/
 - 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/737822669/Makkuro+-+shared+pages
 - 📚learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - 📢 customer sayings https://hello.atlassian.net/wiki/spaces/agile/pages/813168751
