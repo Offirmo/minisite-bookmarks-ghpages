@@ -28,6 +28,7 @@ Emergency
 
 
 Hot
+* OKRs https://hello.atlassian.net/wiki/spaces/agile/pages/821771199/2020-08-20+OKR+sparring+Meeting+notes
 * annual reviews https://hello.atlassian.net/wiki/spaces/PEOP/pages/756119708/People+Managers+Prepare+for+Performance+Review+Meetings
 * https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+Mission+pillars+Candidates
 * https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
