@@ -28,15 +28,15 @@ Emergency
 
 
 Hot
+* onboarding A4T https://hello.atlassian.net/wiki/spaces/~yjutard/pages/841474768/A4T+onboarding+review
 * OKRs https://hello.atlassian.net/wiki/spaces/agile/pages/821771199/2020-08-20+OKR+sparring+Meeting+notes
 * annual reviews https://hello.atlassian.net/wiki/spaces/PEOP/pages/756119708/People+Managers+Prepare+for+Performance+Review+Meetings
-* https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+Mission+pillars+Candidates
-* https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
-* https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
+* mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+Mission+pillars+Candidates
+* 30% error https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
+* D0DAI https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
 * ▓DACIs http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=DACIs
 * Userseg https://hello.atlassian.net/wiki/spaces/PGT/pages/736211791/DACI+-+Which+team+should+own+User+Segmentation
 * build https://hello.atlassian.net/wiki/spaces/agile/pages/824763063/Makkuro+-+Engineering+FE+build+notes
-* mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+mission+vision+pillars+-+candidates
 * terminology https://hello.atlassian.net/wiki/spaces/~yjutard/pages/727728957/RFC+-+Experiment+engineering+terminology+clarification
 
 
