@@ -195,9 +195,9 @@ function generate_color_range_bounds_for(category: UrlCategory): [string, string
 	// look for darkest acceptable variant with enough color difference
 	let intermediate_scale_highest_acceptable_index = -1
 	for (
-		let i = INTERMEDIATE_SCALE_LENGTH - 1;
-		i > intermediate_scale_lowest_acceptable_index && intermediate_scale_highest_acceptable_index === -1;
-		--i
+		let i = INTERMEDIATE_SCALE_LENGTH - 1
+		; i > intermediate_scale_lowest_acceptable_index && intermediate_scale_highest_acceptable_index === -1
+		; --i
 	) {
 		const candidate_color = intermediate_scale[i]
 

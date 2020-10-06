@@ -28,6 +28,8 @@ Emergency
 
 
 Hot
+* OPS https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
+* metrics https://hello.atlassian.net/wiki/spaces/agile/pages/837241740/Makkuro+-+Team+metrics+WIP
 * onboarding A4T https://hello.atlassian.net/wiki/spaces/~yjutard/pages/841474768/A4T+onboarding+review
 * OKRs https://hello.atlassian.net/wiki/spaces/agile/pages/821771199/2020-08-20+OKR+sparring+Meeting+notes
 * annual reviews https://hello.atlassian.net/wiki/spaces/PEOP/pages/756119708/People+Managers+Prepare+for+Performance+Review+Meetings

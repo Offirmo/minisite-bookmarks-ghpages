@@ -95,7 +95,7 @@ function get_cached_raw_data(vault_id: string): string | Rx.Observable<any> {
 function get_password$() {
 	// TODO !
 	/*
-	const input = document.querySelector('password-input');
+	const input = document.querySelector('password-input')
 	return Rx.Observable
 		.fromEvent(input, 'click')
 		.debounceTime(250)
