@@ -55,12 +55,14 @@ Makkuro
 - + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🤯 Squad https://docs.google.com/presentation/d/1YEU35xK9Y6M7ogo9kHCm3rHVjURFmccstZbz-ltRfV8/
+- 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/737822669/Makkuro+-+shared+pages
 - 📚learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - 📢 customer sayings https://hello.atlassian.net/wiki/spaces/agile/pages/813168751
 - ❓Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
 - 💰value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
 - ⚙️ Engineering https://hello.atlassian.net/wiki/spaces/agile/pages/736213274/Makkuro+-+Engineering
+- 🥞 Tech stack https://hello.atlassian.net/wiki/spaces/agile/pages/800925858/Makkuro+-+Tech+stack
 - 🕸 network https://hello.atlassian.net/wiki/spaces/agile/pages/794011584
 - 🔥 retro https://hello.atlassian.net/wiki/spaces/agile/pages/736299978/Makkuro+-+Ceremonies+-+Retrospectives
 - ⚡️quick pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/816581084/TLM+-+Quick+pad
@@ -72,8 +74,8 @@ Makkuro
 
 
 Essentials
-- team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
-- 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
+- ++ Essentials https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
+- ++ 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
 - 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
 - backlog https://hello.atlassian.net/jira/software/projects/CROSSFLOW/boards/3730/backlog
 
