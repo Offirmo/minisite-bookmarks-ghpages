@@ -2,7 +2,7 @@
 
 pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
-- centrify https://atlassian.my.centrify.com/
+- SSO https://atlassian.my.idaptive.app /
 - mail https://mail.google.com/mail/u/0/#inbox
 - 💡notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic

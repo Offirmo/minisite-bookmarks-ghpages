@@ -161,6 +161,7 @@ Dev tools:
 - transform.tools https://transform.tools/graphql-to-typescript
 - https://ezgif.com/video-to-gif
 - diagraming https://github.com/excalidraw/excalidraw
+- https://niram.org/read/
 
 
 Offline / local
