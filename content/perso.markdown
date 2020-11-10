@@ -160,7 +160,7 @@ Dev tools:
 - YT2 https://www.onlinevideoconverter.com/video-converter
 - transform.tools https://transform.tools/graphql-to-typescript
 - https://ezgif.com/video-to-gif
-- diagraming https://github.com/excalidraw/excalidraw
+- diagraming https://excalidraw.com/
 - https://niram.org/read/
 
 
@@ -176,6 +176,9 @@ Offline / local
 
 
 Veille:
+- https://www.joelonsoftware.com/
+- https://maggieappleton.com/garden
+- https://m.signalvnoise.com/
 - https://cordova.apache.org/blog/
 - https://web.dev/blog/
 - https://www.w3.org/blog/CSS/
@@ -205,7 +208,7 @@ Veille:
 - https://aerotwist.com/
 - https://blog.twitter.com/engineering/en_us.html
 - https://eng.uber.com/
-- http://boz.com/
+#- http://boz.com/
 
 
 Setup:
