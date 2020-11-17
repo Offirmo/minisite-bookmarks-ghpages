@@ -21,6 +21,7 @@ the-boring-rpg:
 
 
 Admin
+- admin https://github.com/Offirmo/offirmo-monorepo/blob/master/CONTRIBUTING/admin.md
 - tlk.io https://tlk.io/the-boring-rpg-reloaded
 - r/boringrpg https://www.reddit.com/r/boringrpg/
 - OVH https://www.ovh.com/manager/web/#/configuration
