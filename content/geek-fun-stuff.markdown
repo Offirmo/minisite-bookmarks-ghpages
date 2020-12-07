@@ -44,6 +44,7 @@ Strips
 - Bootstrapped http://bootstrappedcomic.com/post/136384581922
 - SMBC https://www.smbc-comics.com/comic/2002-09-05
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
+- Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 
 
 Webcomics

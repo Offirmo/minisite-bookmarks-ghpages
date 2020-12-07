@@ -9,9 +9,9 @@ pinned:
 
 
 the-boring-rpg:
-- ++ prod        https://www.online-adventur.es/apps/the-boring-rpg/
+- +++ prod        https://www.online-adventur.es/apps/the-boring-rpg/
 - ++ preprod     https://www.online-adventur.es/apps/the-boring-rpg-preprod/
-- staging     https://offirmo-monorepo.netlify.com/A-apps/the-boring-rpg/client-browser/dist/index.html
+- + staging     https://offirmo-monorepo.netlify.com/A-apps/the-boring-rpg/client-browser/dist/index.html
 - GH pages    https://www.offirmo.net/offirmo-monorepo/A-apps/the-boring-rpg/client-browser/dist/
 - dev:1981    http://localhost:1981/A-apps/the-boring-rpg/client-browser/dist/index.html
 - dev:8080    http://localhost:8080
@@ -21,7 +21,7 @@ the-boring-rpg:
 
 
 Admin
-- ++ monitoring https://github.com/Offirmo/offirmo-monorepo/blob/master/CONTRIBUTING/monitoring.md
+- +++ monitoring https://github.com/Offirmo/offirmo-monorepo/blob/master/CONTRIBUTING/monitoring.md
 - tlk.io https://tlk.io/the-boring-rpg-reloaded
 - r/boringrpg https://www.reddit.com/r/boringrpg/
 - OVH https://www.ovh.com/manager/web/#/configuration
