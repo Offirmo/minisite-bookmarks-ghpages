@@ -28,9 +28,8 @@ Admin
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/identity
 - Heroku https://dashboard.heroku.com/pipelines/3da19b18-c3a6-4a10-bd8c-ae45c236da98
-- G analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
-- G Dev https://console.developers.google.com/
-- G Webmaster https://www.google.com/webmasters/tools/home
+- G Analytics https://analytics.google.com/analytics/web/#/embed/report-home/a103238291w176401989p175259321
+- G Dev console https://console.developers.google.com/
 - G Tag manager https://tagmanager.google.com/
 - G Search https://search.google.com/search-console/welcome
 - G play https://play.google.com/apps/publish/

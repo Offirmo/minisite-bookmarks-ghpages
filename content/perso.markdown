@@ -176,6 +176,7 @@ Offline / local
 
 
 Veille:
+- https://overreacted.io/
 - https://www.joelonsoftware.com/
 - https://maggieappleton.com/garden
 - https://m.signalvnoise.com/
