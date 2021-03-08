@@ -176,6 +176,7 @@ Offline / local
 
 
 Veille:
+- https://www.joshwcomeau.com/
 - https://overreacted.io/
 - https://www.joelonsoftware.com/
 - https://maggieappleton.com/garden
@@ -198,7 +199,6 @@ Veille:
 - http://javascriptplayground.com/the-refactoring-tales/
 - http://www.function.fr/
 - http://news.humancoders.com/
-- https://www.joelonsoftware.com/
 - http://www.codeofhonor.com/blog/
 - http://danluu.com/
 - http://rmurphey.com/

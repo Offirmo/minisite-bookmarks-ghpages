@@ -3,7 +3,7 @@
 pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - OA https://www.online-adventur.es
-- PH ship https://www.producthunt.com/upcoming/the-npm-rpg
+- GH https://github.com/Offirmo
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 - skills https://docs.google.com/spreadsheets/d/1mVrIOtq09Mr_OJO7j2UxHr5-I-cJy26vSR-5mRO8Fwg/edit#gid=1575475590
 
@@ -68,6 +68,7 @@ marketing:
 - r/MMORPG https://www.reddit.com/r/MMORPG/
 - https://plaza.dsolver.ca/
 - https://www.ironhorsegames.org/
+- PH ship https://www.producthunt.com/upcoming/the-npm-rpg
 
 
 
