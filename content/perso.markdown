@@ -40,8 +40,9 @@ Projects
 
 💸💸💸
 - NAB https://ib.nab.com.au/nabib/index.jsp
-- Transferwise https://transferwise.com/login
+- (transfer)Wise https://wise.com/login
 - solium https://atlassian.solium.com/solium/servlet/userLogin.do
+- paypal
 - Me https://ib.mebank.com.au/
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
