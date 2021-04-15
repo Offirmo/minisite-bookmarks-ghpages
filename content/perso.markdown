@@ -42,6 +42,7 @@ Projects
 - NAB https://ib.nab.com.au/nabib/index.jsp
 - (transfer)Wise https://wise.com/login
 - solium https://atlassian.solium.com/solium/servlet/userLogin.do
+- prezzee https://www.prezzee.com.au/wallet/
 - paypal https://www.paypal.com/en/signin
 - Me https://ib.mebank.com.au/
 - Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
