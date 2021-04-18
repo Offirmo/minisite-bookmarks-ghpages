@@ -4,16 +4,17 @@ pinned:
 - ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
 - OA https://www.online-adventur.es
 - GH https://github.com/Offirmo
+- monorepo https://github.com/Offirmo/offirmo-monorepo
 - cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 - skills https://docs.google.com/spreadsheets/d/1mVrIOtq09Mr_OJO7j2UxHr5-I-cJy26vSR-5mRO8Fwg/edit#gid=1575475590
 
 
 the-boring-rpg:
-- +++ prod        https://www.online-adventur.es/apps/the-boring-rpg/
-- ++ preprod     https://www.online-adventur.es/apps/the-boring-rpg-preprod/
-- + staging     https://offirmo-monorepo.netlify.com/A-apps/the-boring-rpg/client-browser/dist/index.html
-- GH pages    https://www.offirmo.net/offirmo-monorepo/A-apps/the-boring-rpg/client-browser/dist/
-- dev:1981    http://localhost:1981/A-apps/the-boring-rpg/client-browser/dist/index.html
+- +++ prod    https://www.online-adventur.es/apps/the-boring-rpg/
+- ++ preprod  https://www.online-adventur.es/apps/the-boring-rpg-preprod/
+- + staging   https://offirmo-monorepo.netlify.com/C-apps--clients/the-boring-rpg/client-browser/dist/index.html
+- GH pages    https://www.offirmo.net/offirmo-monorepo/C-apps--clients/the-boring-rpg/client-browser/dist/
+- dev:1981    http://localhost:1981/C-apps--clients/the-boring-rpg/client-browser/dist/index.html
 - dev:8080    http://localhost:8080
 - :1234       http://localhost:1234/index.html
 - legacy      https://www.online-adventur.es/apps/legacy/tbrpg-20190307/index.html
@@ -42,8 +43,8 @@ Dev
 - GH OA https://github.com/online-adventures
 - GH mono https://github.com/Offirmo/offirmo-monorepo
 - GH Oh https://github.com/Offirmo/offirmo-monorepo/tree/master/9-oh-my-rpg
-- TBRPG-browser https://github.com/Offirmo/offirmo-monorepo/tree/master/A-apps/the-boring-rpg/client-browser
-- TBRPG-term https://github.com/Offirmo/offirmo-monorepo/tree/master/A-apps/the-boring-rpg/client-node
+- TBRPG-browser https://github.com/Offirmo/offirmo-monorepo/tree/master/C-apps--clients/the-boring-rpg/client-browser
+- TBRPG-term https://github.com/Offirmo/offirmo-monorepo/tree/master/C-apps--clients/the-boring-rpg/client-node
 - npm https://www.npmjs.com/package/the-npm-rpg
 - npm modules https://github.com/Offirmo/offirmo-monorepo/wiki/npm-modules
 
@@ -106,7 +107,7 @@ Monetize
 
 
 Misc
-- F redirect https://offirmo.netlify.com/A-apps/the-boring-rpg-browser/meta/index.html
+- F redirect https://offirmo.netlify.com/C-apps--clients/the-boring-rpg-browser/meta/index.html
 - npm org https://www.npmjs.com/org/oh-my-rpg
 - https://getstream.io/get_started/#flat_feed
 - https://humio.com/pricing.html
