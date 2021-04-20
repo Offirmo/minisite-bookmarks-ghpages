@@ -80,11 +80,12 @@ Admin:
 Loterie:
 - http://macbidouille.com/
 - https://slashdot.org/
+- HN https://github.com/xueyuanl/daily-hackernews/issues
 - https://news.google.fr/
 - https://news.google.com/news/?ned=au&gl=AU&hl=en-AU
 - feedly.com/#my
 - https://www.facebook.com/
-- https://www.linkedin.com/in/yves-jutard/
+- https://www.linkedin.com/
 - https://smile.amazon.com/
 
 
