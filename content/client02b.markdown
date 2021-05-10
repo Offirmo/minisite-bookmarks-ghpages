@@ -53,6 +53,7 @@ Makkuro
 - ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
+- OGenie https://atlassian.app.opsgenie.com/teams/dashboard/fb5d6cbd-b138-431c-83e0-c0afcca33ff8/main
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🤯 Squad https://docs.google.com/presentation/d/1YEU35xK9Y6M7ogo9kHCm3rHVjURFmccstZbz-ltRfV8/
 - 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
