@@ -7,6 +7,9 @@ Bambin -- Fr 🇫🇷
 - Titounis            https://www.youtube.com/channel/UC8I-UIlXPNS4luC4iV7dRdQ/videos?view=0&sort=dd
 - HeyKids             https://www.youtube.com/channel/UCl0KdGiwyqLJCdu5XMIz_TQ/videos?view=0&sort=dd
 - Tchoupi             https://www.youtube.com/c/tchoupi/videos?view=0&sort=dd
+- Petit ours brun     https://www.youtube.com/user/petitoursbrunbayard/videos
+- Pingu
+- père castor
 
 
 Toddler -- En 🇺🇸

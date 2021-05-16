@@ -14,7 +14,7 @@ the-boring-rpg:
 - ++ preprod  https://www.online-adventur.es/apps/the-boring-rpg-preprod/
 - + staging   https://offirmo-monorepo.netlify.com/C-apps--clients/the-boring-rpg/client-browser/dist/index.html
 - GH pages    https://www.offirmo.net/offirmo-monorepo/C-apps--clients/the-boring-rpg/client-browser/dist/
-- dev:1981    http://localhost:1981/C-apps--clients/the-boring-rpg/client-browser/dist/index.html
+- dev:1981    http://localhost:1981/C-apps--clients/the-boring-rpg/client--browser/dist/index.html
 - dev:8080    http://localhost:8080
 - :1234       http://localhost:1234/index.html
 - legacy      https://www.online-adventur.es/apps/legacy/tbrpg-20190307/index.html
