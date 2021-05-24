@@ -1,13 +1,13 @@
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - prod https://www.ecologiehumaine.eu/
 - login https://www.ecologiehumaine.eu/wp-login.php
 
 
 Outils
 - mailjet
-- socially map http://www.sociallymap.com/
+- socially map https://www.sociallymap.com/
 - hubic https://hubic.com/fr/
 
 
@@ -20,7 +20,7 @@ Dev site
 
 
 À trier
-- agora http://agora.ecologiehumaine.eu/index.php
+- agora https://agora.ecologiehumaine.eu/index.php
 
 
 Coordination

@@ -54,7 +54,7 @@ function get_vault_id() {
 
 	let slug =
 		window.location.hash.slice(1)
-		// http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
+		// https://lea.verou.me/2016/11/url-rewriting-with-github-pages/
 		|| location.pathname.split('/').filter(x => x).slice(-1)[0]
 		|| 'default'
 

@@ -1,7 +1,7 @@
 # client 2b https://www.offirmo.net/minisite-bookmarks-ghpages/client02b
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - SSO https://atlassian.my.idaptive.app /
 - mail https://mail.google.com/mail/u/0/#inbox
 - 💡notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
@@ -36,7 +36,7 @@ Hot
 * mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+Mission+pillars+Candidates
 * 30% error https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
 * D0DAI https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
-* ▓DACIs http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=DACIs
+* ▓DACIs https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=DACIs
 * Userseg https://hello.atlassian.net/wiki/spaces/PGT/pages/736211791/DACI+-+Which+team+should+own+User+Segmentation
 * build https://hello.atlassian.net/wiki/spaces/agile/pages/824763063/Makkuro+-+Engineering+FE+build+notes
 * terminology https://hello.atlassian.net/wiki/spaces/~yjutard/pages/727728957/RFC+-+Experiment+engineering+terminology+clarification
@@ -51,27 +51,28 @@ Management
 
 Makkuro
 - ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
+- ++ trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
-- + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
+- + backlog https://jdog.jira-dev.com/jira/software/projects/KURO/boards/3991/backlog
 - OGenie https://atlassian.app.opsgenie.com/teams/dashboard/fb5d6cbd-b138-431c-83e0-c0afcca33ff8/main
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🤯 Squad https://docs.google.com/presentation/d/1YEU35xK9Y6M7ogo9kHCm3rHVjURFmccstZbz-ltRfV8/
-- 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
+- + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/737822669/Makkuro+-+shared+pages
 - 📚learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - 📢 customer sayings https://hello.atlassian.net/wiki/spaces/agile/pages/813168751
 - ❓Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
 - 💰value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
-- ⚙️ Engineering https://hello.atlassian.net/wiki/spaces/agile/pages/736213274/Makkuro+-+Engineering
+- + ⚙️ Engineering https://hello.atlassian.net/wiki/spaces/agile/pages/736213274/Makkuro+-+Engineering
 - 🥞 Tech stack https://hello.atlassian.net/wiki/spaces/agile/pages/800925858/Makkuro+-+Tech+stack
 - 🕸 network https://hello.atlassian.net/wiki/spaces/agile/pages/794011584
 - 🔥 retro https://hello.atlassian.net/wiki/spaces/agile/pages/736299978/Makkuro+-+Ceremonies+-+Retrospectives
 - ⚡️quick pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/816581084/TLM+-+Quick+pad
 - ♻️ heritage https://hello.atlassian.net/wiki/spaces/agile/pages/736180791/Makkuro+-+Heritage
-- trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 - ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
-- ▒ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Secondary+v3
-- ░ http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Side+v3
+- ▒ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Secondary+v3
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Side+v3
+- + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
 
 
 Essentials
@@ -94,7 +95,7 @@ Team
 - + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
-- suggestions http://go.atlassian.com/suggestion-box
+- suggestions https://go.atlassian.com/suggestion-box
 - demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
 - FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
 - FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
@@ -122,7 +123,7 @@ Doc externe
 - jest https://github.com/Offirmo-team/wiki/wiki/Jest
 - enzyme https://airbnb.io/enzyme/docs/api/shallow.html
 - prop-types https://github.com/facebook/prop-types
-- fetch-mock http://www.wheresrhys.co.uk/fetch-mock/
+- fetch-mock https://www.wheresrhys.co.uk/fetch-mock/
 - styled components https://github.com/styled-components/styled-components
 
 

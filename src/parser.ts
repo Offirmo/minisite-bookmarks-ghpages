@@ -31,7 +31,7 @@ function is_url_separator(char: string): boolean {
 	return char === '/' || char === '.' || char === ':'
 }
 
-// http://stackoverflow.com/a/1917041/587407
+// https://stackoverflow.com/a/1917041/587407
 function sharedStart(array: string[]): string {
 	if (array.length <= 1) return ''
 
@@ -177,7 +177,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 			line = _.trim(line)
 			if (!line) return
 			if (line.startsWith('[comment]: <>')) {
-				// http://stackoverflow.com/questions/4823468/comments-in-markdown
+				// https://stackoverflow.com/questions/4823468/comments-in-markdown
 				logger.info(`line #${line_count} is a comment`)
 				return
 			}

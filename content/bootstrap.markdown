@@ -3,7 +3,7 @@
 # Bootstrap
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 
 Foo

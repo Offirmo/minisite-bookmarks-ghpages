@@ -13,10 +13,10 @@ requirejs.config({
 	// NOTE 2 : relative baseUrl base refers to *the calling html* !
 	baseUrl: '.',
 
-	// http://requirejs.org/docs/api.html#config-enforceDefine
+	// https://requirejs.org/docs/api.html#config-enforceDefine
 	enforceDefine: false,
 
-	// http://requirejs.org/docs/api.html#config-waitSeconds
+	// https://requirejs.org/docs/api.html#config-waitSeconds
 	waitSeconds: 30, // FF has trouble with the default. Strange...
 
 	map: {

@@ -1,7 +1,7 @@
 # client 2
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - centrify https://atlassian.my.centrify.com/
 - mail https://mail.google.com/mail/u/0/#inbox
 - 💡 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
@@ -37,7 +37,7 @@ Team
 - + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
 - + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
 - + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
-- suggestions http://go.atlassian.com/suggestion-box
+- suggestions https://go.atlassian.com/suggestion-box
 - demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
 - FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
 - FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
@@ -65,7 +65,7 @@ Doc externe
 - jest https://github.com/Offirmo-team/wiki/wiki/Jest
 - enzyme https://airbnb.io/enzyme/docs/api/shallow.html
 - prop-types https://github.com/facebook/prop-types
-- fetch-mock http://www.wheresrhys.co.uk/fetch-mock/
+- fetch-mock https://www.wheresrhys.co.uk/fetch-mock/
 - styled components https://github.com/styled-components/styled-components
 
 

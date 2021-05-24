@@ -1,7 +1,7 @@
 # Public open source projects
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 
 npm
@@ -34,12 +34,12 @@ Online adventures
 
 
 The Boring RPG
-- → http://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
+- → https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 
 
 Marketing
-- offirmo http://www.offirmo.net/
-- blog prod http://www.offirmo.net/blog/
+- offirmo https://www.offirmo.net/
+- blog prod https://www.offirmo.net/blog/
 - Product Hunt https://www.producthunt.com/upcoming/
 - itch.io https://offirmo.itch.io/
 - liste https://cobeats.com/folder/SkZNevS9H

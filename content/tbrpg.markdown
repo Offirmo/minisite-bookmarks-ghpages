@@ -1,7 +1,7 @@
 # TBRPG
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - OA https://www.online-adventur.es
 - GH https://github.com/Offirmo
 - monorepo https://github.com/Offirmo/offirmo-monorepo
@@ -59,8 +59,8 @@ marketing:
 - facebook https://www.facebook.com/boringrpg/
 - PH https://www.producthunt.com/upcoming/the-npm-rpg
 - r/incremental_games https://www.reddit.com/r/incremental_games/
-- blog prod http://www.offirmo.net/blog/
-- offirmo http://www.offirmo.net/
+- blog prod https://www.offirmo.net/blog/
+- offirmo https://www.offirmo.net/
 - gamejolt https://gamejolt.com/
 - indieboost https://dashboard.indieboost.com/
 - https://help.producthunt.com/posting/how-to-post-a-product

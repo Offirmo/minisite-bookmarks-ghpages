@@ -21,7 +21,7 @@ yarn build
 
 ### stack
 * typescript
-* http://reactivex.io/rxjs/
+* https://reactivex.io/rxjs/
 * RandomColor https://github.com/davidmerfield/randomColor
 * marky https://github.com/nolanlawson/marky
 

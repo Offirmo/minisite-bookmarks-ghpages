@@ -1,8 +1,8 @@
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
-- reviewers http://denis-sokolov.github.io/random-items/?items=Antoine,Bradley,Edmundas,Guillaume,Thierry,Thomas,William&count=3
-- http://www.worldtimebuddy.com/?pl=1&lid=1153671,2988507,5128581,2193733&h=2988507
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
+- reviewers https://denis-sokolov.github.io/random-items/?items=Antoine,Bradley,Edmundas,Guillaume,Thierry,Thomas,William&count=3
+- https://www.worldtimebuddy.com/?pl=1&lid=1153671,2988507,5128581,2193733&h=2988507
 
 
 
@@ -24,13 +24,13 @@ relevant wiki:
 - https://github.com/Offirmo-team/wiki/wiki/typescript
 
 relevant docs
-- http://www.material-ui.com/
+- https://www.material-ui.com/
 
 side:
-- http://thereignn.ghost.io/a-step-by-step-tdd-approach-on-testing-react-components-using-enzyme/
+- https://thereignn.ghost.io/a-step-by-step-tdd-approach-on-testing-react-components-using-enzyme/
 - https://hackernoon.com/publishing-react-components-to-npm-experiments-with-firenpm-c3a1aac3f408#.jmrlbd5ye
 - https://www.sitepoint.com/react-higher-order-components/
 - https://github.com/ivantsov/redux-subscriber
-- http://babeljs.io/users/
+- https://babeljs.io/users/
 - https://medium.com/javascript-studio/nice-and-easy-module-releases-a32c906b564e#.i0vzjl9a1
 

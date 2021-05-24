@@ -1,17 +1,17 @@
 # Personal bookmarks
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
-- All http://www.offirmo.net/minisite-bookmarks-ghpages/
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
+- All https://www.offirmo.net/minisite-bookmarks-ghpages/
 - Drive https://drive.google.com/drive/#my-drive
 - Gmail https://inbox.google.com/
 - Gmaps https://www.google.com/maps
 - myGmaps https://www.google.com/maps/d/home
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
-- devdocs http://devdocs.io/
+- devdocs https://devdocs.io/
 - GitHub https://github.com/Offirmo?tab=repositories
 - Deezer www.deezer.com
-- tops http://www.deezer.com/profile/637006841/playlists
+- tops https://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - pocket https://getpocket.com/a?src=ff_ext_saved
 - Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FAM/boards/1
@@ -33,7 +33,7 @@ Projects
 - idées https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
 - script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
 - Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
-- http://www.offirmo.net/
+- https://www.offirmo.net/
 - monorepo https://www.offirmo.net/offirmo-monorepo/
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 
@@ -50,17 +50,17 @@ Projects
 - BT super https://bt.com.au/btsuperportal
 - Boursorama https://clients.boursorama.com/connexion/
 - WeSwap https://app.weswap.com/#/fr/login
-- allianz fr http://allianz.fr/
+- allianz fr https://allianz.fr/
 - OFX https://authserver.ofx.com/account/login
 
 
 Misc
-- Tree helper http://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
+- Tree helper https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
 - library https://library.cityofsydney.nsw.gov.au/Montage/Books.aspx
 - https://framindmap.org/c/maps/
 - slack text https://cyanharlow.bitbucket.io/
 - Emoji www.emoji-cheat-sheet.com
-- Emoji http://emojihomepage.com/
+- Emoji https://emojihomepage.com/
 - AirDroid 192.168.1.11:8888
 - OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
 
@@ -68,17 +68,17 @@ Misc
 Admin:
 - Chrome Web Store https://chrome.google.com/webstore/devconsole/g06317458645218047812
 - Edge Store https://partner.microsoft.com/en-us/dashboard/microsoftedge/
-- mutadis.org http://www.mutadis.org/connexion/
-- FDC http://fundfordemocraticculture.org/connexion
-- ameliedescamps.com http://www.ameliedescamps.com/connexion
-- http://javerzac.jutard.com
-- demoetendard http://demoetendard-ef001.rhcloud.com/connexion
-- bac à sable WP http://bacasable-ef001.rhcloud.com/connexion
+- mutadis.org https://www.mutadis.org/connexion/
+- FDC https://fundfordemocraticculture.org/connexion
+- ameliedescamps.com https://www.ameliedescamps.com/connexion
+- https://javerzac.jutard.com
+- demoetendard https://demoetendard-ef001.rhcloud.com/connexion
+- bac à sable WP https://bacasable-ef001.rhcloud.com/connexion
 - webextension Firefox https://addons.mozilla.org/en-US/developers/addons
 
 
 Loterie:
-- http://macbidouille.com/
+- https://macbidouille.com/
 - https://slashdot.org/
 - HN https://github.com/xueyuanl/daily-hackernews/issues
 - https://news.google.fr/
@@ -130,32 +130,32 @@ Wiki perso:
 
 
 Docs:
-- +++ http://devdocs.io/
-- http://youmightnotneedjquery.com/
-- http://htmlreference.io/
-- http://cssreference.io/
-- Git solving http://justinhileman.info/article/git-pretty/full/
+- +++ https://devdocs.io/
+- https://youmightnotneedjquery.com/
+- https://htmlreference.io/
+- https://cssreference.io/
+- Git solving https://justinhileman.info/article/git-pretty/full/
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
 - + TS compiler options https://www.typescriptlang.org/docs/handbook/compiler-options.html
 - TS What's new https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html
-- unminifier http://unminify.com/
+- unminifier https://unminify.com/
 - https://github.com/caolan/async
-- http://momentjs.com/docs/
-- http://mochajs.org/
-- http://chaijs.com/api/bdd/
-- http://sinonjs.org/docs/
-- http://chaijs.com/plugins/chai-sinon/
-- http://usejsdoc.org/
+- https://momentjs.com/docs/
+- https://mochajs.org/
+- https://chaijs.com/api/bdd/
+- https://sinonjs.org/docs/
+- https://chaijs.com/plugins/chai-sinon/
+- https://usejsdoc.org/
 - https://httpstatuses.com/
-- ES6 http://exploringjs.com/es6/ch_modules.html
+- ES6 https://exploringjs.com/es6/ch_modules.html
 
 
 Dev tools:
 - online regexp tester https://regex101.com/
-- Color converter http://www.cssportal.com/css-color-converter/
-- Lorem Ipsum http://www.lipsum.com/feed/html
+- Color converter https://www.cssportal.com/css-color-converter/
+- Lorem Ipsum https://www.lipsum.com/feed/html
 - favicon https://realfavicongenerator.net/
-- favicon checker http://www.colinkeany.com/favicon-checker/
+- favicon checker https://www.colinkeany.com/favicon-checker/
 - Online PDF editor https://www.pdfescape.com/
 - Google PageSpeed Insights https://developers.google.com/speed/pagespeed/insights/
 - Google LightHouse https://developers.google.com/web/tools/lighthouse/#devtools
@@ -188,31 +188,31 @@ Veille:
 - https://web.dev/blog/
 - https://www.w3.org/blog/CSS/
 - https://philipwalton.com/
-- http://gamesfromwithin.com/
+- https://gamesfromwithin.com/
 - https://blog.risingstack.com/
-- http://www.stackoverflow.blog/code-for-a-living
-- http://stackoverflow.blog/engineering/
+- https://www.stackoverflow.blog/code-for-a-living
+- https://stackoverflow.blog/engineering/
 - https://github.com/dominictarr
 - https://github.com/trending/javascript?since=monthly
 - https://www.npmjs.com/browse/star
-- http://blog.npmjs.org/
-- http://www.echojs.com/
-- http://www.darkhorseanalytics.com/blog/
+- https://blog.npmjs.org/
+- https://www.echojs.com/
+- https://www.darkhorseanalytics.com/blog/
 - https://toddmotto.com/
-- http://javascriptplayground.com/the-refactoring-tales/
-- http://www.function.fr/
-- http://news.humancoders.com/
-- http://www.codeofhonor.com/blog/
-- http://danluu.com/
-- http://rmurphey.com/
-- http://crushlovely.com/journal/
+- https://javascriptplayground.com/the-refactoring-tales/
+- https://www.function.fr/
+- https://news.humancoders.com/
+- https://www.codeofhonor.com/blog/
+- https://danluu.com/
+- https://rmurphey.com/
+- https://crushlovely.com/journal/
 - https://news.js.org/
 - https://jslive.com/
-- http://lea.verou.me/
+- https://lea.verou.me/
 - https://aerotwist.com/
 - https://blog.twitter.com/engineering/en_us.html
 - https://eng.uber.com/
-#- http://boz.com/
+#- https://boz.com/
 
 
 Setup:
@@ -220,7 +220,7 @@ Setup:
 - Mac-OS https://github.com/Offirmo-team/wiki/wiki/macOS
 - dev-env https://github.com/Offirmo-team/wiki/wiki/dev-env
 - FF https://github.com/Offirmo-team/wiki/wiki/Firefox
-- DisplayLink http://www.displaylink.com/downloads/osx
+- DisplayLink https://www.displaylink.com/downloads/osx
 - bitmoji https://chrome.google.com/webstore/detail/bitmoji/bfgdeiadkckfbkeigkoncpdieiiefpig
 - new tab url https://chrome.google.com/webstore/detail/new-tab-url/njigpponciklokfkoddampoienefegcl
 - pocket https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
@@ -234,9 +234,9 @@ toread:
 - https://www.artofmanliness.com/
 - https://illimitablemen.com/
 - https://blog.risingstack.com/10-most-important-node-js-articles-2016/
-- http://thejsguy.com/2016/10/15/a-practical-introduction-to-es6-generator-functions.html
+- https://thejsguy.com/2016/10/15/a-practical-introduction-to-es6-generator-functions.html
 - https://developers.google.com/web/fundamentals/getting-started/primers/async-functions
-- http://goshakkk.name/javascript-generators-understanding-sample-use-cases/
+- https://goshakkk.name/javascript-generators-understanding-sample-use-cases/
 - https://developers.google.com/web/updates/2016/09/foreign-fetch
 - https://medium.com/re-dom/master-the-dom-bc1a2a06089b
 - https://codingbox.io/do-you-need-service-worker-in-your-web-app-d68131d65e2c?gi=8262fb9a0ddb
@@ -245,7 +245,7 @@ toread:
 
 
 tosort:
-- games http://gamestd.io/colyseus/
+- games https://gamestd.io/colyseus/
 - https://github.com/Offirmo-team/wiki/wiki/idées-de-posts-de-blog
 - aprilzero.com/explorer/august-2014/
 

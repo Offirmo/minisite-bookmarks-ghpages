@@ -1,8 +1,8 @@
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
-- prod http://www.humblecreatives.ssi.org.au/
-- login http://www.humblecreatives.ssi.org.au/wp-login.php
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
+- prod https://www.humblecreatives.ssi.org.au/
+- login https://www.humblecreatives.ssi.org.au/wp-login.php
 
 
 Coordination

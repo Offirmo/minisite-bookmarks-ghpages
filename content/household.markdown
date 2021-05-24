@@ -2,7 +2,7 @@
 
 
 pinned:
-- ↵ http://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - Drive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
 - Wiki https://github.com/Offirmo-team/wiki/wiki
@@ -26,7 +26,7 @@ Banque
 
 
 Administration Australie
-- 
+-
 
 
 Administration France
@@ -72,7 +72,7 @@ Vacances
 Sorties
 - https://www.featherdale.com.au/featherdale-experiences/
 - https://symbiozoo.com.au
-- Open air cinéma http://www.stgeorgeopenair.com.au/2018-season-program/
+- Open air cinéma https://www.stgeorgeopenair.com.au/2018-season-program/
 - coolest https://expats.atlassian.net/wiki/display/SYD/customcontent/list/ac%3Acom.atlassian.confluence.plugins.confluence-questions%3Aquestion?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions/80366722
 - fireworks https://www.webjet.com.au/travel/tips/top-ten-vantage-points-watch-sydneys-nye-fireworks/
 - fireworks https://www.google.com.au/maps/place/Clarkes+Point+Reserve/@-33.8366684,151.1619643,14.79z/data=!3m1!5s0x6b12ae378e9a7ac7:0x881f184497026074!4m12!1m6!3m5!1s0x6b12ae37b47f5b37:0x8eaddfcd1b32ca52!2sGoogle!8m2!3d-33.8666199!4d151.1958527!3m4!1s0x6b12afa7aacd3e4f:0xf017d68f9f30280!8m2!3d-33.8422812!4d151.1742836?dcr=0
