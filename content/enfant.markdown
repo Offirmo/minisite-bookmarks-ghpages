@@ -16,6 +16,7 @@ Toddler -- En 🇺🇸
 - Cocomelon           https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ/videos?view=0&sort=dd
 - Thomas & Friends    https://www.youtube.com/channel/UC0qrcKuayvbMtPj-WXNFylA/videos?view=0&sort=dd
 - Dave and Ava        https://www.youtube.com/channel/UC6zhI71atP7YLoZyIyCIGNw/videos?view=0&sort=dd
+- Bananas in pyjamas  https://iview.abc.net.au/show/bananas-in-pyjamas
 - Cheeky Monkey Club  https://www.youtube.com/c/CheekyMonkeyClub/videos
 - 100 Animals         https://www.youtube.com/watch?v=Q9JJyfnbY6g
 - ABC for kids        https://iview.abc.net.au/channel/abc4kids
