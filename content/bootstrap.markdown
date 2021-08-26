@@ -6,9 +6,9 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 Base downloads
-- +++ software updates
-- +++ git in terminal
-- +++ brew https://brew.sh/
+- +++ software updates TODO
+- +++ git in terminal TODO
+- ++ xcode TODO
 - ++ jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 
 Setup
