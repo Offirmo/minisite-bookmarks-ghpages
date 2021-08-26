@@ -10,11 +10,12 @@ Base downloads
 -
 
 Setup
-- macOs https://github.com/Offirmo-team/wiki/wiki/macOS
+- +++ dedicated repo https://github.com/Offirmo/open-source-dev-env
+- ++ macOs https://github.com/Offirmo-team/wiki/wiki/macOS
+- + Firefox https://github.com/Offirmo-team/wiki/wiki/Firefox
+- + Chrome https://github.com/Offirmo-team/wiki/wiki/Chrome
+- + WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
 - dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
-- Firefox https://github.com/Offirmo-team/wiki/wiki/Firefox
-- Chrome https://github.com/Offirmo-team/wiki/wiki/Chrome
-- WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
 
 
 Dev doc
