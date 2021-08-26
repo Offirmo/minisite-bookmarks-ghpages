@@ -5,11 +5,17 @@
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
-
-Foo
-- https://github.com/Offirmo-team/wiki/wiki/macOS
+Base downloads
+- jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 -
 
+Setup
+- macOs https://github.com/Offirmo-team/wiki/wiki/macOS
+- dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
+- Firefox https://github.com/Offirmo-team/wiki/wiki/Firefox
+- Chrome https://github.com/Offirmo-team/wiki/wiki/Chrome
+- WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
 
-Dev boc
+
+Dev doc
 - https://confluence.jetbrains.com/display/IDEADEV/Filesystem+Case-Sensitivity+Mismatch

@@ -14,7 +14,7 @@ pinned:
 - Dz tops https://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - pocket https://getpocket.com/
-- YtDownload https://vid-keeper.lbat.ch/
+- VidK https://vid-keeper.lbat.ch/
 - Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FAM/boards/1
 - TZ https://www.worldtimebuddy.com/?pl=1&lid=2147714,2988507,5375480&h=2147714
 - amazon https://www.amazon.com/

@@ -4,6 +4,10 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - SSO https://atlassian.my.idaptive.app /
 - mail https://mail.google.com/mail/u/0/#inbox
+- cal https://calendar.google.com/calendar/u/0/r/week
+- squad weekly https://hello.atlassian.net/wiki/spaces/agile/pages/986068977/Makkuro+squad+weekly+meeting+notes+-+2021
+- leads https://www.google.com/url?q=https://hello.atlassian.net/wiki/spaces/agile/pages/821241624/Onboarding%2Bleads%2Bsync&sa=D&source=calendar&ust=1630099153131603&usg=AOvVaw16jw29Alm4jB9NfrGNV1br
+-
 - Drive https://drive.google.com/drive/#my-drive
 - 💡notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
@@ -29,15 +33,13 @@ Emergency
 
 
 Hot
-* OPS https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
+- + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
+* 🤭 Past HOTs https://hello.atlassian.net/wiki/spaces/agile/pages/1231211056/Makkuro+-+Past+HOTs
 * metrics https://hello.atlassian.net/wiki/spaces/agile/pages/837241740/Makkuro+-+Team+metrics+WIP
 * onboarding A4T https://hello.atlassian.net/wiki/spaces/~yjutard/pages/841474768/A4T+onboarding+review
 * OKRs https://hello.atlassian.net/wiki/spaces/agile/pages/821771199/2020-08-20+OKR+sparring+Meeting+notes
 * annual reviews https://hello.atlassian.net/wiki/spaces/PEOP/pages/756119708/People+Managers+Prepare+for+Performance+Review+Meetings
 * mission https://hello.atlassian.net/wiki/spaces/agile/pages/824531293/Makkuro+-+Mission+pillars+Candidates
-* 30% error https://hello.atlassian.net/wiki/spaces/PGT/pages/418302593/30+error+investigation
-* D0DAI https://hello.atlassian.net/wiki/spaces/~tstevenson/pages/814084072/JSW+D0Dai+dip+investigation
-* ▓DACIs https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=DACIs
 * Userseg https://hello.atlassian.net/wiki/spaces/PGT/pages/736211791/DACI+-+Which+team+should+own+User+Segmentation
 * build https://hello.atlassian.net/wiki/spaces/agile/pages/824763063/Makkuro+-+Engineering+FE+build+notes
 * terminology https://hello.atlassian.net/wiki/spaces/~yjutard/pages/727728957/RFC+-+Experiment+engineering+terminology+clarification
@@ -59,7 +61,6 @@ Makkuro
 - + 🏆 champions https://hello.atlassian.net/wiki/spaces/agile/pages/1231890752/Makkuro+-+Team+champions
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🤯 Squad https://docs.google.com/presentation/d/1YEU35xK9Y6M7ogo9kHCm3rHVjURFmccstZbz-ltRfV8/
-- + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/737822669/Makkuro+-+shared+pages
 - 📚learnings https://hello.atlassian.net/wiki/spaces/agile/pages/819928494/Makkuro%2B-%2BResearch%2Bpast%2Blearnings
 - 📢 customer sayings https://hello.atlassian.net/wiki/spaces/agile/pages/813168751
