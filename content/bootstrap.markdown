@@ -6,9 +6,10 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 Base downloads
+- +++ software updates
+- +++ git in terminal
 - +++ brew https://brew.sh/
 - ++ jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
-- SizeUp https://www.irradiatedsoftware.com/sizeup/
 
 Setup
 - +++ open-source-dev-env https://github.com/Offirmo/open-source-dev-env
@@ -22,4 +23,4 @@ Setup
 Knowledge base
 - https://confluence.jetbrains.com/display/IDEADEV/Filesystem+Case-Sensitivity+Mismatch
 - https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository
-- 
+-
