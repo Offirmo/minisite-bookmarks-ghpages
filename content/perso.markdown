@@ -80,6 +80,7 @@ Admin:
 
 
 Loterie:
+- https://9to5mac.com/
 - https://macbidouille.com/
 - https://slashdot.org/
 - HN https://github.com/xueyuanl/daily-hackernews/issues
