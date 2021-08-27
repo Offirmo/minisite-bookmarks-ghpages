@@ -34,6 +34,7 @@ Data
 
 
 Enterprise life
+- workchronicles https://workchronicles.com/
 - le conseil corporate (fr) https://www.youtube.com/watch?v=VEPFIGMgdd0
 
 
@@ -57,6 +58,7 @@ Webcomics
 - Les voisins du chaos https://www.lesvoisinsduchaos.com/fr/album1/chapter1
 - Le cœur des ruines http://ruines.sos-webcomic.com/
 - directory https://hiveworkscomics.com/
+- Pepper & Carrot https://www.peppercarrot.com/en/webcomic/
 
 
 Misc

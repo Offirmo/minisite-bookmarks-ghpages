@@ -5,21 +5,38 @@ pinned:
 - SSO https://atlassian.my.idaptive.app /
 - mail https://mail.google.com/mail/u/0/#inbox
 - cal https://calendar.google.com/calendar/u/0/r/week
-- squad weekly https://hello.atlassian.net/wiki/spaces/agile/pages/986068977/Makkuro+squad+weekly+meeting+notes+-+2021
-- leads https://www.google.com/url?q=https://hello.atlassian.net/wiki/spaces/agile/pages/821241624/Onboarding%2Bleads%2Bsync&sa=D&source=calendar&ust=1630099153131603&usg=AOvVaw16jw29Alm4jB9NfrGNV1br
--
 - Drive https://drive.google.com/drive/#my-drive
-- 💡notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
 - interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
 - EngMag https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 - onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
-- good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
 - CFTasks https://hello.atlassian.net/wiki/spaces/~yjutard/pages/719442679/Tasks
 - say sth https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 - Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 - https://cyanharlow.bitbucket.io/
 - directory https://directory.prod.atl-paas.net/
+
+-
+
+Pin1
+- mail https://mail.google.com/mail/u/0/#inbox
+- cal https://calendar.google.com/calendar/u/0/r/week
+- squad weekly https://hello.atlassian.net/wiki/spaces/agile/pages/986068977/Makkuro+squad+weekly+meeting+notes+-+2021
+- leads https://www.google.com/url?q=https://hello.atlassian.net/wiki/spaces/agile/pages/821241624/Onboarding%2Bleads%2Bsync&sa=D&source=calendar&ust=1630099153131603&usg=AOvVaw16jw29Alm4jB9NfrGNV1br
+
+
+Pin2
+- https://docs.google.com/spreadsheets/d/1CBKTqIW2x_Kw0aBISNb6TEeJhwnOL17owP8_9qHMSzM/edit#gid=834791440
+- https://docs.google.com/spreadsheets/d/1u8CjVbv9G8rg_JayyBN_3pE2MOTzTsLUWtGxO-Q8zX4/edit?pli=1#gid=0
+- https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit?pli=1#gid=1841026727
+- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/789934507/Yves+Susana+1+1
+- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/789934710/Yves+Ross
+
+Pin3
+- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/688767586/Perpetual+Blogpost+Draft
+- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/691641962/Notes+Atlassian+benefits
+- good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
+
 
 
 Emergency
@@ -72,9 +89,15 @@ Makkuro
 - 🔥 retro https://hello.atlassian.net/wiki/spaces/agile/pages/736299978/Makkuro+-+Ceremonies+-+Retrospectives
 - ⚡️quick pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/816581084/TLM+-+Quick+pad
 - ♻️ heritage https://hello.atlassian.net/wiki/spaces/agile/pages/736180791/Makkuro+-+Heritage
-- ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23543D46&title=Main+v3+-+Makkuro
-- ▒ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Secondary+v3
-- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Side+v3
+- ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Team+Lead&color=%23ff9200
+- ▒ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Team+Lead+-+Urgent&color=%23ff2600
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=OPS
+- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Growth
+- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%230f0&title=Misc+in+progress
+- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Notes
+- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Process+improvements&color=%2300fcff
+- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%230f0&title=20%25
+- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1286703317/FY22+Annual+review+-+Yves
 - + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
 
 

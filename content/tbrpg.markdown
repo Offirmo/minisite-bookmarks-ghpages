@@ -26,6 +26,7 @@ Admin
 - +++ monitoring https://github.com/Offirmo/offirmo-monorepo/blob/master/CONTRIBUTING/monitoring.md
 - tlk.io https://tlk.io/the-boring-rpg-reloaded
 - r/boringrpg https://www.reddit.com/r/boringrpg/
+- ++ Marketing https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit?foo=bar#gid=1924471560
 - OVH https://www.ovh.com/manager/web/#/configuration
 - Sentry https://sentry.io/offirmo/the-boring-rpg/
 - Netlify https://app.netlify.com/sites/online-adventures/identity

@@ -48,3 +48,10 @@ Marial peak
 rankers
 live the second life
 beginning after the end
+
+https://manhwaworld.com/manga/fff-class-trashero-008/
+
+THE LEGENDARY MOONLIGHT SCULPTOR https://readmanganato.com/manga-wl951846/chapter-143
+Iron ladies https://readmanganato.com/manga-dp980372/chapter-309
+The gamer https://readmanganato.com/manga-ef951662/chapter-298
+https://isekaiscan.com/manga/level-1-with-s-rank-drop-rate-is-the-strongest/chapter-1/

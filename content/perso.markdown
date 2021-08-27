@@ -134,6 +134,7 @@ Wiki perso:
 
 Docs:
 - +++ https://devdocs.io/
+- ++ https://www.joshwcomeau.com/operator-lookup
 - https://youmightnotneedjquery.com/
 - https://htmlreference.io/
 - https://cssreference.io/
