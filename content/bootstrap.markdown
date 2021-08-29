@@ -9,8 +9,19 @@ Base downloads
 - +++ software updates TODO
 - +++ git in terminal TODO
 - ++ xcode TODO
-- ++ Dashlane https://www.dashlane.com/fr/download
 - ++ jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
+
+
+Firefox
+- ++ Dashlane https://www.dashlane.com/fr/download
+
+
+Chrome
+- ++ Dashlane https://www.dashlane.com/fr/download
+- uMatrix https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
+- chrome://extensions/
+- Chrome Web store https://chrome.google.com/webstore/category/extensions
+
 
 Setup
 - +++ open-source-dev-env https://github.com/Offirmo/open-source-dev-env
