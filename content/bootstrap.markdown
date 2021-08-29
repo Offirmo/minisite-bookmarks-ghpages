@@ -9,6 +9,7 @@ Base downloads
 - +++ software updates TODO
 - +++ git in terminal TODO
 - ++ xcode TODO
+- ++ Dashlane https://www.dashlane.com/fr/download
 - ++ jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 
 Setup
