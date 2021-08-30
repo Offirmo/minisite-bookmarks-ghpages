@@ -76,6 +76,7 @@ Makkuro
 - + backlog https://jdog.jira-dev.com/jira/software/projects/KURO/boards/3991/backlog
 - + OGenie https://atlassian.app.opsgenie.com/teams/dashboard/fb5d6cbd-b138-431c-83e0-c0afcca33ff8/main
 - + 🏆 champions https://hello.atlassian.net/wiki/spaces/agile/pages/1231890752/Makkuro+-+Team+champions
+- + ⚙️ Engineering https://hello.atlassian.net/wiki/spaces/agile/pages/736213274/Makkuro+-+Engineering
 - SH-Leads https://hello.atlassian.net/wiki/spaces/agile/pages/817988222/On-boarding
 - 🤯 Squad https://docs.google.com/presentation/d/1YEU35xK9Y6M7ogo9kHCm3rHVjURFmccstZbz-ltRfV8/
 - 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/737822669/Makkuro+-+shared+pages
@@ -83,22 +84,20 @@ Makkuro
 - 📢 customer sayings https://hello.atlassian.net/wiki/spaces/agile/pages/813168751
 - ❓Q&D https://hello.atlassian.net/wiki/spaces/agile/pages/737969251/Makkuro+-+Questions+Decisions
 - 💰value https://hello.atlassian.net/wiki/spaces/agile/pages/811670385/Makkuro+-+Research+what+value+should+we+surface
-- + ⚙️ Engineering https://hello.atlassian.net/wiki/spaces/agile/pages/736213274/Makkuro+-+Engineering
 - 🥞 Tech stack https://hello.atlassian.net/wiki/spaces/agile/pages/800925858/Makkuro+-+Tech+stack
 - 🕸 network https://hello.atlassian.net/wiki/spaces/agile/pages/794011584
 - 🔥 retro https://hello.atlassian.net/wiki/spaces/agile/pages/736299978/Makkuro+-+Ceremonies+-+Retrospectives
 - ⚡️quick pad https://hello.atlassian.net/wiki/spaces/~yjutard/pages/816581084/TLM+-+Quick+pad
 - ♻️ heritage https://hello.atlassian.net/wiki/spaces/agile/pages/736180791/Makkuro+-+Heritage
-- ▓ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Team+Lead&color=%23ff9200
-- ▒ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Team+Lead+-+Urgent&color=%23ff2600
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Team+Lead&color=%23ffc20e
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Team+Lead+-+Urgent&color=%23ff2600
 - ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23F00&title=OPS
-- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Growth
-- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%230f0&title=Misc+in+progress
-- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Notes
-- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Process+improvements&color=%2300fcff
-- https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%230f0&title=20%25
-- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1286703317/FY22+Annual+review+-+Yves
-- + my roadmap https://jdog.jira-dev.com/jira/software/projects/MAK/boards/4044/roadmap
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%235DA7AE&title=Growth
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%230f0&title=Misc+in+progress
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%23FFEBBC&title=Notes
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?title=Process+improvements&color=%2300fcff
+- ░ https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html?color=%230f0&title=20%25
+- ░ https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1286703317/FY22+Annual+review+-+Yves
 
 
 Essentials
@@ -131,10 +130,10 @@ Team
 
 
 Doc interne:
-- ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
-- + key repos https://hello.atlassian.net/wiki/spaces/PGT/pages/198246747/Key+repos+that+we+work+with
 - ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - ++ Yves' blog https://hello.atlassian.net/wiki/spaces/~yjutard/blog/
+- ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
+- + key repos https://hello.atlassian.net/wiki/spaces/PGT/pages/198246747/Key+repos+that+we+work+with
 - blog/LD https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/07/22/514631777/Up+to+date+list+of+LaunchDarkly+gotchas+to+watch+out+for
 - better QA https://hello.atlassian.net/wiki/spaces/~yjutard/pages/328770398/2018+11+Better+QA+less+incidents
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
