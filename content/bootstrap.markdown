@@ -16,12 +16,14 @@ Firefox
 - ++ Dashlane https://www.dashlane.com/fr/download
 - https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
 - https://addons.mozilla.org/fr/firefox/addon/tree-tabs/
+- treetabs preferences moz-extension://dc3d4e33-d50b-8148-9152-d074a83635bb/options/options.html
 - https://www.mrfdev.com/enhancer-for-youtube
 
 
 Chrome
 - ++ Dashlane https://www.dashlane.com/fr/download
 - uMatrix https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
+- uMatrix options chrome-extension://ogfcmafjalglgifnmanfmnieipoejdcf/dashboard.html
 - https://www.mrfdev.com/enhancer-for-youtube
 - chrome://extensions/
 - Chrome Web store https://chrome.google.com/webstore/category/extensions
