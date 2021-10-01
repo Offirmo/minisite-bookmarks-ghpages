@@ -17,9 +17,10 @@ Base downloads
 Firefox
 - + Dashlane https://www.dashlane.com/fr/download
 - https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
+- https://addons.mozilla.org/en-US/firefox/addon/umatrix/
 - https://addons.mozilla.org/fr/firefox/addon/tree-tabs/
+- https://addons.mozilla.org/fr/firefox/addon/enhancer-for-youtube/
 - treetabs preferences moz-extension://dc3d4e33-d50b-8148-9152-d074a83635bb/options/options.html
-- enhancer-for-youtube https://www.mrfdev.com/enhancer-for-youtube
 
 
 Chrome
