@@ -40,6 +40,7 @@ Enterprise life
 
 Strips
 - XKCD https://xkcd.com/
+- explain XKCD https://www.explainxkcd.com/
 - SMBC https://www.smbc-comics.com/index.php
 - Dilbert https://dilbert.com/
 - Bootstrapped https://bootstrappedcomic.com/post/136384581922

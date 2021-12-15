@@ -51,6 +51,7 @@ Emergency
 
 Hot
 - + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
+- + opsgenie https://atlassian.app.opsgenie.com/teams/dashboard/af76a772-5433-47c6-88f0-ffb1ad598f80/main
 * 🤭 Past HOTs https://hello.atlassian.net/wiki/spaces/agile/pages/1231211056/Makkuro+-+Past+HOTs
 * metrics https://hello.atlassian.net/wiki/spaces/agile/pages/837241740/Makkuro+-+Team+metrics+WIP
 * onboarding A4T https://hello.atlassian.net/wiki/spaces/~yjutard/pages/841474768/A4T+onboarding+review

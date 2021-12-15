@@ -13,14 +13,27 @@ DnD
 Strips:
 - XKCD https://xkcd.com/
 - Sarah Andersen https://sarahcandersen.com/page/108
+- https://www.whatsupbeanie.com/
+- https://www.monpapa.fr/
+- https://www.buddygator.com/comics
+- https://www.exocomics.com/
+- https://www.patreon.com/thelittletrashmaid
+- Mind Reaver https://www.mind-reaver-cthu.tw/
+- www.oursuperadventure.com
+- https://thepigeongazette.com/
+- https://jenny-jinya.com/
+- https://www.commitstrip.com/
 
-
-- goblins
-- Dragon's burn https://dragonsburn.tumblr.com/post/61187442826/dragons-burn-1-9
+Ongoing comics
+- OOTS
+- Girl Genius https://www.girlgeniusonline.com/
+- goblins https://www.goblinscomic.org/
 
 
 Abandoned webcomics:
 - 72 bunnies https://seventy2bunnies.comicgenesis.com/d/20050507.html
+- Dragon's burn https://dragonsburn.tumblr.com/post/61187442826/dragons-burn-1-9
+
 
 Ongoing mangas:
 - The Gamer https://mangafox.me/manga/the_gamer/v03/c163/30.html
