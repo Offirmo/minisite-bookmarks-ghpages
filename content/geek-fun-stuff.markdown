@@ -42,7 +42,7 @@ Enterprise life
 
 Strips
 - ++ XKCD https://xkcd.com/
-- ++ explain XKCD https://www.explainxkcd.com/
+- + explain XKCD https://www.explainxkcd.com/
 - ++ Dilbert https://dilbert.com/
 - + SMBC https://www.smbc-comics.com/index.php
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
@@ -50,7 +50,7 @@ Strips
 
 Webcomics
 - ++ OOTS https://www.giantitp.com/comics/oots0001.html
-- OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
++ OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 - Open source fantasy comics Pepper & Carrot https://www.peppercarrot.com/en/webcomic/
 
 
