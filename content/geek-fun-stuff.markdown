@@ -52,11 +52,7 @@ Strips
 Webcomics
 - OOTS https://www.giantitp.com/comics/oots0001.html
 - OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
-- Stevostin (fr) https://worldofwarcraft.judgehype.com/galerie/31161/
-- Les voisins du chaos https://www.lesvoisinsduchaos.com/fr/album1/chapter1
-- Le cœur des ruines http://ruines.sos-webcomic.com/
-- directory https://hiveworkscomics.com/
-- Pepper & Carrot https://www.peppercarrot.com/en/webcomic/
+- Open source fantasy comics Pepper & Carrot https://www.peppercarrot.com/en/webcomic/
 
 
 Misc

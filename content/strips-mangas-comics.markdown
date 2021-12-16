@@ -5,6 +5,11 @@
 - https://docs.google.com/spreadsheets/d/1yHDua-s5lk1Yon9IBacVtsjIUnThs7SyqaKYSBlWqXo/edit#gid=155590555
 - https://www.sheet2site.com/api/?key=1yHDua-s5lk1Yon9IBacVtsjIUnThs7SyqaKYSBlWqXo
 
+- 🇫🇷 Stevostin (fr) https://worldofwarcraft.judgehype.com/galerie/31161/
+- 🇫🇷 Les voisins du chaos https://www.lesvoisinsduchaos.com/fr/album1/chapter1
+- 🇫🇷 Le cœur des ruines http://ruines.sos-webcomic.com/
+- directory https://hiveworkscomics.com/
+
 TODDDDD
 - https://github.com/Offirmo-team/wiki/wiki/divers
 
@@ -28,7 +33,8 @@ Strips:
 - https://www.commitstrip.com/
 
 Ongoing comics
-- OOTS
+- OOTS https://www.giantitp.com/comics/oots0001.html
+- OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 - Girl Genius https://www.girlgeniusonline.com/
 - goblins https://www.goblinscomic.org/
 
