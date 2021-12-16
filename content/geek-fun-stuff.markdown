@@ -41,16 +41,16 @@ Enterprise life
 
 
 Strips
-- +++ XKCD https://xkcd.com/
+- ++ XKCD https://xkcd.com/
 - ++ explain XKCD https://www.explainxkcd.com/
-- SMBC https://www.smbc-comics.com/index.php
 - ++ Dilbert https://dilbert.com/
+- SMBC https://www.smbc-comics.com/index.php
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
 - Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 
 
 Webcomics
-- OOTS https://www.giantitp.com/comics/oots0001.html
+- ++ OOTS https://www.giantitp.com/comics/oots0001.html
 - OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 - Open source fantasy comics Pepper & Carrot https://www.peppercarrot.com/en/webcomic/
 
@@ -58,8 +58,9 @@ Webcomics
 Misc
 - https://what-if.xkcd.com/
 - picklecat https://dn.ht/picklecat/
-- https://www.scp-wiki.net/
+- SCP https://scp-wiki.wikidot.com/
 
 
 Games
 - https://www.thegreatestgameyouwilleverplay.com/
+- Cookie Clicker https://orteil.dashnet.org/cookieclicker/
