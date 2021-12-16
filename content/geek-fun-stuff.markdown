@@ -1,11 +1,11 @@
 # fun geek stuff
 
 Dev
-- CommitStrip https://www.commitstrip.com/en/
+- ++ CommitStrip https://www.commitstrip.com/en/
 - Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 - Classic Programmer Paintings https://classicprogrammerpaintings.com/
 - the coding love https://thecodinglove.com/
-- Les joies du code (fr) https://lesjoiesducode.fr/
+- 🇫🇷 Les joies du code https://lesjoiesducode.fr/
 - CSS puns https://saijogeorge.com/css-puns/
 - IT jokes https://entertainment.slashdot.org/story/17/12/18/024219/ask-slashdot-whats-the-worst-it-related-joke-youve-ever-heard
 - daily WTF https://thedailywtf.com/
@@ -34,17 +34,17 @@ Data
 
 
 Enterprise life
+- life at Google https://goomics.net/
 - workchronicles https://workchronicles.com/
-- le conseil corporate (fr) https://www.youtube.com/watch?v=VEPFIGMgdd0
+- 🇫🇷 le conseil corporate https://www.youtube.com/watch?v=VEPFIGMgdd0
 
 
 Strips
-- XKCD https://xkcd.com/
+- +++ XKCD https://xkcd.com/
 - explain XKCD https://www.explainxkcd.com/
 - SMBC https://www.smbc-comics.com/index.php
-- Dilbert https://dilbert.com/
+- ++ Dilbert https://dilbert.com/
 - Bootstrapped https://bootstrappedcomic.com/post/136384581922
-- SMBC https://www.smbc-comics.com/comic/2002-09-05
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
 - Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 
@@ -65,12 +65,8 @@ Webcomics
 Misc
 - https://what-if.xkcd.com/
 - picklecat https://dn.ht/picklecat/
-- List_of_best-selling_manga https://en.wikipedia.org/wiki/List_of_best-selling_manga
 - https://www.scp-wiki.net/
+
 
 Games
 - https://www.thegreatestgameyouwilleverplay.com/
-
-
-Videos
-- https://www.youtube.com/channel/UCFMtdiQILuTZr22sKUeAOOA

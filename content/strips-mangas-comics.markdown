@@ -68,3 +68,4 @@ THE LEGENDARY MOONLIGHT SCULPTOR https://readmanganato.com/manga-wl951846/chapte
 Iron ladies https://readmanganato.com/manga-dp980372/chapter-309
 The gamer https://readmanganato.com/manga-ef951662/chapter-298
 https://isekaiscan.com/manga/level-1-with-s-rank-drop-rate-is-the-strongest/chapter-1/
+- List_of_best-selling_manga https://en.wikipedia.org/wiki/List_of_best-selling_manga
