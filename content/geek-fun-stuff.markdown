@@ -50,7 +50,6 @@ Strips
 
 
 Webcomics
-- https://www.smbc-comics.com/index.php
 - OOTS https://www.giantitp.com/comics/oots0001.html
 - OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 - Stevostin (fr) https://worldofwarcraft.judgehype.com/galerie/31161/
