@@ -34,8 +34,8 @@ Data
 
 Enterprise life
 - ++ productivity tips https://flinkliv.com/
-- life at Google https://goomics.net/
-- workchronicles https://workchronicles.com/
+- + life at Google https://goomics.net/
+- + workchronicles https://workchronicles.com/comics/
 - Bootstrapped https://bootstrappedcomic.com/post/136384581922
 - 🇫🇷 le conseil corporate https://www.youtube.com/watch?v=VEPFIGMgdd0
 
@@ -44,9 +44,8 @@ Strips
 - ++ XKCD https://xkcd.com/
 - ++ explain XKCD https://www.explainxkcd.com/
 - ++ Dilbert https://dilbert.com/
-- SMBC https://www.smbc-comics.com/index.php
+- + SMBC https://www.smbc-comics.com/index.php
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
-- Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 
 
 Webcomics
