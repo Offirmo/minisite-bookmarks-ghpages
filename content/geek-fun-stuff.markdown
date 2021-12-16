@@ -11,7 +11,6 @@ Dev
 - daily WTF https://thedailywtf.com/
 - https://twitter.com/Trump_Developer
 - worst bug https://dev.to/ben/what-was-the-worst-bug-youve-ever-written-2cn7
-- web dev memes https://www.webdevelopersmeme.com/
 - dev strips https://www.monkeyuser.com/
 - r/ProgrammerHumor https://www.reddit.com/r/ProgrammerHumor/
 - node.js reactions https://nodejsreactions-blog.tumblr.com/
@@ -25,7 +24,7 @@ Design
 devops
 - devops reactions https://devopsreactions.tumblr.com/
 - Ubunchu https://gitlab.com/ubunchu-translators/ubunchu/tree/master
-- bash.org top https://www.bash.org/?top
+- bash.org top quotes http://www.bash.org/?top
 - https://twitter.com/dmofengineering
 
 
@@ -34,17 +33,18 @@ Data
 
 
 Enterprise life
+- ++ productivity tips https://flinkliv.com/
 - life at Google https://goomics.net/
 - workchronicles https://workchronicles.com/
+- Bootstrapped https://bootstrappedcomic.com/post/136384581922
 - 🇫🇷 le conseil corporate https://www.youtube.com/watch?v=VEPFIGMgdd0
 
 
 Strips
 - +++ XKCD https://xkcd.com/
-- explain XKCD https://www.explainxkcd.com/
+- ++ explain XKCD https://www.explainxkcd.com/
 - SMBC https://www.smbc-comics.com/index.php
 - ++ Dilbert https://dilbert.com/
-- Bootstrapped https://bootstrappedcomic.com/post/136384581922
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
 - Internet Explorer https://www.webtoons.com/en/challenge/internet-explorer/list?title_no=219164
 
