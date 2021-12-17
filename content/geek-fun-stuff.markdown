@@ -13,6 +13,7 @@ Dev
 - worst bug https://dev.to/ben/what-was-the-worst-bug-youve-ever-written-2cn7
 - dev strips https://www.monkeyuser.com/
 - r/ProgrammerHumor https://www.reddit.com/r/ProgrammerHumor/
+- https://code-cartoons.com/
 - node.js reactions https://nodejsreactions-blog.tumblr.com/
 
 
@@ -50,7 +51,7 @@ Strips
 
 Webcomics
 - ++ OOTS https://www.giantitp.com/comics/oots0001.html
-+ OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
+- + OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 - Open source fantasy comics Pepper & Carrot https://www.peppercarrot.com/en/webcomic/
 
 
