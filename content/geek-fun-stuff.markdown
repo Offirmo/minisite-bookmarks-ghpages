@@ -64,3 +64,4 @@ Misc
 Games
 - https://www.thegreatestgameyouwilleverplay.com/
 - Cookie Clicker https://orteil.dashnet.org/cookieclicker/
+- AI dungeon https://play.aidungeon.io/

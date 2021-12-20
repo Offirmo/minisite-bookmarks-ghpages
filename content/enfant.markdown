@@ -13,16 +13,17 @@ Bambin -- Fr 🇫🇷
 
 
 Toddler -- En 🇺🇸
-- Cocomelon           https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ/videos?view=0&sort=dd
-- Thomas & Friends    https://www.youtube.com/channel/UC0qrcKuayvbMtPj-WXNFylA/videos?view=0&sort=dd
+- Dave and Ava         https://www.youtube.com/channel/UC6zhI71atP7YLoZyIyCIGNw/videos?view=0&sort=dd
+- Cocomelon            https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ/videos?view=0&sort=dd
+- BB John              https://www.youtube.com/c/LittleAngelVideo/videos
+- Thomas & Friends     https://www.youtube.com/channel/UC0qrcKuayvbMtPj-WXNFylA/videos?view=0&sort=dd
 - Thomas & friends ABC https://iview.abc.net.au/show/thomas-and-friends/series/0/video/ZW2190A014S00
-- Dave and Ava        https://www.youtube.com/channel/UC6zhI71atP7YLoZyIyCIGNw/videos?view=0&sort=dd
-- Bananas in pyjamas  https://iview.abc.net.au/show/bananas-in-pyjamas
-- Cheeky Monkey Club  https://www.youtube.com/c/CheekyMonkeyClub/videos
-- 100 Animals         https://www.youtube.com/watch?v=Q9JJyfnbY6g
-- ABC for kids        https://iview.abc.net.au/channel/abc4kids
-- Bluey 🇦🇺            https://iview.abc.net.au/show/bluey/series/0/video/CH1702Q025S00
-- Gruffalo World      https://www.youtube.com/user/GruffaloWorld/videos?view=0&sort=dd&flow=grid
+- Bananas in pyjamas   https://iview.abc.net.au/show/bananas-in-pyjamas
+- Cheeky Monkey Club   https://www.youtube.com/c/CheekyMonkeyClub/videos
+- 100 Animals          https://www.youtube.com/watch?v=Q9JJyfnbY6g
+- ABC for kids         https://iview.abc.net.au/channel/abc4kids
+- Bluey 🇦🇺             https://iview.abc.net.au/show/bluey/series/0/video/CH1702Q025S00
+- Gruffalo World       https://www.youtube.com/user/GruffaloWorld/videos?view=0&sort=dd&flow=grid
 
 
 Later -- Fr 🇫🇷
