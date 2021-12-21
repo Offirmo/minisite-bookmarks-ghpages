@@ -1,11 +1,13 @@
 ////////////////////////////////////
-define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", "./templates", "./incubator/murmur_v3_32"], function (require, exports, _, typescript_string_enums_1, chroma, templates_1, murmur_v3_32_1) {
+define(["require", "exports", "tslib", "lodash", "typescript-string-enums", "chroma-js", "./templates", "./incubator/murmur_v3_32"], function (require, exports, tslib_1, _, typescript_string_enums_1, chroma_js_1, templates_1, murmur_v3_32_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.evaluate_string_width = exports.generate_background_color_for_url = exports.generate_label_from_url = void 0;
+    _ = (0, tslib_1.__importStar)(_);
+    chroma_js_1 = (0, tslib_1.__importDefault)(chroma_js_1);
     const marky = window.marky;
     ////////////////////////////////////
-    const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .com.xy, .biz
+    const UrlCategory = (0, typescript_string_enums_1.Enum)('pro', // .com, .co.xyz, .com.xy, .biz
     'geek', // .net, .io
     'perso', // .me, .name
     'other', 'special');
@@ -19,16 +21,16 @@ define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", 
     const SEED = 3712;
     const COLOR_VARIANT_COUNT = 33;
     // thank you @gka https://github.com/gka/chroma.js/issues/127#issuecomment-291457530
-    const get_CMC_color_difference = chroma.deltaE;
+    const get_CMC_color_difference = chroma_js_1.default.deltaE;
     function get_CIE76_color_difference(ref_color, test_color) {
-        const [L1, a1, b1] = chroma(ref_color).lab();
-        const [L2, a2, b2] = chroma(test_color).lab();
+        const [L1, a1, b1] = (0, chroma_js_1.default)(ref_color).lab();
+        const [L2, a2, b2] = (0, chroma_js_1.default)(test_color).lab();
         return Math.sqrt(Math.pow(L2 - L1, 2) + Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
     }
     // https://en.wikipedia.org/wiki/Color_difference#CIE94
     function get_CIE94_color_difference(ref_color, test_color) {
-        const [L1, a1, b1] = chroma(ref_color).lab();
-        const [L2, a2, b2] = chroma(test_color).lab();
+        const [L1, a1, b1] = (0, chroma_js_1.default)(ref_color).lab();
+        const [L2, a2, b2] = (0, chroma_js_1.default)(test_color).lab();
         // values for "graphic arts"
         const kL = 1;
         const K1 = 0.045;
@@ -111,8 +113,8 @@ define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", 
         const INTERMEDIATE_SCALE_LENGTH = 100;
         const base_color = UrlCategoryColorMapping[category];
         let intermediate_scale;
-        if (chroma(templates_1.BACKGROUND_COLOR).luminance() > chroma(base_color).luminance()) {
-            intermediate_scale = chroma.scale([
+        if ((0, chroma_js_1.default)(templates_1.BACKGROUND_COLOR).luminance() > (0, chroma_js_1.default)(base_color).luminance()) {
+            intermediate_scale = chroma_js_1.default.scale([
                 templates_1.BACKGROUND_COLOR,
                 base_color
             ]).colors(INTERMEDIATE_SCALE_LENGTH);
@@ -171,7 +173,7 @@ define(["require", "exports", "lodash", "typescript-string-enums", "chroma-js", 
     }
     function get_color_range_for(category) {
         const [color_range_lower_bound, color_range_upper_bound] = CACHED_COLOR_RANGE_BOUNDS[category] || generate_color_range_bounds_for(category);
-        return chroma.scale([
+        return chroma_js_1.default.scale([
             color_range_lower_bound,
             color_range_upper_bound
         ])

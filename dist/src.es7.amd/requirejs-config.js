@@ -10,9 +10,9 @@ requirejs.config({
     // NOTE 1 : non-rsrc url below may not be affected by baseUrl
     // NOTE 2 : relative baseUrl base refers to *the calling html* !
     baseUrl: '.',
-    // http://requirejs.org/docs/api.html#config-enforceDefine
+    // https://requirejs.org/docs/api.html#config-enforceDefine
     enforceDefine: false,
-    // http://requirejs.org/docs/api.html#config-waitSeconds
+    // https://requirejs.org/docs/api.html#config-waitSeconds
     waitSeconds: 30,
     map: {
         '*': {

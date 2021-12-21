@@ -1,8 +1,9 @@
 ////////////////////////////////////
-define(["require", "exports", "lodash", "./view-services"], function (require, exports, _, view_services_1) {
+define(["require", "exports", "tslib", "lodash", "./view-services"], function (require, exports, tslib_1, _, view_services_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.factory = void 0;
+    _ = (0, tslib_1.__importStar)(_);
     const marky = window.marky;
     //////////// CONSTANTS ////////////
     const DEFAULT_PAGE_TITLE = 'Awesome bookmarks';
@@ -17,7 +18,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             throw new Error('is_url_separator incorrect parameter');
         return char === '/' || char === '.' || char === ':';
     }
-    // http://stackoverflow.com/a/1917041/587407
+    // https://stackoverflow.com/a/1917041/587407
     function sharedStart(array) {
         if (array.length <= 1)
             return '';
@@ -38,7 +39,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
             logger.groupCollapsed('post_process_group');
             const auto_labelled_bookmarks = group.bookmarks.filter(bookmark => bookmark.label === bookmark.url);
             auto_labelled_bookmarks.forEach(bookmark => {
-                bookmark.label = view_services_1.generate_label_from_url(bookmark.parsed_url);
+                bookmark.label = (0, view_services_1.generate_label_from_url)(bookmark.parsed_url);
             });
             const auto_labels = auto_labelled_bookmarks.map(bookmark => bookmark.label);
             if (auto_labels.length) {
@@ -113,7 +114,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
                 label,
                 weight,
                 secure: parsed_url && parsed_url.protocol === 'https',
-                bgcolor: view_services_1.generate_background_color_for_url(parsed_url, uniformized_url),
+                bgcolor: (0, view_services_1.generate_background_color_for_url)(parsed_url, uniformized_url),
                 parsed_url,
             };
             logger.log('Final, corrected, data extracted from line (before group-level post-processing):', 
@@ -136,7 +137,7 @@ define(["require", "exports", "lodash", "./view-services"], function (require, e
                 if (!line)
                     return;
                 if (line.startsWith('[comment]: <>')) {
-                    // http://stackoverflow.com/questions/4823468/comments-in-markdown
+                    // https://stackoverflow.com/questions/4823468/comments-in-markdown
                     logger.info(`line #${line_count} is a comment`);
                     return;
                 }

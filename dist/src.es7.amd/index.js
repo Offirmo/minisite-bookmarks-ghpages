@@ -1,7 +1,9 @@
 ////////////////////////////////////
-define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
+define(["require", "exports", "tslib", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, tslib_1, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    Rx = (0, tslib_1.__importStar)(Rx);
+    TEMPLATES = (0, tslib_1.__importStar)(TEMPLATES);
     const user_timing_measurement = window.marky;
     user_timing_measurement.mark('global');
     user_timing_measurement.mark('bootstrap');
@@ -13,7 +15,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
-    const dynamic_options = simple_querystring_parser_1.parseLocationParams(window.location);
+    const dynamic_options = (0, simple_querystring_parser_1.parseLocationParams)(window.location);
     console.info({ dynamic_options });
     const logger = dynamic_options.verbose > 0
         ? console
@@ -26,13 +28,13 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             groupCollapsed: () => { },
             groupEnd: () => { },
         });
-    const { decrypt_if_needed_then_parse_data } = parser_1.factory({ logger });
+    const { decrypt_if_needed_then_parse_data } = (0, parser_1.factory)({ logger });
     logger.log('App: Hello world !', { constants: CONSTS });
     ////////////////////////////////////
     function get_vault_id() {
         //return 'client02b'
         let slug = window.location.hash.slice(1)
-            // http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
+            // https://lea.verou.me/2016/11/url-rewriting-with-github-pages/
             || location.pathname.split('/').filter(x => x).slice(-1)[0]
             || 'default';
         // GitHub demo
@@ -49,7 +51,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     }
     function fetch_raw_data(vault_id) {
         user_timing_measurement.mark('fetch_raw_data');
-        return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, {
+        return (0, retrying_fetch_1.retrying_fetch)(`content/${vault_id}.markdown`, undefined, {
             response_should_be_ok: true,
             logger,
         })
@@ -67,7 +69,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     function get_password$() {
         // TODO !
         /*
-        const input = document.querySelector('password-input');
+        const input = document.querySelector('password-input')
         return Rx.Observable
             .fromEvent(input, 'click')
             .debounceTime(250)
@@ -111,7 +113,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             //rowHeight: 36,
             //gutter: 1,
             percentPosition: false,
-            initLayout: false,
+            initLayout: false, // disable initial layout
         }));
         logger.log('Packery created on all elements');
         // attach our event handlers before running the layout
@@ -136,7 +138,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
     ////////////////////////////////////
     setTimeout(() => {
         user_timing_measurement.mark('rx setup');
-        const subjects = rx_auto_1.auto({
+        const subjects = (0, rx_auto_1.auto)({
             ////////////////////////////////////
             vault_id: get_vault_id,
             ////////////////////////////////////
@@ -151,7 +153,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             raw_data: [
                 'cached_raw_data',
                 'fresh_raw_data',
-                rx_auto_1.Operator()
+                (0, rx_auto_1.Operator)()
                     .concat()
                     .distinctUntilChanged()
             ],
@@ -164,7 +166,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
             password: [
                 'cached_password',
                 'fresh_password',
-                rx_auto_1.Operator()
+                (0, rx_auto_1.Operator)()
                     .concat()
                     .distinctUntilChanged()
             ],
@@ -173,10 +175,26 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
                 'vault_id',
                 'raw_data',
                 'password',
-                rx_auto_1.Operator().combineLatest({
+                (0, rx_auto_1.Operator)().combineLatest({
                     project: decrypt_if_needed_then_parse_data
                 })
             ],
+            /*
+             data_source: [
+             'vault_id',
+             'raw_data',
+             'password',
+             //			OPERATORS.combineLatestHashDistinctUntilChangedShallow
+             OPERATORS.combineLatestHash
+             ],
+             data: [
+             'data_source',
+             ({data_source}: ResolvedStreamDefMap) => data_source.observable$.map(v => {
+             const {vault_id, raw_data, password} = v
+             console.warn('source to feed', v, decrypt_if_needed_then_parse_data)
+             return decrypt_if_needed_then_parse_data(vault_id, raw_data, password)
+             })
+             ],*/
         }, {
             logger: console,
             validate: true,
@@ -184,7 +202,7 @@ define(["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", 
         // actions
         if (dynamic_options.verbose > 0) {
             for (let id in subjects) {
-                rx_log_1.log_observable(subjects[id].plain$, id);
+                (0, rx_log_1.log_observable)(subjects[id].plain$, id);
                 //log_observable(subjects[id].behavior$, id + 'B')
             }
         }

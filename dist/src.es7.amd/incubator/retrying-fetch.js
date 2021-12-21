@@ -4,7 +4,7 @@ define(["require", "exports", "typescript-string-enums"], function (require, exp
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.retrying_fetch = exports.RetryScheme = void 0;
     ////////////////////////////////////
-    const RetryScheme = typescript_string_enums_1.Enum('periodic', 'linear', 'geometric');
+    const RetryScheme = (0, typescript_string_enums_1.Enum)('periodic', 'linear', 'geometric');
     exports.RetryScheme = RetryScheme;
     const DEFAULT_OPTIONS = {
         response_should_be_ok: false,

@@ -2146,6 +2146,313 @@ var requirejs, require, define;
 
 define("requireLib", function(){});
 
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global global, define, System, Reflect, Promise */
+var __extends;
+var __assign;
+var __rest;
+var __decorate;
+var __param;
+var __metadata;
+var __awaiter;
+var __generator;
+var __exportStar;
+var __values;
+var __read;
+var __spread;
+var __spreadArrays;
+var __spreadArray;
+var __await;
+var __asyncGenerator;
+var __asyncDelegator;
+var __asyncValues;
+var __makeTemplateObject;
+var __importStar;
+var __importDefault;
+var __classPrivateFieldGet;
+var __classPrivateFieldSet;
+var __createBinding;
+(function (factory) {
+    var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
+    if (typeof define === "function" && define.amd) {
+        define("tslib", ["exports"], function (exports) { factory(createExporter(root, createExporter(exports))); });
+    }
+    else if (typeof module === "object" && typeof module.exports === "object") {
+        factory(createExporter(root, createExporter(module.exports)));
+    }
+    else {
+        factory(createExporter(root));
+    }
+    function createExporter(exports, previous) {
+        if (exports !== root) {
+            if (typeof Object.create === "function") {
+                Object.defineProperty(exports, "__esModule", { value: true });
+            }
+            else {
+                exports.__esModule = true;
+            }
+        }
+        return function (id, v) { return exports[id] = previous ? previous(id, v) : v; };
+    }
+})
+(function (exporter) {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+
+    __extends = function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+
+    __assign = Object.assign || function (t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+
+    __rest = function (s, e) {
+        var t = {};
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+            t[p] = s[p];
+        if (s != null && typeof Object.getOwnPropertySymbols === "function")
+            for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+                if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                    t[p[i]] = s[p[i]];
+            }
+        return t;
+    };
+
+    __decorate = function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+
+    __param = function (paramIndex, decorator) {
+        return function (target, key) { decorator(target, key, paramIndex); }
+    };
+
+    __metadata = function (metadataKey, metadataValue) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+    };
+
+    __awaiter = function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+        return new (P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+            step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+    };
+
+    __generator = function (thisArg, body) {
+        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+        function verb(n) { return function (v) { return step([n, v]); }; }
+        function step(op) {
+            if (f) throw new TypeError("Generator is already executing.");
+            while (_) try {
+                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+                if (y = 0, t) op = [op[0] & 2, t.value];
+                switch (op[0]) {
+                    case 0: case 1: t = op; break;
+                    case 4: _.label++; return { value: op[1], done: false };
+                    case 5: _.label++; y = op[1]; op = [0]; continue;
+                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                    default:
+                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                        if (t[2]) _.ops.pop();
+                        _.trys.pop(); continue;
+                }
+                op = body.call(thisArg, _);
+            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+        }
+    };
+
+    __exportStar = function(m, o) {
+        for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+    };
+
+    __createBinding = Object.create ? (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+    }) : (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        o[k2] = m[k];
+    });
+
+    __values = function (o) {
+        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+        if (m) return m.call(o);
+        if (o && typeof o.length === "number") return {
+            next: function () {
+                if (o && i >= o.length) o = void 0;
+                return { value: o && o[i++], done: !o };
+            }
+        };
+        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+    };
+
+    __read = function (o, n) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator];
+        if (!m) return o;
+        var i = m.call(o), r, ar = [], e;
+        try {
+            while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+        }
+        catch (error) { e = { error: error }; }
+        finally {
+            try {
+                if (r && !r.done && (m = i["return"])) m.call(i);
+            }
+            finally { if (e) throw e.error; }
+        }
+        return ar;
+    };
+
+    /** @deprecated */
+    __spread = function () {
+        for (var ar = [], i = 0; i < arguments.length; i++)
+            ar = ar.concat(__read(arguments[i]));
+        return ar;
+    };
+
+    /** @deprecated */
+    __spreadArrays = function () {
+        for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+        for (var r = Array(s), k = 0, i = 0; i < il; i++)
+            for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+                r[k] = a[j];
+        return r;
+    };
+
+    __spreadArray = function (to, from, pack) {
+        if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+            if (ar || !(i in from)) {
+                if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+                ar[i] = from[i];
+            }
+        }
+        return to.concat(ar || Array.prototype.slice.call(from));
+    };
+
+    __await = function (v) {
+        return this instanceof __await ? (this.v = v, this) : new __await(v);
+    };
+
+    __asyncGenerator = function (thisArg, _arguments, generator) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var g = generator.apply(thisArg, _arguments || []), i, q = [];
+        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+        function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+        function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+        function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);  }
+        function fulfill(value) { resume("next", value); }
+        function reject(value) { resume("throw", value); }
+        function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+    };
+
+    __asyncDelegator = function (o) {
+        var i, p;
+        return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+        function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+    };
+
+    __asyncValues = function (o) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var m = o[Symbol.asyncIterator], i;
+        return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+        function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+        function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+    };
+
+    __makeTemplateObject = function (cooked, raw) {
+        if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+        return cooked;
+    };
+
+    var __setModuleDefault = Object.create ? (function(o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+    }) : function(o, v) {
+        o["default"] = v;
+    };
+
+    __importStar = function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+
+    __importDefault = function (mod) {
+        return (mod && mod.__esModule) ? mod : { "default": mod };
+    };
+
+    __classPrivateFieldGet = function (receiver, state, kind, f) {
+        if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+    };
+
+    __classPrivateFieldSet = function (receiver, state, value, kind, f) {
+        if (kind === "m") throw new TypeError("Private method is not writable");
+        if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+    };
+
+    exporter("__extends", __extends);
+    exporter("__assign", __assign);
+    exporter("__rest", __rest);
+    exporter("__decorate", __decorate);
+    exporter("__param", __param);
+    exporter("__metadata", __metadata);
+    exporter("__awaiter", __awaiter);
+    exporter("__generator", __generator);
+    exporter("__exportStar", __exportStar);
+    exporter("__createBinding", __createBinding);
+    exporter("__values", __values);
+    exporter("__read", __read);
+    exporter("__spread", __spread);
+    exporter("__spreadArrays", __spreadArrays);
+    exporter("__spreadArray", __spreadArray);
+    exporter("__await", __await);
+    exporter("__asyncGenerator", __asyncGenerator);
+    exporter("__asyncDelegator", __asyncDelegator);
+    exporter("__asyncValues", __asyncValues);
+    exporter("__makeTemplateObject", __makeTemplateObject);
+    exporter("__importStar", __importStar);
+    exporter("__importDefault", __importDefault);
+    exporter("__classPrivateFieldGet", __classPrivateFieldGet);
+    exporter("__classPrivateFieldSet", __classPrivateFieldSet);
+});
+
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
     typeof define === 'function' && define.amd ? define('@reactivex/rxjs',['exports'], factory) :
@@ -22009,14 +22316,15 @@ Object.defineProperty(exports, '__esModule', { value: true });
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.15';
+  var VERSION = '4.17.21';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
 
   /** Error message constants. */
   var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
-      FUNC_ERROR_TEXT = 'Expected a function';
+      FUNC_ERROR_TEXT = 'Expected a function',
+      INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.template`';
 
   /** Used to stand-in for `undefined` hash values. */
   var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -22149,10 +22457,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
   var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
       reHasRegExpChar = RegExp(reRegExpChar.source);
 
-  /** Used to match leading and trailing whitespace. */
-  var reTrim = /^\s+|\s+$/g,
-      reTrimStart = /^\s+/,
-      reTrimEnd = /\s+$/;
+  /** Used to match leading whitespace. */
+  var reTrimStart = /^\s+/;
+
+  /** Used to match a single whitespace character. */
+  var reWhitespace = /\s/;
 
   /** Used to match wrap detail comments. */
   var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/,
@@ -22161,6 +22470,18 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
   /** Used to match words composed of alphanumeric characters. */
   var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
+
+  /**
+   * Used to validate the `validate` option in `_.template` variable.
+   *
+   * Forbids characters which could potentially change the meaning of the function argument definition:
+   * - "()," (modification of function parameters)
+   * - "=" (default value)
+   * - "[]{}" (destructuring of function parameters)
+   * - "/" (beginning of a comment)
+   * - whitespace
+   */
+  var reForbiddenIdentifierChars = /[()=,{}\[\]\/\s]/;
 
   /** Used to match backslashes in property paths. */
   var reEscapeChar = /\\(\\)?/g;
@@ -22991,6 +23312,19 @@ Object.defineProperty(exports, '__esModule', { value: true });
   }
 
   /**
+   * The base implementation of `_.trim`.
+   *
+   * @private
+   * @param {string} string The string to trim.
+   * @returns {string} Returns the trimmed string.
+   */
+  function baseTrim(string) {
+    return string
+      ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, '')
+      : string;
+  }
+
+  /**
    * The base implementation of `_.unary` without support for storing metadata.
    *
    * @private
@@ -23321,6 +23655,21 @@ Object.defineProperty(exports, '__esModule', { value: true });
     return hasUnicode(string)
       ? unicodeToArray(string)
       : asciiToArray(string);
+  }
+
+  /**
+   * Used by `_.trim` and `_.trimEnd` to get the index of the last non-whitespace
+   * character of `string`.
+   *
+   * @private
+   * @param {string} string The string to inspect.
+   * @returns {number} Returns the index of the last non-whitespace character.
+   */
+  function trimmedEndIndex(string) {
+    var index = string.length;
+
+    while (index-- && reWhitespace.test(string.charAt(index))) {}
+    return index;
   }
 
   /**
@@ -25716,8 +26065,21 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * @returns {Array} Returns the new sorted array.
      */
     function baseOrderBy(collection, iteratees, orders) {
+      if (iteratees.length) {
+        iteratees = arrayMap(iteratees, function(iteratee) {
+          if (isArray(iteratee)) {
+            return function(value) {
+              return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);
+            }
+          }
+          return iteratee;
+        });
+      } else {
+        iteratees = [identity];
+      }
+
       var index = -1;
-      iteratees = arrayMap(iteratees.length ? iteratees : [identity], baseUnary(getIteratee()));
+      iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
 
       var result = baseMap(collection, function(value, key, collection) {
         var criteria = arrayMap(iteratees, function(iteratee) {
@@ -25974,6 +26336,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
         var key = toKey(path[index]),
             newValue = value;
 
+        if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+          return object;
+        }
+
         if (index != lastIndex) {
           var objValue = nested[key];
           newValue = customizer ? customizer(objValue, key, nested) : undefined;
@@ -26126,11 +26492,14 @@ Object.defineProperty(exports, '__esModule', { value: true });
      *  into `array`.
      */
     function baseSortedIndexBy(array, value, iteratee, retHighest) {
-      value = iteratee(value);
-
       var low = 0,
-          high = array == null ? 0 : array.length,
-          valIsNaN = value !== value,
+          high = array == null ? 0 : array.length;
+      if (high === 0) {
+        return 0;
+      }
+
+      value = iteratee(value);
+      var valIsNaN = value !== value,
           valIsNull = value === null,
           valIsSymbol = isSymbol(value),
           valIsUndefined = value === undefined;
@@ -27615,10 +27984,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
       if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
         return false;
       }
-      // Assume cyclic values are equal.
-      var stacked = stack.get(array);
-      if (stacked && stack.get(other)) {
-        return stacked == other;
+      // Check that cyclic values are equal.
+      var arrStacked = stack.get(array);
+      var othStacked = stack.get(other);
+      if (arrStacked && othStacked) {
+        return arrStacked == other && othStacked == array;
       }
       var index = -1,
           result = true,
@@ -27780,10 +28150,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
           return false;
         }
       }
-      // Assume cyclic values are equal.
-      var stacked = stack.get(object);
-      if (stacked && stack.get(other)) {
-        return stacked == other;
+      // Check that cyclic values are equal.
+      var objStacked = stack.get(object);
+      var othStacked = stack.get(other);
+      if (objStacked && othStacked) {
+        return objStacked == other && othStacked == object;
       }
       var result = true;
       stack.set(object, other);
@@ -31164,6 +31535,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * // The `_.property` iteratee shorthand.
      * _.filter(users, 'active');
      * // => objects for ['barney']
+     *
+     * // Combining several predicates using `_.overEvery` or `_.overSome`.
+     * _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
+     * // => objects for ['fred', 'barney']
      */
     function filter(collection, predicate) {
       var func = isArray(collection) ? arrayFilter : baseFilter;
@@ -31913,15 +32288,15 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * var users = [
      *   { 'user': 'fred',   'age': 48 },
      *   { 'user': 'barney', 'age': 36 },
-     *   { 'user': 'fred',   'age': 40 },
+     *   { 'user': 'fred',   'age': 30 },
      *   { 'user': 'barney', 'age': 34 }
      * ];
      *
      * _.sortBy(users, [function(o) { return o.user; }]);
-     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 30]]
      *
      * _.sortBy(users, ['user', 'age']);
-     * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+     * // => objects for [['barney', 34], ['barney', 36], ['fred', 30], ['fred', 48]]
      */
     var sortBy = baseRest(function(collection, iteratees) {
       if (collection == null) {
@@ -34465,7 +34840,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
       if (typeof value != 'string') {
         return value === 0 ? value : +value;
       }
-      value = value.replace(reTrim, '');
+      value = baseTrim(value);
       var isBinary = reIsBinary.test(value);
       return (isBinary || reIsOctal.test(value))
         ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
@@ -36796,11 +37171,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
       // Use a sourceURL for easier debugging.
       // The sourceURL gets injected into the source that's eval-ed, so be careful
-      // with lookup (in case of e.g. prototype pollution), and strip newlines if any.
-      // A newline wouldn't be a valid sourceURL anyway, and it'd enable code injection.
+      // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
+      // and escape the comment, thus injecting code that gets evaled.
       var sourceURL = '//# sourceURL=' +
         (hasOwnProperty.call(options, 'sourceURL')
-          ? (options.sourceURL + '').replace(/[\r\n]/g, ' ')
+          ? (options.sourceURL + '').replace(/\s/g, ' ')
           : ('lodash.templateSources[' + (++templateCounter) + ']')
         ) + '\n';
 
@@ -36833,12 +37208,16 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
       // If `variable` is not specified wrap a with-statement around the generated
       // code to add the data object to the top of the scope chain.
-      // Like with sourceURL, we take care to not check the option's prototype,
-      // as this configuration is a code injection vector.
       var variable = hasOwnProperty.call(options, 'variable') && options.variable;
       if (!variable) {
         source = 'with (obj) {\n' + source + '\n}\n';
       }
+      // Throw an error if a forbidden character was found in `variable`, to prevent
+      // potential command injection attacks.
+      else if (reForbiddenIdentifierChars.test(variable)) {
+        throw new Error(INVALID_TEMPL_VAR_ERROR_TEXT);
+      }
+
       // Cleanup code by stripping empty strings.
       source = (isEvaluating ? source.replace(reEmptyStringLeading, '') : source)
         .replace(reEmptyStringMiddle, '$1')
@@ -36952,7 +37331,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
     function trim(string, chars, guard) {
       string = toString(string);
       if (string && (guard || chars === undefined)) {
-        return string.replace(reTrim, '');
+        return baseTrim(string);
       }
       if (!string || !(chars = baseToString(chars))) {
         return string;
@@ -36987,7 +37366,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
     function trimEnd(string, chars, guard) {
       string = toString(string);
       if (string && (guard || chars === undefined)) {
-        return string.replace(reTrimEnd, '');
+        return string.slice(0, trimmedEndIndex(string) + 1);
       }
       if (!string || !(chars = baseToString(chars))) {
         return string;
@@ -37541,6 +37920,9 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * values against any array or object value, respectively. See `_.isEqual`
      * for a list of supported value comparisons.
      *
+     * **Note:** Multiple values can be checked by combining several matchers
+     * using `_.overSome`
+     *
      * @static
      * @memberOf _
      * @since 3.0.0
@@ -37556,6 +37938,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
      *
      * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
      * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+     *
+     * // Checking for several possible values
+     * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matches(source) {
       return baseMatches(baseClone(source, CLONE_DEEP_FLAG));
@@ -37569,6 +37955,9 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * **Note:** Partial comparisons will match empty array and empty object
      * `srcValue` values against any array or object value, respectively. See
      * `_.isEqual` for a list of supported value comparisons.
+     *
+     * **Note:** Multiple values can be checked by combining several matchers
+     * using `_.overSome`
      *
      * @static
      * @memberOf _
@@ -37586,6 +37975,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
      *
      * _.find(objects, _.matchesProperty('a', 4));
      * // => { 'a': 4, 'b': 5, 'c': 6 }
+     *
+     * // Checking for several possible values
+     * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
+     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matchesProperty(path, srcValue) {
       return baseMatchesProperty(path, baseClone(srcValue, CLONE_DEEP_FLAG));
@@ -37809,6 +38202,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * Creates a function that checks if **all** of the `predicates` return
      * truthy when invoked with the arguments it receives.
      *
+     * Following shorthands are possible for providing predicates.
+     * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+     * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+     *
      * @static
      * @memberOf _
      * @since 4.0.0
@@ -37835,6 +38232,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
      * Creates a function that checks if **any** of the `predicates` return
      * truthy when invoked with the arguments it receives.
      *
+     * Following shorthands are possible for providing predicates.
+     * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+     * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+     *
      * @static
      * @memberOf _
      * @since 4.0.0
@@ -37854,6 +38255,9 @@ Object.defineProperty(exports, '__esModule', { value: true });
      *
      * func(NaN);
      * // => false
+     *
+     * var matchesFunc = _.overSome([{ 'a': 1 }, { 'a': 2 }])
+     * var matchesPropertyFunc = _.overSome([['a', 1], ['a', 2]])
      */
     var overSome = createOver(arraySome);
 
@@ -43047,7 +43451,7 @@ define('app/incubator/retrying-fetch',["require", "exports", "typescript-string-
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.retrying_fetch = exports.RetryScheme = void 0;
     ////////////////////////////////////
-    const RetryScheme = typescript_string_enums_1.Enum('periodic', 'linear', 'geometric');
+    const RetryScheme = (0, typescript_string_enums_1.Enum)('periodic', 'linear', 'geometric');
     exports.RetryScheme = RetryScheme;
     const DEFAULT_OPTIONS = {
         response_should_be_ok: false,
@@ -45924,11 +46328,11 @@ define('app/templates',["require", "exports"], function (require, exports) {
             // TODO put a clear error icon
             label = '[error missing link]';
         }
-        else if (parsed_url.protocol === 'https:' || parsed_url.protocol === 'http:') {
-            // http://stackoverflow.com/questions/5119041/how-can-i-get-a-web-sites-favicon
+        else if (parsed_url.protocol === 'https:' || parsed_url.protocol === 'https:') {
+            // https://stackoverflow.com/questions/5119041/how-can-i-get-a-web-sites-favicon
             favicon = `<span class="icon"><img height="16" width="16" src='https://www.google.com/s2/favicons?domain=${parsed_url.hostname}' /></span>`;
-            //favicon = `<span class="icon"><img height="20" width="20" src='http://f1.allesedv.com/24/${parsed_url.hostname}' /></span>`
-            //favicon = `<span class="icon"><img height="16" width="16" src='http://favicon.yandex.net/favicon/${parsed_url.hostname}' /></span>`
+            //favicon = `<span class="icon"><img height="20" width="20" src='https://f1.allesedv.com/24/${parsed_url.hostname}' /></span>`
+            //favicon = `<span class="icon"><img height="16" width="16" src='https://favicon.yandex.net/favicon/${parsed_url.hostname}' /></span>`
         }
         return `
 <a class="grid-item grid-item--weight${alternative === -1 ? 0 : weight} ${tachyons_classes}"
@@ -45976,9 +46380,9 @@ ${items}
  * JS Implementation of MurmurHash3 (r136) (as of May 20, 2011)
  *
  * @author <a href="mailto:gary.court@gmail.com">Gary Court</a>
- * @see http://github.com/garycourt/murmurhash-js
+ * @see https://github.com/garycourt/murmurhash-js
  * @author <a href="mailto:aappleby@gmail.com">Austin Appleby</a>
- * @see http://sites.google.com/site/murmurhash/
+ * @see https://sites.google.com/site/murmurhash/
  *
  * @param {string} key ASCII only
  * @param {number} seed Positive integer only
@@ -46036,13 +46440,15 @@ define('app/incubator/murmur_v3_32',["require", "exports"], function (require, e
 });
 //# sourceMappingURL=murmur_v3_32.js.map;
 ////////////////////////////////////
-define('app/view-services',["require", "exports", "lodash", "typescript-string-enums", "chroma-js", "./templates", "./incubator/murmur_v3_32"], function (require, exports, _, typescript_string_enums_1, chroma, templates_1, murmur_v3_32_1) {
+define('app/view-services',["require", "exports", "tslib", "lodash", "typescript-string-enums", "chroma-js", "./templates", "./incubator/murmur_v3_32"], function (require, exports, tslib_1, _, typescript_string_enums_1, chroma_js_1, templates_1, murmur_v3_32_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.evaluate_string_width = exports.generate_background_color_for_url = exports.generate_label_from_url = void 0;
+    _ = (0, tslib_1.__importStar)(_);
+    chroma_js_1 = (0, tslib_1.__importDefault)(chroma_js_1);
     const marky = window.marky;
     ////////////////////////////////////
-    const UrlCategory = typescript_string_enums_1.Enum('pro', // .com, .co.xyz, .com.xy, .biz
+    const UrlCategory = (0, typescript_string_enums_1.Enum)('pro', // .com, .co.xyz, .com.xy, .biz
     'geek', // .net, .io
     'perso', // .me, .name
     'other', 'special');
@@ -46056,16 +46462,16 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     const SEED = 3712;
     const COLOR_VARIANT_COUNT = 33;
     // thank you @gka https://github.com/gka/chroma.js/issues/127#issuecomment-291457530
-    const get_CMC_color_difference = chroma.deltaE;
+    const get_CMC_color_difference = chroma_js_1.default.deltaE;
     function get_CIE76_color_difference(ref_color, test_color) {
-        const [L1, a1, b1] = chroma(ref_color).lab();
-        const [L2, a2, b2] = chroma(test_color).lab();
+        const [L1, a1, b1] = (0, chroma_js_1.default)(ref_color).lab();
+        const [L2, a2, b2] = (0, chroma_js_1.default)(test_color).lab();
         return Math.sqrt(Math.pow(L2 - L1, 2) + Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
     }
     // https://en.wikipedia.org/wiki/Color_difference#CIE94
     function get_CIE94_color_difference(ref_color, test_color) {
-        const [L1, a1, b1] = chroma(ref_color).lab();
-        const [L2, a2, b2] = chroma(test_color).lab();
+        const [L1, a1, b1] = (0, chroma_js_1.default)(ref_color).lab();
+        const [L2, a2, b2] = (0, chroma_js_1.default)(test_color).lab();
         // values for "graphic arts"
         const kL = 1;
         const K1 = 0.045;
@@ -46148,8 +46554,8 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
         const INTERMEDIATE_SCALE_LENGTH = 100;
         const base_color = UrlCategoryColorMapping[category];
         let intermediate_scale;
-        if (chroma(templates_1.BACKGROUND_COLOR).luminance() > chroma(base_color).luminance()) {
-            intermediate_scale = chroma.scale([
+        if ((0, chroma_js_1.default)(templates_1.BACKGROUND_COLOR).luminance() > (0, chroma_js_1.default)(base_color).luminance()) {
+            intermediate_scale = chroma_js_1.default.scale([
                 templates_1.BACKGROUND_COLOR,
                 base_color
             ]).colors(INTERMEDIATE_SCALE_LENGTH);
@@ -46208,7 +46614,7 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
     }
     function get_color_range_for(category) {
         const [color_range_lower_bound, color_range_upper_bound] = CACHED_COLOR_RANGE_BOUNDS[category] || generate_color_range_bounds_for(category);
-        return chroma.scale([
+        return chroma_js_1.default.scale([
             color_range_lower_bound,
             color_range_upper_bound
         ])
@@ -46327,10 +46733,11 @@ define('app/view-services',["require", "exports", "lodash", "typescript-string-e
 });
 //# sourceMappingURL=view-services.js.map;
 ////////////////////////////////////
-define('app/parser',["require", "exports", "lodash", "./view-services"], function (require, exports, _, view_services_1) {
+define('app/parser',["require", "exports", "tslib", "lodash", "./view-services"], function (require, exports, tslib_1, _, view_services_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.factory = void 0;
+    _ = (0, tslib_1.__importStar)(_);
     const marky = window.marky;
     //////////// CONSTANTS ////////////
     const DEFAULT_PAGE_TITLE = 'Awesome bookmarks';
@@ -46345,7 +46752,7 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
             throw new Error('is_url_separator incorrect parameter');
         return char === '/' || char === '.' || char === ':';
     }
-    // http://stackoverflow.com/a/1917041/587407
+    // https://stackoverflow.com/a/1917041/587407
     function sharedStart(array) {
         if (array.length <= 1)
             return '';
@@ -46366,7 +46773,7 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
             logger.groupCollapsed('post_process_group');
             const auto_labelled_bookmarks = group.bookmarks.filter(bookmark => bookmark.label === bookmark.url);
             auto_labelled_bookmarks.forEach(bookmark => {
-                bookmark.label = view_services_1.generate_label_from_url(bookmark.parsed_url);
+                bookmark.label = (0, view_services_1.generate_label_from_url)(bookmark.parsed_url);
             });
             const auto_labels = auto_labelled_bookmarks.map(bookmark => bookmark.label);
             if (auto_labels.length) {
@@ -46441,7 +46848,7 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
                 label,
                 weight,
                 secure: parsed_url && parsed_url.protocol === 'https',
-                bgcolor: view_services_1.generate_background_color_for_url(parsed_url, uniformized_url),
+                bgcolor: (0, view_services_1.generate_background_color_for_url)(parsed_url, uniformized_url),
                 parsed_url,
             };
             logger.log('Final, corrected, data extracted from line (before group-level post-processing):', 
@@ -46464,7 +46871,7 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
                 if (!line)
                     return;
                 if (line.startsWith('[comment]: <>')) {
-                    // http://stackoverflow.com/questions/4823468/comments-in-markdown
+                    // https://stackoverflow.com/questions/4823468/comments-in-markdown
                     logger.info(`line #${line_count} is a comment`);
                     return;
                 }
@@ -46550,88 +46957,101 @@ define('app/parser',["require", "exports", "lodash", "./view-services"], functio
     exports.factory = factory;
 });
 //# sourceMappingURL=parser.js.map;
-(function (exports) {
-'use strict';
+var marky = (function (exports) {
+  'use strict';
 
-/* global performance */
-var perf = typeof performance !== 'undefined' && performance;
+  /* global performance */
+  var perf = typeof performance !== 'undefined' && performance;
 
-var now = perf && perf.now ? function () { return perf.now(); } : function () { return Date.now(); };
+  var now = perf && perf.now ? function () { return perf.now(); } : function () { return Date.now(); }
 
-function throwIfEmpty (name) {
-  if (!name) {
-    throw new Error('name must be non-empty')
-  }
-}
-
-// simple binary sort insertion
-function insertSorted (arr, item) {
-  var low = 0;
-  var high = arr.length;
-  var mid;
-  while (low < high) {
-    mid = (low + high) >>> 1; // like (num / 2) but faster
-    if (arr[mid].startTime < item.startTime) {
-      low = mid + 1;
-    } else {
-      high = mid;
+  function throwIfEmpty (name) {
+    if (!name) {
+      throw new Error('name must be non-empty')
     }
   }
-  arr.splice(low, 0, item);
-}
 
-if (perf && perf.mark) {
-  exports.mark = function (name) {
-    throwIfEmpty(name);
-    perf.mark(("start " + name));
-  };
-  exports.stop = function (name) {
-    throwIfEmpty(name);
-    perf.mark(("end " + name));
-    perf.measure(name, ("start " + name), ("end " + name));
-    var entries = perf.getEntriesByName(name);
-    return entries[entries.length - 1]
-  };
-  exports.getEntries = function () { return perf.getEntriesByType('measure'); };
-  exports.clear = function () {
-    perf.clearMarks();
-    perf.clearMeasures();
-  };
-} else {
-  var marks = {};
-  var entries = [];
-  exports.mark = function (name) {
-    throwIfEmpty(name);
-    var startTime = now();
-    marks['$' + name] = startTime;
-  };
-  exports.stop = function (name) {
-    throwIfEmpty(name);
-    var endTime = now();
-    var startTime = marks['$' + name];
-    if (!startTime) {
-      throw new Error(("no known mark: " + name))
+  // simple binary sort insertion
+  function insertSorted (arr, item) {
+    var low = 0;
+    var high = arr.length;
+    var mid;
+    while (low < high) {
+      mid = (low + high) >>> 1; // like (num / 2) but faster
+      if (arr[mid].startTime < item.startTime) {
+        low = mid + 1;
+      } else {
+        high = mid;
+      }
     }
-    var entry = {
-      startTime: startTime,
-      name: name,
-      duration: endTime - startTime,
-      entryType: 'measure'
+    arr.splice(low, 0, item);
+  }
+
+  exports.mark = void 0;
+  exports.stop = void 0;
+  exports.getEntries = void 0;
+  exports.clear = void 0;
+
+  if (
+    perf &&
+    perf.mark &&
+    perf.getEntriesByName &&
+    perf.getEntriesByType &&
+    perf.clearMeasures
+  ) {
+    exports.mark = function (name) {
+      throwIfEmpty(name);
+      perf.mark(("start " + name));
     };
-    // per the spec this should be at least 150:
-    // https://www.w3.org/TR/resource-timing-1/#extensions-performance-interface
-    // we just have no limit, per Chrome and Edge's de-facto behavior
-    insertSorted(entries, entry);
-    return entry
-  };
-  exports.getEntries = function () { return entries; };
-  exports.clear = function () {
-    marks = {};
-    entries = [];
-  };
-}
+    exports.stop = function (name) {
+      throwIfEmpty(name);
+      perf.mark(("end " + name));
+      perf.measure(name, ("start " + name), ("end " + name));
+      var entries = perf.getEntriesByName(name);
+      return entries[entries.length - 1]
+    };
+    exports.getEntries = function () { return perf.getEntriesByType('measure'); };
+    exports.clear = function () {
+      perf.clearMarks();
+      perf.clearMeasures();
+    };
+  } else {
+    var marks = {};
+    var entries = [];
+    exports.mark = function (name) {
+      throwIfEmpty(name);
+      var startTime = now();
+      marks['$' + name] = startTime;
+    };
+    exports.stop = function (name) {
+      throwIfEmpty(name);
+      var endTime = now();
+      var startTime = marks['$' + name];
+      if (!startTime) {
+        throw new Error(("no known mark: " + name))
+      }
+      var entry = {
+        startTime: startTime,
+        name: name,
+        duration: endTime - startTime,
+        entryType: 'measure'
+      };
+      // per the spec this should be at least 150:
+      // https://www.w3.org/TR/resource-timing-1/#extensions-performance-interface
+      // we just have no limit, per Chrome and Edge's de-facto behavior
+      insertSorted(entries, entry);
+      return entry
+    };
+    exports.getEntries = function () { return entries; };
+    exports.clear = function () {
+      marks = {};
+      entries = [];
+    };
+  }
 
-}((this.marky = this.marky || {})));
+  return exports;
+
+}({}));
 
 define("marky", function(){});
 
@@ -46951,9 +47371,11 @@ define('tachyons',["require", "exports"], function (require, exports) {
 });
 //# sourceMappingURL=empty.js.map;
 ////////////////////////////////////
-define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
+define('app/index',["require", "exports", "tslib", "@reactivex/rxjs", "@offirmo/rx-auto", "packery", "@offirmo/simple-querystring-parser", "./incubator/retrying-fetch", "./incubator/rx-log", "./parser", "./templates", "marky", "tachyons"], function (require, exports, tslib_1, Rx, rx_auto_1, Packery, simple_querystring_parser_1, retrying_fetch_1, rx_log_1, parser_1, TEMPLATES) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    Rx = (0, tslib_1.__importStar)(Rx);
+    TEMPLATES = (0, tslib_1.__importStar)(TEMPLATES);
     const user_timing_measurement = window.marky;
     user_timing_measurement.mark('global');
     user_timing_measurement.mark('bootstrap');
@@ -46965,7 +47387,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         },
         REPO_URL: 'https://github.com/Offirmo/minisite-w',
     };
-    const dynamic_options = simple_querystring_parser_1.parseLocationParams(window.location);
+    const dynamic_options = (0, simple_querystring_parser_1.parseLocationParams)(window.location);
     console.info({ dynamic_options });
     const logger = dynamic_options.verbose > 0
         ? console
@@ -46978,13 +47400,13 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             groupCollapsed: () => { },
             groupEnd: () => { },
         });
-    const { decrypt_if_needed_then_parse_data } = parser_1.factory({ logger });
+    const { decrypt_if_needed_then_parse_data } = (0, parser_1.factory)({ logger });
     logger.log('App: Hello world !', { constants: CONSTS });
     ////////////////////////////////////
     function get_vault_id() {
         //return 'client02b'
         let slug = window.location.hash.slice(1)
-            // http://lea.verou.me/2016/11/url-rewriting-with-github-pages/
+            // https://lea.verou.me/2016/11/url-rewriting-with-github-pages/
             || location.pathname.split('/').filter(x => x).slice(-1)[0]
             || 'default';
         // GitHub demo
@@ -47001,7 +47423,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
     }
     function fetch_raw_data(vault_id) {
         user_timing_measurement.mark('fetch_raw_data');
-        return retrying_fetch_1.retrying_fetch(`content/${vault_id}.markdown`, undefined, {
+        return (0, retrying_fetch_1.retrying_fetch)(`content/${vault_id}.markdown`, undefined, {
             response_should_be_ok: true,
             logger,
         })
@@ -47019,7 +47441,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
     function get_password$() {
         // TODO !
         /*
-        const input = document.querySelector('password-input');
+        const input = document.querySelector('password-input')
         return Rx.Observable
             .fromEvent(input, 'click')
             .debounceTime(250)
@@ -47063,7 +47485,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             //rowHeight: 36,
             //gutter: 1,
             percentPosition: false,
-            initLayout: false,
+            initLayout: false, // disable initial layout
         }));
         logger.log('Packery created on all elements');
         // attach our event handlers before running the layout
@@ -47088,7 +47510,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
     ////////////////////////////////////
     setTimeout(() => {
         user_timing_measurement.mark('rx setup');
-        const subjects = rx_auto_1.auto({
+        const subjects = (0, rx_auto_1.auto)({
             ////////////////////////////////////
             vault_id: get_vault_id,
             ////////////////////////////////////
@@ -47103,7 +47525,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             raw_data: [
                 'cached_raw_data',
                 'fresh_raw_data',
-                rx_auto_1.Operator()
+                (0, rx_auto_1.Operator)()
                     .concat()
                     .distinctUntilChanged()
             ],
@@ -47116,7 +47538,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
             password: [
                 'cached_password',
                 'fresh_password',
-                rx_auto_1.Operator()
+                (0, rx_auto_1.Operator)()
                     .concat()
                     .distinctUntilChanged()
             ],
@@ -47125,10 +47547,26 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
                 'vault_id',
                 'raw_data',
                 'password',
-                rx_auto_1.Operator().combineLatest({
+                (0, rx_auto_1.Operator)().combineLatest({
                     project: decrypt_if_needed_then_parse_data
                 })
             ],
+            /*
+             data_source: [
+             'vault_id',
+             'raw_data',
+             'password',
+             //			OPERATORS.combineLatestHashDistinctUntilChangedShallow
+             OPERATORS.combineLatestHash
+             ],
+             data: [
+             'data_source',
+             ({data_source}: ResolvedStreamDefMap) => data_source.observable$.map(v => {
+             const {vault_id, raw_data, password} = v
+             console.warn('source to feed', v, decrypt_if_needed_then_parse_data)
+             return decrypt_if_needed_then_parse_data(vault_id, raw_data, password)
+             })
+             ],*/
         }, {
             logger: console,
             validate: true,
@@ -47136,7 +47574,7 @@ define('app/index',["require", "exports", "@reactivex/rxjs", "@offirmo/rx-auto",
         // actions
         if (dynamic_options.verbose > 0) {
             for (let id in subjects) {
-                rx_log_1.log_observable(subjects[id].plain$, id);
+                (0, rx_log_1.log_observable)(subjects[id].plain$, id);
                 //log_observable(subjects[id].behavior$, id + 'B')
             }
         }
