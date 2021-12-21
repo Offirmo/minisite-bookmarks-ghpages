@@ -7,22 +7,27 @@
   "author": "Offirmo <offirmo.net@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "__prod": "~~~~~~ PRODUCTION ~~~~~~",
-    "r.js": "r.js",
-    "build": "r.js -o meta/prod/requirejs-build-config.js paths.requireLib=dist/third-party/requirejs@2 include=requireLib && cp -f index.html 404.html",
+
     "__dev": "~~~~~~ DEVELOPMENT ~~~~~~",
     "clean": "rm -rf dist",
     "copy-third-party": "node meta/scripts/copy-third-party.js && cp node_modules/require-css/css-builder.js dist/third-party && cp node_modules/require-css/normalize.js dist/third-party",
-    "dev1": "tsc -p meta/dev --watch",
-    "dev": "run-p dev1",
+    "transpile": "tsc -p meta/dev --watch",
+    "dev": "run-s clean copy-third-party transpile",
     "start": "browser-sync start --server --port $PORT --logLevel debug --files './*.html,dist/**,content/**' --directory --startPath index-dev.html",
     "start_notes": " --no-open",
+
+    "__prod": "~~~~~~ PRODUCTION ~~~~~~",
+    "r.js": "r.js",
+    "build": "r.js -o meta/prod/requirejs-build-config.js paths.requireLib=dist/third-party/requirejs@2 include=requireLib && cp -f index.html 404.html",
+
     "__misc": "~~~~~~ MISC ~~~~~~",
+
     "__local_tools": "~~~~~~ Tools installed locally ~~~~~~",
     "browser-sync": "browser-sync",
     "np": "np",
     "nsp": "nsp",
     "tsc": "tsc",
+
     "__shortcuts": "~~~~~~ Shortcuts ~~~~~~"
   },
   "dependencies": {
@@ -49,6 +54,6 @@
     "nodemon": "^2",
     "npm-run-all": "^4",
     "semver": "^7",
-    "typescript": "^3"
+    "typescript": "^4"
   }
 }

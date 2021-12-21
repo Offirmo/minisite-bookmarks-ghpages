@@ -167,7 +167,7 @@ function factory(raw_options: Partial<ParserOptions>) {
 		const rows: BookmarkGroup[] = []
 
 		const lines = raw_data.split('\n')
-		let current_group: BookmarkGroup | null = null
+		let current_group = null as BookmarkGroup | null
 
 		let line_count = 0
 		lines.forEach(line => {

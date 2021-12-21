@@ -2,7 +2,7 @@
 
 import * as _ from 'lodash'
 import { Enum } from 'typescript-string-enums'
-import * as chroma from 'chroma-js'
+import chroma from 'chroma-js'
 const marky = (window as any).marky
 
 import {

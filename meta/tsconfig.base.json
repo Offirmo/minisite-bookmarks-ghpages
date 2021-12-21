@@ -1,37 +1,55 @@
 {
 	"compileOnSave": false,
 	"compilerOptions": {
+
 		"allowJs": false,
-		"lib": [ "DOM", "es7" ],
+		"lib": [ "DOM", "ES2019" ],
 		"moduleResolution": "node",
 
 		"listEmittedFiles": false,
 		"listFiles": false,
 		"skipDefaultLibCheck": false,
+		"skipLibCheck": true,
 		"noEmitOnError": true,
 		"pretty": true,
+		"extendedDiagnostics": false,
 
+		"strict": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"forceConsistentCasingInFileNames": true,
+		"keyofStringsOnly": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
+		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
 		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
 
 		"alwaysStrict": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
+		"declaration": true,
+		"experimentalDecorators": false,
+		"emitDecoratorMetadata": false,
 		"importHelpers": true,
-		"sourceMap": true,
+		"noEmitHelpers": true,
+		"jsx": "react-jsx",
+
+		"module": "ES2015",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "ES2019",
 		"newLine": "lf",
+		"sourceMap": true,
+		"resolveJsonModule": true,
 
-		"noEmit": true
+		"noEmit": true,
+		"preserveSymlinks": false
 	},
-
 	"include": [
 		"../typings-custom/**/*.ts",
 		"../src/**/*.ts"
