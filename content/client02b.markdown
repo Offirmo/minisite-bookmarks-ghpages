@@ -15,7 +15,6 @@ pinned:
 - Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 - https://cyanharlow.bitbucket.io/
 - directory https://directory.prod.atl-paas.net/
-
 -
 
 Pin1
@@ -71,6 +70,7 @@ Management
 
 
 Makkuro
+* ++ TODO Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/1380629653/Makkuro+-+misc+TODOs
 - ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
 - ++ trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
