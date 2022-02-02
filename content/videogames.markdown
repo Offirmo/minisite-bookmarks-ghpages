@@ -20,3 +20,4 @@ Web:
 - https://js13kgames.com/games/edge-not-found/index.html
 - https://shapez.io/
 - Google JO https://www.google.com/?fpdoodle=1&doodle=174787827&nord=1
+- full RPG http://game.granbluefantasy.jp/

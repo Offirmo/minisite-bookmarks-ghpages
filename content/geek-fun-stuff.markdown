@@ -47,6 +47,7 @@ Strips
 - ++ Dilbert https://dilbert.com/
 - + SMBC https://www.smbc-comics.com/index.php
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
+- https://warandpeas.com/
 
 
 Webcomics

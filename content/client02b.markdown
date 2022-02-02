@@ -37,18 +37,18 @@ Pin3
 - good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
 
 
-
 Emergency
-- + HOT go/hot
-- + severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
-- + LD https://app.launchdarkly.com/default/production/features
+- ++ HOT https://go.atlassian.com/hot
+- ++ severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
+- ++ LD https://app.launchdarkly.com/default/production/features
+- + ii
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
 - Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
 
-Hot
+Hot subject
 - + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - + opsgenie https://atlassian.app.opsgenie.com/teams/dashboard/af76a772-5433-47c6-88f0-ffb1ad598f80/main
 * 🤭 Past HOTs https://hello.atlassian.net/wiki/spaces/agile/pages/1231211056/Makkuro+-+Past+HOTs
@@ -101,12 +101,6 @@ Makkuro
 - ░ https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1286703317/FY22+Annual+review+-+Yves
 
 
-Essentials
-- ++ Essentials https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
-- ++ 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
-- 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
-- backlog https://hello.atlassian.net/jira/software/projects/CROSSFLOW/boards/3730/backlog
-
 Growth
 - Career https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142189/Career+growth
 -
@@ -116,21 +110,8 @@ Engineering:
 - Dev list https://hello.atlassian.net/wiki/spaces/PGT/pages/198265283/Fundle+dev+check+list
 
 
-Team
-- + Jira https://atl-growth.atlassian.net/secure/BrowseProjects.jspa
-- + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
-- + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
-- + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
-- suggestions https://go.atlassian.com/suggestion-box
-- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
-- FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
-- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
-- FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
-- FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
-- holidays https://hello.atlassian.net/wiki/spaces/PEOP/pages/181621547/Atlassian+Holidays
-
-
 Doc interne:
+- ++ Hello home https://hello.atlassian.net/wiki/home
 - ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - ++ Yves' blog https://hello.atlassian.net/wiki/spaces/~yjutard/blog/
 - ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
@@ -350,7 +331,7 @@ TOREVIEW
 
 
 
-Legacy
+LEGACY Growth
 - EAC https://extranet.atlassian.com/
 - growth.jira-dev https://growth.jira-dev.com/secure/Dashboard.jspa
 - OKRs https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+OKRs
@@ -360,6 +341,14 @@ Legacy
 - sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
 - sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
 - Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
+
+
+
+LEGACY Essentials
+- ++ Essentials https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
+- ++ 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
+- 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
+- backlog https://hello.atlassian.net/jira/software/projects/CROSSFLOW/boards/3730/backlog
 
 
 LEGACY Essentials
@@ -372,3 +361,17 @@ LEGACY Essentials
 - 1:1 common https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
 - 1:1 ME https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684624963/Yves+-+1+1
 * https://skribbl.io/
+
+
+LEGACY Groot
+- + Jira https://atl-growth.atlassian.net/secure/BrowseProjects.jspa
+- + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
+- + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
+- + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
+- suggestions https://go.atlassian.com/suggestion-box
+- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
+- FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
+- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
+- FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
+- FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
+- holidays https://hello.atlassian.net/wiki/spaces/PEOP/pages/181621547/Atlassian+Holidays

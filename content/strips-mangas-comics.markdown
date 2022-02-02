@@ -55,6 +55,8 @@ Ongoing mangas:
 - https://mangakakalot.com/chapter/quan_zhi_gao_shou/chapter_24.3
 - https://mangakakalot.com/chapter/dungeon_ni_deai_o_motomeru_no_wa_machigatte_iru_darou_ka/chapter_71
 
+* suggestions: https://www.reddit.com/r/Isekai/comments/rhwi79/can_you_recommend_any_manhwawebtoon_or_light/
+
 
 Finished mangas
 - Nausicaa
