@@ -1,21 +1,19 @@
 # client 2b https://www.offirmo.net/minisite-bookmarks-ghpages/client02b
 
+
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
-- SSO https://atlassian.my.idaptive.app /
-- mail https://mail.google.com/mail/u/0/#inbox
-- cal https://calendar.google.com/calendar/u/0/r/week
-- Drive https://drive.google.com/drive/#my-drive
-- XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
+- notifs https://start.atlassian.com/notifications
+- Tasks https://hello.atlassian.net/wiki/spaces/~yjutard/pages/719442679/Tasks
+- HOT https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 - interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
+- SSO https://atlassian.my.idaptive.app /
+- Drive https://drive.google.com/drive/#my-drive
 - EngMag https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
-- onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
-- CFTasks https://hello.atlassian.net/wiki/spaces/~yjutard/pages/719442679/Tasks
-- say sth https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 - Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 - https://cyanharlow.bitbucket.io/
 - directory https://directory.prod.atl-paas.net/
--
+
 
 Pin1
 - mail https://mail.google.com/mail/u/0/#inbox
@@ -48,6 +46,11 @@ Emergency
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
 
+Monday meeting
+- TC https://team.atlassian.com/updates/projects
+- kudos given https://hello.atlassian.net/browse/RP-163872?jql=project%20%3D%20RP%20AND%20reporter%20%3D%20yjutard%20ORDER%20BY%20created%20DESC
+
+
 Hot subject
 - + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - + opsgenie https://atlassian.app.opsgenie.com/teams/dashboard/af76a772-5433-47c6-88f0-ffb1ad598f80/main
@@ -63,10 +66,13 @@ Hot subject
 
 
 Management
+* OPlan https://hello.atlassian.net/wiki/spaces/agile/pages/1448588247/Makkuro+-+Operational+plan+FY22Q3
+* Teck tasks https://hello.atlassian.net/wiki/spaces/agile/pages/1364428551/Makkuro+-+Engineering+-+tasks+FY22
 * 🏆Tracking https://hello.atlassian.net/wiki/spaces/~yjutard/pages/365090480/Tracking
-* veille https://www.thoughtworks.com/radar/techniques
 * Notes:mgmt https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
+* my QCheck https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1249933773/Yves+-+FY22+quarterly+check-ins
+* tech radar https://www.thoughtworks.com/radar/techniques
 
 
 Makkuro
@@ -139,6 +145,7 @@ Tools:
 * https://engage-email-service.us-east-1.prod.atl-paas.net/#/messages?type=email
 * VMs https://vmac-server.internal.uswest.atlassian.io/
 * significance https://www.optimizely.com/anz/sample-size-calculator/?conversion=66&effect=8&significance=95
+- XBL https://hello.atlassian.net/wiki/spaces/~yjutard/pages/248727231/XBL+-+Experiment+Bootstrap+Logic
 
 
 Services:
@@ -341,6 +348,7 @@ LEGACY Growth
 - sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
 - sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
 - Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
+- onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
 
 
 
