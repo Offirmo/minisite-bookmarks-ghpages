@@ -4,17 +4,20 @@
 
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
+- ODE https://github.com/Offirmo/open-source-dev-env
 
 Base downloads
 - +++ software updates TODO
 - +++ git in terminal TODO
 - ++ xcode TODO
+- ++ ODE https://github.com/Offirmo/open-source-dev-env
 - + jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 - LibreOffice https://www.libreoffice.org/download/download/
 - Safari Tech Preview https://developer.apple.com/safari/download/
 - FF
 
 Firefox
+- ++ download https://www.mozilla.org/en-US/firefox/new/
 - + Dashlane https://www.dashlane.com/fr/download
 - https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
 - https://addons.mozilla.org/en-US/firefox/addon/umatrix/
@@ -24,6 +27,7 @@ Firefox
 
 
 Chrome
+- ++ download https://www.google.com/intl/en_us/chrome/
 - + Dashlane https://www.dashlane.com/fr/download
 - uMatrix https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
 - uMatrix options chrome-extension://ogfcmafjalglgifnmanfmnieipoejdcf/dashboard.html

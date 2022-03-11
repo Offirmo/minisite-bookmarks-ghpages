@@ -58,6 +58,7 @@ Webcomics
 
 
 Misc
+- https://oss.love/
 - https://what-if.xkcd.com/
 - picklecat https://dn.ht/picklecat/
 - SCP https://scp-wiki.wikidot.com/

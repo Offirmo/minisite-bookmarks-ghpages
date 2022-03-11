@@ -38,8 +38,8 @@ Pin3
 Emergency
 - ++ HOT https://go.atlassian.com/hot
 - ++ severity https://hello.atlassian.net/display/BPP/How+to+decide+on+the+severity+of+an+incident
-- ++ LD https://app.launchdarkly.com/default/production/features
-- + ii
+- ++ if you see sth… https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/WIP+If+you+see+something+say+something...
+- + LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
 - Confluence TODO
@@ -52,6 +52,7 @@ Monday meeting
 
 
 Hot subject
+- ++ F2F https://hello.atlassian.net/wiki/spaces/OneSource/pages/661521753/OneSource+-+Current+Office+F2F+and+Travel+Status
 - + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - + opsgenie https://atlassian.app.opsgenie.com/teams/dashboard/af76a772-5433-47c6-88f0-ffb1ad598f80/main
 * 🤭 Past HOTs https://hello.atlassian.net/wiki/spaces/agile/pages/1231211056/Makkuro+-+Past+HOTs
