@@ -77,7 +77,7 @@ Management
 
 
 Makkuro
-* ++ TODO Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/1380629653/Makkuro+-+misc+TODOs
+* ++ TODO Makkuro https://hello.atlassian.net/wiki/spaces/KURO/pages/1380629653/Makkuro+-+misc+TODOs
 - ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
 - ++ trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding

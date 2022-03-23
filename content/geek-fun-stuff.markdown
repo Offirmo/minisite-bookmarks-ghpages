@@ -46,6 +46,7 @@ Strips
 - + explain XKCD https://www.explainxkcd.com/
 - ++ Dilbert https://dilbert.com/
 - + SMBC https://www.smbc-comics.com/index.php
+- + http://www.blastwave-comic.com/
 - Law & sausages https://www.lawsandsausagescomic.com/comic/101
 - https://warandpeas.com/
 - https://falseknees.com/

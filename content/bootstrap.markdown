@@ -14,7 +14,6 @@ Base downloads
 - + jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 - LibreOffice https://www.libreoffice.org/download/download/
 - Safari Tech Preview https://developer.apple.com/safari/download/
-- FF
 
 Firefox
 - ++ download https://www.mozilla.org/en-US/firefox/new/
