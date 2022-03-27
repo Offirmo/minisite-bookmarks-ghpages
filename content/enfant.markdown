@@ -4,6 +4,9 @@ pinned:
 
 
 Bambin -- Fr 🇫🇷
+- ++ france.tv https://www.france.tv/enfants/trois-cinq-ans/tous-les-programmes/
+- Les triplés         https://www.france.tv/france-4/les-triples/
+- Anna                https://www.france.tv/enfants/trois-cinq-ans/anna-et-ses-amis/
 - Titounis            https://www.youtube.com/channel/UC8I-UIlXPNS4luC4iV7dRdQ/videos?view=0&sort=dd
 - HeyKids             https://www.youtube.com/channel/UCl0KdGiwyqLJCdu5XMIz_TQ/videos?view=0&sort=dd
 - Tchoupi             https://www.youtube.com/c/tchoupi/videos?view=0&sort=dd
