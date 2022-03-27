@@ -25,6 +25,14 @@ pinned:
 - mindmaps https://framindmap.org/c/maps/
 
 
+Pinned tabs
+- https://web.whatsapp.com/
+- https://keep.google.com/u/0/#home
+- fb fb
+- https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
+- https://mail.google.com/mail/u/0/#inbox
+-
+
 Projects
 - TBRPG https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 - W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
