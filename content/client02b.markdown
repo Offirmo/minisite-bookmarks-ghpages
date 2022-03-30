@@ -67,8 +67,9 @@ Hot subject
 
 
 Management
-* OPlan https://hello.atlassian.net/wiki/spaces/agile/pages/1448588247/Makkuro+-+Operational+plan+FY22Q3
-* Teck tasks https://hello.atlassian.net/wiki/spaces/agile/pages/1364428551/Makkuro+-+Engineering+-+tasks+FY22
+* ++ OPlan https://hello.atlassian.net/wiki/spaces/agile/pages/1448588247/Makkuro+-+Operational+plan+FY22Q3
+* + Tech tasks https://hello.atlassian.net/wiki/spaces/agile/pages/1364428551/Makkuro+-+Engineering+-+tasks+FY22
+* ++ https://hello.atlassian.net/wiki/spaces/GDAY/pages/758394418/Performance+Indicators
 * 🏆Tracking https://hello.atlassian.net/wiki/spaces/~yjutard/pages/365090480/Tracking
 * Notes:mgmt https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
@@ -78,7 +79,7 @@ Management
 
 Makkuro
 * ++ TODO Makkuro https://hello.atlassian.net/wiki/spaces/KURO/pages/1380629653/Makkuro+-+misc+TODOs
-- ++ Makkuro https://hello.atlassian.net/wiki/spaces/agile/pages/736096713/Makkuro
+- ++ Makkuro https://hello.atlassian.net/wiki/spaces/KURO/overview?homepageId=1588204083
 - ++ trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
 - + backlog https://jdog.jira-dev.com/jira/software/projects/KURO/boards/3991/backlog
