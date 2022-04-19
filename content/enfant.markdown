@@ -6,11 +6,13 @@ pinned:
 Bambin -- Fr 🇫🇷
 - ++ france.tv https://www.france.tv/enfants/trois-cinq-ans/tous-les-programmes/
 - Les triplés         https://www.france.tv/france-4/les-triples/
+- Les triplés         https://www.youtube.com/c/LesTripl%C3%A9s/videos
 - Anna                https://www.france.tv/enfants/trois-cinq-ans/anna-et-ses-amis/
 - Titounis            https://www.youtube.com/channel/UC8I-UIlXPNS4luC4iV7dRdQ/videos?view=0&sort=dd
 - HeyKids             https://www.youtube.com/channel/UCl0KdGiwyqLJCdu5XMIz_TQ/videos?view=0&sort=dd
 - Tchoupi             https://www.youtube.com/c/tchoupi/videos?view=0&sort=dd
 - Petit ours brun     https://www.youtube.com/user/petitoursbrunbayard/videos
+- Cocomelon fr        https://www.youtube.com/channel/UCvNfDBYST145F9RJ2CSk-4A/videos?view=0&sort=dd
 - Pingu               https://www.youtube.com/user/pingu/videos
 - père castor
 

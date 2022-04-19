@@ -17,6 +17,9 @@ TODDDDD
 DnD
 - OOTS bonus https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
 
+Slice of life
+* https://www.penelope-jolicoeur.com/2007/02/page/59/
+*
 
 Strips:
 - XKCD https://xkcd.com/
