@@ -3,6 +3,7 @@
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - All https://www.offirmo.net/minisite-bookmarks-ghpages/
+- 12ft https://12ft.io/
 - Drive https://drive.google.com/drive/#my-drive
 - Gmail https://inbox.google.com/
 - Gmaps https://www.google.com/maps

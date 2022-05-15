@@ -47,6 +47,7 @@ Emergency
 
 
 Monday meeting
+- ++ agenda https://hello.atlassian.net/wiki/spaces/KURO/pages/1664473224/Makkuro+-+Ceremonies+-+Weekly+team+sync
 - TC https://team.atlassian.com/updates/projects
 - kudos given https://peopleops.atlassian.net/browse/KUDOS-2616?jql=reporter%20in%20(currentUser())%20order%20by%20created%20DESC
 - kudos given (old) https://hello.atlassian.net/browse/RP-163872?jql=project%20%3D%20RP%20AND%20reporter%20%3D%20yjutard%20ORDER%20BY%20created%20DESC
