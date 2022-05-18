@@ -18,8 +18,6 @@ pinned:
 - VidK https://vid-keeper.lbat.ch/
 - Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FAM/boards/1
 - TZ https://www.worldtimebuddy.com/?pl=1&lid=2147714,2988507,5375480&h=2147714
-- amazon https://www.amazon.com/
-- outline https://outline.com/
 - skip https://skip.lbat.ch/
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8

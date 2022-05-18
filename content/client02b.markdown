@@ -13,6 +13,8 @@ pinned:
 - Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 - https://cyanharlow.bitbucket.io/
 - directory https://directory.prod.atl-paas.net/
+- 12ft https://12ft.io/
+- BWAMP https://bwamp.me/sandbox/
 
 
 Pin1
@@ -54,7 +56,8 @@ Monday meeting
 
 
 Hot subject
-- ++ F2F https://hello.atlassian.net/wiki/spaces/OneSource/pages/661521753/OneSource+-+Current+Office+F2F+and+Travel+Status
+- + TIP https://hello.atlassian.net/wiki/spaces/KURO/pages/1691925772/Makkuro+-+Ceremonies+-+FY22+TIP+pilot
+- + F2F https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1583232931/Makkuro+-+in-person+FY22
 - + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations
 - + opsgenie https://atlassian.app.opsgenie.com/teams/dashboard/af76a772-5433-47c6-88f0-ffb1ad598f80/main
 * 🤭 Past HOTs https://hello.atlassian.net/wiki/spaces/agile/pages/1231211056/Makkuro+-+Past+HOTs
