@@ -116,24 +116,21 @@ To check:
 
 Wiki perso:
 - ++ https://github.com/Offirmo-team/wiki/wiki
+- ++ https://github.com/Offirmo-team/wiki/wiki/entrepreneuriat
 - + https://github.com/Offirmo-team/wiki/wiki/Sécurité
 - + Appli web https://github.com/Offirmo-team/wiki/wiki/appli-web
-- + https://github.com/Offirmo-team/wiki/wiki/API-web
-- + https://github.com/Offirmo-team/wiki/wiki/module-web
-- + dév. web https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-web
+- browser APIs https://github.com/Offirmo-team/wiki/wiki/browser-APIs
+- + dév. web https://github.com/Offirmo-team/wiki/wiki/développement-web
 - + https://github.com/Offirmo-team/wiki/wiki/css
 - + https://github.com/Offirmo-team/wiki/wiki/javascript
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
 - + https://github.com/Offirmo-team/wiki/wiki/git
 - + https://github.com/Offirmo-team/wiki/wiki/UX
 - https://github.com/Offirmo-team/wiki/wiki/growth
-- https://github.com/Offirmo-team/wiki/wiki/eslint
-- https://github.com/Offirmo-team/wiki/wiki/JSON
 - https://github.com/Offirmo-team/wiki/wiki/react
 - https://github.com/Offirmo-team/wiki/wiki/serveur
 - https://github.com/Offirmo-team/wiki/wiki/carrière
-- dév. logiciel https://github.com/Offirmo-team/wiki/wiki/d%C3%A9veloppement-logiciel
-- https://github.com/Offirmo-team/wiki/wiki/administration-unix
+- dév. logiciel https://github.com/Offirmo-team/wiki/wiki/développement-logiciel
 - https://github.com/Offirmo-team/wiki/wiki/cryptocurrency
 - https://github.com/Offirmo-team/wiki/wiki/RPG
 - https://github.com/Offirmo-team/wiki/wiki/vie
