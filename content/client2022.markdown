@@ -116,9 +116,11 @@ Makkuro
 - ░ https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1286703317/FY22+Annual+review+-+Yves
 
 
-Growth
+Own growth
 - Career https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142189/Career+growth
--
+- rsrc https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142096/Career+resources
+- QCheck https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1249933773
+
 
 Engineering:
 - Freezes https://hello.atlassian.net/display/SRE/Change+Freezes
@@ -328,67 +330,7 @@ Review
 
 
 Misc/fun:
-- haircut https://beards-and-bobs.cliniko.com/bookings#service
 - hypnotoad https://hello.atlassian.net/display/~aelse/2017/11/08/This+blog+is+not+about+a+frog
 - PR https://hello.atlassian.net/wiki/spaces/PEOP/pages/181617899/Australia+-+Residency+Sponsorship
 - donuts https://hello.atlassian.net/wiki/spaces/~briosa/pages/256228848/Sydney+review
 - movember https://hello.atlassian.net/wiki/spaces/FOUNDATION/blog/2018/10/30/332214904/Grow+a+mo+save+a+bro
-
-
-TOREVIEW
-- VR https://hello.atlassian.net/wiki/spaces/~paksenkin/blog/2018/07/13/239932235/VR+Web+and+Beyond?atlOrigin=eyJpIjoiN2E0ZDgzYTY3YTgzNDRkZmJjODAxMTY1N2Y3M2E4MjQiLCJwIjoiYyJ9
-- VR https://hello.atlassian.net/wiki/spaces/LABS/pages/139821846/VR+Lab
-- PLP https://hello.atlassian.net/wiki/spaces/PEOP/pages/181603353/Australia+-+Parental+Leave+Policy
-- HRF https://www.humanservices.gov.au/individuals/families
-- Tangerine meetings https://hello.atlassian.net/display/JFP/Tanginerine+-+Jira+Frontend+Committee+meetings
-- Tangerine article https://hello.atlassian.net/display/JFP/Transitioning+to+tangerine+apps
-- 2021 https://hello.atlassian.net/pages/viewpage.action?pageId=3675993305
-- ydux https://ydux.us-west-1.staging.atl-paas.net/#
-
-
-
-LEGACY Growth
-- EAC https://extranet.atlassian.com/
-- growth.jira-dev https://growth.jira-dev.com/secure/Dashboard.jspa
-- OKRs https://hello.atlassian.net/display/PGT/The+Expandonauts%2C+OKRs
-- Plan https://hello.atlassian.net/display/PGT/Expandonauts+FY18+Q3+plan
-- backlog https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=planning
-- kanban https://growth.jira-dev.com/secure/RapidBoard.jspa?rapidView=64&projectKey=JSWJSD&view=detail&selectedIssue=JSWJSD-200
-- sync Growth https://hello.atlassian.net/display/PGT/Growth+Platform+Collaboration+Register
-- sync Jira https://hello.atlassian.net/display/JPLAT/Jira+Cloud+-+Growth+Sync
-- Groot board https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&selectedIssue=GL-146
-- onboarding https://hello.atlassian.net/wiki/spaces/PGT/pages/197456787/Onboarding+new+members+to+the+Growth+Team
-
-
-
-LEGACY Essentials
-- ++ Essentials https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
-- ++ 🔐TLE https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862
-- 🔏 1:1 shared https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
-- backlog https://hello.atlassian.net/jira/software/projects/CROSSFLOW/boards/3730/backlog
-
-
-LEGACY Essentials
-- rr CF https://remotereactions.com/cross-flow
-- rr CFE https://remotereactions.com/cross-flow-essentials
-- team portal https://hello.atlassian.net/wiki/spaces/PGT/pages/645690717/Cross-flow%2BEssentials%2BTeam
-- 🔒 1:1 shared area https://hello.atlassian.net/wiki/spaces/~yjutard/pages/679474182/Team+Lead+Essentials+-+shared+pages
-- 🔐 1:1 common notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
-- 🔐 https://hello.atlassian.net/wiki/spaces/~yjutard/pages/653513862/Team+Lead+of+Essentials
-- 1:1 common https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684034190/common+1+1+notes
-- 1:1 ME https://hello.atlassian.net/wiki/spaces/~yjutard/pages/684624963/Yves+-+1+1
-* https://skribbl.io/
-
-
-LEGACY Groot
-- + Jira https://atl-growth.atlassian.net/secure/BrowseProjects.jspa
-- + Virality roadmap https://experimentation-platform.atlassian.net/secure/Roadmap.jspa?projectKey=VIRAL&rapidView=12
-- + Groot backlog by epics https://hello.atlassian.net/secure/RapidBoard.jspa?rapidView=2365&projectKey=GL&view=planning.nodetail&epics=visible
-- + Disturbed board https://experimentation-platform.atlassian.net/jira/software/projects/VD/boards/16
-- suggestions https://go.atlassian.com/suggestion-box
-- demos https://hello.atlassian.net/wiki/spaces/PGT/pages/198274332/Growth+Optimisation%2C+monthly+demos
-- FY20Q1 OKRs https://hello.atlassian.net/wiki/spaces/PGT/pages/484004003/FY20+Q1+OKRs+Team+page
-- FY19 proposals https://hello.atlassian.net/display/PGT/FY19+Initiative+Proposals
-- FY18 VTFM https://hello.atlassian.net/display/STRAT/Atlassian+FY18+VTFM
-- FY18 OKRs https://hello.atlassian.net/display/PGT/FY18+Growth+OKRs
-- holidays https://hello.atlassian.net/wiki/spaces/PEOP/pages/181621547/Atlassian+Holidays
