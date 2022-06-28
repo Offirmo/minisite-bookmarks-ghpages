@@ -123,7 +123,7 @@ Own growth
 
 
 Engineering:
-- Freezes https://hello.atlassian.net/display/SRE/Change+Freezes
+- Freezes https://hello.atlassian.net/wiki/spaces/SRE/pages/166805563/Change+Freezes
 - Dev list https://hello.atlassian.net/wiki/spaces/PGT/pages/198265283/Fundle+dev+check+list
 
 
