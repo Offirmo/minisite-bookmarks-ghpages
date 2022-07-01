@@ -69,3 +69,5 @@ Games
 - https://www.thegreatestgameyouwilleverplay.com/
 - Cookie Clicker https://orteil.dashnet.org/cookieclicker/
 - AI dungeon https://play.aidungeon.io/
+- Seirei Gensouki https://h5.g123.jp/game/seirei
+- Flyff Universe https://universe.flyff.com/en/intro2/free-web-mmorpg
