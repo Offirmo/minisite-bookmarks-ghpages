@@ -30,7 +30,7 @@ pinned:
 - Bluey 🇦🇺                 https://iview.abc.net.au/show/bluey/series/0/video/CH1702Q025S00
 - Gruffalo World           https://www.youtube.com/user/GruffaloWorld/videos?view=0&sort=dd&flow=grid
 - Netflix -- Puffin rock   https://www.netflix.com/title/80044965
-  netflix -- Octonauts     https://www.netflix.com/title/80020935
+- Netflix -- Octonauts     https://www.netflix.com/title/80020935
 
 
 3-5 ans -- Fr 🇫🇷
