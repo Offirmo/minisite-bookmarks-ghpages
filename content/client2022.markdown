@@ -45,7 +45,6 @@ Emergency
 - + LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 - ADG3 bug https://hello.atlassian.net/pages/viewpage.action?pageId=3107132607
-- Confluence TODO
 - Chopper https://hello.atlassian.net/display/JCC/Get+to+the+Chopper
 
 
@@ -54,10 +53,11 @@ Monday meeting
 - Atlas https://team.atlassian.com/updates/projects
 - Trello https://trello.com/b/RSX3Ty9K/team-j-love-makkuro
 - kudos given https://peopleops.atlassian.net/browse/KUDOS-2616?jql=reporter%20in%20(currentUser())%20order%20by%20created%20DESC
+- kudos given alt https://peopleops.atlassian.net/servicedesk/customer/user/requests?pIds=23&pIds=23&pIds=23&page=1&rtIds=688&rtIds=689&rtIds=690&statuses=open&statuses=closed
 - kudos given (old) https://hello.atlassian.net/browse/RP-163872?jql=project%20%3D%20RP%20AND%20reporter%20%3D%20yjutard%20ORDER%20BY%20created%20DESC
 
 
-Hot subject
+Burning topics
 - + TIP https://hello.atlassian.net/wiki/spaces/KURO/pages/1691925772/Makkuro+-+Ceremonies+-+FY22+TIP+pilot
 - + F2F https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1583232931/Makkuro+-+in-person+FY22
 - + 🚨 Operations https://hello.atlassian.net/wiki/spaces/agile/pages/790875520/Makkuro+-+Operations

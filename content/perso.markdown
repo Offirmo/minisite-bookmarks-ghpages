@@ -6,7 +6,7 @@ pinned:
 - 12ft https://12ft.io/
 - Drive https://drive.google.com/drive/#my-drive
 - Gmail https://inbox.google.com/
-- Gmaps https://www.google.com/maps
+- GMaps https://www.google.com/maps
 - myGmaps https://www.google.com/maps/d/home
 - recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 - devdocs https://devdocs.io/
@@ -15,10 +15,8 @@ pinned:
 - Dz tops https://www.deezer.com/profile/637006841/playlists
 - Wiki https://github.com/Offirmo-team/wiki/wiki
 - pocket https://getpocket.com/
-- VidK https://vid-keeper.lbat.ch/
 - Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FAM/boards/1
 - TZ https://www.worldtimebuddy.com/?pl=1&lid=2147714,2988507,5375480&h=2147714
-- skip https://skip.lbat.ch/
 - langs https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDk3a3ZUdHRIWnNzbWl0S1hxQ0NHWXc#gid=0
 - S. https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdDBUWGZEMnBYYzNVU1NsZ2JmcFlPbWc&usp=drive_web#gid=8
 - mindmaps https://framindmap.org/c/maps/
@@ -27,7 +25,6 @@ pinned:
 Pinned tabs
 - https://web.whatsapp.com/
 - https://keep.google.com/u/0/#home
-- fb fb
 - https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
 - https://mail.google.com/mail/u/0/#inbox
 -
@@ -58,9 +55,8 @@ Projects
 - CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
 - BT super https://bt.com.au/btsuperportal
 - Boursorama https://clients.boursorama.com/connexion/
-- WeSwap https://app.weswap.com/#/fr/login
 - allianz fr https://allianz.fr/
-- OFX https://authserver.ofx.com/account/login
+- Reward gateway https://atlassian.rewardgateway.com.au/
 
 
 Misc
@@ -171,7 +167,7 @@ Dev tools:
 - YT2 https://www.onlinevideoconverter.com/video-converter
 - transform.tools https://transform.tools/graphql-to-typescript
 - https://ezgif.com/video-to-gif
-- diagraming https://excalidraw.com/
+- diagramming https://excalidraw.com/
 - https://niram.org/read/
 
 
