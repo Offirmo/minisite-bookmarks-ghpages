@@ -23,11 +23,11 @@ pinned:
 
 
 Pinned tabs
-- https://web.whatsapp.com/
-- https://keep.google.com/u/0/#home
-- https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
-- https://mail.google.com/mail/u/0/#inbox
--
+- Whatsapp https://web.whatsapp.com/
+- GKeep https://keep.google.com/u/0/#home
+- Idées https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
+- mail https://mail.google.com/
+
 
 Projects
 - TBRPG https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
