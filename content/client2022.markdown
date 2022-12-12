@@ -76,7 +76,7 @@ Burning topics
 Management
 * ++ OPlan https://hello.atlassian.net/wiki/spaces/KURO/pages/1759118896/Makkuro+-+Operational+plan+FY23Q1
 * + Tech tasks https://hello.atlassian.net/wiki/spaces/agile/pages/1364428551/Makkuro+-+Engineering+-+tasks+FY22
-* ++ https://hello.atlassian.net/wiki/spaces/GDAY/pages/758394418/Performance+Indicators
+* ++ perf https://hello.atlassian.net/wiki/spaces/GDAY/pages/758394418/Performance+Indicators
 * 🏆Tracking https://hello.atlassian.net/wiki/spaces/~yjutard/pages/365090480/Tracking
 * Notes:mgmt https://hello.atlassian.net/wiki/spaces/~yjutard/pages/706297208/Notes+management
 * spreadsheet https://docs.google.com/spreadsheets/d/1t3ycWh08brysS7SJoJX4wPaBW1YOpRs8OMUuBZo17Z4/edit
