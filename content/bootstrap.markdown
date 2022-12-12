@@ -28,10 +28,10 @@ Firefox
 - +++ download https://www.mozilla.org/en-US/firefox/new/
 - ++ Setup https://github.com/Offirmo-team/wiki/wiki/Firefox
 - + Dashlane https://www.dashlane.com/download
-- https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
-- https://addons.mozilla.org/fr/firefox/addon/umatrix/
-- https://addons.mozilla.org/fr/firefox/addon/tree-tabs/
+- uMatrix https://addons.mozilla.org/fr/firefox/addon/umatrix/
 - yt enhancer https://www.mrfdev.com/enhancer-for-youtube
+- https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
+- https://addons.mozilla.org/fr/firefox/addon/tree-tabs/
 - treetabs preferences moz-extension://dc3d4e33-d50b-8148-9152-d074a83635bb/options/options.html
 
 
