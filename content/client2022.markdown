@@ -52,7 +52,7 @@ Monday meeting
 - ++ agenda https://hello.atlassian.net/wiki/spaces/KURO/pages/1664473224/Makkuro+-+Ceremonies+-+Weekly+team+sync
 - Atlas https://team.atlassian.com/updates/projects
 - Trello https://trello.com/b/RSX3Ty9K/team-j-love-makkuro
-- kudos given https://peopleops.atlassian.net/browse/KUDOS-2616?jql=reporter%20in%20(currentUser())%20order%20by%20created%20DESC
+- kudos given https://peopleops.atlassian.net/browse/KUDOS-65572?jql=project%20%3D%20KUDOS%20AND%20reporter%20in%20(currentUser())%20order%20by%20created%20DESC
 - kudos given alt https://peopleops.atlassian.net/servicedesk/customer/user/requests?pIds=23&pIds=23&pIds=23&page=1&rtIds=688&rtIds=689&rtIds=690&statuses=open&statuses=closed
 - kudos given (old) https://hello.atlassian.net/browse/RP-163872?jql=project%20%3D%20RP%20AND%20reporter%20%3D%20yjutard%20ORDER%20BY%20created%20DESC
 
@@ -89,7 +89,7 @@ Makkuro
 - ++ Makkuro https://hello.atlassian.net/wiki/spaces/KURO/overview?homepageId=1588204083
 - ++ trello https://trello.com/b/RSX3Ty9K/team-makkuro-a4t
 - ++ 🔐TLM https://hello.atlassian.net/wiki/spaces/~yjutard/pages/736297215/TLM+-+Team+lead+of+Makkuro+JSW+Onboarding
-- + backlog https://jdog.jira-dev.com/jira/software/projects/KURO/boards/3991/backlog
+- + backlog https://hello.atlassian.net/jira/software/projects/KURO/boards/4574/backlog
 - + OGenie https://atlassian.app.opsgenie.com/teams/dashboard/fb5d6cbd-b138-431c-83e0-c0afcca33ff8/main
 - + 🏆 champions https://hello.atlassian.net/wiki/spaces/agile/pages/1231890752/Makkuro+-+Team+champions
 - + ⚙️ Engineering https://hello.atlassian.net/wiki/spaces/KURO/pages/1590772227/Makkuro+-+Engineering
