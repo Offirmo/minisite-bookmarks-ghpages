@@ -21,3 +21,16 @@ Web:
 - https://shapez.io/
 - Google JO https://www.google.com/?fpdoodle=1&doodle=174787827&nord=1
 - full RPG http://game.granbluefantasy.jp/
+
+WoW
+- battle.net US https://us.shop.battle.net/
+- download https://download.battle.net/en-us/?product=wow
+- https://worldofwarcraft.blizzard.com/
+- https://www.wowhead.com/
+
+GW2
+- https://us.shop.battle.net/
+- arena.net https://account.arena.net/welcome
+
+Misc
+- https://cloud.gg/games
