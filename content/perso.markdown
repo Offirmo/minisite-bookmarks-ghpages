@@ -3,6 +3,8 @@
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - All https://www.offirmo.net/minisite-bookmarks-ghpages/
+- wfw https://workflowy.com/
+- bard https://bard.google.com/
 - 12ft https://12ft.io/
 - Drive https://drive.google.com/drive/#my-drive
 - Gmail https://inbox.google.com/
@@ -26,10 +28,14 @@ Pinned tabs
 - Whatsapp https://web.whatsapp.com/
 - GKeep https://keep.google.com/u/0/#home
 - Idées https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
+- wfw https://workflowy.com/
 - mail https://mail.google.com/
-
+- social https://docs.google.com/spreadsheets/d/1s743-LFI_maviAH5-2wfj6n4BjefBiqFCkeMFYR1tJw/
 
 Projects
+- https://trello.com/b/DMCNfECk/dw
+- https://trello.com/b/k1wVMn6N/wikip%C3%A9dia-contrib
+- https://trello.com/b/IkOLKXXT/spring-cleaning-sale-everything-in-very-good-condition-and-working
 - TBRPG https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 - W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
 - H https://docs.google.com/spreadsheets/d/1o8K0pv5QZVcopl4-6RZoot8ixmLZAJqFX99W7ec-wao/edit#gid=2075720335
