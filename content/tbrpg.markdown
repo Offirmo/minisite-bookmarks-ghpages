@@ -5,7 +5,6 @@ pinned:
 - OA https://www.online-adventur.es
 - GH https://github.com/Offirmo
 - monorepo https://github.com/Offirmo/offirmo-monorepo
-- cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/edit#gid=0
 - skills https://docs.google.com/spreadsheets/d/1mVrIOtq09Mr_OJO7j2UxHr5-I-cJy26vSR-5mRO8Fwg/edit#gid=1575475590
 - UTest https://docs.google.com/spreadsheets/d/1qaRhEWk2SelW7ORe1CL1yUjyL5Jj5w9uCtqvgS9RgDg/edit#gid=0
 
@@ -41,6 +40,8 @@ Admin
 
 
 Dev
+- antisèche programmation https://docs.google.com/spreadsheets/d/1VC5DRHw-ResS5LgoTA131ORXCv9s_aNGuhUNOEeA1-c/
+- TBRPG cheatsheet https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/
 - PM https://docs.google.com/spreadsheets/d/1eYwmi9pUVmy01oSrLrZEbL9-hYwje4NJzqMX3GMOWrQ/edit#gid=0
 - GH OA https://github.com/online-adventures
 - GH mono https://github.com/Offirmo/offirmo-monorepo

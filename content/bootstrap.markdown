@@ -25,26 +25,32 @@ Base downloads
 
 
 Firefox
-- +++ download https://www.mozilla.org/en-US/firefox/new/
-- ++ Setup https://github.com/Offirmo-team/wiki/wiki/Firefox
-- + Dashlane https://www.dashlane.com/download
-- uMatrix https://addons.mozilla.org/fr/firefox/addon/umatrix/
-- yt enhancer https://www.mrfdev.com/enhancer-for-youtube
-- https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
-- https://addons.mozilla.org/fr/firefox/addon/tree-tabs/
-- treetabs preferences moz-extension://dc3d4e33-d50b-8148-9152-d074a83635bb/options/options.html
+- +++ download     https://www.mozilla.org/en-US/firefox/new/
+- ++ Setup         https://github.com/Offirmo-team/wiki/wiki/Firefox
+- + Dashlane       https://addons.mozilla.org/en-US/firefox/addon/dashlane/
+- + sideberry      https://addons.mozilla.org/en-US/firefox/addon/sidebery/
+- uMatrix          https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+- yt enhancer      https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
+- treetabs         https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/
+- containers       https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
 
 Chrome
-- +++ download https://www.google.com/intl/en_us/chrome/
-- ++ Setup https://github.com/Offirmo-team/wiki/wiki/Chrome
-- + Dashlane https://www.dashlane.com/download
-- uMatrix https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
-- yt enhancer https://www.mrfdev.com/enhancer-for-youtube
-- pocket https://getpocket.com/en/chrome/
+- +++ download   https://www.google.com/intl/en_us/chrome/
+- ++ Setup       https://github.com/Offirmo-team/wiki/wiki/Chrome
+- + Dashlane     https://www.dashlane.com/download
+- uMatrix        https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
+- yt enhancer    https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle/related
+- pocket         https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
 - uMatrix options chrome-extension://ogfcmafjalglgifnmanfmnieipoejdcf/dashboard.html
 - chrome://extensions/
 - Chrome Web store https://chrome.google.com/webstore/category/extensions
+
+
+Generic browser
+- + Dashlane   https://www.dashlane.com/download
+- yt enhancer  https://www.mrfdev.com/enhancer-for-youtube
+- pocket       https://getpocket.com/en/chrome/
 
 
 Setup
