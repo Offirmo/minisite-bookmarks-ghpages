@@ -3,13 +3,10 @@
 
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
-- notifs https://start.atlassian.com/notifications
-- Tasks https://hello.atlassian.net/wiki/spaces/~yjutard/pages/719442679/Tasks
 - HOT https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/If+you+see+something+say+something...
 - interview https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142221/Notes+interviewing
 - SSO https://atlassian.my.idaptive.app /
 - Drive https://drive.google.com/drive/#my-drive
-- Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
 - emoji text https://cyanharlow.bitbucket.io/
 - 12ft https://12ft.io/
 
@@ -24,9 +21,10 @@ Pin2
 - Own Growth https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142189/Growth+Perf
 
 Pin3
-- blog https://hello.atlassian.net/wiki/spaces/~yjutard/pages/688767586/Perpetual+Blogpost+Draft
-- https://hello.atlassian.net/wiki/spaces/~yjutard/pages/691641962/Notes+Atlassian+benefits
-- good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
+- stash dashboard https://stash.atlassian.com/dashboard
+- Tasks https://hello.atlassian.net/wiki/spaces/~yjutard/pages/719442679/Tasks
+- notifs https://start.atlassian.com/notifications
+
 
 
 Emergency
@@ -35,6 +33,15 @@ Emergency
 - ++ if you see sth… https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/WIP+If+you+see+something+say+something...
 - + LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
+
+
+Erai
+- board https://hello.atlassian.net/jira/software/projects/ERAI/boards/5907/backlog?assignee=557058%3A485ecbf7-91cf-4faf-8e04-fc1752ff04a6&selectedIssue=ERAI-1501
+
+
+Engineering:
+- Freezes https://hello.atlassian.net/wiki/spaces/SRE/pages/166805563/Change+Freezes
+- go/whereismycommit https://go.atlassian.com/whereismycommit
 
 
 Burning topics
@@ -52,9 +59,7 @@ Own growth
 - QCheck https://hello.atlassian.net/wiki/spaces/~yjutard/pages/1249933773
 
 
-Engineering:
-- Freezes https://hello.atlassian.net/wiki/spaces/SRE/pages/166805563/Change+Freezes
-- Dev list https://hello.atlassian.net/wiki/spaces/PGT/pages/198265283/Fundle+dev+check+list
+
 
 
 Doc interne:
@@ -68,6 +73,9 @@ Doc interne:
 - bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
 - notes/services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
 - search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
+- blog draft https://hello.atlassian.net/wiki/spaces/~yjutard/pages/688767586/Perpetual+Blogpost+Draft
+- benefits https://hello.atlassian.net/wiki/spaces/~yjutard/pages/691641962/Notes+Atlassian+benefits
+- good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
 
 
 Doc externe
@@ -90,7 +98,11 @@ Tools:
 
 
 Shipits
-- GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
+- 57 https://shipit.atlassian.net/browse/SHPLVII-140
+- 56 https://shipit.atlassian.net/browse/SHPLVI-356
+- 54 https://shipit.atlassian.net/browse/SHPLIV-162
+- 52 https://shipit.atlassian.net/browse/SHPLII-192
+- 51 https://shipit.atlassian.net/browse/SHPLI-161
 - 50 https://shipit.atlassian.net/browse/SHPL-155
 - A4TIW TODO
 - 49 https://shipit.atlassian.net/browse/SHPXLIX-268
@@ -112,6 +124,7 @@ Shipits
 - GIW3 https://shipit.atlassian.net/browse/GIW3-6
 - TODO https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2017/10/29/219141981/ShipIt+40+Syd+Growth+Innovation+Week+3+Syd+-+creating+Stride+bots+and+contributing+back
 - 40 https://shipit.atlassian.net/browse/SHPXL-392
+- GIWs https://hello.atlassian.net/wiki/spaces/PGT/pages/197457446/Growth+Innovation+Weeks
 
 
 Roulette
@@ -129,5 +142,9 @@ Review
 - 1000eyes https://app.thousandeyes.com/
 - rsrc https://hello.atlassian.net/pages/viewpage.action?pageId=3841753305
 
+
 Foundation
 - TODO
+
+
+- Q&A https://hello.atlassian.net/wiki/plugins/servlet/ac/com.atlassian.confluence.plugins.confluence-questions/globalQuestionsViewer?ac.com.atlassian.confluence.plugins.confluence-questions.path=/questions
