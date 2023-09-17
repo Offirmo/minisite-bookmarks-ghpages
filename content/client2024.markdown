@@ -66,16 +66,13 @@ Doc interne:
 - ++ Hello home https://hello.atlassian.net/wiki/home
 - ++ Yves' notes https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219142285/Yves%27+notes
 - ++ Yves' blog https://hello.atlassian.net/wiki/spaces/~yjutard/blog/
-- ++ dev notes https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
-- + key repos https://hello.atlassian.net/wiki/spaces/PGT/pages/198246747/Key+repos+that+we+work+with
+- + dev notes -- J-Love https://hello.atlassian.net/wiki/spaces/PGT/pages/198254950/Growth+Engineering+-+Developer+Help+Notes
+- + dev notes -- Makkuro https://hello.atlassian.net/wiki/spaces/ADOS/pages/1663833674/Makkuro+-+dev+notes+guidelines
+- + could doc https://developer.atlassian.com/cloud/
 - blog/LD https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2019/07/22/514631777/Up+to+date+list+of+LaunchDarkly+gotchas+to+watch+out+for
 - better QA https://hello.atlassian.net/wiki/spaces/~yjutard/pages/328770398/2018+11+Better+QA+less+incidents
-- bootcamps https://hello.atlassian.net/display/BOOTCAMP/Classes
-- notes/services https://hello.atlassian.net/display/~yjutard/Notes%3A+Services
 - search in code https://stash.atlassian.com/plugins/servlet/search?q=project%3ACONF%20%22fd-102%22
-- blog draft https://hello.atlassian.net/wiki/spaces/~yjutard/pages/688767586/Perpetual+Blogpost+Draft
-- benefits https://hello.atlassian.net/wiki/spaces/~yjutard/pages/691641962/Notes+Atlassian+benefits
-- good debates https://hello.atlassian.net/wiki/spaces/~yjutard/pages/219141931/Good+debates+reports+and+resources
+
 
 
 Doc externe
