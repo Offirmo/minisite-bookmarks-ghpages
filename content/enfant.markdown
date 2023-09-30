@@ -43,6 +43,7 @@ pinned:
 
 3-5 yo -- En 🇺🇸
 - Netflix -- Octonauts     https://www.netflix.com/title/80020935
+- My Little Pony FIM       https://www.netflix.com/au/title/70234440
 
 
 Later -- Fr 🇫🇷

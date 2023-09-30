@@ -26,22 +26,22 @@ Base downloads
 
 Firefox
 - +++ download     https://www.mozilla.org/en-US/firefox/new/
-- ++ Setup         https://github.com/Offirmo-team/wiki/wiki/Firefox
+- ++ wiki         https://github.com/Offirmo-team/wiki/wiki/Firefox
 - + Dashlane       https://addons.mozilla.org/en-US/firefox/addon/dashlane/
 - + sideberry      https://addons.mozilla.org/en-US/firefox/addon/sidebery/
-- uMatrix          https://addons.mozilla.org/en-US/firefox/addon/umatrix/
-- yt enhancer      https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
+- + uMatrix          https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+- + yt enhancer      https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
 - treetabs         https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/
 - containers       https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
 
 Chrome
 - +++ download   https://www.google.com/intl/en_us/chrome/
-- ++ Setup       https://github.com/Offirmo-team/wiki/wiki/Chrome
-- + Dashlane     https://www.dashlane.com/download
-- uMatrix        https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
-- yt enhancer    https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle/related
-- pocket         https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
+- ++ wiki       https://github.com/Offirmo-team/wiki/wiki/Chrome
+- + Dashlane     https://chrome.google.com/webstore/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
+- + uMatrix        https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
+- + yt enhancer    https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle/related
+- + pocket         https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
 - uMatrix options chrome-extension://ogfcmafjalglgifnmanfmnieipoejdcf/dashboard.html
 - chrome://extensions/
 - Chrome Web store https://chrome.google.com/webstore/category/extensions
