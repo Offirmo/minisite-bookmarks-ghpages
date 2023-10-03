@@ -15,7 +15,7 @@ pinned:
 - Cocomelon fr           https://www.youtube.com/channel/UCvNfDBYST145F9RJ2CSk-4A/videos?view=0&sort=dd
 - Pingu                  https://www.youtube.com/user/pingu/videos
 - père castor            https://www.youtube.com/watch?v=HKoHDCeRx8g&list=PLBE5rkjLzDdhfyqoH5TIC0s3pZlb5AIiD
-
+- Trotro                 https://www.youtube.com/@TrotroOfficiel
 
 2 yo -- En 🇺🇸
 - Cocomelon                https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ/videos?view=0&sort=dd
@@ -35,7 +35,9 @@ pinned:
 
 3-5 ans -- Fr 🇫🇷
 - ++ france.tv        https://www.france.tv/enfants/trois-cinq-ans/tous-les-programmes/
-- Yakari              https://www.youtube.com/c/YAKARIOFFICIEL/videos
+- Yakari 1-5          https://www.youtube.com/watch?v=2SUd5gUziA0&list=PLzS4nmdM1iKdoytP2GOl0s3wjh-AvjWVI&pp=iAQB
+- Yakari 6-10         https://www.youtube.com/watch?v=6YC4JlktgBg&list=PLzS4nmdM1iKeuPLiFyQw4rwbm9_NRHrJZ&pp=iAQB
+- Yakari 11-15        https://www.youtube.com/watch?v=vwDrp-8LDpM&list=PLzS4nmdM1iKcII4N9yEBcP3jfZuNRK7wr&pp=iAQB
 - inspecteur gadget   https://www.youtube.com/channel/UCTubwSVLxOFV0DvQozYJhUQ/videos
 - Oui Oui             https://www.youtube.com/c/OuiOuiofficielfrancais/videos?view=0&sort=dd&flow=grid
 - maya l'abeille      https://www.youtube.com/@MayaFR/videos
@@ -49,8 +51,8 @@ pinned:
 Later -- Fr 🇫🇷
 - Disney              https://www.youtube.com/c/disneyfr/playlists?view=50&sort=dd&shelf_id=6
 - Schtroumpfs         https://www.youtube.com/playlist?list=PLEMKcYFLxBRC2-qa_vBQyLySflE4qsPhk
-
-
+- Blake & Mortimer    https://www.youtube.com/@blakemortimerofficiel9614/playlists
+- Malheurs de Sophie? https://www.youtube.com/@MalheursDeSophieFR/playlists
 
 
 
@@ -58,7 +60,8 @@ Later -- En
 - VeggieTales https://www.youtube.com/veggietales/videos?view=0&sort=dd&flow=grid
 - ABC for kids         https://iview.abc.net.au/channel/abc4kids
 - denver le dernier dinosaure  https://www.youtube.com/watch?v=0qquUsMQMdY&list=PLr6meh0B0TFyHNKACMsWcZca4BF1rf3zX
-
+- Valerian  https://www.youtube.com/@valerianlaurelineenglishof984/playlists
+-
 
 To check
 - https://fr.wikipedia.org/wiki/Les_Animaux_du_Bois_de_Quat%27sous
