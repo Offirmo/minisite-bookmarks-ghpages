@@ -34,7 +34,12 @@ pinned:
 
 
 3-5 ans -- Fr 🇫🇷
-- ++ france.tv        https://www.france.tv/enfants/trois-cinq-ans/tous-les-programmes/
+- ++ france.tv                            https://www.france.tv/enfants/trois-cinq-ans/tous-les-programmes/
+- il était une fois -- l'homme            https://www.france.tv/france-4/il-etait-une-fois-l-homme/
+- il était une fois -- les découvreurs    https://www.france.tv/france-4/il-etait-une-fois-les-decouvreurs/
+- il était une fois -- les explorateurs   https://www.france.tv/france-4/il-etait-une-fois-les-explorateurs/
+- il était une fois -- la vie             https://www.france.tv/france-4/il-etait-une-fois-la-vie/
+- yt il était une fois   https://www.youtube.com/@HelloMaestrofr/playlists
 - Yakari 1-5          https://www.youtube.com/watch?v=2SUd5gUziA0&list=PLzS4nmdM1iKdoytP2GOl0s3wjh-AvjWVI&pp=iAQB
 - Yakari 6-10         https://www.youtube.com/watch?v=6YC4JlktgBg&list=PLzS4nmdM1iKeuPLiFyQw4rwbm9_NRHrJZ&pp=iAQB
 - Yakari 11-15        https://www.youtube.com/watch?v=vwDrp-8LDpM&list=PLzS4nmdM1iKcII4N9yEBcP3jfZuNRK7wr&pp=iAQB
@@ -46,6 +51,12 @@ pinned:
 3-5 yo -- En 🇺🇸
 - Netflix -- Octonauts     https://www.netflix.com/title/80020935
 - My Little Pony FIM       https://www.netflix.com/au/title/70234440
+- Magic Schoolbus -- s1    https://www.youtube.com/playlist?list=PLgBHIYV2JeVZaUlh8Ka3UZ7d9TtIo1aH1
+- Magic Schoolbus -- s2    https://www.youtube.com/playlist?list=PLgBHIYV2JeVZF9JjwP2FRqFDN0KySmS_-
+- Magic Schoolbus -- s3    https://www.youtube.com/playlist?list=PLgBHIYV2JeVYXT035RYH5aCrZpSYXJqWV
+- Magic Schoolbus -- s4    https://www.youtube.com/playlist?list=PLgBHIYV2JeVbWk74i3-bko7KYDxeeeKoB
+- Netflix -- Magic Schoolbus rides again   https://www.netflix.com/au/title/80108373
+
 
 
 Later -- Fr 🇫🇷
@@ -61,7 +72,8 @@ Later -- En
 - ABC for kids         https://iview.abc.net.au/channel/abc4kids
 - denver le dernier dinosaure  https://www.youtube.com/watch?v=0qquUsMQMdY&list=PLr6meh0B0TFyHNKACMsWcZca4BF1rf3zX
 - Valerian  https://www.youtube.com/@valerianlaurelineenglishof984/playlists
--
+
+
 
 To check
 - https://fr.wikipedia.org/wiki/Les_Animaux_du_Bois_de_Quat%27sous
