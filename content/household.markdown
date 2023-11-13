@@ -3,41 +3,41 @@
 
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
+- perso https://www.offirmo.net/minisite-bookmarks-ghpages/perso
 - Drive https://drive.google.com/drive/#my-drive
 - Inbox https://inbox.google.com/
 - Wiki https://github.com/Offirmo-team/wiki/wiki
+
+
+
+💸💸💸
 - NAB https://ib.nab.com.au/nabib/index.jsp
-- AtlasShop https://atlassian.rewardgateway.com.au/SmartSpending
+- Wise https://wise.com/login
+- solium https://atlassian.solium.com/solium/servlet/userLogin.do
+- prezzee https://www.prezzee.com.au/wallet/
+- paypal https://www.paypal.com/en/signin
+- Me https://ib.mebank.com.au/
+- Reward gateway https://atlassian.rewardgateway.com.au/
 
-
-Investissement
-- BRICKX
-- Stoneraise https://www.stoneraise.com/
-
-
-
-Banque
-- Fortuneo https://mabanque.fortuneo.fr/fr/identification.jsp
-- CB virtuelles https://mabanque.fortuneo.fr/paiement-securise/#/login
-- Boursorama https://clients.boursorama.com/connexion/
-- WeSwap https://app.weswap.com/#/fr/login
-- Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
-- Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 
 
 Administration Australie
--
+- myGov https://my.gov.au/
+- ATO.gov.au https://www.ato.gov.au/
+- service NSW https://www.service.nsw.gov.au/
+- forms NSW https://onlineforms.bdm.nsw.gov.au/
+- Sydney https://online.cityofsydney.nsw.gov.au/Account
+- Water https://ebill.sydneywater.com.au/vpo/
+- centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
+- BUPA https://my.bupa.com.au/
+- super
+- kidsoft https://parentslogin.kidsoft.com.au/
 
 
 Administration France
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
 - https://www.impots.gouv.fr/portail/
 - https://www.info-retraite.fr/
-
-
-
-Super:
-* https://extranet.atlassian.com/questions/2331674858/what-are-some-good-alternatives-to-bt-super
 
 
 Soins
