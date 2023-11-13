@@ -29,9 +29,22 @@ Administration Australie
 - Sydney https://online.cityofsydney.nsw.gov.au/Account
 - Water https://ebill.sydneywater.com.au/vpo/
 - centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
-- BUPA https://my.bupa.com.au/
 - super
-- kidsoft https://parentslogin.kidsoft.com.au/
+
+
+Soins
+- BUPA https://my.bupa.com.au/
+- Woolhara
+- dentist https://expats.atlassian.net/wiki/spaces/SYD/pages/20873224/Dentist
+- dentist https://extranet.atlassian.com/questions/2277769242/can-anyone-recommend-a-good-trustworthy-dentist-in-sydney
+- doctor https://expats.atlassian.net/wiki/spaces/SYD/pages/21594129/Doctor
+- doctor https://expats.atlassian.net/wiki/spaces/SYD/pages/21594133/Choosing+a+Doctor
+
+
+
+Utils
+- GoGet https://www.goget.com.au/
+
 
 
 Administration France
@@ -39,12 +52,6 @@ Administration France
 - https://www.impots.gouv.fr/portail/
 - https://www.info-retraite.fr/
 
-
-Soins
-- dentist https://expats.atlassian.net/wiki/spaces/SYD/pages/20873224/Dentist
-- dentist https://extranet.atlassian.com/questions/2277769242/can-anyone-recommend-a-good-trustworthy-dentist-in-sydney
-- doctor https://expats.atlassian.net/wiki/spaces/SYD/pages/21594129/Doctor
-- doctor https://expats.atlassian.net/wiki/spaces/SYD/pages/21594133/Choosing+a+Doctor
 
 
 Medicare
@@ -57,8 +64,9 @@ Tenants
 * https://www.tenants.org.au/factsheet-09-you-want-to-leave
 
 
-Educ
-* https://extranet.atlassian.com/display/PEOP/Expats+Benefits+-+Child+Education+Costs
+Enfants
+- kidsoft https://parentslogin.kidsoft.com.au/
+- https://extranet.atlassian.com/display/PEOP/Expats+Benefits+-+Child+Education+Costs
 
 
 Work
