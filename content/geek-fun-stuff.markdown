@@ -52,6 +52,11 @@ Strips
 - https://falseknees.com/
 
 
+Memes
+- https://www.nyan.cat/
+- picklecat https://dn.ht/picklecat/
+
+
 Webcomics
 - ++ OOTS https://www.giantitp.com/comics/oots0001.html
 - + OOTS help https://www.giantitp.com/forums/showthread.php?4909-What-Haley-Said-Compilation
@@ -61,7 +66,6 @@ Webcomics
 Misc
 - https://oss.love/
 - https://what-if.xkcd.com/
-- picklecat https://dn.ht/picklecat/
 - SCP https://scp-wiki.wikidot.com/
 - https://poolsuite.net/
 
