@@ -4,7 +4,6 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - All https://www.offirmo.net/minisite-bookmarks-ghpages/
 - wfw https://workflowy.com/
-- bard https://bard.google.com/
 - 12ft https://12ft.io/
 - Drive https://drive.google.com/drive/#my-drive
 - Gmail https://inbox.google.com/
@@ -31,6 +30,11 @@ Pinned tabs
 - wfw https://workflowy.com/
 - mail https://mail.google.com/
 - social https://docs.google.com/spreadsheets/d/1s743-LFI_maviAH5-2wfj6n4BjefBiqFCkeMFYR1tJw/
+
+Tools
+- ChatGPT https://app.chatgpt.com/
+- bard https://bard.google.com/
+- meta.ai https://www.meta.ai/
 
 Projects
 - https://trello.com/b/DMCNfECk/dw

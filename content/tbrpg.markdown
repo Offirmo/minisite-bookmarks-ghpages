@@ -108,6 +108,10 @@ Monetize
 - https://opencollective.com/
 - patreon
 
+Tools
+- https://www.remove.bg/
+
+
 
 Misc
 - F redirect https://offirmo.netlify.com/C-apps--clients/the-boring-rpg-browser/meta/index.html
