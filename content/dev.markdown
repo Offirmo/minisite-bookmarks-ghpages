@@ -4,6 +4,12 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 
+online tools
+- AI palettes https://deblank.com/colors
+- SVG viewer https://www.svgviewer.dev/
+
+
+
 npm
 * listing offirmo.net https://www.offirmo.net/offirmo-monorepo/0-doc/modules-directory/index.html
 * wiki npm modules https://github.com/Offirmo/offirmo-monorepo/wiki/npm-modules
@@ -82,4 +88,3 @@ Doc
 - Enum https://github.com/dphilipson/typescript-string-enums
 - react-overlays https://github.com/react-bootstrap/react-overlays
 - LS polyfill https://github.com/azu/localstorage-ponyfill
-

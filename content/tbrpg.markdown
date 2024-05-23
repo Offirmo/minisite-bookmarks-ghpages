@@ -109,7 +109,9 @@ Monetize
 - patreon
 
 Tools
+- https://app.leonardo.ai/
 - https://www.remove.bg/
+- https://firefly.adobe.com/generate/images
 
 
 

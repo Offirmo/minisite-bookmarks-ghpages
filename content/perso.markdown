@@ -33,7 +33,7 @@ Pinned tabs
 
 Tools
 - ChatGPT https://app.chatgpt.com/
-- bard https://bard.google.com/
+- Gemini https://gemini.google.com/app
 - meta.ai https://www.meta.ai/
 
 Projects
