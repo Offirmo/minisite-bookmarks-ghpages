@@ -34,9 +34,14 @@ Emergency
 - + LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
 
+Standup
+- https://www.nytimes.com/games/connections
+- https://framed.wtf/
+- https://worldle.teuteuf.fr/
+-
 
-Erai
-- board https://hello.atlassian.net/jira/software/projects/ERAI/boards/5907/backlog?assignee=557058%3A485ecbf7-91cf-4faf-8e04-fc1752ff04a6&selectedIssue=ERAI-1501
+Cosmos
+- board https://hello.jira.atlassian.cloud/jira/software/projects/SEA/boards/4524
 
 
 Engineering:
