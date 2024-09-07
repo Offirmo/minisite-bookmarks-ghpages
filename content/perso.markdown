@@ -130,16 +130,14 @@ Wiki perso:
 - browser APIs https://github.com/Offirmo-team/wiki/wiki/browser-APIs
 - + dév. web https://github.com/Offirmo-team/wiki/wiki/développement-web
 - + https://github.com/Offirmo-team/wiki/wiki/css
-- + https://github.com/Offirmo-team/wiki/wiki/javascript
+- + https://github.com/Offirmo-team/wiki/wiki/svg
 - + https://github.com/Offirmo-team/wiki/wiki/typescript
+- + https://github.com/Offirmo-team/wiki/wiki/javascript
+- https://github.com/Offirmo-team/wiki/wiki/react
 - + https://github.com/Offirmo-team/wiki/wiki/git
 - + https://github.com/Offirmo-team/wiki/wiki/UX
-- https://github.com/Offirmo-team/wiki/wiki/growth
-- https://github.com/Offirmo-team/wiki/wiki/react
-- https://github.com/Offirmo-team/wiki/wiki/serveur
 - https://github.com/Offirmo-team/wiki/wiki/carrière
 - dév. logiciel https://github.com/Offirmo-team/wiki/wiki/développement-logiciel
-- https://github.com/Offirmo-team/wiki/wiki/cryptocurrency
 - https://github.com/Offirmo-team/wiki/wiki/RPG
 - https://github.com/Offirmo-team/wiki/wiki/vie
 
@@ -170,6 +168,7 @@ Dev tools:
 - online regexp tester https://regex101.com/
 - Color converter https://www.cssportal.com/css-color-converter/
 - Lorem Ipsum https://www.lipsum.com/feed/html
+- SVG https://www.svgviewer.dev/
 - favicon https://realfavicongenerator.net/
 - favicon checker https://www.colinkeany.com/favicon-checker/
 - Online PDF editor https://www.pdfescape.com/

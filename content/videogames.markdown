@@ -1,3 +1,5 @@
+# online games
+
 
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
@@ -14,12 +16,11 @@ Elvenar
 
 Web:
 - Ouigo pinball https://letsplay.ouigo.com/
-- gnomes https://www.google.com.au/logos/2018/gnomes/gnomes18.html?hl=en
+- google doodles https://doodles.google/search/?form_tags=interactive%20game
 - minesweeper https://proxx.app/
 - https://archive.org/details/msdos_Oregon_Trail_Deluxe_The_1992
 - https://js13kgames.com/games/edge-not-found/index.html
 - https://shapez.io/
-- Google JO https://www.google.com/?fpdoodle=1&doodle=174787827&nord=1
 - full RPG http://game.granbluefantasy.jp/
 
 WoW
@@ -33,4 +34,4 @@ GW2
 - arena.net https://account.arena.net/welcome
 
 Misc
-- https://cloud.gg/games
+- cload gaming https://cloud.gg/games

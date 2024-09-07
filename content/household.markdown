@@ -1,4 +1,4 @@
-# Personal bookmarks
+# Household bookmarks
 
 
 pinned:
