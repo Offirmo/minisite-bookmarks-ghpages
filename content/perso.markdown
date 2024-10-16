@@ -32,10 +32,12 @@ Pinned tabs
 - social https://docs.google.com/spreadsheets/d/1s743-LFI_maviAH5-2wfj6n4BjefBiqFCkeMFYR1tJw/
 
 Tools
-- advanced search https://www.google.com/advanced_search
-- ChatGPT https://app.chatgpt.com/
+- ++ ChatGPT https://app.chatgpt.com/
+- Google advanced search https://www.google.com/advanced_search
 - Gemini https://gemini.google.com/app
 - meta.ai https://www.meta.ai/
+- reactions https://statlas.prod.atl-paas.net/czhou/reacc/index.html
+- emoji text https://cyanharlow.bitbucket.io/
 
 Projects
 - https://trello.com/b/DMCNfECk/dw
