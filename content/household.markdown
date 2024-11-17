@@ -3,22 +3,26 @@
 
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
-- perso https://www.offirmo.net/minisite-bookmarks-ghpages/perso
-- Drive https://drive.google.com/drive/#my-drive
-- Inbox https://inbox.google.com/
-- Wiki https://github.com/Offirmo-team/wiki/wiki
-
+- 🔖 https://www.offirmo.net/minisite-bookmarks-ghpages/perso
+- 🗂️ https://drive.google.com/drive/#my-drive
+- ✉️ https://inbox.google.com/
+- 🗺️ https://www.google.com/maps
+- MyMaps
+- Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FA21/boards/1/backlog
 
 
 💸💸💸
-- NAB https://ib.nab.com.au/nabib/index.jsp
-- Wise https://wise.com/login
-- solium https://atlassian.solium.com/solium/servlet/userLogin.do
+- ++ NAB https://ib.nab.com.au/nabib/index.jsp
+- ++ Athena https://www.athena.com.au/
+- + Wise https://wise.com/login
+- Reward gateway https://atlassian.rewardgateway.com.au/
 - prezzee https://www.prezzee.com.au/wallet/
 - paypal https://www.paypal.com/en/signin
 - Me https://ib.mebank.com.au/
-- Reward gateway https://atlassian.rewardgateway.com.au/
 
+
+Utils
+- GoGet https://www.goget.com.au/
 
 
 Administration Australie
@@ -31,8 +35,8 @@ Administration Australie
 - centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
 
 
-Private
-- Athena https://www.athena.com.au/
+💸💸💸 Private
+- solium https://atlassian.solium.com/solium/servlet/userLogin.do
 - super https://portal.australiansuper.com/login
 
 
@@ -46,8 +50,7 @@ Soins
 
 
 
-Utils
-- GoGet https://www.goget.com.au/
+
 
 
 
