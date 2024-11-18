@@ -7,8 +7,9 @@ pinned:
 - 🗂️ https://drive.google.com/drive/#my-drive
 - ✉️ https://inbox.google.com/
 - 🗺️ https://www.google.com/maps
-- MyMaps
+- MyMaps https://www.google.com/maps/d/home
 - Jira https://chloe-and-ye.atlassian.net/jira/software/projects/FA21/boards/1/backlog
+- Trello https://trello.com/b/DtCrAMOB/important-family-dates
 
 
 💸💸💸

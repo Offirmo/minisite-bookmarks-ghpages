@@ -56,6 +56,7 @@ pinned:
 - Magic Schoolbus -- s3    https://www.youtube.com/playlist?list=PLgBHIYV2JeVYXT035RYH5aCrZpSYXJqWV
 - Magic Schoolbus -- s4    https://www.youtube.com/playlist?list=PLgBHIYV2JeVbWk74i3-bko7KYDxeeeKoB
 - Netflix -- Magic Schoolbus rides again   https://www.netflix.com/au/title/80108373
+- Dragons Rescue Riders
 
 
 
@@ -72,10 +73,13 @@ Later -- En
 - ABC for kids         https://iview.abc.net.au/channel/abc4kids
 - denver le dernier dinosaure  https://www.youtube.com/watch?v=0qquUsMQMdY&list=PLr6meh0B0TFyHNKACMsWcZca4BF1rf3zX
 - Valerian  https://www.youtube.com/@valerianlaurelineenglishof984/playlists
-
+- Fast & Furious Spy Racers
 
 
 To check
 - https://fr.wikipedia.org/wiki/Les_Animaux_du_Bois_de_Quat%27sous
 - Increditales https://www.youtube.com/channel/UCAK1Ex6_IRIwLPDmVXWbf-w/videos?view=0&sort=dd&flow=grid
 - https://au.cbeebies.com/
+- https://kidscreen.com/
+- https://www.9now.com.au/shows/kids
+- https://en.wikipedia.org/wiki/Lego_Star_Wars:_Droid_Tales
