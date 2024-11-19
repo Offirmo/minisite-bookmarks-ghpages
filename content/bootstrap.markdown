@@ -10,18 +10,17 @@ pinned:
 Base downloads
 - +++ software updates TODO
 - +++ git in terminal TODO
-- ++ Dropbox https://www.dropbox.com/install
-- ++ bepo https://bepo.fr/wiki/Installation
-- use "afnor"
 - ++ ODE + apps through brew https://github.com/Offirmo/open-source-dev-env
-- LibreOffice https://www.libreoffice.org/download/download/
-- + jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
+- Brio driver https://hub.sync.logitech.com/tunedesktop?posts.view=downloads
+- DisplayLink https://www.synaptics.com/products/displaylink-graphics/downloads
+- Plain Text Editor https://apps.apple.com/us/app/plain-text-editor/id1572202501
+- Velja https://sindresorhus.com/velja
 - Safari Tech Preview https://developer.apple.com/safari/download/
+- Chrome dev https://www.google.com/intl/en_us/chrome/dev/
+- Chrome canary https://www.google.com/chrome/canary/
+- LibreOffice https://www.libreoffice.org/download/download/
 - LT browser https://www.lambdatest.com/lt-browser
-- code https://apps.apple.com/us/app/xcode/id497799835
-- source tree https://www.sourcetreeapp.com/
-- Skype https://www.skype.com/en/get-skype/
-- Signal https://signal.org/en/download/
+- xcode https://apps.apple.com/us/app/xcode/id497799835
 
 
 Firefox
@@ -58,6 +57,12 @@ Setup
 - ++ macOs https://github.com/Offirmo-team/wiki/wiki/macOS
 - + WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
 - dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
+- jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
+- source tree https://www.sourcetreeapp.com/
+- Skype https://www.skype.com/en/get-skype/
+- Signal https://signal.org/en/download/
+- Dropbox https://www.dropbox.com/install
+- bepo https://bepo.fr/wiki/Installation
 
 
 Knowledge base
