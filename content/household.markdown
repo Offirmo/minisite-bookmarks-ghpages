@@ -24,6 +24,8 @@ pinned:
 
 Utils
 - GoGet https://www.goget.com.au/
+- Elec https://www.originenergy.com.au/my/
+- Water https://ebill.sydneywater.com.au/vpo/
 
 
 Administration Australie
@@ -32,7 +34,6 @@ Administration Australie
 - ++ service NSW https://www.service.nsw.gov.au/
 - forms NSW https://onlineforms.bdm.nsw.gov.au/
 - ++ Sydney https://online.cityofsydney.nsw.gov.au/Account
-- Water https://ebill.sydneywater.com.au/vpo/
 - centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
 
 

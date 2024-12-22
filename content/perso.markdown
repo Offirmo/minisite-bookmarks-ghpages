@@ -31,6 +31,7 @@ Pinned tabs
 - mail https://mail.google.com/
 - social https://docs.google.com/spreadsheets/d/1s743-LFI_maviAH5-2wfj6n4BjefBiqFCkeMFYR1tJw/
 
+
 Tools
 - ++ ChatGPT https://app.chatgpt.com/
 - Google advanced search https://www.google.com/advanced_search
@@ -38,6 +39,7 @@ Tools
 - meta.ai https://www.meta.ai/
 - reactions https://statlas.prod.atl-paas.net/czhou/reacc/index.html
 - emoji text https://cyanharlow.bitbucket.io/
+
 
 Projects
 - https://trello.com/b/DMCNfECk/dw
@@ -60,7 +62,7 @@ Projects
 💸💸💸
 - NAB https://ib.nab.com.au/nabib/index.jsp
 - (transfer)Wise https://wise.com/login
-- solium https://atlassian.solium.com/solium/servlet/userLogin.do
+- solium Atl https://atlassian.solium.com/solium/servlet/userLogin.do
 - prezzee https://www.prezzee.com.au/wallet/
 - paypal https://www.paypal.com/en/signin
 - Me https://ib.mebank.com.au/
@@ -72,28 +74,26 @@ Projects
 - Reward gateway https://atlassian.rewardgateway.com.au/
 
 
-Misc
-- Tree helper https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
-- dropbox https://www.dropbox.com/
+Services
 - library https://library.cityofsydney.nsw.gov.au/Montage/Books.aspx
-- https://framindmap.org/c/maps/
+- dropbox https://www.dropbox.com/
+- myGov https://my.gov.au/
+- service NSW https://www.service.nsw.gov.au/
+- Sydney https://online.cityofsydney.nsw.gov.au/Account
+- Water https://ebill.sydneywater.com.au/vpo/
+- BUPA https://my.bupa.com.au/
+- ATO.gov.au https://www.ato.gov.au/
+- centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
+
+
+
+Tools
+- speed test https://speed.measurementlab.net/
+- Tree helper https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
+- MMaps https://framindmap.org/c/maps/
 - slack text https://cyanharlow.bitbucket.io/
 - Emoji www.emoji-cheat-sheet.com
 - Emoji https://emojihomepage.com/
-- AirDroid 192.168.1.11:8888
-- OneTab chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
-
-
-Admin:
-- Chrome Web Store https://chrome.google.com/webstore/devconsole/g06317458645218047812
-- Edge Store https://partner.microsoft.com/en-us/dashboard/microsoftedge/
-- mutadis.org https://www.mutadis.org/connexion/
-- FDC https://fundfordemocraticculture.org/connexion
-- ameliedescamps.com https://www.ameliedescamps.com/connexion
-- https://javerzac.jutard.com
-- demoetendard https://demoetendard-ef001.rhcloud.com/connexion
-- bac à sable WP https://bacasable-ef001.rhcloud.com/connexion
-- webextension Firefox https://addons.mozilla.org/en-US/developers/addons
 
 
 Loterie:
@@ -103,22 +103,14 @@ Loterie:
 - HN https://github.com/xueyuanl/daily-hackernews/issues
 - https://news.google.fr/
 - https://news.google.com/news/?ned=au&gl=AU&hl=en-AU
-- feedly.com/#my
+- https://feedly.com/#my
 - https://www.facebook.com/
 - https://www.linkedin.com/
-- https://smile.amazon.com/
 
 
 To check:
 - https://parentslogin.kidsoft.com.au/
-- myGov https://my.gov.au/
-- service NSW https://www.service.nsw.gov.au/
 - forms NSW https://onlineforms.bdm.nsw.gov.au/
-- Sydney https://online.cityofsydney.nsw.gov.au/Account
-- Water https://ebill.sydneywater.com.au/vpo/
-- BUPA https://my.bupa.com.au/
-- ATO.gov.au https://www.ato.gov.au/
-- centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
 - https://www.impots.gouv.fr/portail/
 - https://www.info-retraite.fr/
@@ -168,6 +160,7 @@ Docs:
 
 Dev tools:
 - online regexp tester https://regex101.com/
+- CSS colors http://davidbau.com/colors/
 - Color converter https://www.cssportal.com/css-color-converter/
 - Lorem Ipsum https://www.lipsum.com/feed/html
 - SVG https://www.svgviewer.dev/
@@ -278,3 +271,17 @@ Legacy
 - ING direct https://secure.ingdirect.fr/protected/pages/index.jsf#
 - Crédit Mutuel https://www.creditmutuel.fr/fr/authentification.html
 - Compte Nickel https://mon.compte-nickel.fr/identifiez-vous
+
+
+
+
+TOSORT
+- Chrome Web Store https://chrome.google.com/webstore/devconsole/g06317458645218047812
+- Edge Store https://partner.microsoft.com/en-us/dashboard/microsoftedge/
+- mutadis.org https://www.mutadis.org/connexion/
+- FDC https://fundfordemocraticculture.org/connexion
+- ameliedescamps.com https://www.ameliedescamps.com/connexion
+- https://javerzac.jutard.com
+- demoetendard https://demoetendard-ef001.rhcloud.com/connexion
+- bac à sable WP https://bacasable-ef001.rhcloud.com/connexion
+- webextension Firefox https://addons.mozilla.org/en-US/developers/addons
