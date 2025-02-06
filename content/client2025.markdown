@@ -3,8 +3,10 @@
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - SSO https://canva.okta.com
-- portal https://canva.okta.com/app/UserHome
 - Drive https://drive.google.com/drive/#my-drive
+
+
+Portals
 
 
 Pin1
@@ -15,6 +17,7 @@ Pin1
 Pin2
 - 1:1 xxx
 - Own Growth xxx
+
 
 Pin3
 - dashboard xxx
@@ -29,15 +32,21 @@ Emergency
 - ++ if you see sth… https://hello.atlassian.net/wiki/spaces/~yjutard/blog/2018/08/03/261462251/WIP+If+you+see+something+say+something...
 - + LD https://app.launchdarkly.com/default/production/features
 - Jira bug https://jdog.jira-dev.com/servicedesk/customer/portal/104
+- ++ revert ??
+- + FFlags ??
 
 
-Team
-- xxx
+Team "Apps runtime"
+
+
 
 Engineering
-- xxx
+- GitHub me https://github.com/yjutard
 
 
+Help
+
+tosort
 
 Onboarding
 - help mailto:people@canva.com
@@ -46,6 +55,8 @@ Onboarding
 
 Hardware?
 - portable displays https://au.espres.so/
+- USB-C hub?
+- new dock?
 
 Misc
 - interview prep https://www.canva.com/design/DAFrqNg4EPU/G4uqslwVioraklTZW0HMIw/view

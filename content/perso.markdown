@@ -94,6 +94,8 @@ Tools
 - slack text https://cyanharlow.bitbucket.io/
 - Emoji www.emoji-cheat-sheet.com
 - Emoji https://emojihomepage.com/
+- https://www.remove.bg/
+- https://labs.kaleido.ai/
 
 
 Loterie:
