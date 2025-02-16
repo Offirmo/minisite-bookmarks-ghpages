@@ -4,6 +4,48 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 
+core docs
+- +++ https://github.com/Offirmo-team/wiki
+- +++ https://devdocs.io/
+- ++ https://www.joshwcomeau.com/operator-lookup/
+- antisèche programmation UT https://docs.google.com/spreadsheets/d/1VC5DRHw-ResS5LgoTA131ORXCv9s_aNGuhUNOEeA1-c/?gid=378923023
+- antisèche entretien on-screen https://docs.google.com/spreadsheets/d/1KBBw1IkffjMwoy6anErauYwmKkVMWJ19AJaXNmTvQJw/
+- log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/
+- TBRPG RichText https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/
+
+
+Dev
+- :1000    http://localhost:1000
+- :1234    http://localhost:1234
+- :1981    http://localhost:1981
+- :2000    http://localhost:2000
+- :3000    http://localhost:3000
+- :8080    http://localhost:8080
+- :9090    http://localhost:9090
+
+
+GitHub
+- +++ Offirmo https://github.com/Offirmo
+- ++ monorepo https://github.com/Offirmo/offirmo-monorepo
+
+
+Monorepo
+- offirmo.net via GH pages https://www.offirmo.net/offirmo-monorepo/
+- netlify     https://offirmo-monorepo.netlify.com/
+- wiki https://github.com/Offirmo/offirmo-monorepo/wiki/
+
+
+Marketing
+- offirmo https://www.offirmo.net/
+- blog prod https://www.offirmo.net/blog/
+- Product Hunt https://www.producthunt.com/upcoming/
+- itch.io https://offirmo.itch.io/
+- liste https://cobeats.com/folder/SkZNevS9H
+
+
+
+
+
 online tools
 - AI palettes https://deblank.com/colors
 - SVG viewer https://www.svgviewer.dev/
@@ -15,11 +57,7 @@ npm
 * wiki npm modules https://github.com/Offirmo/offirmo-monorepo/wiki/npm-modules
 
 
-Monorepo
-- src https://github.com/Offirmo/offirmo-monorepo
-- offirmo.net via GH pages https://www.offirmo.net/offirmo-monorepo/
-- netlify     https://offirmo-monorepo.netlify.com/
-- wiki https://github.com/Offirmo/offirmo-monorepo/wiki/
+
 
 
 offirmo-practical-js-logger
@@ -43,18 +81,7 @@ The Boring RPG
 - → https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 
 
-Marketing
-- offirmo https://www.offirmo.net/
-- blog prod https://www.offirmo.net/blog/
-- Product Hunt https://www.producthunt.com/upcoming/
-- itch.io https://offirmo.itch.io/
-- liste https://cobeats.com/folder/SkZNevS9H
 
-
-Dev
-- :8080    http://localhost:8080
-- :1981    http://localhost:1981
-- :1234    http://localhost:1234
 
 
 

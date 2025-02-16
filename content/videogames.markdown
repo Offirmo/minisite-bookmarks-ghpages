@@ -15,9 +15,10 @@ Elvenar
 
 
 Web:
-- Ouigo pinball https://letsplay.ouigo.com/
+- Ouigo pinball https://letsplay.ouigo.es/
+- aggreg https://www.karaqu.com/
 - google doodles https://doodles.google/search/?form_tags=interactive%20game
-- minesweeper https://proxx.app/
+- minesweeper minimal https://proxx.app/
 - https://archive.org/details/msdos_Oregon_Trail_Deluxe_The_1992
 - https://js13kgames.com/games/edge-not-found/index.html
 - https://shapez.io/
@@ -34,4 +35,5 @@ GW2
 - arena.net https://account.arena.net/welcome
 
 Misc
-- cload gaming https://cloud.gg/games
+- cloud gaming https://cloud.gg/games
+- down https://letsplay.ouigo.com/
