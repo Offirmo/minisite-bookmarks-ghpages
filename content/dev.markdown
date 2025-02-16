@@ -29,18 +29,18 @@ GitHub
 - ++ monorepo https://github.com/Offirmo/offirmo-monorepo
 
 
-Monorepo
-- offirmo.net via GH pages https://www.offirmo.net/offirmo-monorepo/
-- netlify     https://offirmo-monorepo.netlify.com/
-- wiki https://github.com/Offirmo/offirmo-monorepo/wiki/
-
-
 Marketing
 - offirmo https://www.offirmo.net/
 - blog prod https://www.offirmo.net/blog/
 - Product Hunt https://www.producthunt.com/upcoming/
 - itch.io https://offirmo.itch.io/
 - liste https://cobeats.com/folder/SkZNevS9H
+
+
+Monorepo
+- offirmo.net via GH pages https://www.offirmo.net/offirmo-monorepo/
+- netlify     https://offirmo-monorepo.netlify.com/
+- wiki https://github.com/Offirmo/offirmo-monorepo/wiki/
 
 
 
