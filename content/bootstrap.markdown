@@ -67,3 +67,21 @@ Setup
 
 Knowledge base
 - https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository
+
+
+
+
+
+Setup:
+- ode-env https://github.com/Offirmo/open-source-dev-env
+- Mac-OS https://github.com/Offirmo-team/wiki/wiki/macOS
+- dev-env https://github.com/Offirmo-team/wiki/wiki/dev-env
+- FF https://github.com/Offirmo-team/wiki/wiki/Firefox
+- DisplayLink https://www.displaylink.com/downloads/osx
+- bitmoji https://chrome.google.com/webstore/detail/bitmoji/bfgdeiadkckfbkeigkoncpdieiiefpig
+- new tab url https://chrome.google.com/webstore/detail/new-tab-url/njigpponciklokfkoddampoienefegcl
+- pocket https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
+- suspender https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg
+- FF down chrome://downloadmgr/content/downloadmgrOverlay.xul
+- Cext. chrome://extensions/
+- CSet. chrome://settings/
