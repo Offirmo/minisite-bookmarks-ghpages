@@ -3,7 +3,7 @@
 pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - All https://www.offirmo.net/minisite-bookmarks-ghpages/
-- wfw https://workflowy.com/
+- WFw https://workflowy.com/
 - 12ft https://12ft.io/
 - Drive https://drive.google.com/drive/#my-drive
 - Gmail https://inbox.google.com/
@@ -33,30 +33,24 @@ Pinned tabs
 
 
 Tools
-- ++ ChatGPT https://app.chatgpt.com/
+- pdf edit https://www.pdfescape.com/
+- speed test https://speed.measurementlab.net/
+- Tree helper https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
+- MMaps https://framindmap.org/c/maps/
+- slack text https://cyanharlow.bitbucket.io/
+- Emoji www.emoji-cheat-sheet.com
+- Emoji https://emojihomepage.com/
+- emoji text https://cyanharlow.bitbucket.io/
+- reactions https://statlas.prod.atl-paas.net/czhou/reacc/index.html
+
+
+Tools -- AI
+- + ChatGPT https://app.chatgpt.com/
 - Google advanced search https://www.google.com/advanced_search
 - Gemini https://gemini.google.com/app
 - meta.ai https://www.meta.ai/
-- reactions https://statlas.prod.atl-paas.net/czhou/reacc/index.html
-- emoji text https://cyanharlow.bitbucket.io/
-
-
-Projects
-- https://trello.com/b/DMCNfECk/dw
-- https://trello.com/b/k1wVMn6N/wikip%C3%A9dia-contrib
-- https://trello.com/b/IkOLKXXT/spring-cleaning-sale-everything-in-very-good-condition-and-working
-- TBRPG https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
-- W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
-- H https://docs.google.com/spreadsheets/d/1o8K0pv5QZVcopl4-6RZoot8ixmLZAJqFX99W7ec-wao/edit#gid=2075720335
-- NW https://docs.google.com/spreadsheets/d/1gw6oq6Y-lBK7dwHbHFAVsXwU0UsBMPSa6vW84FZwtS0/edit
-- RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit#gid=0
-- xP https://docs.google.com/spreadsheets/d/1fLPvAOTpolX8EksJt6zHNzoCN4fN_yaGexwJYNCQipc/edit#gid=0
-- idées https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
-- script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
-- Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
-- https://www.offirmo.net/
-- monorepo https://www.offirmo.net/offirmo-monorepo/
-- recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
+- remove.bg https://www.remove.bg/
+- more ai img https://labs.kaleido.ai/
 
 
 💸💸💸
@@ -86,16 +80,23 @@ Services
 - centrelink https://www.humanservices.gov.au/individuals/services/centrelink/centrelink-online-accounts
 
 
+Projects
+- https://trello.com/b/DMCNfECk/dw
+- https://trello.com/b/k1wVMn6N/wikip%C3%A9dia-contrib
+- https://trello.com/b/IkOLKXXT/spring-cleaning-sale-everything-in-very-good-condition-and-working
+- TBRPG https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
+- W https://docs.google.com/spreadsheets/d/1FRU7OYckwqF3cA6T2I65kPVIke5YDHzfWNuYXlcRPBI/edit
+- H https://docs.google.com/spreadsheets/d/1o8K0pv5QZVcopl4-6RZoot8ixmLZAJqFX99W7ec-wao/edit#gid=2075720335
+- NW https://docs.google.com/spreadsheets/d/1gw6oq6Y-lBK7dwHbHFAVsXwU0UsBMPSa6vW84FZwtS0/edit
+- RF https://docs.google.com/spreadsheets/d/1umjbNSWQHbH3nlWaXTEPtg2asTIp6BGBbx7XFkOt12s/edit#gid=0
+- xP https://docs.google.com/spreadsheets/d/1fLPvAOTpolX8EksJt6zHNzoCN4fN_yaGexwJYNCQipc/edit#gid=0
+- idées https://docs.google.com/document/d/1RbWOZsk7rTISq5jtmZEqVs125H3lew4FhzJqxSwDMzI/edit#
+- script https://docs.google.com/document/d/1aFDlI9cy__IB_N4Qsn8hdCD-gUqCjnwleI6Nhn29WGQ/edit
+- Projets https://docs.google.com/spreadsheet/ccc?key=0AtLHgwXYff3zdFowNGNYZjgyb3VqNTlrTGtYTUF2elE#gid=0
+- https://www.offirmo.net/
+- monorepo https://www.offirmo.net/offirmo-monorepo/
+- recettes https://docs.google.com/document/d/1C4TkPOeraCCuj5-AbjM-wAtJqBD1OC_XkpUz2XvLsSw/edit#
 
-Tools
-- speed test https://speed.measurementlab.net/
-- Tree helper https://www.offirmo.net/web-tech-experiments/browser/vanilla/app_tree_helper.html
-- MMaps https://framindmap.org/c/maps/
-- slack text https://cyanharlow.bitbucket.io/
-- Emoji www.emoji-cheat-sheet.com
-- Emoji https://emojihomepage.com/
-- https://www.remove.bg/
-- https://labs.kaleido.ai/
 
 
 Loterie:
@@ -111,7 +112,7 @@ Loterie:
 
 
 To check:
-- https://parentslogin.kidsoft.com.au/
+- kidsoft https://parentslogin.kidsoft.com.au/
 - forms NSW https://onlineforms.bdm.nsw.gov.au/
 - Assurance maladie https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true
 - https://www.impots.gouv.fr/portail/

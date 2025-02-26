@@ -4,13 +4,16 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 
 
+
 core docs
+- ++ wiki https://github.com/Offirmo-team/wiki/wiki
 - ++ https://devdocs.io/
 - + https://www.joshwcomeau.com/operator-lookup/
 - antisèche programmation UT https://docs.google.com/spreadsheets/d/1VC5DRHw-ResS5LgoTA131ORXCv9s_aNGuhUNOEeA1-c/?gid=378923023
 - antisèche entretien on-screen https://docs.google.com/spreadsheets/d/1KBBw1IkffjMwoy6anErauYwmKkVMWJ19AJaXNmTvQJw/
 - log levels https://docs.google.com/spreadsheets/d/1Bc32plQTswNdCqXS99deB0n7Te7FfD7uepGAOOlPbvY/
 - TBRPG RichText https://docs.google.com/spreadsheets/d/1qyshvX5HsiUUzN40PxY4q48R0qllgKkM2z9r-YsMTSI/
+
 
 
 Wiki perso:
@@ -34,7 +37,6 @@ Wiki perso:
 
 
 
-
 Dev tools:
 - online regexp tester https://regex101.com/
 - CSS colors http://davidbau.com/colors/
@@ -52,7 +54,6 @@ Dev tools:
 - https://ezgif.com/video-to-gif
 - diagramming https://excalidraw.com/
 - https://niram.org/read/
-
 
 
 
