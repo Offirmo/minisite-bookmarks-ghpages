@@ -7,43 +7,42 @@ pinned:
 - ODE https://github.com/Offirmo/open-source-dev-env
 
 
-Base downloads
+Base installs
 - +++ software updates TODO
+- ++ OS settings https://github.com/Offirmo-team/wiki/wiki/macOS
 - +++ git in terminal TODO
 - ++ ODE + apps through brew https://github.com/Offirmo/open-source-dev-env
+- jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 - Brio driver https://hub.sync.logitech.com/tunedesktop?posts.view=downloads
 - DisplayLink https://www.synaptics.com/products/displaylink-graphics/downloads
 - Plain Text Editor https://apps.apple.com/us/app/plain-text-editor/id1572202501
-- Velja https://sindresorhus.com/velja
-- Safari Tech Preview https://developer.apple.com/safari/download/
-- Chrome dev https://www.google.com/intl/en_us/chrome/dev/
-- Chrome canary https://www.google.com/chrome/canary/
-- LibreOffice https://www.libreoffice.org/download/download/
-- LT browser https://www.lambdatest.com/lt-browser
-- xcode https://apps.apple.com/us/app/xcode/id497799835
+
 
 
 Firefox
 - +++ download     https://www.mozilla.org/en-US/firefox/new/
-- ++ wiki         https://github.com/Offirmo-team/wiki/wiki/Firefox
+- ++ wiki          https://github.com/Offirmo-team/wiki/wiki/Firefox
 - + Dashlane       https://addons.mozilla.org/en-US/firefox/addon/dashlane/
 - + sideberry      https://addons.mozilla.org/en-US/firefox/addon/sidebery/
-- + uMatrix          https://addons.mozilla.org/en-US/firefox/addon/umatrix/
-- + yt enhancer      https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
+- + uMatrix        https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+- + yt enhancer    https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
 - treetabs         https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/
 - containers       https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
 
+
 Chrome
-- +++ download   https://www.google.com/intl/en_us/chrome/
-- ++ wiki       https://github.com/Offirmo-team/wiki/wiki/Chrome
-- + Dashlane     https://chrome.google.com/webstore/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
+- +++ download     https://www.google.com/intl/en_us/chrome/
+- ++ wiki          https://github.com/Offirmo-team/wiki/wiki/Chrome
+- + Dashlane       https://chrome.google.com/webstore/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
 - + uMatrix        https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
 - + yt enhancer    https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle/related
 - + pocket         https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
 - uMatrix options chrome-extension://ogfcmafjalglgifnmanfmnieipoejdcf/dashboard.html
-- chrome://extensions/
+- Cext. chrome://extensions/
+- CSet. chrome://settings/
 - Chrome Web store https://chrome.google.com/webstore/category/extensions
+
 
 
 Generic browser
@@ -52,36 +51,27 @@ Generic browser
 - pocket       https://getpocket.com/en/chrome/
 
 
-Setup
+
+Dev Env
 - +++ open-source-dev-env https://github.com/Offirmo/open-source-dev-env
-- ++ macOs https://github.com/Offirmo-team/wiki/wiki/macOS
 - + WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
 - dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
 - jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 - source tree https://www.sourcetreeapp.com/
-- Skype https://www.skype.com/en/get-skype/
+- Velja https://sindresorhus.com/velja
+- Safari Tech Preview https://developer.apple.com/safari/download/
+- Chrome dev https://www.google.com/intl/en_us/chrome/dev/
+- Chrome canary https://www.google.com/chrome/canary/
+- LT browser https://www.lambdatest.com/lt-browser
+- xcode https://apps.apple.com/us/app/xcode/id497799835
+
+
+Misc
 - Signal https://signal.org/en/download/
 - Dropbox https://www.dropbox.com/install
 - bepo https://bepo.fr/wiki/Installation
+- LibreOffice https://www.libreoffice.org/download/download-libreoffice/
 
 
-Knowledge base
-- https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository
-
-
-
-
-
-Setup:
-- ode-env https://github.com/Offirmo/open-source-dev-env
-- Mac-OS https://github.com/Offirmo-team/wiki/wiki/macOS
-- dev-env https://github.com/Offirmo-team/wiki/wiki/dev-env
-- FF https://github.com/Offirmo-team/wiki/wiki/Firefox
-- DisplayLink https://www.displaylink.com/downloads/osx
-- bitmoji https://chrome.google.com/webstore/detail/bitmoji/bfgdeiadkckfbkeigkoncpdieiiefpig
-- new tab url https://chrome.google.com/webstore/detail/new-tab-url/njigpponciklokfkoddampoienefegcl
-- pocket https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
-- suspender https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg
-- FF down chrome://downloadmgr/content/downloadmgrOverlay.xul
-- Cext. chrome://extensions/
-- CSet. chrome://settings/
+Legacy
+- Skype https://www.skype.com/en/get-skype/

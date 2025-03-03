@@ -16,10 +16,8 @@ pinned:
 - ++ NAB https://ib.nab.com.au/nabib/index.jsp
 - ++ Athena https://www.athena.com.au/
 - + Wise https://wise.com/login
+- assurance https://online.gio.com.au/onesuncorp/
 - Reward gateway https://atlassian.rewardgateway.com.au/
-- prezzee https://www.prezzee.com.au/wallet/
-- paypal https://www.paypal.com/en/signin
-- Me https://ib.mebank.com.au/
 
 
 Utils
@@ -51,8 +49,10 @@ Soins
 - doctor https://expats.atlassian.net/wiki/spaces/SYD/pages/21594133/Choosing+a+Doctor
 
 
-
-
+Legacy
+- prezzee https://www.prezzee.com.au/wallet/
+- paypal https://www.paypal.com/en/signin
+- Me https://ib.mebank.com.au/
 
 
 
