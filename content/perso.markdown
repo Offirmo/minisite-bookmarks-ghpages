@@ -42,13 +42,16 @@ Tools
 - Emoji https://emojihomepage.com/
 - emoji text https://cyanharlow.bitbucket.io/
 - reactions https://statlas.prod.atl-paas.net/czhou/reacc/index.html
+- perf https://browserbench.org
 
 
 Tools -- AI
 - + ChatGPT https://app.chatgpt.com/
+- + GH Copilot https://github.com/copilot
+- + Gemini https://gemini.google.com/app
+- + meta.ai https://www.meta.ai/
+- + Grok https://grok.com/
 - Google advanced search https://www.google.com/advanced_search
-- Gemini https://gemini.google.com/app
-- meta.ai https://www.meta.ai/
 - remove.bg https://www.remove.bg/
 - more ai img https://labs.kaleido.ai/
 

@@ -23,6 +23,7 @@ Web:
 - https://js13kgames.com/games/edge-not-found/index.html
 - https://shapez.io/
 - full RPG http://game.granbluefantasy.jp/
+- https://gamestd.io/
 
 WoW
 - battle.net US https://us.shop.battle.net/
