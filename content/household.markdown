@@ -5,6 +5,7 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - 🔖 https://www.offirmo.net/minisite-bookmarks-ghpages/perso
 - 🗂️ https://drive.google.com/drive/#my-drive
+- HH notes https://docs.google.com/spreadsheets/d/10QYeE8ZU69DBHO8ViPbaxd4sr2_XNmDKvcAJn9MJhow/
 - ✉️ https://inbox.google.com/
 - 🗺️ https://www.google.com/maps
 - MyMaps https://www.google.com/maps/d/home
