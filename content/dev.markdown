@@ -11,6 +11,7 @@ pinned:
 core docs
 - ++ wiki https://github.com/Offirmo-team/wiki/wiki
 - ++ https://devdocs.io/
+- + React https://react.dev/reference/react
 - + https://www.joshwcomeau.com/operator-lookup/
 - antisèche programmation UT    https://docs.google.com/spreadsheets/d/1VC5DRHw-ResS5LgoTA131ORXCv9s_aNGuhUNOEeA1-c/
 - antisèche entretien on-screen https://docs.google.com/spreadsheets/d/1KBBw1IkffjMwoy6anErauYwmKkVMWJ19AJaXNmTvQJw/
@@ -52,6 +53,7 @@ localhost
 - :6000    http://localhost:6000
 - :7000    http://localhost:7000
 - :8080    http://localhost:8080
+- :8181    http://localhost:8080
 - :9001    http://localhost:9001
 - :9090    http://localhost:9090
 
@@ -107,7 +109,7 @@ Veille -- outils/tech
 - + https://web.dev/blog/
 - + TS blog https://devblogs.microsoft.com/typescript/
 - eslint https://eslint.org/blog/
-- Parcel blog https://parceljs.org/blog/v2-12-0/
+- Parcel blog https://parceljs.org/blog/
 - https://fonts.googleblog.com/
 - Cordova https://cordova.apache.org/blog/
 
