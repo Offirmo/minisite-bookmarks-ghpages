@@ -55,6 +55,7 @@ Generic browser
 Dev Env
 - +++ open-source-dev-env https://github.com/Offirmo/open-source-dev-env
 - + WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
+- + Warp https://github.com/Offirmo-team/wiki/wiki/warp-terminal
 - dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
 - jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
 - source tree https://www.sourcetreeapp.com/
