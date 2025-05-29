@@ -58,12 +58,13 @@ Dev Env
 - + Warp https://github.com/Offirmo-team/wiki/wiki/warp-terminal
 - dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
 - jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
-- source tree https://www.sourcetreeapp.com/
+- Docker Desktop https://www.docker.com/products/docker-desktop/
 - Velja https://sindresorhus.com/velja
 - Safari Tech Preview https://developer.apple.com/safari/download/
 - Chrome dev https://www.google.com/intl/en_us/chrome/dev/
 - Chrome canary https://www.google.com/chrome/canary/
 - LT browser https://www.lambdatest.com/lt-browser
+- source tree https://www.sourcetreeapp.com/
 - xcode https://apps.apple.com/us/app/xcode/id497799835
 
 
