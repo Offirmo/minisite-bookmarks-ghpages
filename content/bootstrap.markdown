@@ -36,6 +36,7 @@ Chrome
 - ++ wiki          https://github.com/Offirmo-team/wiki/wiki/Chrome
 - + Dashlane       https://chrome.google.com/webstore/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
 - + uMatrix        https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf
+- + uMatrix        https://github.com/gorhill/uMatrix/releases
 - + yt enhancer    https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle/related
 - + pocket         https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
 - uMatrix options chrome-extension://ogfcmafjalglgifnmanfmnieipoejdcf/dashboard.html
