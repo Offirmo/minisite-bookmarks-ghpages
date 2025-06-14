@@ -17,6 +17,7 @@ Elvenar
 Web:
 - Ouigo pinball https://letsplay.ouigo.es/
 - aggreg https://www.karaqu.com/
+- snake https://3310snake.com/
 - google doodles https://doodles.google/search/?form_tags=interactive%20game
 - minesweeper minimal https://proxx.app/
 - https://archive.org/details/msdos_Oregon_Trail_Deluxe_The_1992
@@ -25,15 +26,18 @@ Web:
 - full RPG http://game.granbluefantasy.jp/
 - https://gamestd.io/
 
+
 WoW
 - battle.net US https://us.shop.battle.net/
 - download https://download.battle.net/en-us/?product=wow
 - https://worldofwarcraft.blizzard.com/
 - https://www.wowhead.com/
 
+
 GW2
 - https://us.shop.battle.net/
 - arena.net https://account.arena.net/welcome
+
 
 Misc
 - cloud gaming https://cloud.gg/games
