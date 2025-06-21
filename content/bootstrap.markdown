@@ -26,7 +26,7 @@ Firefox
 - + sideberry      https://addons.mozilla.org/en-US/firefox/addon/sidebery/
 - + uMatrix        https://addons.mozilla.org/en-US/firefox/addon/umatrix/
 - + yt enhancer    https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
-- treetabs         https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/
+- theme https://addons.mozilla.org/en-US/firefox/addon/gruvboxgruvboxgruvboxgruvboxgr/
 - containers       https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
 
@@ -55,10 +55,12 @@ Generic browser
 
 Dev Env
 - +++ open-source-dev-env https://github.com/Offirmo/open-source-dev-env
+- ++ dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
 - + WebStorm https://github.com/Offirmo-team/wiki/wiki/webstorm
 - + Warp https://github.com/Offirmo-team/wiki/wiki/warp-terminal
-- dev env https://github.com/Offirmo-team/wiki/wiki/dev-env
 - jetBrains Toolbox https://www.jetbrains.com/toolbox-app/
+- Cursor https://github.com/Offirmo-team/wiki/wiki/Cursor
+- VScode https://github.com/Offirmo-team/wiki/wiki/VS-Code
 - Docker Desktop https://www.docker.com/products/docker-desktop/
 - Velja https://sindresorhus.com/velja
 - Safari Tech Preview https://developer.apple.com/safari/download/
@@ -67,6 +69,7 @@ Dev Env
 - LT browser https://www.lambdatest.com/lt-browser
 - source tree https://www.sourcetreeapp.com/
 - xcode https://apps.apple.com/us/app/xcode/id497799835
+- Plain Text Editor https://sindresorhus.com/plain-text-editor
 
 
 Misc
@@ -78,3 +81,4 @@ Misc
 
 Legacy
 - Skype https://www.skype.com/en/get-skype/
+- treetabs https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/
