@@ -51,6 +51,7 @@ Tools -- AI
 - + Gemini https://gemini.google.com/app
 - + meta.ai https://www.meta.ai/
 - + Grok https://grok.com/
+- Mistral https://chat.mistral.ai/chat
 - free small AI https://playground.ai.cloudflare.com/
 - Google advanced search https://www.google.com/advanced_search
 - remove.bg https://www.remove.bg/
