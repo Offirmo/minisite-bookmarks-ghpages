@@ -16,7 +16,8 @@ Base installs
 - Brio driver https://hub.sync.logitech.com/tunedesktop?posts.view=downloads
 - DisplayLink https://www.synaptics.com/products/displaylink-graphics/downloads
 - Plain Text Editor https://apps.apple.com/us/app/plain-text-editor/id1572202501
-
+- Chatgpt desktop https://openai.com/chatgpt/download/
+- Claude desktop https://claude.ai/download
 
 
 Firefox

@@ -64,6 +64,7 @@ Webcomics
 
 
 Misc
+- emulation Mac https://infinitemac.org/
 - https://oss.love/
 - https://what-if.xkcd.com/
 - SCP https://scp-wiki.wikidot.com/
