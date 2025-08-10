@@ -6,24 +6,24 @@ pinned:
 
 
 Digital security
-++ https://www.privacyguides.org/
-+ https://www.torproject.org/download/
-+ Brave Browser https://brave.com/download/
-+ Pwd manager https://chromewebstore.google.com/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
+- ++ https://www.privacyguides.org/
+- + https://www.torproject.org/download/
+- + Brave Browser https://brave.com/download/
+- + Pwd manager https://chromewebstore.google.com/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
 
 
 Exchanges
-++ CGecko ranking https://www.coingecko.com/en/exchanges
-+ https://www.binance.com/
-+ Uphold
+- ++ CGecko ranking https://www.coingecko.com/en/exchanges
+- + https://www.binance.com/
+- + Uphold
 
 
 Wallets
-+ Stripe https://www.privy.io/
-+ Rabby https://chromewebstore.google.com/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch
-+ https://metamask.io/
-+ https://phantom.com/
-+ CoinBase https://wallet.coinbase.com/
+- + Stripe https://www.privy.io/
+- + Rabby https://chromewebstore.google.com/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch
+- + https://metamask.io/
+- + https://phantom.com/
+- + CoinBase https://wallet.coinbase.com/
 
 
 Other

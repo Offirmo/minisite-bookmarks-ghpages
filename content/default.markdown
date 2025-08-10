@@ -13,3 +13,12 @@ All boards
 - strips-mangas-comics https://www.offirmo.net/minisite-bookmarks-ghpages/strips-mangas-comics
 - tbrpg https://www.offirmo.net/minisite-bookmarks-ghpages/tbrpg
 - videogames https://www.offirmo.net/minisite-bookmarks-ghpages/videogames
+
+
+TEST
+- ++++ 4
+- +++ 3
+- ++ 2
+- + 1
+- 0
+-
