@@ -2,7 +2,7 @@
 
 
 pinned:
-- ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
+- 🦎https://www.coingecko.com/
 
 
 Digital security
@@ -15,7 +15,7 @@ Digital security
 Exchanges
 - ++ CGecko ranking https://www.coingecko.com/en/exchanges
 - + https://www.binance.com/
-- + Uphold
+- + Coinbase
 
 
 Wallets
