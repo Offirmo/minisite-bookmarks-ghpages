@@ -10,12 +10,14 @@ Digital security
 - + https://www.torproject.org/download/
 - + Brave Browser https://brave.com/download/
 - + Pwd manager https://chromewebstore.google.com/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
+- pwd peppering https://passwordbits.com/salting-passwords/
+- tmp mail https://mail.tm/
 
 
 Exchanges
 - ++ CGecko ranking https://www.coingecko.com/en/exchanges
-- + https://www.binance.com/
-- + Coinbase
+- + Binance https://www.binance.com/
+- + Coinbase https://www.coinbase.com/
 
 
 Wallets
@@ -29,12 +31,14 @@ Wallets
 Other
 - infinex.xyz/
 - jobs https://cryptojobslist.com/
+- https://rugcheck.xyz/
 
 
 NFT
+- https://magiceden.io/
 - https://blur.io/
 - superrare
-- OpenSea
+- https://opensea.io/
 
 
 Trading

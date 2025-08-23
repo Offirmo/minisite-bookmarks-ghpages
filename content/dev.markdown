@@ -65,6 +65,7 @@ Dev Docs:
 - + HTML https://htmlreference.io/
 - + TS compiler options https://www.typescriptlang.org/docs/handbook/compiler-options.html
 - + Typescript doc https://www.typescriptlang.org/docs/index.html
+- type-fest https://github.com/sindresorhus/type-fest?tab=readme-ov-file#api
 - Enum https://github.com/dphilipson/typescript-string-enums
 - ES6 https://exploringjs.com/es6/ch_modules.html
 - Fraction.js https://github.com/infusion/Fraction.js/
