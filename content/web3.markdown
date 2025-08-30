@@ -28,10 +28,15 @@ Wallets
 - + CoinBase https://wallet.coinbase.com/
 
 
-Other
-- infinex.xyz/
-- jobs https://cryptojobslist.com/
-- https://rugcheck.xyz/
+Bitcoin
+- https://bitcoin.stackexchange.com/
+
+
+Ethereum
+- https://ethereum.org/
+
+Solana
+- https://medium.com/solana-labs
 
 
 NFT
@@ -39,6 +44,21 @@ NFT
 - https://blur.io/
 - superrare
 - https://opensea.io/
+
+
+Meme
+- oerview https://blockworks.com/analytics/launchpads
+- bonk.fun
+- pump.fun
+-
+
+Other
+- infinex.xyz/
+- jobs https://cryptojobslist.com/
+- https://rugcheck.xyz/
+- https://pancakeswap.finance/
+- https://www.cryptokitties.co/
+
 
 
 Trading
@@ -53,7 +73,7 @@ News
 
 
 TOSORT
-- https://ethereum.org/
+
 - https://kaito.ai/
 - https://www.pudgypenguins.com/
 - https://yaps.kaito.ai/social-card
