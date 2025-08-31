@@ -7,17 +7,34 @@ pinned:
 
 Digital security
 - ++ https://www.privacyguides.org/
-- + https://www.torproject.org/download/
-- + Brave Browser https://brave.com/download/
 - + Pwd manager https://chromewebstore.google.com/detail/dashlane-%E2%80%94-password-manag/fdjamakpfbbddfjaooikfcpapjohcfmg
+- + Brave Browser https://brave.com/download/
+- + https://www.torproject.org/download/
+- https://blog.torproject.org/sc25/
+- https://gitlab.torproject.org/tpo
+- https://securityinabox.org/
+- https://ssd.eff.org/
+- https://tails.net/doc/about/warnings/index.en.html
 - pwd peppering https://passwordbits.com/salting-passwords/
 - tmp mail https://mail.tm/
+- https://relay.firefox.com/
+
+
+Learn
+- wallet sign https://wise-signer.cyfrin.io/
+
+
+Check
+- https://github.com/deficollective/defiscan
+- https://www.scamsniffer.io/extension/
 
 
 Exchanges
 - ++ CGecko ranking https://www.coingecko.com/en/exchanges
-- + Binance https://www.binance.com/
 - + Coinbase https://www.coinbase.com/
+- https://blockearner.com.au/
+- https://www.binance.com/
+
 
 
 Wallets
@@ -29,14 +46,28 @@ Wallets
 
 
 Bitcoin
-- https://bitcoin.stackexchange.com/
+- https://www.lopp.net/bitcoin-information.html
+- s/o https://bitcoin.stackexchange.com/questions?sort=votes
 
 
 Ethereum
 - https://ethereum.org/
+- https://etherscan.io/
+- https://www.uxscout.xyz/
+- s/o https://ethereum.stackexchange.com/questions?sort=votes
+- movie https://ethereumfilm.xyz/watch-the-film
+
 
 Solana
 - https://medium.com/solana-labs
+
+
+Aave
+https://aavescan.com/
+
+
+Sui
+https://sui.io/
 
 
 NFT
@@ -58,7 +89,7 @@ Other
 - https://rugcheck.xyz/
 - https://pancakeswap.finance/
 - https://www.cryptokitties.co/
-
+- https://matrix.org/
 
 
 Trading
@@ -68,6 +99,8 @@ Trading
 News
 - Crypto Twitter https://x.com/
 - https://www.coingecko.com/
+- https://x.com/realScamSniffer
+- https://x.com/CyversAlerts
 
 
 
