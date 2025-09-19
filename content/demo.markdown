@@ -12,3 +12,12 @@ tools :
 comics
 - https://mangafox.me/manga/the_gamer/v01/c035/14.html
 
+
+
+TEST
+- ++++ 4
+- +++ 3
+- ++ 2
+- + 1
+- 0
+-

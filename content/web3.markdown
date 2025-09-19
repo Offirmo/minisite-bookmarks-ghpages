@@ -29,20 +29,19 @@ Check
 - https://www.scamsniffer.io/extension/
 
 
-Exchanges
+Exchange
 - ++ CGecko ranking https://www.coingecko.com/en/exchanges
 - + Coinbase https://www.coinbase.com/
 - https://blockearner.com.au/
 - https://www.binance.com/
 
 
-
 Wallets
-- + Stripe https://www.privy.io/
+- + Phantom https://phantom.com/
 - + Rabby https://chromewebstore.google.com/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch
-- + https://metamask.io/
-- + https://phantom.com/
-- + CoinBase https://wallet.coinbase.com/
+- CoinBase https://wallet.coinbase.com/
+- MetaMask https://metamask.io/
+- Stripe https://www.privy.io/
 
 
 Bitcoin
@@ -51,8 +50,9 @@ Bitcoin
 
 
 Ethereum
+- +++ scanner https://etherscan.io/
 - https://ethereum.org/
-- https://etherscan.io/
+-
 - https://www.uxscout.xyz/
 - s/o https://ethereum.stackexchange.com/questions?sort=votes
 - movie https://ethereumfilm.xyz/watch-the-film
@@ -75,6 +75,7 @@ NFT
 - https://blur.io/
 - superrare
 - https://opensea.io/
+- collections dominance https://www.coingecko.com/en/nft/global-stats
 
 
 Meme
