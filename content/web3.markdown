@@ -44,34 +44,44 @@ Wallets
 - Stripe https://www.privy.io/
 
 
+
 Bitcoin
-- ++ scanner
+- ++ landing https://www.coingecko.com/en/coins/bitcoin
+- tool https://bitaps.com/tools
 - https://www.lopp.net/bitcoin-information.html
-- s/o https://bitcoin.stackexchange.com/questions?sort=votes
+- s/e https://bitcoin.stackexchange.com/questions?sort=votes
+- r/Bitcoin https://www.reddit.com/r/Bitcoin/
+
 
 
 Ethereum
-- ++ scanner https://etherscan.io/
+- ++ landing https://www.coingecko.com/en/coins/ethereum
+- ++ explorer https://etherscan.io/
+- wallets comp 2025/09 https://x.com/waleswoosh/status/1968306828951134279
 - + news https://blog.ethereum.org/
 - + home https://ethereum.org/
 - https://www.uxscout.xyz/
-- s/o https://ethereum.stackexchange.com/questions?sort=votes
+- s/e https://ethereum.stackexchange.com/questions?sort=votes
 - movie https://ethereumfilm.xyz/watch-the-film
 
 
 Solana
-- ++ scanner
+- ++ landing https://www.coingecko.com/en/coins/solana
 - + news https://medium.com/solana-labs
 - + home https://solana.com/
-
+- s/e https://solana.stackexchange.com/questions?sort=votes
 
 
 Aave
-- ++ scanner https://aavescan.com/
+- ++ explorer https://aavescan.com/
 
 
 Sui
-https://sui.io/
+- + home https://sui.io/
+
+
+Base
+- ++ explorer https://basescan.org/
 
 
 NFT
@@ -120,6 +130,7 @@ Trading
 
 
 News
+- https://cointelegraph.com/
 - Crypto Twitter https://x.com/
 - https://www.coingecko.com/
 - https://x.com/realScamSniffer
