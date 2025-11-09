@@ -81,3 +81,7 @@ Games
 - Flyff Universe https://universe.flyff.com/en/intro2/free-web-mmorpg
 - 0AD warfare https://play0ad.com/
 - DOSbox https://pieter.com/
+- https://lom.joynetgame.com
+- https://h5.g123.jp/game/guruguru?lang=en&platform=auto&utm_source=facebook&utm_campaign=guruguru_en_NewDisplayAdvantageNew_adn_all&utm_adgroup=cr_normal_advantage&utm_content=guruguru20240516_en_mi1_1080-1080.jpg&utm_creative=guruguru20240516_en_mi1_1080-1080.jpg&fbclid=PAZXh0bgNhZW0BMAABpjrw70Hb1bvXzabHVb3tiYLUHMVAvVZ4CrUi8aT5zN6RNcDbEjzhavXMuA_aem_caUTAIRBAZaRvotPqIbh_g
+- https://messenger.abeto.co/
+- pacman https://searchplayground.google/pacman/halloween/

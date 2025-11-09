@@ -51,6 +51,10 @@ Bitcoin
 - https://www.lopp.net/bitcoin-information.html
 - s/e https://bitcoin.stackexchange.com/questions?sort=votes
 - r/Bitcoin https://www.reddit.com/r/Bitcoin/
+- https://learnmeabitcoin.com/
+- https://blockscan.com/
+- https://groups.google.com/g/bitcoindev
+- https://bitcoinknots.org/
 
 
 
@@ -63,6 +67,9 @@ Ethereum
 - https://www.uxscout.xyz/
 - s/e https://ethereum.stackexchange.com/questions?sort=votes
 - movie https://ethereumfilm.xyz/watch-the-film
+- revoke tool https://revoke.cash/
+- 7702 checker https://eip7702.app/
+- gas tracker https://etherscan.io/gastracker
 
 
 Solana
@@ -82,6 +89,16 @@ Sui
 
 Base
 - ++ explorer https://basescan.org/
+
+
+berachain
+- https://www.berachain.com/
+- https://x.com/berachain
+- https://bscscan.com/
+
+
+stable
+- circle faucet https://faucet.circle.com/
 
 
 NFT
@@ -152,3 +169,6 @@ TOSORT
 - https://www.pudgypop.com/
 - https://www.coinbase.com/en-au/wallet/smart-wallet
 - https://jup.ag/
+- cards https://orbitxpay.com/
+- cex https://www.cointree.com/
+- au https://blacksheep.money/

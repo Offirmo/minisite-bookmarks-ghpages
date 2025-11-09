@@ -5,6 +5,7 @@ pinned:
 - ↵ https://www.offirmo.net/minisite-bookmarks-ghpages/default
 - +++ Offirmo https://github.com/Offirmo
 - ++ monorepo https://github.com/Offirmo/offirmo-monorepo
+- Tech Watch https://docs.google.com/spreadsheets/d/16aNWU6c_PQlXY1lNom2F8hlEVV-OaaOFTWfsv0Wafag/
 
 
 
