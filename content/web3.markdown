@@ -161,6 +161,9 @@ Network
 - jobs https://cryptojobslist.com/
 
 
+Publishing
+- https://paragraph.com/
+
 
 TOSORT
 - https://kaito.ai/

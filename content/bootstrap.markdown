@@ -27,6 +27,7 @@ Firefox
 - + sideberry      https://addons.mozilla.org/en-US/firefox/addon/sidebery/
 - + uMatrix        https://addons.mozilla.org/en-US/firefox/addon/umatrix/
 - + yt enhancer    https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
+- + archive        https://addons.mozilla.org/en-US/firefox/addon/wayback-machine_new/
 - theme https://addons.mozilla.org/en-US/firefox/addon/gruvboxgruvboxgruvboxgruvboxgr/
 - containers       https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
