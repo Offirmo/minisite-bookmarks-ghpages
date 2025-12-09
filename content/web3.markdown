@@ -18,6 +18,7 @@ Digital security
 - pwd peppering https://passwordbits.com/salting-passwords/
 - tmp mail https://mail.tm/
 - https://relay.firefox.com/
+- icloud https://support.apple.com/en-au/guide/icloud/mm6b1a490a/icloud
 
 
 Learn
@@ -26,6 +27,7 @@ Learn
 
 Check
 - https://github.com/deficollective/defiscan
+- https://www.kerberus.com/extension/
 - https://www.scamsniffer.io/extension/
 - https://rugcheck.xyz/
 
@@ -74,6 +76,7 @@ Ethereum
 
 Solana
 - ++ landing https://www.coingecko.com/en/coins/solana
+- ++ wallet https://chromewebstore.google.com/detail/jupiter-wallet/iledlaeogohbilgbfhmbgkgmpplbfboh
 - + news https://medium.com/solana-labs
 - + home https://solana.com/
 - s/e https://solana.stackexchange.com/questions?sort=votes
@@ -175,3 +178,5 @@ TOSORT
 - cards https://orbitxpay.com/
 - cex https://www.cointree.com/
 - au https://blacksheep.money/
+- aave https://x.com/aave/status/1990421343175672159?s=20
+- https://aave.com/app/r/931834
