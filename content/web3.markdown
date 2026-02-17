@@ -32,19 +32,20 @@ Check
 - https://rugcheck.xyz/
 
 
-Exchange
+CEX
 - ++ CGecko ranking https://www.coingecko.com/en/exchanges
 - + Coinbase https://www.coinbase.com/
 - https://www.binance.com/
 
 
 Wallets
-- ++ Phantom https://phantom.com/
+- ++ Infinex https://app.infinex.xyz/
 - ++ Rabby https://chromewebstore.google.com/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch
-- CoinBase https://wallet.coinbase.com/
+- Rainbow https://rainbow.me/
+- Phantom https://phantom.com/
 - MetaMask https://metamask.io/
+- CoinBase https://wallet.coinbase.com/
 - Stripe https://www.privy.io/
-
 
 
 Bitcoin
@@ -57,7 +58,7 @@ Bitcoin
 - https://blockscan.com/
 - https://groups.google.com/g/bitcoindev
 - https://bitcoinknots.org/
-
+- https://delvingbitcoin.org/
 
 
 Ethereum
@@ -113,12 +114,10 @@ NFT
 - https://www.pudgypenguins.com/
 
 
-
 Meme
 - overview https://blockworks.com/analytics/launchpads
 - bonk.fun
 - pump.fun
-
 
 
 DApps
@@ -131,13 +130,10 @@ Banking
 - https://blockearner.com.au/
 
 
-
 Other
-- app.infinex.xyz/
 - domains https://unstoppabledomains.com/
 - https://pancakeswap.finance/
 - https://matrix.org/
-
 
 
 Trading
@@ -180,3 +176,24 @@ TOSORT
 - au https://blacksheep.money/
 - aave https://x.com/aave/status/1990421343175672159?s=20
 - https://aave.com/app/r/931834
+
+
+https://www.zkp2p.xyz/swap?tab=buy
+https://portal.swapper.finance/
+blacksheep
+https://swap.defillama.com/
+https://polymarket.com/
+
+
+tools
+eth https://web3tools.chainstacklabs.com/
+eth https://swiss-knife.xyz/
+
+DEX https://swap.defillama.com/ https://defillama.com/about
+https://www.bungee.exchange/ ?
+
+https://app.uniswap.org
+https://app.aave
+
+HYPE
+https://www.flowscan.xyz/builders
