@@ -10,6 +10,7 @@ pinned:
 
 
 core docs
+- ++ Warp https://app.warp.dev/drive/folder/Generic-cw0zqPnemkZkKotymQshJ3
 - ++ wiki https://github.com/Offirmo-team/wiki/wiki
 - ++ https://devdocs.io/
 - + React https://react.dev/reference/react
