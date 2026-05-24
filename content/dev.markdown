@@ -85,6 +85,12 @@ Dev Docs:
 - unminifier https://unminify.com/
 
 
+Diagramming:
+- sketching (hand drawn) https://dgm.sh/
+- diagramming https://excalidraw.com/
+- TSDiagram https://tsdiagram.com/
+
+
 
 Online tools:
 - online regexp tester https://regex101.com/
@@ -94,13 +100,10 @@ Online tools:
 - SVG https://www.svgviewer.dev/
 - favicon https://realfavicongenerator.net/
 - favicon checker https://www.colinkeany.com/favicon-checker/
-- Online PDF editor https://www.pdfescape.com/
 - Google PageSpeed Insights https://developers.google.com/speed/pagespeed/insights/
 - Google LightHouse https://developers.google.com/web/tools/lighthouse/#devtools
 - transform.tools https://transform.tools/graphql-to-typescript
 - https://ezgif.com/video-to-gif
-- diagramming https://excalidraw.com/
-- https://niram.org/read/
 - AI palettes https://deblank.com/colors
 
 

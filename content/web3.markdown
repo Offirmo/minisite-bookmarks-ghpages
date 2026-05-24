@@ -19,6 +19,7 @@ Digital security
 - tmp mail https://mail.tm/
 - https://relay.firefox.com/
 - icloud https://support.apple.com/en-au/guide/icloud/mm6b1a490a/icloud
+- FF integrated VPN https://support.mozilla.org/en-US/kb/built-in-vpn
 
 
 Learn

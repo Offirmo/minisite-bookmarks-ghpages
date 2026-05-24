@@ -53,7 +53,7 @@ Ongoing mangas:
 - The Gamer https://mangafox.me/manga/the_gamer/v03/c163/30.html
 - Bleach https://www.mangareader.net/bleach
 - Hunter x Hunter https://www.mangareader.net/hunter-x-hunter
-- space brothers
+- space brothers https://m.fanfox.net/manga/uchuu_kyoudai/
 - Jin
 - https://chapmanganato.com/manga-ef951662/chapter-278
 - https://mangakakalot.com/chapter/oh_lord_jesus/chapter_32
