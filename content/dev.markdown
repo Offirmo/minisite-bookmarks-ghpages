@@ -90,6 +90,7 @@ Diagramming:
 - sketching (hand drawn) https://dgm.sh/
 - diagramming https://excalidraw.com/
 - TSDiagram https://tsdiagram.com/
+- fish https://pretty.fish/
 
 
 
