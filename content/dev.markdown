@@ -98,6 +98,7 @@ Online tools:
 - online regexp tester https://regex101.com/
 - CSS colors http://davidbau.com/colors/
 - Color converter https://www.cssportal.com/css-color-converter/
+- JWT https://www.jwt.io/
 - Lorem Ipsum https://www.lipsum.com/feed/html
 - SVG https://www.svgviewer.dev/
 - favicon https://realfavicongenerator.net/

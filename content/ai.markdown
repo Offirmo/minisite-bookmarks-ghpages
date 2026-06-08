@@ -12,3 +12,7 @@ Agent frameworks
 
 Orchestrators
 - https://docs.paperclip.ing/
+
+
+Build
+- langchain https://docs.langchain.com/
