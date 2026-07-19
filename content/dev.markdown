@@ -95,6 +95,7 @@ Diagramming:
 
 
 Online tools:
+- speed test https://speed.cloudflare.com/
 - online regexp tester https://regex101.com/
 - CSS colors http://davidbau.com/colors/
 - Color converter https://www.cssportal.com/css-color-converter/
